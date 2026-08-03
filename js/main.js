@@ -253,6 +253,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 const resultBox = document.getElementById('estimator-result');
                 resultBox.style.display = 'block';
                 resultBox.style.animation = 'fadeIn 0.5s ease forwards';
+
+                // Google Ads Lead Conversion
+if (typeof gtag === "function") {
+    gtag('event', 'conversion', {
+        'send_to': 'AW-10955118130/fUDECPSNptscELKs5-co',
+        'value': 1.0,
+        'currency': 'INR'
+    });
+}
                 
                 // Inject Prices
                 document.getElementById('price-display-container').innerHTML = calculatedDisplayHtml;
