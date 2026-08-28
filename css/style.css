@@ -190,3 +190,47 @@ html, body {
         padding: 0 !important;
     }
 }
+/* ==========================================================
+   FINAL PERMANENT OVERRIDE: GAP, FORM CENTERING & HEADER
+========================================================== */
+
+@media (max-width: 768px) {
+    /* 1. Hero Section ka upar wala extra gap hatane ke liye */
+    .hero-section {
+        padding-top: 30px !important;
+        margin-top: 0 !important;
+    }
+
+    /* 2. Header elements ko ek line me aur right side align karne ke liye */
+    .site-header .header-inner, header .container {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        width: 100% !important;
+        padding: 8px 12px !important;
+        box-sizing: border-box !important;
+    }
+
+    /* 3. Callback Form ka right side se cutna aur center na hona fix karne ke liye */
+    .callback-section {
+        padding: 40px 0 !important;
+    }
+
+    .callback-grid {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        width: 100% !important;
+        gap: 20px !important;
+    }
+
+    .callback-form-box {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 auto !important;
+        padding: 20px !important;
+        box-sizing: border-box !important;
+        aspect-ratio: auto !important; /* Square shape mobile par hata kar content ke hisab se fit karna */
+    }
+}
