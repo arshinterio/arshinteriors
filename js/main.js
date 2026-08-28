@@ -1,10 +1,30 @@
 /**
  * ARSH INTERIORS - MASTER JAVASCRIPT
- * Handles Page Transitions, Custom Dropdowns, Smart Estimator Math & Dashboard
+ * Handles Page Transitions, Custom Dropdowns, Smart Estimator Math, Dashboard & Responsive Mobile Menu
  */
 
 document.addEventListener('DOMContentLoaded', () => {
     
+    // 0. MOBILE HAMBURGER MENU TOGGLE
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn'); // Aapke 3-line icon ki ID
+    const navMenu = document.querySelector('.desktop-nav'); // Aapke navigation menu ki class
+
+    if (mobileMenuBtn && navMenu) {
+        mobileMenuBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            navMenu.classList.toggle('mobile-active');
+            mobileMenuBtn.classList.toggle('active');
+        });
+
+        // Menu ke bahar click karne par close ho jaye
+        document.addEventListener('click', (e) => {
+            if (!navMenu.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+                navMenu.classList.remove('mobile-active');
+                mobileMenuBtn.classList.remove('active');
+            }
+        });
+    }
+
     // 1. PAGE TRANSITION ENGINE
     const pageContent = document.getElementById('page-content');
     if (pageContent) {
@@ -20,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
     transitionLinks.forEach(link => {
         link.addEventListener('click', (e) => {
             const targetUrl = link.getAttribute('href');
-            if (targetUrl.startsWith('#') || link.getAttribute('target') === '_blank') return;
+            if (!targetUrl || targetUrl.startsWith('#') || link.getAttribute('target') === '_blank') return;
             
             const currentPath = window.location.pathname.split('/').pop() || 'index.html';
             if (targetUrl === currentPath || targetUrl === window.location.href) return;
@@ -203,7 +223,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // CEILING
             if (chkCeiling) {
                 let cDesign = document.getElementById('ceilingDesign').value;
-                let cRate = cDesign === 'Simple' ? 90 : (cDesign === 'Premium' ? 140 : 190); // Adjusted rates
+                let cRate = cDesign === 'Simple' ? 90 : (cDesign === 'Premium' ? 140 : 190);
                 let cTotal = ceilingAreaVal * cRate;
                 
                 detailsString += `Ceiling: ${ceilingAreaVal} sqft (${cDesign}). `;
@@ -221,18 +241,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 let eScope = document.getElementById('elecScope').value;
                 let eTaste = document.getElementById('elecTaste').value || "Standard";
                 
-                // Base Points based on Property Type
                 let totalPoints = 0;
                 if(propType.includes('1 BHK')) totalPoints = 35;
                 else if(propType.includes('2 BHK')) totalPoints = 55;
                 else if(propType.includes('3 BHK')) totalPoints = 75;
                 else if(propType.includes('4+ BHK')) totalPoints = 95;
                 else if(propType === 'Bungalow' || propType === 'Commercial') {
-                    // Smart Logic: Use Ceiling area divided by 12 to estimate electrical points
                     totalPoints = Math.round(ceilingAreaVal / 12);
-                    if(totalPoints < 40) totalPoints = 40; // minimum fallback
+                    if(totalPoints < 40) totalPoints = 40;
                 } else {
-                    totalPoints = 50; // default fallback
+                    totalPoints = 50;
                 }
 
                 let pointRate = (eScope === "With Lights") ? 1100 : 700;
@@ -265,7 +283,6 @@ document.addEventListener('DOMContentLoaded', () => {
             document.querySelector('.form-step[data-step="4"]').style.display = 'none';
             document.getElementById('form-loader').style.display = 'block';
 
-            // Send Data to Original Estimator Google Sheet
             const payload = {
                 name: name,
                 phone: phone,
@@ -282,16 +299,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 body: JSON.stringify(payload)
             }).catch(e => console.log("Sent securely."));
 
-            // Trigger Dashboard Transition
             setTimeout(() => {
                 document.getElementById('form-loader').style.display = 'none';
                 const dashboard = document.getElementById('premiumResultDashboard');
                 dashboard.style.display = 'block';
                 
-                // Inject Prices
                 document.getElementById('dynamicPriceInvoice').innerHTML = calculatedDisplayHtml;
 
-                // Configure WhatsApp Button
                 const waMsg = `*Arsh Interiors - New Blueprint Configured* 🏢\n\n` +
                               `*Name:* ${name}\n` +
                               `*Location:* ${loc}\n` +
