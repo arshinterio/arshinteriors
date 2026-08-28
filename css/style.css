@@ -1,33 +1,45 @@
 /* ==========================================================
-   ARSH INTERIORS - PERFECT MOBILE RESPONSIVE HEADER & MENU
+   PERFECT FIX: ZOOM, BUTTONS & COST CALCULATOR
 ========================================================== */
 
-/* Desktop & Tablet View (769px aur usse badi screen) */
-@media (min-width: 769px) {
-    #mobileMenuBtn {
-        display: none !important;
-    }
-    .desktop-nav {
-        display: flex !important;
-        flex-direction: row !important;
-        position: static !important;
-        background: transparent !important;
-        box-shadow: none !important;
-        width: auto !important;
-        padding: 0 !important;
-    }
+/* 1. Zoom-out problem fix (Viewport ko lock karna) */
+html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+    -webkit-text-size-adjust: 100% !important;
 }
 
-/* Mobile View (768px aur usse choti screen) */
+/* 2. Header aur Buttons Alignment Fix */
+.site-header .container {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    flex-wrap: nowrap !important;
+}
+
+/* 3. Cost Calculator Button & CTA Fix (Action Trigger aur Clickability) */
+#estimatorModule, 
+a[href="#estimatorModule"], 
+.btn {
+    position: relative !important;
+    z-index: 9999 !important;
+    pointer-events: auto !important;
+    cursor: pointer !important;
+}
+
+/* Mobile responsive adjustments */
 @media (max-width: 768px) {
     .site-header .container {
-        position: relative !important;
-        display: flex !important;
-        justify-content: space-between !important;
-        align-items: center !important;
+        padding: 10px 15px !important;
     }
 
-    /* 1. By default mobile menu hide rahega taaki overlap na ho */
+    /* Header CTA phone button ko mobile par compact karna taaki overlap na ho */
+    .header-cta {
+        font-size: 0.85rem !important;
+        padding: 8px 12px !important;
+    }
+
+    /* Desktop nav hidden by default on mobile */
     .desktop-nav {
         display: none !important;
         position: absolute !important;
@@ -41,15 +53,12 @@
         box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15) !important;
         border-bottom: 3px solid #ff6b6b !important;
         z-index: 99999 !important;
-        margin: 0 !important;
     }
 
-    /* 2. Jab JavaScript se 'active' class lagegi tab menu khulega */
     .desktop-nav.active {
         display: flex !important;
     }
 
-    /* Menu ke links ki styling */
     .desktop-nav a {
         display: block !important;
         width: 100% !important;
@@ -62,12 +71,6 @@
         border-bottom: 1px solid #f2f2f2 !important;
     }
 
-    .desktop-nav a:hover {
-        background-color: #fafafa !important;
-        color: #ff6b6b !important;
-    }
-
-    /* 3. Hamburger Button Design */
     #mobileMenuBtn {
         display: flex !important;
         align-items: center !important;
@@ -80,7 +83,15 @@
         cursor: pointer !important;
         font-size: 1.2rem !important;
         color: #111 !important;
-        padding: 0 !important;
         z-index: 100000 !important;
+    }
+}
+
+@media (min-width: 769px) {
+    #mobileMenuBtn {
+        display: none !important;
+    }
+    .desktop-nav {
+        display: flex !important;
     }
 }
