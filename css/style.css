@@ -1,8 +1,4 @@
-/* ==========================================================
-   UNIVERSAL MOBILE MENU & BUTTON FIX (ALL PAGES)
-========================================================== */
-
-/* Desktop / Tablet View (769px aur usse upar) */
+/* Mobile Responsive Header & Menu Fix */
 @media (min-width: 769px) {
     #mobileMenuBtn, .mobile-menu-btn {
         display: none !important;
@@ -18,7 +14,6 @@
     }
 }
 
-/* Mobile View (768px aur usse niche) */
 @media (max-width: 768px) {
     .site-header .container, header .container {
         position: relative !important;
@@ -27,7 +22,6 @@
         align-items: center !important;
     }
 
-    /* 1. Mobile par menu by default hide rahega */
     .desktop-nav {
         display: none !important;
         position: absolute !important;
@@ -44,12 +38,10 @@
         margin: 0 !important;
     }
 
-    /* 2. Jab JavaScript se 'active' class lagegi tab menu khulega */
     .desktop-nav.active {
         display: flex !important;
     }
 
-    /* Menu ke links ki styling */
     .desktop-nav a {
         display: block !important;
         width: 100% !important;
@@ -62,12 +54,6 @@
         border-bottom: 1px solid #f2f2f2 !important;
     }
 
-    .desktop-nav a:hover {
-        background-color: #fafafa !important;
-        color: #ff6b6b !important;
-    }
-
-    /* 3. Hamburger Button Design & Visibility Fix */
     #mobileMenuBtn, .mobile-menu-btn {
         display: flex !important;
         align-items: center !important;
