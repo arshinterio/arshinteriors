@@ -1,57 +1,65 @@
 /* ==========================================================
-   FINAL FIXED: VIEWPORT ZOOM & BUTTON VISIBILITY FIX
+   FINAL POLISH: LOGO, CALL ICON, MENU FIX & TYPOGRAPHY
 ========================================================== */
 
-/* 1. Zoom-out / Horizontal Overflow Fix (Fit to Screen) */
-html, body {
-    width: 100% !important;
-    max-width: 100% !important;
-    overflow-x: hidden !important;
-    box-sizing: border-box !important;
+/* 1. Logo ko ek line me rakhne ke liye */
+.site-header .container, header .container {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    flex-wrap: nowrap !important;
+    position: relative !important;
 }
 
-*, *:before, *:after {
-    box-sizing: inherit;
+.logo, .footer-logo {
+    display: inline-flex !important;
+    align-items: center !important;
+    white-space: nowrap !important;
+    gap: 8px !important;
 }
 
-/* 2. Universal Button Visibility Fix (Background, Border & Padding) */
-a.btn, button.btn, .btn-primary, .btn-outline, button {
+.logo .logo-text {
+    display: inline-block !important;
+    font-size: 1.2rem !important;
+    font-weight: 800 !important;
+}
+
+/* 2. Header Phone Button: Number hide karke sirf Round Call Icon banana */
+.header-cta {
+    width: 42px !important;
+    height: 42px !important;
+    padding: 0 !important;
+    border-radius: 50% !important;
     display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
-    padding: 12px 24px !important;
-    border-radius: 8px !important;
-    font-weight: 600 !important;
-    text-decoration: none !important;
-    cursor: pointer !important;
-    text-align: center !important;
-}
-
-/* Primary Button Styling (Coral Pink background) */
-.btn-primary, button[type="submit"], .header-cta {
     background-color: #ff6b6b !important;
     color: #ffffff !important;
-    border: 2px solid #ff6b6b !important;
+    box-shadow: 0 4px 10px rgba(255, 107, 107, 0.3) !important;
 }
 
-/* Outline Button Styling */
-.btn-outline {
-    background-color: transparent !important;
-    color: #111111 !important;
-    border: 2px solid #111111 !important;
+/* Number text ko poori tarah hide karne ke liye */
+.header-cta {
+    font-size: 0 !important;
 }
 
-/* 3. Mobile Header & Menu Alignment */
+/* Sirf phone icon dikhe aur bada ho jaye */
+.header-cta i {
+    font-size: 1.1rem !important;
+    margin: 0 !important;
+}
+
+/* 3. Mobile Menu Position & Dropdown Fix (Buttons ke niche aana rokna) */
 @media (max-width: 768px) {
-    .site-header .container, header .container {
-        display: flex !important;
-        justify-content: space-between !important;
-        align-items: center !important;
-        width: 100% !important;
-        padding: 10px 15px !important;
+    /* Header ki positioning fix taaki menu header ke theek niche khule */
+    .site-header, header {
+        position: sticky !important;
+        top: 0 !important;
+        z-index: 999999 !important;
+        background: #ffffff !important;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.05) !important;
     }
 
-    /* Mobile Menu Dropdown */
     .desktop-nav {
         display: none !important;
         position: absolute !important;
@@ -61,10 +69,11 @@ a.btn, button.btn, .btn-primary, .btn-outline, button {
         background: #ffffff !important;
         flex-direction: column !important;
         align-items: center !important;
-        padding: 20px 0 !important;
-        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15) !important;
+        padding: 15px 0 !important;
+        box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15) !important;
         border-bottom: 3px solid #ff6b6b !important;
-        z-index: 99999 !important;
+        z-index: 999998 !important;
+        margin: 0 !important;
     }
 
     .desktop-nav.active {
@@ -76,8 +85,26 @@ a.btn, button.btn, .btn-primary, .btn-outline, button {
         width: 100% !important;
         text-align: center !important;
         padding: 12px 0 !important;
-        font-size: 1.1rem !important;
+        font-size: 1.05rem !important;
+        font-weight: 600 !important;
         color: #222222 !important;
         border-bottom: 1px solid #f2f2f2 !important;
     }
+}
+
+/* 4. Typography / Text Cleanup (Upar ke texts ko clean aur sharp banana) */
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    -webkit-font-smoothing: antialiased !important;
+    letter-spacing: -0.2px !important;
+}
+
+h1, h2, h3, h4, .hero-title {
+    letter-spacing: -0.5px !important;
+    line-height: 1.25 !important;
+}
+
+.hero-subtitle {
+    letter-spacing: 1.5px !important;
+    font-weight: 700 !important;
 }
