@@ -1,27 +1,57 @@
-/* Mobile Responsive Header & Menu Fix */
-@media (min-width: 769px) {
-    #mobileMenuBtn, .mobile-menu-btn {
-        display: none !important;
-    }
-    .desktop-nav {
-        display: flex !important;
-        flex-direction: row !important;
-        position: static !important;
-        background: transparent !important;
-        box-shadow: none !important;
-        width: auto !important;
-        padding: 0 !important;
-    }
+/* ==========================================================
+   FINAL FIXED: VIEWPORT ZOOM & BUTTON VISIBILITY FIX
+========================================================== */
+
+/* 1. Zoom-out / Horizontal Overflow Fix (Fit to Screen) */
+html, body {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+    box-sizing: border-box !important;
 }
 
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* 2. Universal Button Visibility Fix (Background, Border & Padding) */
+a.btn, button.btn, .btn-primary, .btn-outline, button {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 12px 24px !important;
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+    cursor: pointer !important;
+    text-align: center !important;
+}
+
+/* Primary Button Styling (Coral Pink background) */
+.btn-primary, button[type="submit"], .header-cta {
+    background-color: #ff6b6b !important;
+    color: #ffffff !important;
+    border: 2px solid #ff6b6b !important;
+}
+
+/* Outline Button Styling */
+.btn-outline {
+    background-color: transparent !important;
+    color: #111111 !important;
+    border: 2px solid #111111 !important;
+}
+
+/* 3. Mobile Header & Menu Alignment */
 @media (max-width: 768px) {
     .site-header .container, header .container {
-        position: relative !important;
         display: flex !important;
         justify-content: space-between !important;
         align-items: center !important;
+        width: 100% !important;
+        padding: 10px 15px !important;
     }
 
+    /* Mobile Menu Dropdown */
     .desktop-nav {
         display: none !important;
         position: absolute !important;
@@ -35,7 +65,6 @@
         box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15) !important;
         border-bottom: 3px solid #ff6b6b !important;
         z-index: 99999 !important;
-        margin: 0 !important;
     }
 
     .desktop-nav.active {
@@ -48,25 +77,7 @@
         text-align: center !important;
         padding: 12px 0 !important;
         font-size: 1.1rem !important;
-        font-weight: 600 !important;
         color: #222222 !important;
-        text-decoration: none !important;
         border-bottom: 1px solid #f2f2f2 !important;
-    }
-
-    #mobileMenuBtn, .mobile-menu-btn {
-        display: flex !important;
-        align-items: center !important;
-        justify-content: center !important;
-        width: 40px !important;
-        height: 40px !important;
-        background: transparent !important;
-        border: 1px solid #ddd !important;
-        border-radius: 8px !important;
-        cursor: pointer !important;
-        font-size: 1.2rem !important;
-        color: #111 !important;
-        padding: 0 !important;
-        z-index: 100000 !important;
     }
 }
