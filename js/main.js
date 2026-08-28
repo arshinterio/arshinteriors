@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+    const mobileMenuBtn = document.getElementById("mobileMenuBtn") || document.querySelector(".mobile-menu-btn");
     const desktopNav = document.querySelector(".desktop-nav");
 
     if (mobileMenuBtn && desktopNav) {
