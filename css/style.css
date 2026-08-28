@@ -149,6 +149,44 @@ html, body {
         background: transparent !important;
         box-shadow: none !important;
         width: auto !important;
+
+        /* ==========================================================
+   HEADER ALIGNMENT & CALLBACK FORM FIX FOR MOBILE
+========================================================== */
+
+@media (max-width: 768px) {
+    /* Header items ko ek line me aur space-between rakhne ke liye */
+    .site-header .header-inner, header .container {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        width: 100% !important;
+        padding: 10px 12px !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Right side me Call button aur Hamburger ko paas-paas rakhne ke liye container */
+    .header-right-actions, .site-header .container {
+        display: flex !important;
+        align-items: center !important;
+        gap: 8px !important;
+    }
+
+    /* Callback Form box ko mobile par cutne se bachane ke liye (Center Fix) */
+    .callback-form-box {
+        width: 90% !important;
+        max-width: 100% !important;
+        margin: 0 auto !important;
+        padding: 25px 20px !important;
+        box-sizing: border-box !important;
+    }
+
+    .callback-section .container {
+        padding: 0 15px !important;
+        box-sizing: border-box !important;
+    }
+}
         padding: 0 !important;
     }
 }
