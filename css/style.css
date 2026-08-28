@@ -1,33 +1,58 @@
 /* ==========================================================
-   FINAL POLISH: LOGO, CALL ICON, MENU FIX & TYPOGRAPHY
+   FINAL PERMANENT FIX: HEADER, LOGO, CALL ICON & MOBILE MENU
 ========================================================== */
 
-/* 1. Logo ko ek line me rakhne ke liye */
-.site-header .container, header .container {
+/* 1. Zoom-out / Horizontal Overflow Fix (Fit to Screen) */
+html, body {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+    box-sizing: border-box !important;
+}
+
+/* 2. Header Container Layout (Logo, Call Icon, Hamburger ek line me) */
+.site-header, header {
+    position: sticky !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    background: #ffffff !important;
+    z-index: 99999 !important;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08) !important;
+}
+
+.site-header .header-inner, header .container {
     display: flex !important;
     justify-content: space-between !important;
     align-items: center !important;
     flex-wrap: nowrap !important;
-    position: relative !important;
+    width: 100% !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 12px 16px !important;
+    box-sizing: border-box !important;
 }
 
-.logo, .footer-logo {
+/* 3. Logo Fix: 'Arsh Interiors' ko ek line mein rakhna */
+.site-header .logo {
     display: inline-flex !important;
     align-items: center !important;
-    white-space: nowrap !important;
     gap: 8px !important;
+    white-space: nowrap !important;
+    text-decoration: none !important;
 }
 
-.logo .logo-text {
+.site-header .logo .logo-text {
     display: inline-block !important;
-    font-size: 1.2rem !important;
+    font-size: 1.1rem !important;
     font-weight: 800 !important;
+    color: #111111 !important;
 }
 
-/* 2. Header Phone Button: Number hide karke sirf Round Call Icon banana */
-.header-cta {
-    width: 42px !important;
-    height: 42px !important;
+/* 4. Phone Button Fix: Number hide karke sirf Gol (Round) Call Icon banana */
+.site-header .header-cta {
+    width: 40px !important;
+    height: 40px !important;
     padding: 0 !important;
     border-radius: 50% !important;
     display: inline-flex !important;
@@ -35,32 +60,21 @@
     justify-content: center !important;
     background-color: #ff6b6b !important;
     color: #ffffff !important;
-    box-shadow: 0 4px 10px rgba(255, 107, 107, 0.3) !important;
+    border: none !important;
+    font-size: 0 !important; /* Number text ko completely hide karne ke liye */
+    box-shadow: 0 4px 12px rgba(255, 107, 107, 0.4) !important;
+    flex-shrink: 0 !important;
 }
 
-/* Number text ko poori tarah hide karne ke liye */
-.header-cta {
-    font-size: 0 !important;
-}
-
-/* Sirf phone icon dikhe aur bada ho jaye */
-.header-cta i {
-    font-size: 1.1rem !important;
+.site-header .header-cta i {
+    font-size: 1rem !important;
     margin: 0 !important;
+    color: #ffffff !important;
 }
 
-/* 3. Mobile Menu Position & Dropdown Fix (Buttons ke niche aana rokna) */
+/* 5. Mobile Menu Dropdown Fix (Header ke theek niche khulega) */
 @media (max-width: 768px) {
-    /* Header ki positioning fix taaki menu header ke theek niche khule */
-    .site-header, header {
-        position: sticky !important;
-        top: 0 !important;
-        z-index: 999999 !important;
-        background: #ffffff !important;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.05) !important;
-    }
-
-    .desktop-nav {
+    .site-header .desktop-nav {
         display: none !important;
         position: absolute !important;
         top: 100% !important;
@@ -72,15 +86,15 @@
         padding: 15px 0 !important;
         box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15) !important;
         border-bottom: 3px solid #ff6b6b !important;
-        z-index: 999998 !important;
+        z-index: 99998 !important;
         margin: 0 !important;
     }
 
-    .desktop-nav.active {
+    .site-header .desktop-nav.active {
         display: flex !important;
     }
 
-    .desktop-nav a {
+    .site-header .desktop-nav a {
         display: block !important;
         width: 100% !important;
         text-align: center !important;
@@ -88,23 +102,45 @@
         font-size: 1.05rem !important;
         font-weight: 600 !important;
         color: #222222 !important;
+        text-decoration: none !important;
         border-bottom: 1px solid #f2f2f2 !important;
+    }
+
+    .site-header .desktop-nav a:hover {
+        background-color: #fafafa !important;
+        color: #ff6b6b !important;
+    }
+
+    /* Mobile Hamburger Button Styling */
+    .site-header .mobile-menu-btn {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 40px !important;
+        height: 40px !important;
+        background: transparent !important;
+        border: 1px solid #ddd !important;
+        border-radius: 8px !important;
+        cursor: pointer !important;
+        font-size: 1.2rem !important;
+        color: #111111 !important;
+        padding: 0 !important;
+        flex-shrink: 0 !important;
     }
 }
 
-/* 4. Typography / Text Cleanup (Upar ke texts ko clean aur sharp banana) */
-body {
-    font-family: 'Plus Jakarta Sans', sans-serif !important;
-    -webkit-font-smoothing: antialiased !important;
-    letter-spacing: -0.2px !important;
-}
-
-h1, h2, h3, h4, .hero-title {
-    letter-spacing: -0.5px !important;
-    line-height: 1.25 !important;
-}
-
-.hero-subtitle {
-    letter-spacing: 1.5px !important;
-    font-weight: 700 !important;
+/* Desktop View par Hamburger hide rahe */
+@media (min-width: 769px) {
+    .site-header .mobile-menu-btn {
+        display: none !important;
+    }
+    .site-header .desktop-nav {
+        display: flex !important;
+        flex-direction: row !important;
+        position: static !important;
+        background: transparent !important;
+        box-shadow: none !important;
+        width: auto !important;
+        padding: 0 !important;
+    }
 }
