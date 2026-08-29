@@ -146,7 +146,7 @@
                                     <label style="font-weight: 700; color: #333; margin-bottom: 8px; display: block;">Property Type *</label>
                                     <div class="custom-premium-select" id="propTypeSelect">
                                         <div class="select-trigger" style="padding: 15px; border: 1px solid #ddd; border-radius: 8px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; background: #fff;"><span style="color: #555;">Select Property Type</span> <i class="fas fa-chevron-down arrow"></i></div>
-                                        <div class="select-options" style="display: none; background: #fff; border: 1px solid #ddd; position: absolute; width: 100%; z-index: 10; border-radius: 8px; margin-top: 5px; box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
+                                        <div class="select-options" style="display: none; background: #fff; border: 1px solid #ddd; position: absolute; width: 100%; z-index: 100; border-radius: 8px; margin-top: 5px; box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
                                             <div class="option" data-value="1 BHK" style="padding: 12px; cursor: pointer; border-bottom: 1px solid #f0f0f0;">1 BHK Apartment</div>
                                             <div class="option" data-value="2 BHK" style="padding: 12px; cursor: pointer; border-bottom: 1px solid #f0f0f0;">2 BHK Apartment</div>
                                             <div class="option" data-value="3 BHK" style="padding: 12px; cursor: pointer; border-bottom: 1px solid #f0f0f0;">3 BHK Apartment</div>
@@ -161,7 +161,7 @@
                                     <label style="font-weight: 700; color: #333; margin-bottom: 8px; display: block;">Project Timeline *</label>
                                     <div class="custom-premium-select" id="timelineSelect">
                                         <div class="select-trigger" style="padding: 15px; border: 1px solid #ddd; border-radius: 8px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; background: #fff;"><span style="color: #555;">Expected Start Date</span> <i class="fas fa-chevron-down arrow"></i></div>
-                                        <div class="select-options" style="display: none; background: #fff; border: 1px solid #ddd; position: absolute; width: 100%; z-index: 10; border-radius: 8px; margin-top: 5px; box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
+                                        <div class="select-options" style="display: none; background: #fff; border: 1px solid #ddd; position: absolute; width: 100%; z-index: 100; border-radius: 8px; margin-top: 5px; box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
                                             <div class="option" data-value="Immediately" style="padding: 12px; cursor: pointer; border-bottom: 1px solid #f0f0f0;">Immediately (Within 7 Days)</div>
                                             <div class="option" data-value="Within 1 Month" style="padding: 12px; cursor: pointer; border-bottom: 1px solid #f0f0f0;">Within 1 Month</div>
                                             <div class="option" data-value="Just Planning" style="padding: 12px; cursor: pointer;">Just Planning / Evaluating</div>
@@ -268,7 +268,7 @@
             </div>
         </section>
 
-        <!-- Direct Contact Section (GMB Removed, Office & Contact Info Retained) -->
+        <!-- Direct Contact Section -->
         <section style="padding: 40px 15px 60px; background: #fff; border-top: 1px solid #eee; box-sizing: border-box;">
             <div class="container" style="max-width: 1000px; margin: 0 auto; text-align: center; padding: 0 15px; box-sizing: border-box;">
                 <h2 style="font-size: 2rem; color: #111; margin-bottom: 12px;">Need Direct Assistance from <span style="color: #ff6b6b;">Arsh Interiors?</span></h2>
@@ -364,11 +364,13 @@
                             if (opt) opt.style.display = 'none';
                         }
                     });
-                    optionsBox.style.display = optionsBox.style.display === 'block' ? 'none' : 'block';
+                    const isVisible = optionsBox.style.display === 'block';
+                    optionsBox.style.display = isVisible ? 'none' : 'block';
                 });
 
                 optionsBox.querySelectorAll('.option').forEach(option => {
-                    option.addEventListener('click', function() {
+                    option.addEventListener('click', function(e) {
+                        e.stopPropagation();
                         triggerSpan.textContent = this.textContent;
                         triggerSpan.style.color = '#111';
                         hiddenInput.value = this.getAttribute('data-value');
@@ -419,11 +421,13 @@
                 }
 
                 formSteps.forEach(step => {
+                    step.style.display = 'none';
                     step.classList.remove('active');
                 });
 
                 const targetStep = document.querySelector(`.form-step[data-step="${nextStepNum}"]`);
                 if (targetStep) {
+                    targetStep.style.display = 'block';
                     targetStep.classList.add('active');
                     window.scrollTo({ top: 200, behavior: 'smooth' });
                 }
@@ -434,11 +438,13 @@
             button.addEventListener('click', function() {
                 const prevStepNum = this.getAttribute('data-prev');
                 formSteps.forEach(step => {
+                    step.style.display = 'none';
                     step.classList.remove('active');
                 });
 
                 const targetStep = document.querySelector(`.form-step[data-step="${prevStepNum}"]`);
                 if (targetStep) {
+                    targetStep.style.display = 'block';
                     targetStep.classList.add('active');
                     window.scrollTo({ top: 200, behavior: 'smooth' });
                 }
