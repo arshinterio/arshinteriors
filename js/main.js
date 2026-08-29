@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
     
-    /* 1. Mobile Menu Toggle */
+    /* ==========================================
+       1. MOBILE MENU TOGGLE LOGIC
+       ========================================== */
     const mobileMenuBtn = document.getElementById("mobileMenuBtn") || document.querySelector(".mobile-menu-btn");
     const desktopNav = document.querySelector(".desktop-nav");
 
@@ -17,9 +19,18 @@ document.addEventListener("DOMContentLoaded", function () {
                 mobileMenuBtn.classList.remove("active");
             });
         });
+
+        document.addEventListener("click", function (e) {
+            if (!desktopNav.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+                desktopNav.classList.remove("active");
+                mobileMenuBtn.classList.remove("active");
+            }
+        });
     }
 
-    /* 2. Custom Dropdowns */
+    /* ==========================================
+       2. ESTIMATOR CUSTOM DROPDOWNS LOGIC
+       ========================================== */
     const customSelects = document.querySelectorAll('.custom-premium-select');
     if (customSelects.length > 0) {
         customSelects.forEach(selectContainer => {
@@ -59,7 +70,9 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    /* 3. Multi-Step Form Logic */
+    /* ==========================================
+       3. ESTIMATOR MULTI-STEP NAVIGATION LOGIC
+       ========================================== */
     const formSteps = document.querySelectorAll('.form-step');
     const nextButtons = document.querySelectorAll('.btn-next');
     const prevButtons = document.querySelectorAll('.btn-prev');
@@ -70,37 +83,40 @@ document.addEventListener("DOMContentLoaded", function () {
                 const nextStepNum = this.getAttribute('data-next');
                 
                 if (nextStepNum === "2") {
-                    const propType = document.getElementById('propType').value;
-                    const timeline = document.getElementById('timeline').value;
-                    if (!propType || !timeline) {
+                    const propTypeElem = document.getElementById('propType');
+                    const timelineElem = document.getElementById('timeline');
+                    if (!propTypeElem || !propTypeElem.value || !timelineElem || !timelineElem.value) {
                         alert("Please select both Property Type and Project Timeline.");
                         return;
                     }
                 }
 
                 if (nextStepNum === "3") {
-                    const chkCeiling = document.getElementById('chkCeiling').checked;
-                    const chkElectrical = document.getElementById('chkElectrical').checked;
-                    const chkPainting = document.getElementById('chkPainting').checked;
+                    const chkCeiling = document.getElementById('chkCeiling')?.checked || false;
+                    const chkElectrical = document.getElementById('chkElectrical')?.checked || false;
+                    const chkPainting = document.getElementById('chkPainting')?.checked || false;
+                    const chkFurniture = document.getElementById('chkFurniture')?.checked || false;
 
-                    if (!chkCeiling && !chkElectrical && !chkPainting) {
+                    if (!chkCeiling && !chkElectrical && !chkPainting && !chkFurniture) {
                         alert("Please select at least one service scope.");
                         return;
                     }
 
-                    document.getElementById('dyn-ceiling').style.display = chkCeiling ? 'block' : 'none';
-                    document.getElementById('dyn-electrical').style.display = chkElectrical ? 'block' : 'none';
-                    document.getElementById('dyn-painting').style.display = chkPainting ? 'block' : 'none';
+                    const dynC = document.getElementById('dyn-ceiling');
+                    const dynE = document.getElementById('dyn-electrical');
+                    const dynP = document.getElementById('dyn-painting');
+                    const dynF = document.getElementById('dyn-furniture');
+
+                    if (dynC) dynC.style.display = chkCeiling ? 'block' : 'none';
+                    if (dynE) dynE.style.display = chkElectrical ? 'block' : 'none';
+                    if (dynP) dynP.style.display = chkPainting ? 'block' : 'none';
+                    if (dynF) dynF.style.display = chkFurniture ? 'block' : 'none';
                 }
 
-                formSteps.forEach(step => {
-                    step.style.display = 'none';
-                    step.classList.remove('active');
-                });
+                formSteps.forEach(step => step.classList.remove('active'));
 
                 const targetStep = document.querySelector(`.form-step[data-step="${nextStepNum}"]`);
                 if (targetStep) {
-                    targetStep.style.display = 'block';
                     targetStep.classList.add('active');
                     window.scrollTo({ top: 200, behavior: 'smooth' });
                 }
@@ -110,14 +126,10 @@ document.addEventListener("DOMContentLoaded", function () {
         prevButtons.forEach(button => {
             button.addEventListener('click', function() {
                 const prevStepNum = this.getAttribute('data-prev');
-                formSteps.forEach(step => {
-                    step.style.display = 'none';
-                    step.classList.remove('active');
-                });
+                formSteps.forEach(step => step.classList.remove('active'));
 
                 const targetStep = document.querySelector(`.form-step[data-step="${prevStepNum}"]`);
                 if (targetStep) {
-                    targetStep.style.display = 'block';
                     targetStep.classList.add('active');
                     window.scrollTo({ top: 200, behavior: 'smooth' });
                 }
@@ -125,7 +137,9 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    /* 4. Clean Checkbox Card Selection (No Ajeeb Checkboxes) */
+    /* ==========================================
+       4. CHECKBOX CARDS STYLING TOGGLE
+       ========================================== */
     const checkboxCards = document.querySelectorAll('.custom-checkbox-card');
     if (checkboxCards.length > 0) {
         checkboxCards.forEach(card => {
@@ -152,15 +166,17 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    /* 5. Live Cost Calculation & Submission Logic */
+    /* ==========================================
+       5. 3-TIER ESTIMATE SUBMISSION LOGIC
+       ========================================== */
     const estimatorForm = document.getElementById('arshEstimatorForm');
     if (estimatorForm) {
         estimatorForm.addEventListener('submit', function(e) {
             e.preventDefault();
 
-            const name = document.getElementById('custName').value;
-            const phone = document.getElementById('custPhone').value;
-            const loc = document.getElementById('custLoc').value;
+            const name = document.getElementById('custName')?.value || '';
+            const phone = document.getElementById('custPhone')?.value || '';
+            const loc = document.getElementById('custLoc')?.value || '';
 
             if (!name || !phone || !loc) {
                 alert("Please fill in all required destination details.");
@@ -173,49 +189,37 @@ document.addEventListener("DOMContentLoaded", function () {
             });
 
             const areaInput = document.getElementById('ceilingArea');
-            const area = areaInput && areaInput.value ? parseFloat(areaInput.value) : 600; // Default estimate base
+            const area = areaInput && areaInput.value ? parseFloat(areaInput.value) : 600;
 
-            // Calculation Logic based on standard Pune rates (Gypsum/POP ceiling ~110/sqft, Electrical ~45/sqft, Painting ~35/sqft)
-            let estimatedCost = 0;
-            let breakdownText = "";
+            let baseCost = 0;
+            if (selectedServices.includes("False Ceiling")) baseCost += area * 100;
+            if (selectedServices.includes("Electrical")) baseCost += area * 40;
+            if (selectedServices.includes("Painting")) baseCost += area * 30;
+            if (selectedServices.includes("Furniture")) baseCost += area * 250;
 
-            if (selectedServices.includes("False Ceiling")) {
-                let ceilingCost = area * 110;
-                estimatedCost += ceilingCost;
-                breakdownText += `<br>• False Ceiling (~${area} sq.ft): ₹${ceilingCost.toLocaleString('en-IN')}`;
-            }
-            if (selectedServices.includes("Electrical")) {
-                let elecCost = area * 45;
-                estimatedCost += elecCost;
-                breakdownText += `<br>• Electrical Work: ₹${elecCost.toLocaleString('en-IN')}`;
-            }
-            if (selectedServices.includes("Painting")) {
-                let paintCost = area * 35;
-                estimatedCost += paintCost;
-                breakdownText += `<br>• Wall Painting: ₹${paintCost.toLocaleString('en-IN')}`;
-            }
+            if (baseCost === 0) baseCost = 50000;
 
-            if (estimatedCost === 0) {
-                estimatedCost = 45000; // Minimum baseline
-                breakdownText = `<br>• General Execution Scope`;
-            }
+            let budgetCost = Math.round(baseCost * 0.85);
+            let premiumCost = Math.round(baseCost * 1.15);
+            let luxuryCost = Math.round(baseCost * 1.55);
 
             const payload = {
                 name: name,
                 phone: phone,
                 loc: loc,
-                propertyType: document.getElementById('propType').value,
-                timeline: document.getElementById('timeline').value,
+                propertyType: document.getElementById('propType')?.value || 'N/A',
+                timeline: document.getElementById('timeline')?.value || 'N/A',
                 services: selectedServices.join(', '),
                 ceilingArea: area,
-                estimatedTotal: "₹ " + estimatedCost.toLocaleString('en-IN')
+                estimateTier1: "₹ " + budgetCost.toLocaleString('en-IN'),
+                estimateTier2: "₹ " + premiumCost.toLocaleString('en-IN'),
+                estimateTier3: "₹ " + luxuryCost.toLocaleString('en-IN')
             };
 
             formSteps.forEach(step => step.style.display = 'none');
             const loader = document.getElementById('form-loader');
             if (loader) loader.style.display = 'block';
 
-            // Send data to Google Sheets silently
             fetch("https://script.google.com/macros/s/AKfycbzWeJMWLdQKLsB7qoznoorTDRxWODsSRR87xCBKUo76mdvFCxqOYiy2zDGqPpNy7LIU/exec", {
                 method: "POST",
                 mode: "no-cors",
@@ -223,21 +227,43 @@ document.addEventListener("DOMContentLoaded", function () {
                 body: JSON.stringify(payload)
             }).catch(() => {});
 
-            // Show calculated result instantly on screen
             setTimeout(() => {
                 if (loader) {
                     loader.innerHTML = `
-                        <div style="text-align:center; padding: 20px;">
-                            <i class="fas fa-calculator" style="font-size: 3rem; color: #ff6b6b; margin-bottom: 15px;"></i>
-                            <h3 style="color: #111; margin-bottom: 10px;">Estimated Execution Budget</h3>
-                            <div style="font-size: 2.2rem; font-weight: 800; color: #ff6b6b; margin: 15px 0;">
-                                ₹ ${estimatedCost.toLocaleString('en-IN')} <span style="font-size: 0.9rem; color: #666; font-weight: 400;">(approx.)</span>
+                        <div style="text-align:center; padding: 10px;">
+                            <i class="fas fa-award" style="font-size: 2.8rem; color: #ff6b6b; margin-bottom: 12px;"></i>
+                            <h3 style="color: #111; margin-bottom: 8px;">Estimated Tier Options for ${name}</h3>
+                            <p style="color: #666; font-size: 0.9rem; margin-bottom: 20px;">Based on your scope (${selectedServices.join(', ')}) across ${area} sq.ft in ${loc}:</p>
+                            
+                            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; text-align: left; margin-bottom: 20px;">
+                                <!-- Budget Friendly -->
+                                <div style="background: #faf9f8; padding: 20px; border-radius: 12px; border: 1px solid #eaeaea; box-sizing: border-box;">
+                                    <span style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: #666; letter-spacing: 1px;">Standard / Basic</span>
+                                    <h4 style="color: #111; font-size: 1.1rem; margin: 5px 0 10px 0;">Budget Friendly</h4>
+                                    <div style="font-size: 1.4rem; font-weight: 800; color: #ff6b6b;">₹ ${budgetCost.toLocaleString('en-IN')}</div>
+                                    <p style="font-size: 0.8rem; color: #777; margin-top: 8px;">Standard branded materials & functional layouts.</p>
+                                </div>
+                                
+                                <!-- Premium -->
+                                <div style="background: #fff5f5; padding: 20px; border-radius: 12px; border: 2px solid #ff6b6b; box-sizing: border-box; position: relative;">
+                                    <span style="position: absolute; top: -10px; right: 15px; background: #ff6b6b; color: #fff; font-size: 0.65rem; padding: 3px 8px; border-radius: 20px; font-weight: 700;">MOST POPULAR</span>
+                                    <span style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: #ff6b6b; letter-spacing: 1px;">Recommended</span>
+                                    <h4 style="color: #111; font-size: 1.1rem; margin: 5px 0 10px 0;">Premium Finish</h4>
+                                    <div style="font-size: 1.4rem; font-weight: 800; color: #ff6b6b;">₹ ${premiumCost.toLocaleString('en-IN')}</div>
+                                    <p style="font-size: 0.8rem; color: #777; margin-top: 8px;">Superior Gyproc boards, profile lighting & Royale emulsions.</p>
+                                </div>
+
+                                <!-- Luxury -->
+                                <div style="background: #faf9f8; padding: 20px; border-radius: 12px; border: 1px solid #eaeaea; box-sizing: border-box;">
+                                    <span style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: #666; letter-spacing: 1px;">High-End Designer</span>
+                                    <h4 style="color: #111; font-size: 1.1rem; margin: 5px 0 10px 0;">Luxury Living</h4>
+                                    <div style="font-size: 1.4rem; font-weight: 800; color: #ff6b6b;">₹ ${luxuryCost.toLocaleString('en-IN')}</div>
+                                    <p style="font-size: 0.8rem; color: #777; margin-top: 8px;">Bespoke textures, PU furniture polish & smart automation.</p>
+                                </div>
                             </div>
-                            <p style="color: #555; font-size: 0.95rem; text-align: left; background: #faf9f8; padding: 15px; border-radius: 8px; margin: 15px 0; border: 1px solid #eee;">
-                                <strong>Scope Breakdown:</strong> ${breakdownText}
-                            </p>
-                            <p style="color: #666; font-size: 0.9rem; margin-top: 15px;">Thank you <strong>${name}</strong>! Our team from Arsh Interiors, Dhayari will connect with you on WhatsApp (+91 ${phone}) with a detailed BOQ.</p>
-                            <a href="https://wa.me/919022104232?text=Hello%20Arsh%20Interiors,%20I%20received%20an%20estimate%20of%20Rs.%20${estimatedCost.toLocaleString('en-IN')}%20for%20my%20project%20in%20${loc}." target="_blank" style="display: inline-block; background: #25d366; color: #fff; padding: 12px 25px; border-radius: 8px; text-decoration: none; font-weight: 700; margin-top: 15px;">
+
+                            <p style="color: #666; font-size: 0.85rem; margin-top: 10px;">Our team from Arsh Interiors, Dhayari will connect with you on WhatsApp (+91 ${phone}) with an exact BOQ.</p>
+                            <a href="https://wa.me/919022104232?text=Hello%20Arsh%20Interiors,%20I%20reviewed%20the%20estimate%20tiers%20for%20my%20project%20in%20${loc}." target="_blank" style="display: inline-block; background: #25d366; color: #fff; padding: 12px 25px; border-radius: 8px; text-decoration: none; font-weight: 700; margin-top: 15px;">
                                 <i class="fab fa-whatsapp"></i> Discuss on WhatsApp
                             </a>
                         </div>
