@@ -1,24 +1,166 @@
 /* ==========================================================
-   ESTIMATOR MOBILE FIX & CLEAN CARD DESIGN
-========================================================== */
+   ARSH INTERIORS - UNIFIED MASTER STYLESHEET
+   ========================================================== */
+
+:root {
+    --primary-color: #ff6b6b;
+    --text-dark: #111111;
+    --text-light: #555555;
+    --bg-light: #faf9f8;
+    --bg-white: #ffffff;
+    --border-color: #eeeeee;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: var(--text-dark);
+    background-color: var(--bg-light);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+.serif {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Container & Grid Responsiveness */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* Header & Mobile Navigation */
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--bg-white);
+    z-index: 9999;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    box-sizing: border-box;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    box-sizing: border-box;
+}
+
+.desktop-nav {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.desktop-nav a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.desktop-nav a.active,
+.desktop-nav a:hover {
+    color: var(--primary-color);
+}
+
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--text-dark);
+}
+
+/* Mobile Responsive Menu Styles */
+@media (max-width: 992px) {
+    .desktop-nav {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background: var(--bg-white);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        transition: left 0.4s ease-in-out;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        z-index: 998;
+    }
+    .desktop-nav.active {
+        left: 0;
+    }
+    .mobile-menu-btn {
+        display: block;
+    }
+}
+
+/* Floating WhatsApp Button */
+.floating-wa {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #25d366;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    box-shadow: 0 10px 30px rgba(37,211,102,0.4);
+    z-index: 9999;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+.floating-wa:hover {
+    transform: scale(1.08);
+}
+
+/* Estimator Form & Steps Layout */
+.form-step {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+.form-step.active {
+    display: block;
+    opacity: 1;
+}
+
+.estimator-wrapper {
+    background: var(--bg-white);
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.08);
+    padding: 40px 30px;
+    border: 1px solid var(--border-color);
+    position: relative;
+    box-sizing: border-box;
+}
+
 @media (max-width: 768px) {
     .estimator-wrapper {
         padding: 20px 15px !important;
         width: 100% !important;
-        box-sizing: border-box !important;
     }
-    
-    .input-grid {
+    .input-grid, .visual-selection-grid {
         grid-template-columns: 1fr !important;
         gap: 15px !important;
     }
-
-    .visual-selection-grid {
-        grid-template-columns: 1fr !important;
-        gap: 15px !important;
-    }
-
-    /* Dropdowns mobile par box ke andar fix karne ke liye */
     .custom-premium-select .select-options {
         position: relative !important;
         width: 100% !important;
@@ -28,16 +170,30 @@
     }
 }
 
-/* Checkboxes ko completely hide karke clean modern card look dena */
 .hidden-cb {
     display: none !important;
 }
 
-.custom-checkbox-card {
-    display: block;
-    cursor: pointer;
-}
-
 .visual-box {
     transition: all 0.3s ease;
+}
+
+/* Pinterest Embed Responsive Adjustments */
+.pinterest-embed-wrapper {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.06);
+    border: 1px solid var(--border-color);
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .pinterest-embed-wrapper {
+        padding: 10px;
+    }
 }
