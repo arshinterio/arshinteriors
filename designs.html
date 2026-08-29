@@ -6,6 +6,36 @@
     <title>Interior Design Portfolio & Pinterest Gallery | Arsh Interiors Pune</title>
     <meta name="description" content="Explore master portfolio and Pinterest design archives by Arsh Interiors Pune. Specializing in Gypsum false ceiling, wall moulding, TV unit design, and interior lighting across Pune, Wakad, and Kharadi.">
     
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Interior Design Portfolio | Arsh Interiors Pune">
+    <meta property="og:description" content="Explore master design portfolio and Pinterest design archives by Arsh Interiors Pune.">
+    <meta property="og:type" content="website">
+
+    <!-- Local Business Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Arsh Interiors",
+      "alternateName": "Arsh Interior",
+      "telephone": "+919022104232",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Dhayari",
+        "addressLocality": "Pune",
+        "addressRegion": "Maharashtra",
+        "postalCode": "411041",
+        "addressCountry": "IN"
+      },
+      "sameAs": [
+        "https://maps.app.goo.gl/wy16RFpNYSbMEBpC6",
+        "https://www.instagram.com/arsh_nterior?igsi=NGJyZTh2MDcyMG1u",
+        "https://www.facebook.com/share/1CxC6A6Mtj/",
+        "https://wa.me/919022104232"
+      ]
+    }
+    </script>
+
     <!-- Preloading & Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,7 +54,7 @@
             grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
             gap: 25px;
             max-width: 1100px;
-            margin: 0 auto 50px auto;
+            margin: 0 auto 40px auto;
         }
         .design-cat-card {
             background: #fff;
@@ -37,6 +67,7 @@
             display: flex;
             flex-direction: column;
             text-align: center;
+            box-sizing: border-box;
         }
         .design-cat-card:hover {
             transform: translateY(-5px);
@@ -44,20 +75,21 @@
             border-color: #ff6b6b;
         }
         .design-cat-img-wrap {
-            height: 180px;
+            height: 160px;
             background: linear-gradient(135deg, #f5f5f5 0%, #e9e9e9 100%);
             display: flex;
             align-items: center;
             justify-content: center;
             color: #ff6b6b;
-            font-size: 3rem;
+            font-size: 2.8rem;
             position: relative;
         }
         .design-cat-content {
             padding: 20px;
+            box-sizing: border-box;
         }
         .design-cat-content h3 {
-            font-size: 1.2rem;
+            font-size: 1.15rem;
             color: #111;
             margin-bottom: 8px;
         }
@@ -65,6 +97,7 @@
             font-size: 0.85rem;
             color: #666;
             margin-bottom: 15px;
+            line-height: 1.4;
         }
         .explore-link {
             font-size: 0.9rem;
@@ -74,13 +107,32 @@
             align-items: center;
             gap: 5px;
         }
+
+        /* Pinterest Fit-to-Screen Responsive Wrapper */
+        .pinterest-embed-wrapper {
+            width: 100%;
+            max-width: 850px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 16px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.06);
+            border: 1px solid #eee;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        @media (max-width: 768px) {
+            .pinterest-embed-wrapper {
+                padding: 10px;
+            }
+        }
     </style>
 </head>
-<body style="padding-top: 90px; background-color: #faf9f8;">
+<body style="padding-top: 110px; background-color: #faf9f8; overflow-x: hidden;">
 
     <!-- Fixed Header -->
-    <header class="site-header" id="mainHeader" style="position: fixed; top: 0; left: 0; width: 100%; background: #ffffff; z-index: 9999; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
-        <div class="container header-inner" style="display: flex; align-items: center; justify-content: space-between; padding: 15px 20px; max-width: 1200px; margin: 0 auto;">
+    <header class="site-header" id="mainHeader" style="position: fixed; top: 0; left: 0; width: 100%; background: #ffffff; z-index: 9999; box-shadow: 0 2px 10px rgba(0,0,0,0.05); box-sizing: border-box;">
+        <div class="container header-inner" style="display: flex; align-items: center; justify-content: space-between; padding: 15px 20px; max-width: 1200px; margin: 0 auto; box-sizing: border-box;">
             <a href="index.html" class="logo nav-link" style="color: #111; text-decoration: none; font-weight: 800; font-size: 1.2rem; display: flex; align-items: center; gap: 8px;">
                 <i class="fas fa-layer-group logo-icon" style="color: #111;"></i> 
                 <span class="logo-text">Arsh Interiors</span>
@@ -90,6 +142,7 @@
                 <a href="index.html" class="nav-link" style="color: #555; text-decoration: none; font-weight: 600;">Home</a>
                 <a href="about.html" class="nav-link" style="color: #555; text-decoration: none; font-weight: 600;">About Us</a>
                 <a href="services.html" class="nav-link" style="color: #555; text-decoration: none; font-weight: 600;">Expert Services</a>
+                <a href="estimator.html" class="nav-link" style="color: #555; text-decoration: none; font-weight: 600;">Cost Calculator</a>
                 <a href="designs.html" class="nav-link active" style="color: #ff6b6b; text-decoration: none; font-weight: 600;">Portfolio</a>
             </nav>
             
@@ -108,19 +161,19 @@
     <main>
         
         <!-- Inner Hero Section with SEO Keywords -->
-        <section style="padding: 60px 20px 40px; text-align: center; background: linear-gradient(180deg, #fff 0%, #faf9f8 100%);">
-            <div class="container" style="max-width: 900px; margin: 0 auto;">
-                <span style="color: #ff6b6b; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; font-size: 0.9rem;">Verified Project Archives & Live Inspirations</span>
-                <h1 style="font-size: clamp(2.2rem, 4vw, 3.8rem); margin: 15px 0; color: #111;">Master Design <span style="color: #ff6b6b; font-style: italic; font-family: 'Playfair Display', serif;">Portfolio & Gallery</span></h1>
-                <p style="font-size: 1.05rem; max-width: 800px; margin: 0 auto 20px; color: #555; line-height: 1.6;">Explore our categorized design collections including false ceilings, wall mouldings, TV units, and interior lighting executed across Pune, Wakad, Kharadi, and Baner.</p>
+        <section style="padding: 40px 15px 30px; text-align: center; background: linear-gradient(180deg, #fff 0%, #faf9f8 100%); box-sizing: border-box;">
+            <div class="container" style="max-width: 900px; margin: 0 auto; padding: 0 15px; box-sizing: border-box;">
+                <span style="color: #ff6b6b; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; font-size: 0.85rem; display: block; margin-bottom: 10px;">Verified Project Archives & Live Inspirations</span>
+                <h1 style="font-size: clamp(2.2rem, 4vw, 3.8rem); margin: 15px 0; color: #111; line-height: 1.2;">Master Design <span style="color: #ff6b6b; font-style: italic; font-family: 'Playfair Display', serif;">Portfolio & Gallery</span></h1>
+                <p style="font-size: 1.05rem; max-width: 800px; margin: 0 auto 20px; color: #555; line-height: 1.6; padding: 0 5px;">Explore our categorized design collections including false ceilings, wall mouldings, TV units, and interior lighting executed across Pune, Wakad, Kharadi, and Baner.</p>
             </div>
         </section>
 
         <!-- Section 1: Top Category Cards with Preview Icons & Links -->
-        <section style="padding: 20px 20px 40px;">
-            <div class="container">
-                <div style="text-align: center; margin-bottom: 35px;">
-                    <h2 style="font-size: 1.8rem; color: #111;">Browse Design <span style="color: #ff6b6b; font-style: italic; font-family: 'Playfair Display', serif;">Categories</span></h2>
+        <section style="padding: 10px 15px 30px; box-sizing: border-box;">
+            <div class="container" style="max-width: 1100px; margin: 0 auto; padding: 0 15px; box-sizing: border-box;">
+                <div style="text-align: center; margin-bottom: 30px;">
+                    <h2 style="font-size: 1.8rem; color: #111; margin-bottom: 8px;">Browse Design <span style="color: #ff6b6b; font-style: italic; font-family: 'Playfair Display', serif;">Categories</span></h2>
                     <p style="color: #666; font-size: 0.95rem;">Click on any category card to open the live board collection.</p>
                 </div>
 
@@ -176,30 +229,28 @@
             </div>
         </section>
 
-        <!-- Section 2: Live Pinterest Board Embed (Loads full board widget when live on GitHub) -->
-        <section style="padding: 20px 20px 60px; text-align: center;">
-            <div class="container" style="max-width: 1000px; margin: 0 auto;">
+        <!-- Section 2: Live Pinterest Board Embed (Fit-to-Screen Responsive Fix) -->
+        <section style="padding: 10px 15px 60px; text-align: center; box-sizing: border-box;">
+            <div class="container" style="max-width: 1000px; margin: 0 auto; padding: 0 15px; box-sizing: border-box;">
                 
-                <div style="margin-bottom: 30px;">
-                    <i class="fab fa-pinterest" style="font-size: 3rem; color: #E60023; margin-bottom: 10px;"></i>
-                    <h2 style="font-size: 1.8rem; color: #111;">Live False Ceiling <span style="color: #ff6b6b; font-style: italic; font-family: 'Playfair Display', serif;">Pinterest Board</span></h2>
-                    <p style="color: #666; font-size: 0.95rem; margin-top: 5px;">Browse through our complete collection of live pins and design structures directly from Pinterest.</p>
+                <div style="margin-bottom: 25px;">
+                    <i class="fab fa-pinterest" style="font-size: 2.5rem; color: #E60023; margin-bottom: 8px;"></i>
+                    <h2 style="font-size: 1.8rem; color: #111; margin-bottom: 5px;">Live False Ceiling <span style="color: #ff6b6b; font-style: italic; font-family: 'Playfair Display', serif;">Pinterest Board</span></h2>
+                    <p style="color: #666; font-size: 0.95rem;">Browse through our complete collection of live pins and design structures directly from Pinterest.</p>
                 </div>
 
-                <!-- Embedded Pinterest Board Box -->
-                <div style="display: inline-block; background: #fff; padding: 25px; border-radius: 16px; box-shadow: 0 15px 35px rgba(0,0,0,0.06); border: 1px solid #eee; max-width: 100%; min-height: 450px;">
-                    
-                    <!-- Pinterest Script (Load Once) -->
+                <!-- Responsive Pinterest Board Box -->
+                <div class="pinterest-embed-wrapper">
+                    <!-- Pinterest Script -->
                     <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
 
-                    <!-- Pinterest Board Widget Tag -->
+                    <!-- Pinterest Board Widget Tag with Responsive Width -->
                     <a href="https://in.pinterest.com/sameerkhan0790270/false-ceiling-design/"
                        data-pin-do="embedBoard"
-                       data-pin-board-width="800"
-                       data-pin-scale-height="450"
-                       data-pin-scale-width="115">
+                       data-pin-board-width="100%"
+                       data-pin-scale-height="500"
+                       data-pin-scale-width="100">
                     </a>
-
                 </div>
 
             </div>
@@ -208,10 +259,10 @@
     </main>
 
     <!-- Main Footer -->
-    <footer style="background: #111; color: #fff; padding: 60px 20px 0;">
-        <div class="container" style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 50px; margin-bottom: 40px;">
+    <footer style="background: #111; color: #fff; padding: 60px 15px 0; box-sizing: border-box;">
+        <div class="container" style="max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 40px; margin-bottom: 40px; box-sizing: border-box;">
             <div>
-                <h3 style="color: #fff; font-size: 1.5rem; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;"><i class="fas fa-layer-group"></i> Arsh Interiors</h3>
+                <h3 style="color: #fff; font-size: 1.4rem; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;"><i class="fas fa-layer-group"></i> Arsh Interiors</h3>
                 <p style="color: #aaa; font-size: 0.9rem; line-height: 1.7;">Premium interior contracting services based in Dhayari, Pune. We bring architectural elegance to modern spaces through meticulous execution and superior materials.</p>
             </div>
             <div>
@@ -231,9 +282,9 @@
         </div>
 
         <!-- SEO Keywords Footer Block -->
-        <div style="background: #0a0a0a; padding: 30px 20px; border-top: 1px solid rgba(255,255,255,0.05);">
-            <div class="container" style="max-width: 1200px; margin: 0 auto;">
-                <h4 style="color: #555; font-size: 0.9rem; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px;">Areas & Services We Cover</h4>
+        <div style="background: #0a0a0a; padding: 30px 15px; border-top: 1px solid rgba(255,255,255,0.05); box-sizing: border-box;">
+            <div class="container" style="max-width: 1100px; margin: 0 auto; box-sizing: border-box;">
+                <h4 style="color: #555; font-size: 0.85rem; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 1px;">Areas & Services We Cover</h4>
                 <div style="font-size: 0.75rem; color: #444; text-align: justify; line-height: 1.8;">
                     False ceiling in Pune, False ceiling in Katraj, False ceiling in Kharadi, False ceiling in Wakad, False ceiling in Hinjawadi, False ceiling in Baner, False ceiling in Balewadi, False ceiling in Kothrud, False ceiling in Viman Nagar, False ceiling in Magarpatta, False ceiling in Hadapsar, False ceiling in Pimple Saudagar, False ceiling in PCMC. Gypsum ceiling contractors in Pune, Gypsum ceiling in Wakad, POP design in Pune, POP ceiling in Kharadi, PVC ceiling in Pune, PVC ceiling in Katraj, Wall moulding in Pune. Electrical work in Pune, Electrician near me, Electrician in Wakad, Electrician in Baner, Electrician in Kharadi, Electrician in Hinjawadi, Electrical contractors in Pune, Electrician in PCMC, Electrician in Kothrud, Concealed wiring in Pune. Painters in Pune, House painting in Pune, Painters in Wagholi, Painters in Ravet, Painters in PCMC, Painters in Kharadi, Painters in Baner, Painters in Wakad, Painters in Hadapsar, Painters in Katraj, Luxury painters in Pune, Texture painting in Pune. Custom furniture in Pune, Modular kitchen in Pune, Modular kitchen in Wakad, Modular kitchen in Baner, Custom wardrobes in Pune, Interior contractors in Pune, Interior contractors in Wakad, Turnkey interior designers in Pune, Best interior decorators in Pune, False ceiling materials in Pune, Saint Gobain Gyproc false ceiling Pune, Arsh Interiors Pune, Electrician in Viman Nagar, Electrician in Magarpatta, House painters in Viman Nagar, House painters in Kothrud, False ceiling in Aundh, Electrician in Aundh, Painters in Aundh, Modular furniture in Aundh. False ceiling in Shivaji Nagar, Electrician in Shivaji Nagar, Painters in Shivaji Nagar. False ceiling in Kalyani Nagar, Electrician in Kalyani Nagar, Painters in Kalyani Nagar, Custom furniture in Kalyani Nagar. False ceiling in Koregaon Park, House painting in Koregaon Park. False ceiling in Dhayari, Electrician in Dhayari, Painters in Dhayari. False ceiling in Sinhagad Road, Electrician in Sinhagad Road. False ceiling in Pimple Nilakh, Electrician in Pimple Nilakh, Painters in Pimple Nilakh. False ceiling in Bavdhan, Electrician in Bavdhan, Painters in Bavdhan. False ceiling in Pashan, Electrician in Pashan, Painters in Pashan. False ceiling in Karve Nagar, Electrician in Karve Nagar, Painters in Karve Nagar. False ceiling in Deccan Gymkhana, Electrician in Deccan Gymkhana, House painters in Deccan Gymkhana. False ceiling in Swargate, Electrician in Swargate, Painters in Swargate. False ceiling in Camp, Electrician in Camp, Painters in Camp. Home renovation in Pune, Office interiors in Pune, Commercial false ceiling in Pune, Grid ceiling in Pune, Commercial painting in Pune.
                 </div>
@@ -245,5 +296,6 @@
         </div>
     </footer>
 
+    <script src="js/main.js"></script>
 </body>
 </html>
