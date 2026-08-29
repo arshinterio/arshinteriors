@@ -1,8 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     
-    /* ==========================================
-       1. MOBILE MENU TOGGLE LOGIC
-       ========================================== */
+    /* 1. Mobile Menu Toggle */
     const mobileMenuBtn = document.getElementById("mobileMenuBtn") || document.querySelector(".mobile-menu-btn");
     const desktopNav = document.querySelector(".desktop-nav");
 
@@ -28,9 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    /* ==========================================
-       2. ESTIMATOR CUSTOM DROPDOWNS LOGIC
-       ========================================== */
+    /* 2. Estimator Custom Dropdowns Logic (100% Working Fix) */
     const customSelects = document.querySelectorAll('.custom-premium-select');
     if (customSelects.length > 0) {
         customSelects.forEach(selectContainer => {
@@ -45,14 +41,20 @@ document.addEventListener("DOMContentLoaded", function () {
                     customSelects.forEach(s => {
                         if (s !== selectContainer) {
                             const opt = s.querySelector('.select-options');
-                            if (opt) opt.style.display = 'none';
+                            if (opt) {
+                                opt.style.display = 'none';
+                                opt.classList.remove('show');
+                            }
                         }
                     });
-                    optionsBox.style.display = optionsBox.style.display === 'block' ? 'none' : 'block';
+                    
+                    const isVisible = optionsBox.style.display === 'block';
+                    optionsBox.style.display = isVisible ? 'none' : 'block';
                 });
 
                 optionsBox.querySelectorAll('.option').forEach(option => {
-                    option.addEventListener('click', function() {
+                    option.addEventListener('click', function(e) {
+                        e.stopPropagation();
                         triggerSpan.textContent = this.textContent;
                         triggerSpan.style.color = '#111';
                         hiddenInput.value = this.getAttribute('data-value');
@@ -70,9 +72,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    /* ==========================================
-       3. ESTIMATOR MULTI-STEP NAVIGATION LOGIC
-       ========================================== */
+    /* 3. Multi-Step Navigation Logic */
     const formSteps = document.querySelectorAll('.form-step');
     const nextButtons = document.querySelectorAll('.btn-next');
     const prevButtons = document.querySelectorAll('.btn-prev');
@@ -113,10 +113,14 @@ document.addEventListener("DOMContentLoaded", function () {
                     if (dynF) dynF.style.display = chkFurniture ? 'block' : 'none';
                 }
 
-                formSteps.forEach(step => step.classList.remove('active'));
+                formSteps.forEach(step => {
+                    step.style.display = 'none';
+                    step.classList.remove('active');
+                });
 
                 const targetStep = document.querySelector(`.form-step[data-step="${nextStepNum}"]`);
                 if (targetStep) {
+                    targetStep.style.display = 'block';
                     targetStep.classList.add('active');
                     window.scrollTo({ top: 200, behavior: 'smooth' });
                 }
@@ -126,10 +130,14 @@ document.addEventListener("DOMContentLoaded", function () {
         prevButtons.forEach(button => {
             button.addEventListener('click', function() {
                 const prevStepNum = this.getAttribute('data-prev');
-                formSteps.forEach(step => step.classList.remove('active'));
+                formSteps.forEach(step => {
+                    step.style.display = 'none';
+                    step.classList.remove('active');
+                });
 
                 const targetStep = document.querySelector(`.form-step[data-step="${prevStepNum}"]`);
                 if (targetStep) {
+                    targetStep.style.display = 'block';
                     targetStep.classList.add('active');
                     window.scrollTo({ top: 200, behavior: 'smooth' });
                 }
@@ -137,9 +145,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    /* ==========================================
-       4. CHECKBOX CARDS STYLING TOGGLE
-       ========================================== */
+    /* 4. Checkbox Cards Styling Toggle */
     const checkboxCards = document.querySelectorAll('.custom-checkbox-card');
     if (checkboxCards.length > 0) {
         checkboxCards.forEach(card => {
@@ -166,9 +172,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    /* ==========================================
-       5. 3-TIER ESTIMATE SUBMISSION LOGIC
-       ========================================== */
+    /* 5. 3-Tier Estimate Submission Logic */
     const estimatorForm = document.getElementById('arshEstimatorForm');
     if (estimatorForm) {
         estimatorForm.addEventListener('submit', function(e) {
