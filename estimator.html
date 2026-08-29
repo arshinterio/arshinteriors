@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>False Ceiling & Interior Cost Calculator Pune | Arsh Interiors Estimator</title>
-    <meta name="description" content="Calculate instant interior execution costs with Arsh Interiors (Arsh Interior) in Pune. Get precise estimates for Gypsum false ceilings, electrical work, and painting across Wakad, Baner, and Kharadi.">
+    <meta name="description" content="Calculate instant interior execution costs with Arsh Interiors (Arsh Interior) in Pune. Get precise estimates for Gypsum false ceilings, electrical work, painting, and custom furniture across Pune.">
     <meta name="keywords" content="False ceiling cost calculator Pune, Interior cost estimator Pune, Gypsum ceiling rate per sq ft, Arsh Interiors estimator, Interior quotation Pune, Electrical wiring cost, House painting estimate Pune">
     
     <!-- Open Graph Tags -->
     <meta property="og:title" content="Interior Cost Calculator | Arsh Interiors Pune">
-    <meta property="og:description" content="Get instant and transparent execution estimates for false ceilings, electrical, and painting from Arsh Interiors Pune.">
+    <meta property="og:description" content="Get instant and transparent execution estimates for false ceilings, electrical, painting, and furniture from Arsh Interiors Pune.">
     <meta property="og:type" content="website">
 
     <!-- Local Business Schema Markup -->
@@ -47,12 +47,55 @@
     
     <!-- Main CSS -->
     <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* Smooth Step Switching & Mobile Fit Fixes */
+        .form-step {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.4s ease-in-out;
+        }
+        .form-step.active {
+            display: block;
+            opacity: 1;
+        }
+        .estimator-wrapper {
+            background: #fff;
+            max-width: 900px;
+            margin: 0 auto;
+            border-radius: 20px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.08);
+            padding: 40px 30px;
+            border: 1px solid #eee;
+            position: relative;
+            box-sizing: border-box;
+        }
+        @media (max-width: 768px) {
+            .estimator-wrapper {
+                padding: 20px 15px !important;
+                width: 100% !important;
+            }
+            .input-grid, .visual-selection-grid {
+                grid-template-columns: 1fr !important;
+                gap: 15px !important;
+            }
+            .custom-premium-select .select-options {
+                position: relative !important;
+                width: 100% !important;
+                box-shadow: none !important;
+                border: 1px solid #ddd !important;
+                margin-top: 5px !important;
+            }
+        }
+        .hidden-cb { display: none !important; }
+        .visual-box { transition: all 0.3s ease; }
+    </style>
 </head>
-<body style="padding-top: 90px; background-color: #faf9f8;">
+<body style="padding-top: 110px; background-color: #faf9f8; overflow-x: hidden;">
 
     <!-- Fixed Header -->
-    <header class="site-header" id="mainHeader" style="position: fixed; top: 0; left: 0; width: 100%; background: #ffffff; z-index: 9999; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
-        <div class="container header-inner" style="display: flex; align-items: center; justify-content: space-between; padding: 15px 20px; max-width: 1200px; margin: 0 auto;">
+    <header class="site-header" id="mainHeader" style="position: fixed; top: 0; left: 0; width: 100%; background: #ffffff; z-index: 9999; box-shadow: 0 2px 10px rgba(0,0,0,0.05); box-sizing: border-box;">
+        <div class="container header-inner" style="display: flex; align-items: center; justify-content: space-between; padding: 15px 20px; max-width: 1200px; margin: 0 auto; box-sizing: border-box;">
             <a href="index.html" class="logo nav-link" style="color: #111; text-decoration: none; font-weight: 800; font-size: 1.2rem; display: flex; align-items: center; gap: 8px;">
                 <i class="fas fa-layer-group logo-icon" style="color: #111;"></i> 
                 <span class="logo-text">Arsh Interiors</span>
@@ -81,129 +124,142 @@
     <main>
         
         <!-- Hero Section with SEO Keywords -->
-        <section style="padding: 60px 20px 40px; text-align: center; background: linear-gradient(180deg, #fff 0%, #faf9f8 100%);">
-            <div class="container" style="max-width: 900px; margin: 0 auto;">
-                <span style="color: #ff6b6b; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; font-size: 0.9rem;">Transparent Execution Budgeting</span>
-                <h1 style="font-size: clamp(2.2rem, 4vw, 3.8rem); margin: 15px 0; color: #111;">False Ceiling & Interior <span style="color: #ff6b6b; font-style: italic; font-family: 'Playfair Display', serif;">Cost Calculator</span></h1>
-                <p style="font-size: 1.05rem; max-width: 800px; margin: 0 auto 20px; color: #555; line-height: 1.6;">Use the smart estimation tool by <strong>Arsh Interiors</strong> (Arsh Interior) to calculate transparent, market-leading execution rates for false ceilings, electrical wiring, and wall painting across Pune.</p>
+        <section style="padding: 40px 15px 30px; text-align: center; background: linear-gradient(180deg, #fff 0%, #faf9f8 100%); box-sizing: border-box;">
+            <div class="container" style="max-width: 900px; margin: 0 auto; padding: 0 15px; box-sizing: border-box;">
+                <span style="color: #ff6b6b; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; font-size: 0.85rem; display: block; margin-bottom: 10px;">Transparent Execution Budgeting</span>
+                <h1 style="font-size: clamp(2.2rem, 4vw, 3.8rem); margin: 15px 0; color: #111; line-height: 1.2;">False Ceiling & Interior <span style="color: #ff6b6b; font-style: italic; font-family: 'Playfair Display', serif;">Cost Calculator</span></h1>
+                <p style="font-size: 1.05rem; max-width: 800px; margin: 0 auto 20px; color: #555; line-height: 1.6; padding: 0 5px;">Use the smart estimation tool by <strong>Arsh Interiors</strong> (Arsh Interior) to calculate transparent, market-leading execution rates for false ceilings, electrical wiring, wall painting, and custom furniture across Pune.</p>
             </div>
         </section>
 
         <!-- Advanced Cost Calculator Section -->
-        <section class="premium-estimator-section" style="padding: 20px 20px 80px; background: #faf9f8;">
-            <div class="container">
-                <div class="estimator-wrapper" style="background: #fff; max-width: 900px; margin: 0 auto; border-radius: 20px; box-shadow: 0 20px 50px rgba(0,0,0,0.08); padding: 50px; border: 1px solid #eee; position: relative;">
+        <section class="premium-estimator-section" style="padding: 10px 15px 60px; background: #faf9f8; box-sizing: border-box;">
+            <div class="container" style="max-width: 1000px; margin: 0 auto; padding: 0 15px; box-sizing: border-box;">
+                <div class="estimator-wrapper">
                     <form id="arshEstimatorForm" class="advanced-form">
+                        
                         <!-- STEP 1 -->
                         <div class="form-step step-1 active" data-step="1">
-                            <h3 style="border-bottom: 2px solid #f0f0f0; padding-bottom: 15px; margin-bottom: 30px; color: #111;"><span style="color: #ff6b6b;">01.</span> Space Context</h3>
-                            <div class="input-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
-                                <div class="input-group">
-                                    <label style="font-weight: 700; color: #333; margin-bottom: 10px; display: block;">Property Type *</label>
+                            <h3 style="border-bottom: 2px solid #f0f0f0; padding-bottom: 15px; margin-bottom: 25px; color: #111;"><span style="color: #ff6b6b;">01.</span> Space Context</h3>
+                            <div class="input-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 25px;">
+                                <div class="input-group" style="position: relative;">
+                                    <label style="font-weight: 700; color: #333; margin-bottom: 8px; display: block;">Property Type *</label>
                                     <div class="custom-premium-select" id="propTypeSelect">
-                                        <div class="select-trigger" style="padding: 15px; border: 1px solid #ddd; border-radius: 8px; cursor: pointer; display: flex; justify-content: space-between; align-items: center;"><span style="color: #555;">Select Property Type</span> <i class="fas fa-chevron-down arrow"></i></div>
-                                        <div class="select-options" style="display: none; background: #fff; border: 1px solid #ddd; position: absolute; width: 100%; z-index: 10; border-radius: 8px; margin-top: 5px;">
-                                            <div class="option" data-value="1 BHK" style="padding: 12px; cursor: pointer;">1 BHK Apartment</div>
-                                            <div class="option" data-value="2 BHK" style="padding: 12px; cursor: pointer;">2 BHK Apartment</div>
-                                            <div class="option" data-value="3 BHK" style="padding: 12px; cursor: pointer;">3 BHK Apartment</div>
-                                            <div class="option" data-value="4+ BHK" style="padding: 12px; cursor: pointer;">4+ BHK / Duplex</div>
-                                            <div class="option" data-value="Bungalow" style="padding: 12px; cursor: pointer;">Villa / Bungalow</div>
+                                        <div class="select-trigger" style="padding: 15px; border: 1px solid #ddd; border-radius: 8px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; background: #fff;"><span style="color: #555;">Select Property Type</span> <i class="fas fa-chevron-down arrow"></i></div>
+                                        <div class="select-options" style="display: none; background: #fff; border: 1px solid #ddd; position: absolute; width: 100%; z-index: 10; border-radius: 8px; margin-top: 5px; box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
+                                            <div class="option" data-value="1 BHK" style="padding: 12px; cursor: pointer; border-bottom: 1px solid #f0f0f0;">1 BHK Apartment</div>
+                                            <div class="option" data-value="2 BHK" style="padding: 12px; cursor: pointer; border-bottom: 1px solid #f0f0f0;">2 BHK Apartment</div>
+                                            <div class="option" data-value="3 BHK" style="padding: 12px; cursor: pointer; border-bottom: 1px solid #f0f0f0;">3 BHK Apartment</div>
+                                            <div class="option" data-value="4+ BHK" style="padding: 12px; cursor: pointer; border-bottom: 1px solid #f0f0f0;">4+ BHK / Duplex</div>
+                                            <div class="option" data-value="Bungalow" style="padding: 12px; cursor: pointer; border-bottom: 1px solid #f0f0f0;">Villa / Bungalow</div>
                                             <div class="option" data-value="Commercial" style="padding: 12px; cursor: pointer;">Commercial / Retail</div>
                                         </div>
                                         <input type="hidden" id="propType" required>
                                     </div>
                                 </div>
-                                <div class="input-group">
-                                    <label style="font-weight: 700; color: #333; margin-bottom: 10px; display: block;">Project Timeline *</label>
+                                <div class="input-group" style="position: relative;">
+                                    <label style="font-weight: 700; color: #333; margin-bottom: 8px; display: block;">Project Timeline *</label>
                                     <div class="custom-premium-select" id="timelineSelect">
-                                        <div class="select-trigger" style="padding: 15px; border: 1px solid #ddd; border-radius: 8px; cursor: pointer; display: flex; justify-content: space-between; align-items: center;"><span style="color: #555;">Expected Start Date</span> <i class="fas fa-chevron-down arrow"></i></div>
-                                        <div class="select-options" style="display: none; background: #fff; border: 1px solid #ddd; position: absolute; width: 100%; z-index: 10; border-radius: 8px; margin-top: 5px;">
-                                            <div class="option" data-value="Immediately" style="padding: 12px; cursor: pointer;">Immediately (Within 7 Days)</div>
-                                            <div class="option" data-value="Within 1 Month" style="padding: 12px; cursor: pointer;">Within 1 Month</div>
+                                        <div class="select-trigger" style="padding: 15px; border: 1px solid #ddd; border-radius: 8px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; background: #fff;"><span style="color: #555;">Expected Start Date</span> <i class="fas fa-chevron-down arrow"></i></div>
+                                        <div class="select-options" style="display: none; background: #fff; border: 1px solid #ddd; position: absolute; width: 100%; z-index: 10; border-radius: 8px; margin-top: 5px; box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
+                                            <div class="option" data-value="Immediately" style="padding: 12px; cursor: pointer; border-bottom: 1px solid #f0f0f0;">Immediately (Within 7 Days)</div>
+                                            <div class="option" data-value="Within 1 Month" style="padding: 12px; cursor: pointer; border-bottom: 1px solid #f0f0f0;">Within 1 Month</div>
                                             <div class="option" data-value="Just Planning" style="padding: 12px; cursor: pointer;">Just Planning / Evaluating</div>
                                         </div>
                                         <input type="hidden" id="timeline" required>
                                     </div>
                                 </div>
                             </div>
-                            <button type="button" class="btn btn-full btn-next" data-next="2" style="background: #ff6b6b; color: #fff; width: 100%; margin-top: 30px; padding: 18px; border: none; border-radius: 12px; font-size: 1.1rem; cursor: pointer;">Select Execution Scope <i class="fas fa-arrow-right" style="margin-left: 10px;"></i></button>
+                            <button type="button" class="btn btn-full btn-next" data-next="2" style="background: #ff6b6b; color: #fff; width: 100%; margin-top: 30px; padding: 18px; border: none; border-radius: 12px; font-size: 1.1rem; cursor: pointer; font-weight: 700;">Select Execution Scope <i class="fas fa-arrow-right" style="margin-left: 10px;"></i></button>
                         </div>
 
                         <!-- STEP 2 -->
-                        <div class="form-step step-2" data-step="2" style="display: none;">
-                            <h3 style="border-bottom: 2px solid #f0f0f0; padding-bottom: 15px; margin-bottom: 30px; color: #111;"><span style="color: #ff6b6b;">02.</span> Scope of Work</h3>
-                            <div class="visual-selection-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
-                                <label class="custom-checkbox-card">
+                        <div class="form-step step-2" data-step="2">
+                            <h3 style="border-bottom: 2px solid #f0f0f0; padding-bottom: 15px; margin-bottom: 25px; color: #111;"><span style="color: #ff6b6b;">02.</span> Scope of Work</h3>
+                            <div class="visual-selection-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px;">
+                                <label class="custom-checkbox-card" style="cursor: pointer;">
                                     <input type="checkbox" name="services" value="False Ceiling" class="hidden-cb" id="chkCeiling">
-                                    <div class="card-content visual-box" style="padding: 30px 15px; border: 2px solid #eee; border-radius: 16px; text-align: center; cursor: pointer;">
-                                        <i class="fas fa-layer-group" style="font-size: 3rem; color: #999; margin-bottom: 15px;"></i>
-                                        <span style="font-weight: 700; display: block; font-size: 1.1rem; color: #111;">False Ceiling</span>
+                                    <div class="card-content visual-box" style="padding: 20px 10px; border: 2px solid #eee; border-radius: 14px; text-align: center; box-sizing: border-box;">
+                                        <i class="fas fa-layer-group" style="font-size: 2rem; color: #999; margin-bottom: 10px;"></i>
+                                        <span style="font-weight: 700; display: block; font-size: 0.95rem; color: #111;">False Ceiling</span>
                                     </div>
                                 </label>
-                                <label class="custom-checkbox-card">
+                                <label class="custom-checkbox-card" style="cursor: pointer;">
                                     <input type="checkbox" name="services" value="Electrical" class="hidden-cb" id="chkElectrical">
-                                    <div class="card-content visual-box" style="padding: 30px 15px; border: 2px solid #eee; border-radius: 16px; text-align: center; cursor: pointer;">
-                                        <i class="fas fa-bolt" style="font-size: 3rem; color: #999; margin-bottom: 15px;"></i>
-                                        <span style="font-weight: 700; display: block; font-size: 1.1rem; color: #111;">Electrical Work</span>
+                                    <div class="card-content visual-box" style="padding: 20px 10px; border: 2px solid #eee; border-radius: 14px; text-align: center; box-sizing: border-box;">
+                                        <i class="fas fa-bolt" style="font-size: 2rem; color: #999; margin-bottom: 10px;"></i>
+                                        <span style="font-weight: 700; display: block; font-size: 0.95rem; color: #111;">Electrical Work</span>
                                     </div>
                                 </label>
-                                <label class="custom-checkbox-card">
+                                <label class="custom-checkbox-card" style="cursor: pointer;">
                                     <input type="checkbox" name="services" value="Painting" class="hidden-cb" id="chkPainting">
-                                    <div class="card-content visual-box" style="padding: 30px 15px; border: 2px solid #eee; border-radius: 16px; text-align: center; cursor: pointer;">
-                                        <i class="fas fa-paint-roller" style="font-size: 3rem; color: #999; margin-bottom: 15px;"></i>
-                                        <span style="font-weight: 700; display: block; font-size: 1.1rem; color: #111;">Wall Painting</span>
+                                    <div class="card-content visual-box" style="padding: 20px 10px; border: 2px solid #eee; border-radius: 14px; text-align: center; box-sizing: border-box;">
+                                        <i class="fas fa-paint-roller" style="font-size: 2rem; color: #999; margin-bottom: 10px;"></i>
+                                        <span style="font-weight: 700; display: block; font-size: 0.95rem; color: #111;">Wall Painting</span>
+                                    </div>
+                                </label>
+                                <label class="custom-checkbox-card" style="cursor: pointer;">
+                                    <input type="checkbox" name="services" value="Furniture" class="hidden-cb" id="chkFurniture">
+                                    <div class="card-content visual-box" style="padding: 20px 10px; border: 2px solid #eee; border-radius: 14px; text-align: center; box-sizing: border-box;">
+                                        <i class="fas fa-couch" style="font-size: 2rem; color: #999; margin-bottom: 10px;"></i>
+                                        <span style="font-weight: 700; display: block; font-size: 0.95rem; color: #111;">Custom Furniture</span>
                                     </div>
                                 </label>
                             </div>
-                            <div class="form-actions" style="display: flex; gap: 20px; margin-top: 30px;">
-                                <button type="button" class="btn btn-prev" data-prev="1" style="flex: 1; padding: 18px; border: 1px solid #ddd; background: transparent; border-radius: 12px; cursor: pointer;"><i class="fas fa-arrow-left"></i> Back</button>
-                                <button type="button" class="btn btn-next" data-next="3" style="flex: 2; padding: 18px; background: #ff6b6b; color: #fff; border: none; border-radius: 12px; cursor: pointer;">Define Specifications <i class="fas fa-arrow-right"></i></button>
+                            <div class="form-actions" style="display: flex; gap: 20px; margin-top: 25px;">
+                                <button type="button" class="btn btn-prev" data-prev="1" style="flex: 1; padding: 16px; border: 1px solid #ddd; background: transparent; border-radius: 12px; cursor: pointer; font-weight: 600;"><i class="fas fa-arrow-left"></i> Back</button>
+                                <button type="button" class="btn btn-next" data-next="3" style="flex: 2; padding: 16px; background: #ff6b6b; color: #fff; border: none; border-radius: 12px; cursor: pointer; font-weight: 700;">Define Specifications <i class="fas fa-arrow-right"></i></button>
                             </div>
                         </div>
 
                         <!-- STEP 3 -->
-                        <div class="form-step step-3" data-step="3" style="display: none;">
-                            <h3 style="border-bottom: 2px solid #f0f0f0; padding-bottom: 15px; margin-bottom: 30px; color: #111;"><span style="color: #ff6b6b;">03.</span> Blueprint Details</h3>
+                        <div class="form-step step-3" data-step="3">
+                            <h3 style="border-bottom: 2px solid #f0f0f0; padding-bottom: 15px; margin-bottom: 20px; color: #111;"><span style="color: #ff6b6b;">03.</span> Blueprint Details</h3>
                             
-                            <div id="dyn-ceiling" style="display: none; background: #faf9f8; padding: 25px; border-radius: 16px; margin-bottom: 20px; border: 1px solid #eaeaea;">
-                                <h4 style="margin-bottom: 20px; color: #111;"><i class="fas fa-layer-group" style="color: #ff6b6b; margin-right: 8px;"></i> False Ceiling Specs</h4>
-                                <div class="input-group" style="margin-bottom: 20px;">
-                                    <label style="font-weight: 700; font-size: 0.9rem; margin-bottom: 8px; display: block; color: #333;">Total Carpet Area (Sq.Ft) *</label>
-                                    <input type="number" id="ceilingArea" placeholder="E.g., 650" style="width: 100%; padding: 15px; border: 1px solid #ddd; border-radius: 8px; font-size: 1rem;">
+                            <div id="dyn-ceiling" style="display: none; background: #faf9f8; padding: 18px; border-radius: 14px; margin-bottom: 15px; border: 1px solid #eaeaea; box-sizing: border-box;">
+                                <h4 style="margin-bottom: 10px; color: #111; font-size: 1.05rem;"><i class="fas fa-layer-group" style="color: #ff6b6b; margin-right: 8px;"></i> False Ceiling Specs</h4>
+                                <div class="input-group">
+                                    <label style="font-weight: 700; font-size: 0.85rem; margin-bottom: 6px; display: block; color: #333;">Total Carpet Area (Sq.Ft) *</label>
+                                    <input type="number" id="ceilingArea" placeholder="E.g., 650" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 0.95rem; background: #fff; box-sizing: border-box;">
                                 </div>
                             </div>
 
-                            <div id="dyn-electrical" style="display: none; background: #faf9f8; padding: 25px; border-radius: 16px; margin-bottom: 20px; border: 1px solid #eaeaea;">
-                                <h4 style="margin-bottom: 20px; color: #111;"><i class="fas fa-bolt" style="color: #ff6b6b; margin-right: 8px;"></i> Electrical Scope</h4>
-                                <p style="font-size: 0.9rem; color: #666;">Standard concealed wiring and modular point configuration will be calculated automatically based on property type.</p>
+                            <div id="dyn-electrical" style="display: none; background: #faf9f8; padding: 18px; border-radius: 14px; margin-bottom: 15px; border: 1px solid #eaeaea; box-sizing: border-box;">
+                                <h4 style="margin-bottom: 8px; color: #111; font-size: 1.05rem;"><i class="fas fa-bolt" style="color: #ff6b6b; margin-right: 8px;"></i> Electrical Scope</h4>
+                                <p style="font-size: 0.85rem; color: #666; line-height: 1.4;">Standard concealed wiring, main DB setup, and modular point configuration will be calculated automatically based on property type.</p>
                             </div>
 
-                            <div id="dyn-painting" style="display: none; background: #faf9f8; padding: 25px; border-radius: 16px; margin-bottom: 20px; border: 1px solid #eaeaea;">
-                                <h4 style="margin-bottom: 20px; color: #111;"><i class="fas fa-paint-roller" style="color: #ff6b6b; margin-right: 8px;"></i> Painting Finishes</h4>
-                                <p style="font-size: 0.9rem; color: #666;">Includes surface putty preparation, primer coat, and double coat emulsion finishes.</p>
+                            <div id="dyn-painting" style="display: none; background: #faf9f8; padding: 18px; border-radius: 14px; margin-bottom: 15px; border: 1px solid #eaeaea; box-sizing: border-box;">
+                                <h4 style="margin-bottom: 8px; color: #111; font-size: 1.05rem;"><i class="fas fa-paint-roller" style="color: #ff6b6b; margin-right: 8px;"></i> Painting Finishes</h4>
+                                <p style="font-size: 0.85rem; color: #666; line-height: 1.4;">Includes surface putty preparation, primer coat, and double/triple coat emulsion finishes.</p>
                             </div>
 
-                            <div class="form-actions" style="display: flex; gap: 20px; margin-top: 30px;">
-                                <button type="button" class="btn btn-prev" data-prev="2" style="flex: 1; padding: 18px; border: 1px solid #ddd; background: transparent; border-radius: 12px; cursor: pointer;"><i class="fas fa-arrow-left"></i> Back</button>
-                                <button type="button" class="btn btn-next" data-next="4" style="flex: 2; padding: 18px; background: #ff6b6b; color: #fff; border: none; border-radius: 12px; cursor: pointer;">Finalize Details <i class="fas fa-arrow-right"></i></button>
+                            <div id="dyn-furniture" style="display: none; background: #faf9f8; padding: 18px; border-radius: 14px; margin-bottom: 15px; border: 1px solid #eaeaea; box-sizing: border-box;">
+                                <h4 style="margin-bottom: 8px; color: #111; font-size: 1.05rem;"><i class="fas fa-couch" style="color: #ff6b6b; margin-right: 8px;"></i> Custom Furniture Scope</h4>
+                                <p style="font-size: 0.85rem; color: #666; line-height: 1.4;">Includes modular kitchen units, custom wardrobes, TV consoles, and storage lofts based on layout.</p>
+                            </div>
+
+                            <div class="form-actions" style="display: flex; gap: 20px; margin-top: 25px;">
+                                <button type="button" class="btn btn-prev" data-prev="2" style="flex: 1; padding: 16px; border: 1px solid #ddd; background: transparent; border-radius: 12px; cursor: pointer; font-weight: 600;"><i class="fas fa-arrow-left"></i> Back</button>
+                                <button type="button" class="btn btn-next" data-next="4" style="flex: 2; padding: 16px; background: #ff6b6b; color: #fff; border: none; border-radius: 12px; cursor: pointer; font-weight: 700;">Finalize Details <i class="fas fa-arrow-right"></i></button>
                             </div>
                         </div>
 
                         <!-- STEP 4 -->
-                        <div class="form-step step-4" data-step="4" style="display: none;">
-                            <h3 style="border-bottom: 2px solid #f0f0f0; padding-bottom: 15px; margin-bottom: 30px; color: #111;"><span style="color: #ff6b6b;">04.</span> Destination</h3>
-                            <div class="input-grid" style="display: grid; grid-template-columns: 1fr; gap: 20px;">
-                                <input type="text" id="custName" placeholder="Full Name *" required style="padding: 16px; border: 1px solid #ddd; border-radius: 8px; width: 100%; font-size: 1rem; color: #333;">
-                                <input type="tel" id="custPhone" placeholder="WhatsApp Number *" maxlength="10" required style="padding: 16px; border: 1px solid #ddd; border-radius: 8px; width: 100%; font-size: 1rem; color: #333;">
-                                <input type="text" id="custLoc" placeholder="Project Location (e.g., Baner, Wakad) *" required style="padding: 16px; border: 1px solid #ddd; border-radius: 8px; width: 100%; font-size: 1rem; color: #333;">
+                        <div class="form-step step-4" data-step="4">
+                            <h3 style="border-bottom: 2px solid #f0f0f0; padding-bottom: 15px; margin-bottom: 25px; color: #111;"><span style="color: #ff6b6b;">04.</span> Destination</h3>
+                            <div class="input-grid" style="display: grid; grid-template-columns: 1fr; gap: 15px;">
+                                <input type="text" id="custName" placeholder="Full Name *" required style="padding: 15px; border: 1px solid #ddd; border-radius: 8px; width: 100%; font-size: 1rem; color: #333; background: #fff; box-sizing: border-box;">
+                                <input type="tel" id="custPhone" placeholder="WhatsApp Number *" maxlength="10" required style="padding: 15px; border: 1px solid #ddd; border-radius: 8px; width: 100%; font-size: 1rem; color: #333; background: #fff; box-sizing: border-box;">
+                                <input type="text" id="custLoc" placeholder="Project Location (e.g., Baner, Wakad) *" required style="padding: 15px; border: 1px solid #ddd; border-radius: 8px; width: 100%; font-size: 1rem; color: #333; background: #fff; box-sizing: border-box;">
                             </div>
-                            <div class="form-actions" style="display: flex; gap: 20px; margin-top: 30px;">
-                                <button type="button" class="btn btn-prev" data-prev="3" style="flex: 1; padding: 18px; border: 1px solid #ddd; background: transparent; border-radius: 12px; cursor: pointer;"><i class="fas fa-arrow-left"></i> Back</button>
-                                <button type="submit" class="btn" style="flex: 2; padding: 18px; background: #111; color: #fff; border: none; border-radius: 12px; cursor: pointer; font-size: 1.1rem; font-weight: 700;">Get Estimate <i class="fas fa-file-invoice-dollar" style="margin-left: 8px;"></i></button>
+                            <div class="form-actions" style="display: flex; gap: 20px; margin-top: 25px;">
+                                <button type="button" class="btn btn-prev" data-prev="3" style="flex: 1; padding: 16px; border: 1px solid #ddd; background: transparent; border-radius: 12px; cursor: pointer; font-weight: 600;"><i class="fas fa-arrow-left"></i> Back</button>
+                                <button type="submit" class="btn" style="flex: 2; padding: 16px; background: #111; color: #fff; border: none; border-radius: 12px; cursor: pointer; font-size: 1.1rem; font-weight: 700;">Get Estimate <i class="fas fa-file-invoice-dollar" style="margin-left: 8px;"></i></button>
                             </div>
                         </div>
 
-                        <div id="form-loader" style="display:none; text-align:center; padding: 40px 0;">
+                        <div id="form-loader" style="display:none; text-align:center; padding: 30px 0;">
                             <i class="fas fa-circle-notch fa-spin" style="font-size: 3rem; color: #ff6b6b; margin-bottom: 15px;"></i>
                             <h4 style="color: #111;">Generating your exact blueprint estimation...</h4>
                         </div>
@@ -212,29 +268,29 @@
             </div>
         </section>
 
-        <!-- Direct Contact Card Section -->
-        <section style="padding: 40px 20px 80px; background: #fff; border-top: 1px solid #eee;">
-            <div class="container" style="max-width: 1000px; margin: 0 auto; text-align: center;">
-                <h2 style="font-size: 2rem; color: #111; margin-bottom: 15px;">Need Direct Assistance from <span style="color: #ff6b6b;">Arsh Interiors?</span></h2>
-                <p style="color: #666; font-size: 1.05rem; margin-bottom: 30px; max-width: 600px; margin-left: auto; margin-right: auto;">Reach out to us directly through phone, email, WhatsApp, or visit our office location in Dhayari, Pune.</p>
+        <!-- Direct Contact Section (GMB Removed, Office & Contact Info Retained) -->
+        <section style="padding: 40px 15px 60px; background: #fff; border-top: 1px solid #eee; box-sizing: border-box;">
+            <div class="container" style="max-width: 1000px; margin: 0 auto; text-align: center; padding: 0 15px; box-sizing: border-box;">
+                <h2 style="font-size: 2rem; color: #111; margin-bottom: 12px;">Need Direct Assistance from <span style="color: #ff6b6b;">Arsh Interiors?</span></h2>
+                <p style="color: #666; font-size: 1.05rem; margin-bottom: 30px; max-width: 600px; margin-left: auto; margin-right: auto;">Reach out to us directly through phone, WhatsApp, or visit our office location in Dhayari, Pune.</p>
                 
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; text-align: left;">
-                    <div style="background: #faf9f8; padding: 25px; border-radius: 16px; border: 1px solid #eaeaea;">
+                    <div style="background: #faf9f8; padding: 25px; border-radius: 16px; border: 1px solid #eaeaea; box-sizing: border-box;">
                         <i class="fas fa-phone-alt" style="color: #ff6b6b; font-size: 1.5rem; margin-bottom: 15px;"></i>
                         <h4 style="color: #111; margin-bottom: 5px;">Call Us</h4>
                         <a href="tel:+919022104232" style="color: #555; text-decoration: none; font-weight: 600;">+91 9022104232</a>
                     </div>
-                    <div style="background: #faf9f8; padding: 25px; border-radius: 16px; border: 1px solid #eaeaea;">
+                    <div style="background: #faf9f8; padding: 25px; border-radius: 16px; border: 1px solid #eaeaea; box-sizing: border-box;">
                         <i class="fab fa-whatsapp" style="color: #25D366; font-size: 1.5rem; margin-bottom: 15px;"></i>
                         <h4 style="color: #111; margin-bottom: 5px;">WhatsApp Chat</h4>
                         <a href="https://wa.me/919022104232" target="_blank" style="color: #555; text-decoration: none; font-weight: 600;">Instant Message</a>
                     </div>
-                    <div style="background: #faf9f8; padding: 25px; border-radius: 16px; border: 1px solid #eaeaea;">
+                    <div style="background: #faf9f8; padding: 25px; border-radius: 16px; border: 1px solid #eaeaea; box-sizing: border-box;">
                         <i class="fas fa-map-marker-alt" style="color: #4285F4; font-size: 1.5rem; margin-bottom: 15px;"></i>
                         <h4 style="color: #111; margin-bottom: 5px;">Office Address</h4>
                         <span style="color: #555; font-size: 0.9rem; display: block; line-height: 1.4;">Dhayari, Pune, Maharashtra - 411041</span>
                     </div>
-                    <div style="background: #faf9f8; padding: 25px; border-radius: 16px; border: 1px solid #eaeaea;">
+                    <div style="background: #faf9f8; padding: 25px; border-radius: 16px; border: 1px solid #eaeaea; box-sizing: border-box;">
                         <i class="fas fa-share-alt" style="color: #ff6b6b; font-size: 1.5rem; margin-bottom: 15px;"></i>
                         <h4 style="color: #111; margin-bottom: 5px;">Social Profiles</h4>
                         <div style="display: flex; gap: 12px; margin-top: 5px; font-size: 1.1rem;">
@@ -250,11 +306,11 @@
     </main>
 
     <!-- Main Footer -->
-    <footer style="background: #111; color: #fff; padding: 60px 20px 0;">
-        <div class="container" style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 50px; margin-bottom: 40px;">
+    <footer style="background: #111; color: #fff; padding: 60px 15px 0; box-sizing: border-box;">
+        <div class="container" style="max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 40px; margin-bottom: 40px; box-sizing: border-box;">
             <div>
-                <h3 style="color: #fff; font-size: 1.5rem; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;"><i class="fas fa-layer-group"></i> Arsh Interiors</h3>
-                <p style="color: #aaa; font-size: 0.9rem; line-height: 1.7;">Arsh Interiors (Arsh Interior) provides premium interior contracting services based in Dhayari, Pune. Specializing in false ceilings, electrical work, and painting execution.</p>
+                <h3 style="color: #fff; font-size: 1.4rem; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;"><i class="fas fa-layer-group"></i> Arsh Interiors</h3>
+                <p style="color: #aaa; font-size: 0.9rem; line-height: 1.7;">Arsh Interiors (Arsh Interior) provides premium interior contracting services based in Dhayari, Pune. Specializing in false ceilings, electrical work, painting, and modular furniture.</p>
             </div>
             <div>
                 <h4 style="color: #fff; font-size: 1.1rem; margin-bottom: 20px;">Quick Links</h4>
@@ -273,11 +329,11 @@
         </div>
 
         <!-- SEO Keywords Footer Block -->
-        <div style="background: #0a0a0a; padding: 30px 20px; border-top: 1px solid rgba(255,255,255,0.05);">
-            <div class="container" style="max-width: 1200px; margin: 0 auto;">
-                <h4 style="color: #555; font-size: 0.9rem; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px;">Cost Estimator & Services Covered - Arsh Interiors</h4>
+        <div style="background: #0a0a0a; padding: 30px 15px; border-top: 1px solid rgba(255,255,255,0.05); box-sizing: border-box;">
+            <div class="container" style="max-width: 1100px; margin: 0 auto; box-sizing: border-box;">
+                <h4 style="color: #555; font-size: 0.85rem; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 1px;">Cost Estimator & Services Covered - Arsh Interiors</h4>
                 <div style="font-size: 0.75rem; color: #444; text-align: justify; line-height: 1.8;">
-                    False ceiling cost calculator Pune, Gypsum false ceiling price per sq ft, POP false ceiling quotation, Arsh Interiors estimator, Arsh Interior Pune, Interior renovation budget calculator, False ceiling in Wakad, False ceiling in Baner, False ceiling in Kharadi, Electrical work cost estimator Pune, Wall painting quotation calculator, Turnkey interior pricing Pune.
+                    False ceiling cost calculator Pune, Gypsum false ceiling price per sq ft, POP false ceiling quotation, Arsh Interiors estimator, Arsh Interior Pune, Interior renovation budget calculator, False ceiling in Wakad, False ceiling in Baner, False ceiling in Kharadi, Electrical work cost estimator Pune, Wall painting quotation calculator, Custom furniture pricing Pune.
                 </div>
             </div>
         </div>
@@ -287,7 +343,237 @@
         </div>
     </footer>
 
- <!-- Main JavaScript -->
+    <!-- Main JavaScript with 3-Tier Option Presentation & Full Scope Logic -->
     <script src="js/main.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Custom Dropdowns Logic
+        const customSelects = document.querySelectorAll('.custom-premium-select');
+        customSelects.forEach(selectContainer => {
+            const trigger = selectContainer.querySelector('.select-trigger');
+            const optionsBox = selectContainer.querySelector('.select-options');
+            const hiddenInput = selectContainer.querySelector('input[type="hidden"]');
+            const triggerSpan = trigger ? trigger.querySelector('span') : null;
+
+            if (trigger && optionsBox && hiddenInput && triggerSpan) {
+                trigger.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    customSelects.forEach(s => {
+                        if (s !== selectContainer) {
+                            const opt = s.querySelector('.select-options');
+                            if (opt) opt.style.display = 'none';
+                        }
+                    });
+                    optionsBox.style.display = optionsBox.style.display === 'block' ? 'none' : 'block';
+                });
+
+                optionsBox.querySelectorAll('.option').forEach(option => {
+                    option.addEventListener('click', function() {
+                        triggerSpan.textContent = this.textContent;
+                        triggerSpan.style.color = '#111';
+                        hiddenInput.value = this.getAttribute('data-value');
+                        optionsBox.style.display = 'none';
+                    });
+                });
+            }
+        });
+
+        document.addEventListener('click', function() {
+            customSelects.forEach(s => {
+                const opt = s.querySelector('.select-options');
+                if (opt) opt.style.display = 'none';
+            });
+        });
+
+        // Multi-Step Navigation & Animation
+        const formSteps = document.querySelectorAll('.form-step');
+        const nextButtons = document.querySelectorAll('.btn-next');
+        const prevButtons = document.querySelectorAll('.btn-prev');
+
+        nextButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const nextStepNum = this.getAttribute('data-next');
+                
+                if (nextStepNum === "2") {
+                    if (!document.getElementById('propType').value || !document.getElementById('timeline').value) {
+                        alert("Please select both Property Type and Project Timeline.");
+                        return;
+                    }
+                }
+
+                if (nextStepNum === "3") {
+                    const chkCeiling = document.getElementById('chkCeiling').checked;
+                    const chkElectrical = document.getElementById('chkElectrical').checked;
+                    const chkPainting = document.getElementById('chkPainting').checked;
+                    const chkFurniture = document.getElementById('chkFurniture').checked;
+
+                    if (!chkCeiling && !chkElectrical && !chkPainting && !chkFurniture) {
+                        alert("Please select at least one service scope.");
+                        return;
+                    }
+
+                    document.getElementById('dyn-ceiling').style.display = chkCeiling ? 'block' : 'none';
+                    document.getElementById('dyn-electrical').style.display = chkElectrical ? 'block' : 'none';
+                    document.getElementById('dyn-painting').style.display = chkPainting ? 'block' : 'none';
+                    document.getElementById('dyn-furniture').style.display = chkFurniture ? 'block' : 'none';
+                }
+
+                formSteps.forEach(step => {
+                    step.classList.remove('active');
+                });
+
+                const targetStep = document.querySelector(`.form-step[data-step="${nextStepNum}"]`);
+                if (targetStep) {
+                    targetStep.classList.add('active');
+                    window.scrollTo({ top: 200, behavior: 'smooth' });
+                }
+            });
+        });
+
+        prevButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const prevStepNum = this.getAttribute('data-prev');
+                formSteps.forEach(step => {
+                    step.classList.remove('active');
+                });
+
+                const targetStep = document.querySelector(`.form-step[data-step="${prevStepNum}"]`);
+                if (targetStep) {
+                    targetStep.classList.add('active');
+                    window.scrollTo({ top: 200, behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Checkbox Cards Styling
+        const checkboxCards = document.querySelectorAll('.custom-checkbox-card');
+        checkboxCards.forEach(card => {
+            const checkbox = card.querySelector('input[type="checkbox"]');
+            const visualBox = card.querySelector('.visual-box');
+
+            card.addEventListener('click', function() {
+                setTimeout(() => {
+                    if (checkbox.checked) {
+                        visualBox.style.borderColor = '#ff6b6b';
+                        visualBox.style.background = 'rgba(255,107,107,0.05)';
+                        const icon = visualBox.querySelector('i');
+                        if (icon) icon.style.color = '#ff6b6b';
+                    } else {
+                        visualBox.style.borderColor = '#eee';
+                        visualBox.style.background = '#fff';
+                        const icon = visualBox.querySelector('i');
+                        if (icon) icon.style.color = '#999';
+                    }
+                }, 10);
+            });
+        });
+
+        // Live Cost Calculation & 3-Tier Presentation Submission Logic
+        const estimatorForm = document.getElementById('arshEstimatorForm');
+        if (estimatorForm) {
+            estimatorForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+
+                const name = document.getElementById('custName').value;
+                const phone = document.getElementById('custPhone').value;
+                const loc = document.getElementById('custLoc').value;
+
+                if (!name || !phone || !loc) {
+                    alert("Please fill in all required destination details.");
+                    return;
+                }
+
+                let selectedServices = [];
+                document.querySelectorAll('input[name="services"]:checked').forEach(cb => {
+                    selectedServices.push(cb.value);
+                });
+
+                const areaInput = document.getElementById('ceilingArea');
+                const area = areaInput && areaInput.value ? parseFloat(areaInput.value) : 600;
+
+                let baseCost = 0;
+                if (selectedServices.includes("False Ceiling")) baseCost += area * 100;
+                if (selectedServices.includes("Electrical")) baseCost += area * 40;
+                if (selectedServices.includes("Painting")) baseCost += area * 30;
+                if (selectedServices.includes("Furniture")) baseCost += area * 250;
+
+                if (baseCost === 0) baseCost = 50000;
+
+                // 3 Tier Calculations (Budget Friendly, Premium, Luxury)
+                let budgetCost = Math.round(baseCost * 0.85);
+                let premiumCost = Math.round(baseCost * 1.15);
+                let luxuryCost = Math.round(baseCost * 1.55);
+
+                const payload = {
+                    name: name,
+                    phone: phone,
+                    loc: loc,
+                    propertyType: document.getElementById('propType').value,
+                    timeline: document.getElementById('timeline').value,
+                    services: selectedServices.join(', '),
+                    ceilingArea: area,
+                    estimateTier1: "₹ " + budgetCost.toLocaleString('en-IN'),
+                    estimateTier2: "₹ " + premiumCost.toLocaleString('en-IN'),
+                    estimateTier3: "₹ " + luxuryCost.toLocaleString('en-IN')
+                };
+
+                formSteps.forEach(step => step.style.display = 'none');
+                const loader = document.getElementById('form-loader');
+                if (loader) loader.style.display = 'block';
+
+                fetch("https://script.google.com/macros/s/AKfycbzWeJMWLdQKLsB7qoznoorTDRxWODsSRR87xCBKUo76mdvFCxqOYiy2zDGqPpNy7LIU/exec", {
+                    method: "POST",
+                    mode: "no-cors",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(payload)
+                }).catch(() => {});
+
+                setTimeout(() => {
+                    if (loader) {
+                        loader.innerHTML = `
+                            <div style="text-align:center; padding: 10px;">
+                                <i class="fas fa-award" style="font-size: 2.8rem; color: #ff6b6b; margin-bottom: 12px;"></i>
+                                <h3 style="color: #111; margin-bottom: 8px;">Estimated Tier Options for ${name}</h3>
+                                <p style="color: #666; font-size: 0.9rem; margin-bottom: 20px;">Based on your scope (${selectedServices.join(', ')}) across ${area} sq.ft in ${loc}:</p>
+                                
+                                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; text-align: left; margin-bottom: 20px;">
+                                    <!-- Budget Friendly -->
+                                    <div style="background: #faf9f8; padding: 20px; border-radius: 12px; border: 1px solid #eaeaea; box-sizing: border-box;">
+                                        <span style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: #666; letter-spacing: 1px;">Standard / Basic</span>
+                                        <h4 style="color: #111; font-size: 1.1rem; margin: 5px 0 10px 0;">Budget Friendly</h4>
+                                        <div style="font-size: 1.4rem; font-weight: 800; color: #ff6b6b;">₹ ${budgetCost.toLocaleString('en-IN')}</div>
+                                        <p style="font-size: 0.8rem; color: #777; margin-top: 8px;">Standard branded materials & functional layouts.</p>
+                                    </div>
+                                    
+                                    <!-- Premium -->
+                                    <div style="background: #fff5f5; padding: 20px; border-radius: 12px; border: 2px solid #ff6b6b; box-sizing: border-box; position: relative;">
+                                        <span style="position: absolute; top: -10px; right: 15px; background: #ff6b6b; color: #fff; font-size: 0.65rem; padding: 3px 8px; border-radius: 20px; font-weight: 700;">MOST POPULAR</span>
+                                        <span style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: #ff6b6b; letter-spacing: 1px;">Recommended</span>
+                                        <h4 style="color: #111; font-size: 1.1rem; margin: 5px 0 10px 0;">Premium Finish</h4>
+                                        <div style="font-size: 1.4rem; font-weight: 800; color: #ff6b6b;">₹ ${premiumCost.toLocaleString('en-IN')}</div>
+                                        <p style="font-size: 0.8rem; color: #777; margin-top: 8px;">Superior Gyproc boards, profile lighting & Royale emulsions.</p>
+                                    </div>
+
+                                    <!-- Luxury -->
+                                    <div style="background: #faf9f8; padding: 20px; border-radius: 12px; border: 1px solid #eaeaea; box-sizing: border-box;">
+                                        <span style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: #666; letter-spacing: 1px;">High-End Designer</span>
+                                        <h4 style="color: #111; font-size: 1.1rem; margin: 5px 0 10px 0;">Luxury Living</h4>
+                                        <div style="font-size: 1.4rem; font-weight: 800; color: #ff6b6b;">₹ ${luxuryCost.toLocaleString('en-IN')}</div>
+                                        <p style="font-size: 0.8rem; color: #777; margin-top: 8px;">Bespoke textures, PU furniture polish & smart automation.</p>
+                                    </div>
+                                </div>
+
+                                <p style="color: #666; font-size: 0.85rem; margin-top: 10px;">Our team from Arsh Interiors, Dhayari will connect with you on WhatsApp (+91 ${phone}) with an exact BOQ.</p>
+                                <a href="https://wa.me/919022104232?text=Hello%20Arsh%20Interiors,%20I%20reviewed%20the%20estimate%20tiers%20for%20my%20project%20in%20${loc}." target="_blank" style="display: inline-block; background: #25d366; color: #fff; padding: 12px 25px; border-radius: 8px; text-decoration: none; font-weight: 700; margin-top: 15px;">
+                                    <i class="fab fa-whatsapp"></i> Discuss on WhatsApp
+                                </a>
+                            </div>
+                        `;
+                    }
+                }, 800);
+            });
+        }
+    });
+    </script>
 </body>
-</html>   
+</html>
