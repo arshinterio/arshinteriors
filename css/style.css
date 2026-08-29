@@ -1,236 +1,43 @@
-/* Sabhi elements ko screen ke andar lock karne ke liye */
-html, body {
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-}
 /* ==========================================================
-   FINAL PERMANENT FIX: HEADER, LOGO, CALL ICON & MOBILE MENU
+   ESTIMATOR MOBILE FIX & CLEAN CARD DESIGN
 ========================================================== */
-
-/* 1. Zoom-out / Horizontal Overflow Fix (Fit to Screen) */
-html, body {
-    width: 100% !important;
-    max-width: 100% !important;
-    overflow-x: hidden !important;
-    box-sizing: border-box !important;
-}
-
-/* 2. Header Container Layout (Logo, Call Icon, Hamburger ek line me) */
-.site-header, header {
-    position: sticky !important;
-    top: 0 !important;
-    left: 0 !important;
-    width: 100% !important;
-    background: #ffffff !important;
-    z-index: 99999 !important;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08) !important;
-}
-
-.site-header .header-inner, header .container {
-    display: flex !important;
-    justify-content: space-between !important;
-    align-items: center !important;
-    flex-wrap: nowrap !important;
-    width: 100% !important;
-    max-width: 1200px !important;
-    margin: 0 auto !important;
-    padding: 12px 16px !important;
-    box-sizing: border-box !important;
-}
-
-/* 3. Logo Fix: 'Arsh Interiors' ko ek line mein rakhna */
-.site-header .logo {
-    display: inline-flex !important;
-    align-items: center !important;
-    gap: 8px !important;
-    white-space: nowrap !important;
-    text-decoration: none !important;
-}
-
-.site-header .logo .logo-text {
-    display: inline-block !important;
-    font-size: 1.1rem !important;
-    font-weight: 800 !important;
-    color: #111111 !important;
-}
-
-/* 4. Phone Button Fix: Number hide karke sirf Gol (Round) Call Icon banana */
-.site-header .header-cta {
-    width: 40px !important;
-    height: 40px !important;
-    padding: 0 !important;
-    border-radius: 50% !important;
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    background-color: #ff6b6b !important;
-    color: #ffffff !important;
-    border: none !important;
-    font-size: 0 !important; /* Number text ko completely hide karne ke liye */
-    box-shadow: 0 4px 12px rgba(255, 107, 107, 0.4) !important;
-    flex-shrink: 0 !important;
-}
-
-.site-header .header-cta i {
-    font-size: 1rem !important;
-    margin: 0 !important;
-    color: #ffffff !important;
-}
-
-/* 5. Mobile Menu Dropdown Fix (Header ke theek niche khulega) */
 @media (max-width: 768px) {
-    .site-header .desktop-nav {
-        display: none !important;
-        position: absolute !important;
-        top: 100% !important;
-        left: 0 !important;
+    .estimator-wrapper {
+        padding: 20px 15px !important;
         width: 100% !important;
-        background: #ffffff !important;
-        flex-direction: column !important;
-        align-items: center !important;
-        padding: 15px 0 !important;
-        box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15) !important;
-        border-bottom: 3px solid #ff6b6b !important;
-        z-index: 99998 !important;
-        margin: 0 !important;
+        box-sizing: border-box !important;
+    }
+    
+    .input-grid {
+        grid-template-columns: 1fr !important;
+        gap: 15px !important;
     }
 
-    .site-header .desktop-nav.active {
-        display: flex !important;
+    .visual-selection-grid {
+        grid-template-columns: 1fr !important;
+        gap: 15px !important;
     }
 
-    .site-header .desktop-nav a {
-        display: block !important;
+    /* Dropdowns mobile par box ke andar fix karne ke liye */
+    .custom-premium-select .select-options {
+        position: relative !important;
         width: 100% !important;
-        text-align: center !important;
-        padding: 12px 0 !important;
-        font-size: 1.05rem !important;
-        font-weight: 600 !important;
-        color: #222222 !important;
-        text-decoration: none !important;
-        border-bottom: 1px solid #f2f2f2 !important;
-    }
-
-    .site-header .desktop-nav a:hover {
-        background-color: #fafafa !important;
-        color: #ff6b6b !important;
-    }
-
-    /* Mobile Hamburger Button Styling */
-    .site-header .mobile-menu-btn {
-        display: flex !important;
-        align-items: center !important;
-        justify-content: center !important;
-        width: 40px !important;
-        height: 40px !important;
-        background: transparent !important;
-        border: 1px solid #ddd !important;
-        border-radius: 8px !important;
-        cursor: pointer !important;
-        font-size: 1.2rem !important;
-        color: #111111 !important;
-        padding: 0 !important;
-        flex-shrink: 0 !important;
-    }
-}
-
-/* Desktop View par Hamburger hide rahe */
-@media (min-width: 769px) {
-    .site-header .mobile-menu-btn {
-        display: none !important;
-    }
-    .site-header .desktop-nav {
-        display: flex !important;
-        flex-direction: row !important;
-        position: static !important;
-        background: transparent !important;
         box-shadow: none !important;
-        width: auto !important;
-
-        /* ==========================================================
-   HEADER ALIGNMENT & CALLBACK FORM FIX FOR MOBILE
-========================================================== */
-
-@media (max-width: 768px) {
-    /* Header items ko ek line me aur space-between rakhne ke liye */
-    .site-header .header-inner, header .container {
-        display: flex !important;
-        flex-direction: row !important;
-        justify-content: space-between !important;
-        align-items: center !important;
-        width: 100% !important;
-        padding: 10px 12px !important;
-        box-sizing: border-box !important;
-    }
-
-    /* Right side me Call button aur Hamburger ko paas-paas rakhne ke liye container */
-    .header-right-actions, .site-header .container {
-        display: flex !important;
-        align-items: center !important;
-        gap: 8px !important;
-    }
-
-    /* Callback Form box ko mobile par cutne se bachane ke liye (Center Fix) */
-    .callback-form-box {
-        width: 90% !important;
-        max-width: 100% !important;
-        margin: 0 auto !important;
-        padding: 25px 20px !important;
-        box-sizing: border-box !important;
-    }
-
-    .callback-section .container {
-        padding: 0 15px !important;
-        box-sizing: border-box !important;
+        border: 1px solid #ddd !important;
+        margin-top: 5px !important;
     }
 }
-        padding: 0 !important;
-    }
+
+/* Checkboxes ko completely hide karke clean modern card look dena */
+.hidden-cb {
+    display: none !important;
 }
-/* ==========================================================
-   FINAL PERMANENT OVERRIDE: GAP, FORM CENTERING & HEADER
-========================================================== */
 
-@media (max-width: 768px) {
-    /* 1. Hero Section ka upar wala extra gap hatane ke liye */
-    .hero-section {
-        padding-top: 30px !important;
-        margin-top: 0 !important;
-    }
+.custom-checkbox-card {
+    display: block;
+    cursor: pointer;
+}
 
-    /* 2. Header elements ko ek line me aur right side align karne ke liye */
-    .site-header .header-inner, header .container {
-        display: flex !important;
-        flex-direction: row !important;
-        justify-content: space-between !important;
-        align-items: center !important;
-        width: 100% !important;
-        padding: 8px 12px !important;
-        box-sizing: border-box !important;
-    }
-
-    /* 3. Callback Form ka right side se cutna aur center na hona fix karne ke liye */
-    .callback-section {
-        padding: 40px 0 !important;
-    }
-
-    .callback-grid {
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
-        width: 100% !important;
-        gap: 20px !important;
-    }
-
-    .callback-form-box {
-        width: 100% !important;
-        max-width: 100% !important;
-        margin: 0 auto !important;
-        padding: 20px !important;
-        box-sizing: border-box !important;
-        aspect-ratio: auto !important; /* Square shape mobile par hata kar content ke hisab se fit karna */
-    }
+.visual-box {
+    transition: all 0.3s ease;
 }
