@@ -398,7 +398,7 @@
         </div>
     </footer>
 
-    <!-- Script Logic with POST request to Google Sheet -->
+    <!-- Script Logic with Updated POST URL -->
     <script>
         function toggleService(card, serviceName) {
             card.classList.toggle('selected');
@@ -516,21 +516,20 @@
                 servicesText += ' | Note: ' + otherReq;
             }
 
-            // Google Sheets POST Payload matching your original working script
+            // Google Sheets POST Payload matching your new Apps Script URL
             const sheetPayload = {
                 name: name,
                 phone: phone,
-                location: loc,
-                propertyType: propType,
-                carpetArea: carpet + " sq.ft",
-                timeline: document.getElementById('timeline').value,
+                loc: loc,
+                propType: propType,
+                area: carpet + " sq.ft",
                 services: servicesText,
-                qualityTier: quality,
-                estimatedRange: `₹ ${simpleRangeStr} to ₹ ${luxuryRangeStr}`
+                budget: `₹ ${simpleRangeStr} to ₹ ${luxuryRangeStr}`,
+                timeline: document.getElementById('timeline').value
             };
 
-            // Send data via POST with no-cors to your original working Google Sheet URL
-            fetch("https://script.google.com/macros/s/AKfycbzWeJMWLdQKLsB7qoznoorTDRxWODsSRR87xCBKUo76mdvFCxqOYiy2zDGqPpNy7LIU/exec", {
+            // Send data via POST with no-cors to your new Apps Script Web App URL
+            fetch("https://script.google.com/macros/s/AKfycbyfai0umT23wNzwSwsY1v8ow-qq7O4QTzuU4C9M3RKbWUtxEuK0UK65R7Ty2aoAXobOcQ/exec", {
                 method: "POST",
                 mode: "no-cors",
                 headers: { "Content-Type": "application/json" },
