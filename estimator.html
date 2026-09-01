@@ -398,7 +398,7 @@
         </div>
     </footer>
 
-    <!-- Script Logic with POST request to Google Sheet -->
+    <!-- Script Logic -->
     <script>
         function toggleService(card, serviceName) {
             card.classList.toggle('selected');
@@ -511,30 +511,22 @@
             let premiumRangeStr = formatLakhsRange(premiumMin, premiumMax);
             let luxuryRangeStr = formatLakhsRange(luxuryMin, luxuryMax);
 
-            let servicesText = selectedServices.join(', ');
-            if(otherReq && otherReq !== 'None') {
-                servicesText += ' | Note: ' + otherReq;
-            }
-
-            // Google Sheets POST Payload matching your original working script
-            const sheetPayload = {
+            // Google Sheets GET Request Parameters (Using original Sheet URL)
+            const queryParams = new URLSearchParams({
                 name: name,
                 phone: phone,
                 location: loc,
                 propertyType: propType,
                 carpetArea: carpet + " sq.ft",
                 timeline: document.getElementById('timeline').value,
-                services: servicesText,
+                services: selectedServices.join(', '),
+                otherRequirements: otherReq,
                 qualityTier: quality,
                 estimatedRange: `₹ ${simpleRangeStr} to ₹ ${luxuryRangeStr}`
-            };
+            }).toString();
 
-            // Send data via POST with no-cors to your original working Google Sheet URL
-            fetch("https://script.google.com/macros/s/AKfycbzWeJMWLdQKLsB7qoznoorTDRxWODsSRR87xCBKUo76mdvFCxqOYiy2zDGqPpNy7LIU/exec", {
-                method: "POST",
-                mode: "no-cors",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify(sheetPayload)
+            fetch(`https://script.google.com/macros/s/AKfycbzWeJMWLdQKLsB7qoznoorTDRxWODsSRR87xCBKUo76mdvFCxqOYiy2zDGqPpNy7LIU/exec?${queryParams}`, {
+                method: "GET"
             }).catch(() => {});
 
             document.getElementById('proEstimatorForm').classList.add('hidden');
