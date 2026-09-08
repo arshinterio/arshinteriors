@@ -277,37 +277,29 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    /* 6. Dynamic Nav Active State Highlight (New Added) */
-    const currentPath = window.location.pathname;
-    const navLinks = document.querySelectorAll('.nav-link');
-    if (navLinks.length > 0) {
-        navLinks.forEach(link => {
-            const href = link.getAttribute('href');
-            if (!href) return;
+    /* 6. Force Nav Color Fix (Direct DOM Override) */
+    setTimeout(() => {
+        const path = window.location.pathname.toLowerCase();
+        document.querySelectorAll('.desktop-nav a').forEach(link => {
+            const href = (link.getAttribute('href') || '').toLowerCase();
+            let isMatch = false;
 
-            const cleanCurrent = currentPath.replace(/\/+$/, '');
-            const cleanHref = href.replace(/\/+$/, '');
-
-            let isActive = false;
-            if (cleanHref === '' || cleanHref === '/') {
-                if (cleanCurrent === '' || cleanCurrent === '/' || cleanCurrent.endsWith('/index')) {
-                    isActive = true;
-                }
+            if (path === '/' || path === '/index.html') {
+                if (href === '/' || href === 'index.html' || href === '/index.html') isMatch = true;
             } else {
-                if (cleanCurrent.includes(cleanHref)) {
-                    isActive = true;
-                }
+                // Check if current path contains the href name (e.g., /services/ matches /services)
+                const cleanHref = href.replace(/\//g, '');
+                if (cleanHref && path.includes(cleanHref)) isMatch = true;
             }
 
-            if (isActive) {
-                link.style.color = '#ff6b6b';
-                link.style.fontWeight = '600';
-                link.classList.add('active');
+            if (isMatch) {
+                link.style.setProperty('color', '#ff6b6b', 'important');
+                link.style.setProperty('font-weight', '600', 'important');
             } else {
-                link.style.color = '#555';
-                link.classList.remove('active');
+                link.style.setProperty('color', '#555', 'important');
+                link.style.setProperty('font-weight', '600', 'important');
             }
         });
-    }
+    }, 50);
 
 });
