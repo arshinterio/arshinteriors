@@ -1,41 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/css" href="https://www.xml-sitemaps.com/css/sitemap.css"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    
+    <!-- 1. Home Page -->
+    <url>
+        <loc>https://arshinterior.in/</loc>
+        <lastmod>2026-09-09</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
 
-  <url>
-       <loc>https://arshinterior.in/</loc>
-       <lastmod>2026-08-28T11:18:11+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>1.0000</priority>
-  </url>
-  <url>
-       <loc>https://arshinterior.in/index.html</loc>
-       <lastmod>2026-08-28T11:18:11+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.8000</priority>
-  </url>
-  <url>
-       <loc>https://arshinterior.in/about.html</loc>
-       <lastmod>2026-08-28T11:18:11+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.8000</priority>
-  </url>
-  <url>
-       <loc>https://arshinterior.in/services.html</loc>
-       <lastmod>2026-08-28T11:18:11+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.8000</priority>
-  </url>
-  <url>
-       <loc>https://arshinterior.in/estimator.html</loc>
-       <lastmod>2026-08-28T11:18:11+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.8000</priority>
-  </url>
-  <url>
-       <loc>https://arshinterior.in/designs.html</loc>
-       <lastmod>2026-08-28T11:18:11+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.8000</priority>
-  </url>
+    <!-- 2. About Page -->
+    <url>
+        <loc>https://arshinterior.in/about</loc>
+        <lastmod>2026-09-09</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- 3. Services Overview Page -->
+    <url>
+        <loc>https://arshinterior.in/services</loc>
+        <lastmod>2026-09-09</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- 4. Design / Gallery Page -->
+    <url>
+        <loc>https://arshinterior.in/design</loc>
+        <lastmod>2026-09-09</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- 5. Interactive Cost Estimator -->
+    <url>
+        <loc>https://arshinterior.in/estimator</loc>
+        <lastmod>2026-09-09</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- 6. False Ceiling Service Page -->
+    <url>
+        <loc>https://arshinterior.in/False-Ceiling-in-Pune</loc>
+        <lastmod>2026-09-09</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- 7. Gypsum & POP Work Page -->
+    <url>
+        <loc>https://arshinterior.in/gypsum-pop-work</loc>
+        <lastmod>2026-09-09</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- 8. Electrical Work Page -->
+    <url>
+        <loc>https://arshinterior.in/electrical-work-in-pune</loc>
+        <lastmod>2026-09-09</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- 9. Painting Services Page -->
+    <url>
+        <loc>https://arshinterior.in/painting-in-pune</loc>
+        <lastmod>2026-09-09</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- 10. Custom Furniture & Carpentry Page -->
+    <url>
+        <loc>https://arshinterior.in/furniture-in-pune</loc>
+        <lastmod>2026-09-09</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
 </urlset>
