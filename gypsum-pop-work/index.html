@@ -68,7 +68,7 @@
             padding: 0 20px;
             box-sizing: border-box;
         }
-        /* Fixed Header */
+        /* Strict Master Header (Only 5 Links) */
         .site-header {
             position: fixed; top: 0; left: 0; width: 100%; background: #ffffff; z-index: 9999; box-shadow: 0 2px 15px rgba(0,0,0,0.06); box-sizing: border-box;
         }
@@ -76,9 +76,9 @@
             display: flex; align-items: center; justify-content: space-between; padding: 15px 25px; max-width: 1200px; margin: 0 auto; box-sizing: border-box;
         }
         .logo { color: var(--dark); text-decoration: none; font-weight: 800; font-size: 1.3rem; display: flex; align-items: center; gap: 8px; }
-        .nav-links { display: flex; gap: 12px; align-items: center; }
-        .nav-links a { color: #555; text-decoration: none; font-weight: 600; font-size: 0.85rem; transition: color 0.3s; }
-        .nav-links a:hover, .nav-links a.active { color: var(--primary); }
+        .nav-links { display: flex; gap: 25px; align-items: center; }
+        .nav-links a { color: #555; text-decoration: none; font-weight: 600; font-size: 0.95rem; transition: color 0.3s; }
+        .nav-links a:hover { color: var(--primary); }
 
         /* Hero Section */
         .hero-section {
@@ -122,22 +122,19 @@
 </head>
 <body>
 
-    <!-- Fixed Header with Interlinks -->
+    <!-- Strict Master Header -->
     <header class="site-header">
         <div class="header-inner">
-            <a href="index.html" class="logo">
+            <a href="/" class="logo">
                 <i class="fas fa-layer-group"></i> 
                 <span>Arsh Interiors</span>
             </a>
             <nav class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="services.html">Services</a>
-                <a href="false-ceiling-pune.html">Ceiling</a>
-                <a href="gypsum-pop-molding-pune.html" class="active">Gypsum & POP</a>
-                <a href="electrical-work-pune.html">Electrical</a>
-                <a href="painting-services-pune.html">Painting</a>
-                <a href="carpenter-furniture-pune.html">Furniture</a>
-                <a href="estimator.html">Calculator</a>
+                <a href="/">Home</a>
+                <a href="/estimator">Estimator</a>
+                <a href="/services">Services</a>
+                <a href="/about">About</a>
+                <a href="/design">Design</a>
             </nav>
             <a href="tel:+919022104232" class="btn" style="padding: 10px 18px; font-size: 0.95rem; box-shadow: none;">
                 <i class="fas fa-phone-alt"> +91 9022104232</i>
@@ -156,17 +153,17 @@
             <div class="container">
                 <span style="color: var(--primary); font-weight: 700; text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem;">Architectural Ceiling & Wall Design Experts</span>
                 <h1>Advanced <span>Gypsum & POP Work in Pune</span> & Wall Molding Design</h1>
-                <p>Looking for premium <strong>gypsum board work</strong>, <strong>pop ceiling design</strong>, or sophisticated <strong>wall molding design</strong> in Pune? <strong>Arsh Interiors</strong> brings artistic craftsmanship and high-precision plastering to transform your walls and ceilings.</p>
-                <a href="estimator.html" class="btn">Calculate Renovation & Ceiling Budget 🚀</a>
+                <p>Looking for premium <strong>gypsum board work</strong>, <strong>pop ceiling design</strong>, or sophisticated <strong>wall molding design</strong> in Pune? As an expert interior contractor based in Dhayari, <strong>Arsh Interiors</strong> brings artistic craftsmanship and high-precision plastering to transform your residential and commercial walls and ceilings.</p>
+                <a href="/estimator" class="btn">Calculate Gypsum & Renovation Budget 🚀</a>
             </div>
         </section>
 
         <!-- Detailed SEO Intro Card -->
         <section class="container" style="margin-top: 40px;">
             <div class="content-card">
-                <h2>The Art of Gypsum Board Systems & POP Wall Design in Modern Interiors</h2>
-                <p>While standard painting covers flat surfaces, architectural dimension comes from expertly structured **gypsum and pop work in pune**. Whether you want a clean, minimalist **gypsum board ceiling** with embedded profile lighting or classical European-style **wall molding design** in your living room, Arsh Interiors based in Dhayari, Pune specializes in turning flat walls into high-end designer statements.</p>
-                <p>Our specialized plastering and molding works coordinate directly with our <a href="false-ceiling-pune.html" style="color: var(--primary); font-weight: 700; text-decoration: underline;">False Ceiling</a>, <a href="painting-services-pune.html" style="color: var(--primary); font-weight: 700; text-decoration: underline;">Painting</a>, and <a href="carpenter-furniture-pune.html" style="color: var(--primary); font-weight: 700; text-decoration: underline;">Furniture</a> services to maintain a unified design language across your entire property.</p>
+                <h2>The Art of Gypsum Board Systems & POP Wall Design in Modern Pune Interiors</h2>
+                <p>While standard wall painting covers flat surfaces, true architectural dimension comes from expertly structured **gypsum and pop work in pune**. Whether you want a clean, minimalist **gypsum board ceiling** with embedded profile lighting or classical European-style **wall molding design** in your living room across prime Pune localities like Wakad, Baner, Kharadi, Hinjewadi, and Dhayari, Arsh Interiors specializes in turning flat walls into high-end designer statements.</p>
+                <p>Our specialized plastering and molding works coordinate directly with our <a href="/False-Ceiling-in-Pune" style="color: var(--primary); font-weight: 700; text-decoration: underline;">False Ceiling</a>, <a href="/painting-in-pune" style="color: var(--primary); font-weight: 700; text-decoration: underline;">Painting Services</a>, and <a href="/furniture-in-pune" style="color: var(--primary); font-weight: 700; text-decoration: underline;">Custom Furniture</a> services to maintain a unified design language across your entire property. Before starting electrical ducting or finishing, we also sync with our <a href="/electrical-work-in-pune" style="color: var(--primary); font-weight: 700; text-decoration: underline;">Electrical Work</a> team.</p>
             </div>
         </section>
 
@@ -180,7 +177,7 @@
                     <div class="service-box">
                         <i class="fas fa-layer-group"></i>
                         <h3>Gypsum Board False Ceiling</h3>
-                        <p>Lightweight galvanized iron framing covered with high-grade gypsum boards for seamless multi-level ceilings, cove lights, and drop designs.</p>
+                        <p>Lightweight galvanized iron framing covered with high-grade Saint-Gobain Gyproc boards for seamless multi-level ceilings, cove lights, and drop designs.</p>
                     </div>
                     <div class="service-box">
                         <i class="fas fa-shapes"></i>
@@ -190,12 +187,12 @@
                     <div class="service-box">
                         <i class="fas fa-border-all"></i>
                         <h3>Wall Molding & Wall Paneling</h3>
-                        <p>Classical wainscoting, picture frame wall moldings, and geometric panel designs that add depth and royal character to living room walls.</p>
+                        <p>Classical wainscoting, picture frame wall moldings, and geometric panel designs that add depth and royal character to living room and bedroom walls.</p>
                     </div>
                     <div class="service-box">
                         <i class="fas fa-paint-brush"></i>
                         <h3>3D POP Wall Decor</h3>
-                        <p>Custom-crafted POP wall art, TV unit backdrops, and fluted relief patterns designed specifically for modern Indian apartments and villas.</p>
+                        <p>Custom-crafted POP wall art, TV unit backdrops, and fluted relief patterns designed specifically for modern Indian apartments and luxury villas.</p>
                     </div>
                     <div class="service-box">
                         <i class="fas fa-lightbulb"></i>
@@ -205,12 +202,12 @@
                     <div class="service-box">
                         <i class="fas fa-tools"></i>
                         <h3>Crack-Free Putty Finishing</h3>
-                        <p>Reinforced fiberglass tape joints and multi-stage putty leveling to ensure zero cracks and a flawless paint-ready surface.</p>
+                        <p>Reinforced fiberglass tape joints and multi-stage putty leveling to ensure zero cracks and a flawless paint-ready surface backed by our <a href="/estimator" style="color: var(--primary); text-decoration: underline; font-weight: 600;">Cost Calculator</a>.</p>
                     </div>
                 </div>
             </div>
         </section>
-<!-- Material & Per Sq. Ft Rate Table -->
+        <!-- Material & Per Sq. Ft Rate Table -->
         <section class="container">
             <div class="content-card">
                 <h2>Gypsum Board, POP Work & Wall Molding Rates in Pune</h2>
@@ -255,16 +252,16 @@
                     </table>
                 </div>
 
-                <p>To calculate exact project estimates combining gypsum/POP work with <a href="electrical-work-pune.html" style="color: var(--primary); font-weight: 700; text-decoration: underline;">Electrical Work</a> and <a href="painting-services-pune.html" style="color: var(--primary); font-weight: 700; text-decoration: underline;">Painting</a>, visit our interactive <a href="estimator.html" style="color: var(--primary); font-weight: 700; text-decoration: underline;">Cost Calculator</a> tool.</p>
+                <p>To calculate exact project estimates combining gypsum/POP work with <a href="/electrical-work-in-pune" style="color: var(--primary); font-weight: 700; text-decoration: underline;">Electrical Work</a> and <a href="/painting-in-pune" style="color: var(--primary); font-weight: 700; text-decoration: underline;">Painting Services</a>, visit our interactive <a href="/estimator" style="color: var(--primary); font-weight: 700; text-decoration: underline;">Cost Calculator</a> tool.</p>
             </div>
         </section>
 
         <!-- Mid-Page SEO Interlink Callout -->
         <section class="container">
             <div style="background: linear-gradient(135deg, #111 0%, #222 100%); color: #fff; border-radius: 20px; padding: 40px; text-align: center; margin-bottom: 40px;">
-                <h3 style="color: #fff; font-size: 1.8rem; margin-bottom: 15px;">Looking for Complete Home Renovation in Pune?</h3>
-                <p style="color: #ccc; max-width: 700px; margin: 0 auto 25px; font-size: 1.05rem;">Ceiling and wall designs form the core visual identity of your home. Explore our <a href="services.html" style="color: var(--primary); text-decoration: underline; font-weight: 700;">Expert Services</a> page to see how we sync POP moldings with woodwork and lighting.</p>
-                <a href="estimator.html" class="btn" style="background: var(--primary);">Calculate Total Project Budget &rarr;</a>
+                <h3 style="color: #fff; font-size: 1.8rem; margin-bottom: 15px;">Looking for Complete Home Renovation & Furniture in Pune?</h3>
+                <p style="color: #ccc; max-width: 700px; margin: 0 auto 25px; font-size: 1.05rem;">Ceiling and wall designs form the core visual identity of your home. Explore our <a href="/furniture-in-pune" style="color: var(--primary); text-decoration: underline; font-weight: 700;">Custom Furniture</a> and <a href="/False-Ceiling-in-Pune" style="color: var(--primary); text-decoration: underline; font-weight: 700;">False Ceiling</a> services.</p>
+                <a href="/estimator" class="btn" style="background: var(--primary);">Calculate Total Project Budget &rarr;</a>
             </div>
         </section>
 
@@ -283,13 +280,13 @@
                 <p>Yes! A specialized <strong>pop wall design</strong> or 3D relief paneling is frequently used behind TV entertainment centers to create striking architectural depth, often paired with hidden LED profile lighting channels.</p>
 
                 <h3>4. Do your gypsum and POP services include crack-resistant joint finishing?</h3>
-                <p>Absolutely. We use specialized joint paper tapes, fiberglass mesh, and multi-layer acrylic joint compounds to completely eliminate hairline cracks at board joints before the final <a href="painting-services-pune.html" style="color: var(--primary); font-weight: 700; text-decoration: underline;">Painting</a> stage.</p>
+                <p>Absolutely. We use specialized joint paper tapes, fiberglass mesh, and multi-layer acrylic joint compounds to completely eliminate hairline cracks at board joints before the final <a href="/painting-in-pune" style="color: var(--primary); font-weight: 700; text-decoration: underline;">Painting Services</a> stage.</p>
 
                 <h3>5. How can I calculate an instant cost estimate for my ceiling or wall project?</h3>
-                <p>You can instantly compute accurate pricing based on your property type and area by heading over to our interactive <a href="estimator.html" style="color: var(--primary); font-weight: 700; text-decoration: underline;">Cost Calculator</a> page.</p>
+                <p>You can instantly compute accurate pricing based on your property type and area by heading over to our interactive <a href="/estimator" style="color: var(--primary); font-weight: 700; text-decoration: underline;">Cost Calculator</a> page.</p>
 
                 <h3>6. Where is Arsh Interiors located for direct consultations?</h3>
-                <p>Our office is located in Dhayari, Pune, from where we manage contracting projects across Wakad, Baner, Kharadi, Kothrud, and all of PCMC. You can learn more on our <a href="index.html" style="color: var(--primary); font-weight: 700; text-decoration: underline;">Home</a> page.</p>
+                <p>Our office is located in Dhayari, Pune, from where we manage contracting projects across Wakad, Baner, Kharadi, Kothrud, and all of PCMC. You can learn more on our <a href="/" style="color: var(--primary); font-weight: 700; text-decoration: underline;">Home</a> page or browse our <a href="/services" style="color: var(--primary); font-weight: 700; text-decoration: underline;">Services</a> page.</p>
             </div>
         </section>
 
@@ -299,14 +296,14 @@
                 <span style="color: var(--primary); font-weight: 700; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px;">Plan Your Budget Today</span>
                 <h2 style="border: none; margin: 15px 0 10px; font-size: 2.2rem;">Calculate Gypsum, POP & Renovation Estimates Instantly</h2>
                 <p style="color: var(--gray); max-width: 650px; margin: 0 auto 30px; font-size: 1.05rem;">Use our smart estimation calculator to get clear price brackets for gypsum board ceilings, wall moldings, electrical wiring, and custom furniture in Pune.</p>
-                <a href="estimator.html" class="btn" style="background: #25d366; font-size: 1.2rem; padding: 18px 40px;">
+                <a href="/estimator" class="btn" style="background: #25d366; font-size: 1.2rem; padding: 18px 40px;">
                     <i class="fas fa-calculator"></i> Launch Cost Calculator 🚀
                 </a>
             </div>
         </section>
     </main>
 
-    <!-- Comprehensive SEO Footer with Interlinks -->
+    <!-- Comprehensive SEO Footer with Interlinks & Massive Location Keyword Block -->
     <footer style="background: #111; color: #fff; padding: 60px 20px 20px;">
         <div class="container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 40px;">
             <div>
@@ -314,16 +311,23 @@
                 <p style="color: #aaa; font-size: 0.9rem; line-height: 1.7;">Expert gypsum board contractors and wall molding specialists based in Dhayari, Pune. Specializing in designer ceilings, POP work, and architectural wall styling.</p>
             </div>
             <div>
-                <h4 style="color: #fff; margin-bottom: 15px; font-size: 1.1rem;">Quick Navigation</h4>
+                <h4 style="color: #fff; margin-bottom: 15px; font-size: 1.1rem;">Quick Master Navigation</h4>
                 <ul style="list-style: none; padding: 0; line-height: 2.2; margin: 0;">
-                    <li><a href="index.html" style="color: #aaa; text-decoration: none;">Home Page</a></li>
-                    <li><a href="services.html" style="color: #aaa; text-decoration: none;">Expert Services</a></li>
-                    <li><a href="false-ceiling-pune.html" style="color: #aaa; text-decoration: none;">False Ceiling Contractor</a></li>
-                    <li><a href="gypsum-pop-molding-pune.html" style="color: #ff6b6b; text-decoration: none;">Gypsum & POP Work</a></li>
-                    <li><a href="electrical-work-pune.html" style="color: #aaa; text-decoration: none;">Electrical Work in Pune</a></li>
-                    <li><a href="painting-services-pune.html" style="color: #aaa; text-decoration: none;">Painting Contractors</a></li>
-                    <li><a href="carpenter-furniture-pune.html" style="color: #aaa; text-decoration: none;">Carpenter & Furniture</a></li>
-                    <li><a href="estimator.html" style="color: #aaa; text-decoration: none;">Interior Cost Calculator</a></li>
+                    <li><a href="/" style="color: #aaa; text-decoration: none;">Home Page</a></li>
+                    <li><a href="/estimator" style="color: #aaa; text-decoration: none;">Cost Calculator</a></li>
+                    <li><a href="/services" style="color: #aaa; text-decoration: none;">Services Overview</a></li>
+                    <li><a href="/about" style="color: #aaa; text-decoration: none;">About Us</a></li>
+                    <li><a href="/design" style="color: #aaa; text-decoration: none;">Design Gallery</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 style="color: #fff; margin-bottom: 15px; font-size: 1.1rem;">Specialized Service Pages</h4>
+                <ul style="list-style: none; padding: 0; line-height: 2.2; margin: 0;">
+                    <li><a href="/False-Ceiling-in-Pune" style="color: #aaa; text-decoration: none;">False Ceiling in Pune</a></li>
+                    <li><a href="/gypsum-pop-work" style="color: var(--primary); text-decoration: none; font-weight: 600;">Gypsum & POP Work</a></li>
+                    <li><a href="/electrical-work-in-pune" style="color: #aaa; text-decoration: none;">Electrical Work in Pune</a></li>
+                    <li><a href="/painting-in-pune" style="color: #aaa; text-decoration: none;">Painting Services</a></li>
+                    <li><a href="/furniture-in-pune" style="color: #aaa; text-decoration: none;">Custom Furniture & Carpentry</a></li>
                 </ul>
             </div>
             <div>
@@ -336,12 +340,12 @@
             </div>
         </div>
 
-        <!-- Hidden SEO Keyword Cloud Footer Block -->
-        <div style="background: #0a0a0a; padding: 25px 20px; border-top: 1px solid rgba(255,255,255,0.05);">
+        <!-- Hyper-Local Pune SEO Keyword Index Block (200+ Locations) -->
+        <div style="background: #0a0a0a; padding: 25px 20px; border-top: 1px solid rgba(255,255,255,0.05); margin-bottom: 20px;">
             <div class="container">
-                <h4 style="color: #555; font-size: 0.8rem; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px;">Gypsum & POP SEO Index - Arsh Interiors Pune</h4>
-                <div style="font-size: 0.75rem; color: #444; text-align: justify; line-height: 1.8;">
-                    Gypsum and POP work in Pune, Gypsum board ceiling Pune, POP ceiling design, Wall molding design Pune, POP wall design interior, False ceiling and POP contractor Wakad, Cornice and molding services Baner, Arsh Interiors Dhayari Pune.
+                <h4 style="color: #666; font-size: 0.8rem; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px;">Gypsum & POP Hyper-Local SEO Index - Arsh Interiors Pune</h4>
+                <div style="font-size: 0.75rem; color: #555; text-align: justify; line-height: 1.8; columns: 3; column-gap: 20px;">
+                    Gypsum and POP work in Dhayari Pune, Gypsum board ceiling in Wakad, POP ceiling design in Baner, Wall molding design in Hinjewadi, POP work in Kothrud, Gypsum work in Kharadi, Wall molding in Hadapsar, POP design in Viman Nagar, Gypsum false ceiling in Magarpatta City, Wall molding design in Aundh, POP ceiling in Pimple Saudagar, Gypsum board in Kalyani Nagar, Wall molding in Koregaon Park, POP work in Bavdhan, Gypsum ceiling in Pashan, Wall molding in SB Road, POP design in Model Colony, Gypsum work in Deccan Gymkhana, Wall molding in Erandwane, POP ceiling in Shivajinagar, Gypsum board in Swargate, Wall molding in Camp, POP design in Nana Peth, Gypsum work in Rasta Peth, Wall molding in Budhwar Peth, POP ceiling in Pune Station, Gypsum board in Ghorpadi, Wall molding in Wanowrie, POP work in NIBM Road, Gypsum ceiling in Undri, Wall molding in Mohammadwadi, POP design in Pisoli, Gypsum work in Kondhwa, Wall molding in Katraj, POP ceiling in Ambegaon Pathar, Gypsum board in Dhayari Phata, Wall molding in Narhe, POP work in Vadgaon Budruk, Gypsum ceiling in Sinhagad Road, Wall molding in Warje, POP design in Karvenagar, Gypsum work in Kothrud Depot, Wall molding in Paud Road, POP ceiling in Bhusari Colony, Gypsum board in Chandan Nagar, Wall molding in Kharadi Bypass, POP work in Wagholi, Gypsum ceiling in Lohegaon, Wall molding in Dhanori, POP design in Vishrantwadi, Gypsum work in Yerwada, Wall molding in Dighi, POP ceiling in Alandi Road, Gypsum board in Bhosari, Wall molding in Pimpri, POP work in Chinchwad, Gypsum ceiling in Akurdi, Wall molding in Nigdi, POP design in Ravet, Gypsum work in Wakad BRTS, Wall molding in Punawale, POP ceiling in Tathawade, Gypsum board in Hinjewadi Phase 1, Wall molding in Hinjewadi Phase 2, POP work in Hinjewadi Phase 3, Gypsum ceiling in Maan, Wall molding in Marunji, POP design in Kasarwadi, Gypsum work in Dapodi, Wall molding in Bopodi, POP ceiling in Khadki, Gypsum board in Aundh IT Park, Wall molding in Baner Pashan Link Road, POP work in Somatane, Gypsum ceiling in Talegaon, Wall molding in Chakan, POP design in Shikrapur, Gypsum work in Saswad, Wall molding in Pirangut, POP ceiling in Paud, Gypsum board in Lavasa, Wall molding in Manjari, POP work in Keshavnagar, Gypsum ceiling in Mundhwa, Wall molding in Kharadi South, POP design in Magarpatta South, Gypsum work in Hadapsar Industrial Estate, Wall molding in Sasane Nagar, POP ceiling in Pune Solapur Road, Gypsum board in Fursungi, Wall molding in Urali Kanchan, POP work in Holkarwadi, Gypsum ceiling in Handewadi, Wall molding in Autadwadi Handewadi, POP design in Katraj Bypass, Gypsum work in Bhilarewadi, Wall molding in Gujar Nimbalkarwadi, POP ceiling in Jambhulwadi, Gypsum board in Shindewadi, Wall molding in Khed Shivapur, POP work in Bhor, Gypsum ceiling in Satara Road, Wall molding in Market Yard, POP design in Gultekdi, Gypsum work in Nana Peth Pune, Wall molding in Shukrawar Peth, POP ceiling in Shanivar Peth, Gypsum board in Raviwar Peth, Wall molding in Kasba Peth, POP work in Mangalwar Peth, Gypsum ceiling in Somwar Peth, Wall molding in Ganeshpeth, POP design in Bhavani Peth, Gypsum work in Vadgaon Sheri, Wall molding in Chandan Nagar Pune, POP ceiling in Kharadi Knowledge Park, Gypsum board in Viman Nagar Extension, Wall molding in Lohegaon Airport Road, POP work in Dhanori Lohegaon Link Road, Gypsum ceiling in Vishrantwadi Alandi Road, Wall molding in Kalas, POP design in Dapodi Pune, Gypsum work in Pimpri Colony, Wall molding in Sant Tukaram Nagar, POP ceiling in Kasarwadi Phata, Gypsum board in Akurdi Station Road, Wall molding in Nigdi Pradhikaran, POP work in Ravet BRTS Road, Gypsum ceiling in Punawale Jakat Naka, Wall molding in Hinjewadi Blue Ridge, POP design in Wakad Wakadkar Wasti, Gypsum work in Baner IT Park, Wall molding in Aundh Baner Link Road, POP ceiling in Pashan Sus Road, Gypsum board in Sus, Wall molding in Mahalunge, POP work in Nande, Gypsum ceiling in Lavale, Wall molding in Pirangut MIDC, POP design in Hinjewadi Phase 1 MIDC, Gypsum work in Hinjewadi Megapolis, Wall molding in Wakad Datta Mandir Road, POP ceiling in Hinjewadi Wakad Link Road, Gypsum board in Dhayari Narhe Road.
                 </div>
             </div>
         </div>
@@ -352,21 +356,3 @@
     </footer>
 </body>
 </html>
-<!-- Hyper-Local Pune SEO Keyword Index Block (200+ Location Combinations) -->
-<section style="background: #0d0d0d; color: #777; padding: 40px 20px; border-top: 1px solid rgba(255,255,255,0.08); font-size: 0.75rem; line-height: 1.9; box-sizing: border-box;">
-    <div class="container" style="max-width: 1150px; margin: 0 auto;">
-        <h4 style="color: #ff6b6b; font-size: 0.85rem; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1.5px;">Arsh Interiors Pune | Hyper-Local Service & Keyword Index</h4>
-        
-        <p style="text-align: justify; color: #666; margin-bottom: 20px;">
-            <strong>Arsh Interiors (Dhayari, Pune)</strong> offers expert interior execution, false ceiling installation, electrical wiring, wall painting, custom carpentry, and gypsum/POP wall molding across all major localities, sub-urbs, IT parks, and residential zones in Pune and Pimpri-Chinchwad (PCMC). Below is our exhaustive regional service keyword index optimized for local search visibility:
-        </p>
-
-        <div style="columns: 3; column-gap: 30px; text-align: justify; color: #555;">
-            False ceiling contractor in Dhayari Pune, Gypsum false ceiling in Wakad, Electrician near me in Baner, Painting contractors in Hinjewadi, Carpenter in Kothrud, PVC ceiling in Kharadi, POP work in Hadapsar, Interior designer in Viman Nagar, False ceiling in Magarpatta City, Electrical wiring in Aundh, Wall molding design in Pimple Saudagar, Custom furniture in Kalyani Nagar, False ceiling installation in Koregaon Park, House painters in Bavdhan, Gypsum board work in Pashan, Interior contractor in SB Road, False ceiling in Model Colony, Electrician in Deccan Gymkhana, Painting services in Erandwane, Carpentry work in Shivajinagar, Suspended grid ceiling in Swargate, POP ceiling design in Camp, False ceiling in Nana Peth, Electrical contractor in Rasta Peth, Interior decorators in Budhwar Peth, False ceiling in Pune Station, Painter in Ghorpadi, Carpenter in Wanowrie, False ceiling in NIBM Road, PVC ceiling in Undri, Gypsum work in Mohammadwadi, Electrical work in Pisoli, False ceiling in Kondhwa, Interior execution in Katraj, Carpenter in Ambegaon Pathar, False ceiling in Dhayari Phata, Painting work in Narhe, Electrical services in Vadgaon Budruk, False ceiling in Sinhagad Road, POP molding in Warje, Interior contractor in Karvenagar, False ceiling in Kothrud Depot, Electrician in Paud Road, Painting contractor in Bhusari Colony, Carpenter in Chandan Nagar, False ceiling in Kharadi Bypass, POP design in Wagholi, Electrical work in Lohegaon, False ceiling in Dhanori, Painting in Vishrantwadi, Carpentry in Yerwada, False ceiling in Dighi, Electrician in Alandi Road, False ceiling in Bhosari, Interior work in Pimpri, Carpentry in Chinchwad, False ceiling in Akurdi, Painting in Nigdi, Electrical work in Ravet, False ceiling in Wakad BRTS, POP design in Punawale, Interior contractor in Tathawade, False ceiling in Hinjewadi Phase 1, Electrician in Hinjewadi Phase 2, Carpentry in Hinjewadi Phase 3, Painting in Maan, False ceiling in Marunji, Interior work in Kasarwadi, False ceiling in Dapodi, Electrical contractor in Bopodi, Painting in Khadki, Carpenter in Aundh IT Park, False ceiling in Baner Pashan Link Road, POP work in Somatane, Interior execution in Talegaon, False ceiling in Chakan, Electrical work in Shikrapur, Painting in Saswad, False ceiling in Pirangut, Carpentry in Paud, False ceiling in Lavasa, Interior contractor in Manjari, POP molding in Keshavnagar, False ceiling in Mundhwa, Electrical work in Kharadi South, Painting contractor in Magarpatta South, Carpentry in Hadapsar Industrial Estate, False ceiling in Sasane Nagar, POP design in Pune Solapur Road, Interior execution in Fursungi, False ceiling in Urali Kanchan, Electrical contractor in Holkarwadi, Painting in Handewadi, Carpentry in Autadwadi Handewadi, False ceiling in Katraj Bypass, POP molding in Bhilarewadi, False ceiling in Gujar Nimbalkarwadi, Electrical work in Jambhulwadi, Painting in Shindewadi, Carpentry in Khed Shivapur, False ceiling in Bhor, Interior contractor in Satara Road, False ceiling in Market Yard, Electrical work in Gultekdi, Painting in Nana Peth Pune, Carpentry in Shukrawar Peth, False ceiling in Shanivar Peth, POP design in Raviwar Peth, Interior work in Kasba Peth, False ceiling in Mangalwar Peth, Electrical contractor in Somwar Peth, Painting in Ganeshpeth, Carpentry in Bhavani Peth, False ceiling in Vadgaon Sheri, POP molding in Chandan Nagar Pune, Interior execution in Kharadi Knowledge Park, False ceiling in Viman Nagar Extension, Electrical work in Lohegaon Airport Road, Painting in Dhanori Lohegaon Link Road, Carpentry in Vishrantwadi Alandi Road, False ceiling in Kalas, POP design in Dapodi Pune, Interior contractor in Pimpri Colony, False ceiling in Sant Tukaram Nagar, Electrical work in Kasarwadi Phata, Painting in Akurdi Station Road, Carpentry in Nigdi Pradhikaran, False ceiling in Ravet BRTS Road, POP molding in Punawale Jakat Naka, Interior execution in Hinjewadi Blue Ridge, False ceiling in Wakad Wakadkar Wasti, Electrical contractor in Baner IT Park, Painting in Aundh Baner Link Road, Carpentry in Pashan Sus Road, False ceiling in Sus, POP design in Mahalunge, Interior work in Nande, False ceiling in Lavale, Electrical work in Pirangut MIDC, Painting in Hinjewadi Phase 1 MIDC, Carpentry in Hinjewadi Megapolis, False ceiling in Wakad Datta Mandir Road, POP molding in Hinjewadi Wakad Link Road, Interior contractor in Dhayari Narhe Road.
-        </div>
-
-        <div style="margin-top: 25px; text-align: center; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 15px; color: #444;">
-            <p>&copy; 2026 Arsh Interiors Pune. Direct Contracting & Execution Specialists. All Rights Reserved.</p>
-        </div>
-    </div>
-</section>
