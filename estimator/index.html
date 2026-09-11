@@ -34,7 +34,7 @@
     <!-- Preloading & Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
@@ -44,7 +44,7 @@
             --dark: #111111;
             --light: #faf9f8;
             --gray: #666666;
-            --border: #e0e0e0;
+            --border: #f0d5d5;
             --card-bg: #ffffff;
             --transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
         }
@@ -86,7 +86,7 @@
             background: #f0f0f0; color: var(--dark); width: 42px; height: 42px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; cursor: pointer; border: none; transition: var(--transition);
         }
 
-        /* Mobile Drawer Menu */
+        /* Mobile Slide-out Drawer */
         .mobile-drawer {
             position: fixed; top: 0; right: -100%; width: 280px; height: 100vh; background: #fff; z-index: 10000; box-shadow: -5px 0 30px rgba(0,0,0,0.15); transition: var(--transition); padding: 30px 20px; display: flex; flex-direction: column; box-sizing: border-box;
         }
@@ -96,11 +96,31 @@
         .drawer-links a { font-size: 1.1rem; font-weight: 700; color: var(--dark); text-decoration: none; transition: var(--transition); }
         .drawer-links a:hover, .drawer-links a.active { color: var(--primary); }
 
-        /* Estimator Card Container */
+        /* Highlighted Estimator Card Container with Light Pink Touch */
         .estimator-card {
-            background: var(--card-bg); border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); padding: 30px 20px; border: 1px solid #eaeaea; margin: 20px 0 40px; transition: var(--transition);
+            background: linear-gradient(135deg, #ffffff 0%, #fff8f8 100%); 
+            border-radius: 20px; 
+            box-shadow: 0 12px 35px rgba(255,107,107,0.08); 
+            padding: 35px 20px; 
+            border: 2px solid #ffdcdc; 
+            margin: 20px 0 40px; 
+            transition: var(--transition);
         }
-        h2 { font-size: 1.5rem; color: var(--dark); margin-top: 0; margin-bottom: 20px; text-align: center; border-bottom: 2px solid #f0f0f0; padding-bottom: 12px; }
+        
+        /* Styled Heading as requested */
+        .calc-heading {
+            font-size: clamp(1.8rem, 3.5vw, 2.2rem); 
+            color: var(--dark); 
+            margin-top: 0; 
+            margin-bottom: 25px; 
+            text-align: center; 
+            border-bottom: 2px solid #ffdcdc; 
+            padding-bottom: 15px; 
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-weight: 700;
+        }
+        .calc-heading span { color: var(--primary); }
         
         .form-group { margin-bottom: 20px; }
         label { display: block; font-weight: 700; margin-bottom: 8px; font-size: 0.9rem; color: #222; }
@@ -113,8 +133,9 @@
         .checkbox-card {
             border: 2px solid var(--border); border-radius: 12px; padding: 15px 10px; text-align: center; cursor: pointer; transition: var(--transition); background: #fff;
         }
+        .checkbox-card:hover { border-color: var(--primary); transform: translateY(-3px); }
         .checkbox-card.selected {
-            border-color: var(--primary); background: rgba(255,107,107,0.04); color: var(--primary); box-shadow: 0 5px 15px rgba(255,107,107,0.1);
+            border-color: var(--primary); background: rgba(255,107,107,0.06); color: var(--primary); box-shadow: 0 5px 15px rgba(255,107,107,0.1);
         }
         .checkbox-card i { font-size: 1.6rem; margin-bottom: 6px; display: block; color: var(--gray); }
         .checkbox-card.selected i { color: var(--primary); }
@@ -149,7 +170,7 @@
                 <span>Arsh Interiors</span>
             </a>
             
-            <!-- Desktop Nav -->
+            <!-- Desktop Nav (Clean URLs without .html) -->
             <nav class="desktop-nav">
                 <a href="/">Home</a>
                 <a href="/about">About Us</a>
@@ -170,7 +191,7 @@
         </div>
     </header>
 
-    <!-- Mobile Slide-out Drawer -->
+    <!-- Mobile Slide-out Drawer (Clean URLs) -->
     <div class="mobile-drawer" id="mobileDrawer">
         <button class="drawer-close" onclick="toggleDrawer()"><i class="fas fa-times"></i></button>
         <ul class="drawer-links">
@@ -191,14 +212,14 @@
     </a>
 
     <main>
-        <!-- Estimator Card Section (Starts right at the top without ugly text) -->
+        <!-- Estimator Card Section (Starts right at the top with highlighted soft pink theme) -->
         <section class="container animate-fade">
             <div class="estimator-card">
                 <form id="proEstimatorForm">
                     
                     <!-- STEP 1 -->
                     <div id="step-1">
-                        <h2>Interior Cost Calculator</h2>
+                        <h2 class="calc-heading">Interior <span>Cost Calculator</span></h2>
                         <div class="form-group">
                             <label for="propType">Select Property Type *</label>
                             <select id="propType" required>
@@ -232,7 +253,7 @@
 
                     <!-- STEP 2 -->
                     <div id="step-2" class="hidden">
-                        <h2>Choose Services & Quality Grade</h2>
+                        <h2 class="calc-heading">Choose Services & <span>Quality Grade</span></h2>
                         <div class="form-group">
                             <label>Select Services Required * (Multiple Choice)</label>
                             <div class="grid-options" style="margin-top: 10px;">
@@ -281,7 +302,7 @@
 
                     <!-- STEP 3 -->
                     <div id="step-3" class="hidden">
-                        <h2>Project Location & Contact</h2>
+                        <h2 class="calc-heading">Project Location & <span>Contact</span></h2>
                         <div class="form-group">
                             <label for="clientName">Full Name *</label>
                             <input type="text" id="clientName" required placeholder="Enter your full name">
@@ -305,7 +326,7 @@
 
                 <!-- RESULT CONTAINER -->
                 <div id="resultContainer" class="hidden" style="margin-top: 25px; text-align: center;">
-                    <h2>Estimated Cost Breakdown</h2>
+                    <h2 class="calc-heading">Estimated Cost <span>Breakdown</span></h2>
                     <p id="resultSubtitle" style="color: var(--gray); margin-bottom: 25px; font-size: 1rem;"></p>
                     
                     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 15px; text-align: left;" id="tierBoxes"></div>
@@ -318,10 +339,10 @@
             </div>
         </section>
 
-        <!-- SEO Content Cards & Internal Links Hub -->
+        <!-- SEO Content Cards & Internal Links Hub (Clean URLs) -->
         <section class="container" style="margin-bottom: 50px;">
             <div class="estimator-card" style="padding: 35px 25px;">
-                <h2 style="font-size: 1.6rem;">Complete Interior Execution & Budgeting Guide in Pune</h2>
+                <h2 style="font-size: 1.5rem; border: none; padding-bottom: 0;">Complete Interior Execution & Budgeting Guide in Pune</h2>
                 
                 <p style="font-size: 1rem; color: #444; line-height: 1.8; margin-bottom: 20px;">
                     Planning a home renovation or setting up a newly purchased property across Pune requires absolute financial transparency. Using our advanced <strong>interior cost estimator Pune</strong> tool, property owners across Wakad, Baner, Hinjewadi, Kothrud, and Dhayari can instantly calculate accurate market rates. Whether you need a precise <a href="/False-Ceiling-in-Pune" style="color: var(--primary); font-weight: 700; text-decoration: underline;">false ceiling cost calculator Pune</a> or want to explore our complete <a href="/services" style="color: var(--primary); font-weight: 700; text-decoration: underline;">Services Overview</a>, our platform reflects true material and labor benchmarks.
@@ -334,25 +355,25 @@
                 <h3 style="font-size: 1.3rem; color: #111; margin-top: 30px; margin-bottom: 12px;">Explore Specialized Service Quotations</h3>
                 
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 15px; margin: 20px 0;">
-                    <div style="background: #faf9f8; padding: 20px; border-radius: 14px; border: 1px solid #e5e5e5;">
+                    <div style="background: #fff; padding: 20px; border-radius: 14px; border: 1px solid #ffdcdc;">
                         <h4 style="color: #111; margin-bottom: 8px; font-size: 1rem;"><i class="fas fa-layer-group" style="color: var(--primary);"></i> False Ceiling Works</h4>
                         <p style="font-size: 0.85rem; color: #666; margin-bottom: 12px;">Calculates GI metal framing, Gyproc boards, and <a href="/gypsum-pop-work" style="color: var(--primary); text-decoration: underline; font-weight: 600;">gypsum ceiling rate per sq ft</a>.</p>
                         <a href="/False-Ceiling-in-Pune" style="color: var(--primary); font-weight: 700; text-decoration: none; font-size: 0.85rem;">View Page &rarr;</a>
                     </div>
                     
-                    <div style="background: #faf9f8; padding: 20px; border-radius: 14px; border: 1px solid #e5e5e5;">
+                    <div style="background: #fff; padding: 20px; border-radius: 14px; border: 1px solid #ffdcdc;">
                         <h4 style="color: #111; margin-bottom: 8px; font-size: 1rem;"><i class="fas fa-bolt" style="color: var(--primary);"></i> Electrical & Lighting</h4>
                         <p style="font-size: 0.85rem; color: #666; margin-bottom: 12px;">Estimates concealed PVC pipe laying, <a href="/electrical-work-in-pune" style="color: var(--primary); text-decoration: underline; font-weight: 600;">electrical wiring cost</a>, and MCB boards.</p>
                         <a href="/electrical-work-in-pune" style="color: var(--primary); font-weight: 700; text-decoration: none; font-size: 0.85rem;">View Page &rarr;</a>
                     </div>
 
-                    <div style="background: #faf9f8; padding: 20px; border-radius: 14px; border: 1px solid #e5e5e5;">
+                    <div style="background: #fff; padding: 20px; border-radius: 14px; border: 1px solid #ffdcdc;">
                         <h4 style="color: #111; margin-bottom: 8px; font-size: 1rem;"><i class="fas fa-paint-roller" style="color: var(--primary);"></i> Wall Painting</h4>
                         <p style="font-size: 0.85rem; color: #666; margin-bottom: 12px;">Computes Birla White putty, primer, and <a href="/painting-in-pune" style="color: var(--primary); text-decoration: underline; font-weight: 600;">house painting estimate Pune</a>.</p>
                         <a href="/painting-in-pune" style="color: var(--primary); font-weight: 700; text-decoration: none; font-size: 0.85rem;">View Page &rarr;</a>
                     </div>
 
-                    <div style="background: #faf9f8; padding: 20px; border-radius: 14px; border: 1px solid #e5e5e5;">
+                    <div style="background: #fff; padding: 20px; border-radius: 14px; border: 1px solid #ffdcdc;">
                         <h4 style="color: #111; margin-bottom: 8px; font-size: 1rem;"><i class="fas fa-couch" style="color: var(--primary);"></i> Custom Furniture</h4>
                         <p style="font-size: 0.85rem; color: #666; margin-bottom: 12px;">Factors in modular kitchens, wardrobes, and <a href="/furniture-in-pune" style="color: var(--primary); text-decoration: underline; font-weight: 600;">custom furniture pricing Pune</a>.</p>
                         <a href="/furniture-in-pune" style="color: var(--primary); font-weight: 700; text-decoration: none; font-size: 0.85rem;">View Page &rarr;</a>
@@ -362,7 +383,7 @@
         </section>
     </main>
 
-    <!-- Main Footer with Master Interlinks & Massive Keyword Index -->
+    <!-- Main Footer with Clean URLs & Keyword Index -->
     <footer style="background: #111; color: #fff; padding: 50px 15px 0; box-sizing: border-box;">
         <div class="container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 30px; margin-bottom: 30px; box-sizing: border-box;">
             <div>
@@ -400,7 +421,7 @@
             <div class="container" style="max-width: 1100px; margin: 0 auto;">
                 <h4 style="color: #777; font-size: 0.8rem; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 1px;">False ceiling cost calculator Pune & Estimator Index - Arsh Interiors</h4>
                 <div style="font-size: 0.7rem; color: #555; text-align: justify; line-height: 1.8; columns: 2; column-gap: 20px;">
-                    False ceiling cost calculator Pune, Interior cost estimator Pune, Gypsum ceiling rate per sq ft, Arsh Interiors estimator, Interior quotation Pune, Electrical wiring cost, House painting estimate Pune, Interior estimation tool Pune, Home renovation budget calculator, False ceiling cost estimator in Wakad, Interior cost calculator in Baner, False ceiling price in Hinjewadi, Gypsum ceiling quote in Kothrud, Interior budgeting in Kharadi, Renovation calculator in Hadapsar, Cost estimator in Viman Nagar, Budget tool in Magarpatta City, Interior quotation in Aundh, Cost calculator in Pimple Saudagar, Estimator in Kalyani Nagar, Renovation cost in Koregaon Park, Budget in Bavdhan, False ceiling estimate in Pashan, Interior budgeting in SB Road, Cost estimator in Model Colony, Interior estimator in Deccan Gymkhana, Renovation budget in Erandwane, Cost calculator in Shivajinagar, Interior budgeting in Swargate, Renovation estimator in Camp, Budget calculator in Nana Peth, Interior cost in Rasta Peth, Estimator tool in Budhwar Peth, Cost calculator in Pune Station, Budget estimator in Ghorpadi, Interior cost in Wanowrie, Renovation budget in NIBM Road, Cost estimator in Undri, Interior estimator in Mohammadwadi, Budget calculator in Pisoli, Cost calculator in Kondhwa, Interior budgeting in Katraj, Renovation estimator in Ambegaon Pathar, Cost calculator in Dhayari Phata, Interior estimator in Narhe, Budget calculator in Vadgaon Budruk, Cost calculator in Sinhagad Road, Interior budgeting in Warje, Renovation estimator in Karvenagar, Cost calculator in Kothrud Depot, Interior estimator in Paud Road, Budget calculator in Bhusari Colony, Cost calculator in Chandan Nagar, Interior budgeting in Kharadi Bypass, Renovation estimator in Wagholi, Cost calculator in Lohegaon, Interior estimator in Dhanori, Budget calculator in Vishrantwadi, Cost calculator in Yerwada, Interior budgeting in Dighi, Renovation estimator in Alandi Road, Cost calculator in Bhosari, Interior estimator in Pimpri, Budget calculator in Chinchwad, Cost calculator in Akurdi, Interior budgeting in Nigdi, Renovation estimator in Ravet, Cost calculator in Wakad BRTS, Interior estimator in Punawale, Budget calculator in Tathawade, Cost calculator in Hinjewadi Phase 1, Interior budgeting in Hinjewadi Phase 2, Renovation estimator in Hinjewadi Phase 3, Cost calculator in Maan, Interior estimator in Marunji, Budget calculator in Kasarwadi, Cost calculator in Dapodi, Interior budgeting in Bopodi, Renovation estimator in Khadki, Cost calculator in Aundh IT Park, Interior estimator in Baner Pashan Link Road, Budget calculator in Somatane, Cost calculator in Talegaon, Interior budgeting in Chakan, Renovation estimator in Shikrapur, Cost calculator in Saswad, Interior estimator in Pirangut, Budget calculator in Paud, Cost calculator in Lavasa, Interior budgeting in Manjari, Renovation estimator in Keshavnagar, Cost calculator in Mundhwa, Interior estimator in Kharadi South, Budget calculator in Magarpatta South, Cost calculator in Hadapsar Industrial Estate, Interior budgeting in Sasane Nagar, Renovation estimator in Pune Solapur Road, Cost calculator in Fursungi, Interior estimator in Urali Kanchan, Budget calculator in Holkarwadi, Cost calculator in Handewadi, Interior budgeting in Autadwadi Handewadi, Renovation estimator in Katraj Bypass, Cost calculator in Bhilarewadi, Interior estimator in Gujar Nimbalkarwadi, Budget calculator in Jambhulwadi, Cost calculator in Shindewadi, Interior budgeting in Khed Shivapur, Renovation estimator in Bhor, Cost calculator in Satara Road, Interior estimator in Market Yard, Budget calculator in Gultekdi, Cost calculator in Nana Peth Pune, Interior budgeting in Shukrawar Peth, Renovation estimator in Shanivar Peth, Cost calculator in Raviwar Peth, Interior estimator in Kasba Peth, Budget calculator in Mangalwar Peth, Cost calculator in Somwar Peth, Interior budgeting in Ganeshpeth, Renovation estimator in Bhavani Peth, Cost calculator in Vadgaon Sheri, Interior estimator in Chandan Nagar Pune, Budget calculator in Kharadi Knowledge Park, Cost calculator in Viman Nagar Extension, Interior budgeting in Lohegaon Airport Road, Renovation estimator in Dhanori Lohegaon Link Road, Cost calculator in Vishrantwadi Alandi Road, Interior estimator in Kalas, Budget calculator in Dapodi Pune, Cost calculator in Pimpri Colony, Interior budgeting in Sant Tukaram Nagar, Renovation estimator in Kasarwadi Phata, Cost calculator in Akurdi Station Road, Interior estimator in Nigdi Pradhikaran, Budget calculator in Ravet BRTS Road, Cost calculator in Punawale Jakat Naka, Interior estimator in Hinjewadi Blue Ridge, Budget calculator in Wakad Wakadkar Wasti, Cost calculator in Baner IT Park, Interior budgeting in Aundh Baner Link Road, Renovation estimator in Pashan Sus Road, Cost calculator in Sus, Interior estimator in Mahalunge, Budget calculator in Nande, Cost calculator in Lavasa, Interior budgeting in Pirangut MIDC, Renovation estimator in Hinjewadi Phase 1 MIDC, Cost calculator in Hinjewadi Megapolis, Interior estimator in Wakad Datta Mandir Road, Budget calculator in Hinjewadi Wakad Link Road, Cost calculator in Dhayari Narhe Road.
+                    False ceiling cost calculator Pune, Interior cost estimator Pune, Gypsum ceiling rate per sq ft, Arsh Interiors estimator, Interior quotation Pune, Electrical wiring cost, House painting estimate Pune, Interior estimation tool Pune, Home renovation budget calculator, False ceiling cost estimator in Wakad, Interior cost calculator in Baner, False ceiling price in Hinjewadi, Gypsum ceiling quote in Kothrud, Interior budgeting in Kharadi, Renovation calculator in Hadapsar, Cost estimator in Viman Nagar, Budget tool in Magarpatta City, Interior quotation in Aundh, Cost calculator in Pimple Saudagar, Estimator in Kalyani Nagar, Renovation cost in Koregaon Park, Budget in Bavdhan, False ceiling estimate in Pashan, Interior budgeting in SB Road, Cost estimator in Model Colony, Interior estimator in Deccan Gymkhana, Renovation budget in Erandwane, Cost calculator in Shivajinagar, Interior budgeting in Swargate, Renovation estimator in Camp, Budget calculator in Nana Peth, Interior cost in Rasta Peth, Estimator tool in Budhwar Peth, Cost calculator in Pune Station, Budget estimator in Ghorpadi, Interior cost in Wanowrie, Renovation budget in NIBM Road, Cost estimator in Undri, Interior estimator in Mohammadwadi, Budget calculator in Pisoli, Cost calculator in Kondhwa, Interior budgeting in Katraj, Renovation estimator in Ambegaon Pathar, Cost calculator in Dhayari Phata, Interior estimator in Narhe, Budget calculator in Vadgaon Budruk, Cost estimator in Sinhagad Road, Interior budgeting in Warje, Renovation estimator in Karvenagar, Cost calculator in Kothrud Depot, Interior estimator in Paud Road, Budget calculator in Bhusari Colony, Cost calculator in Chandan Nagar, Interior budgeting in Kharadi Bypass, Renovation estimator in Wagholi, Cost calculator in Lohegaon, Interior estimator in Dhanori, Budget calculator in Vishrantwadi, Cost calculator in Yerwada, Interior budgeting in Dighi, Renovation estimator in Alandi Road, Cost calculator in Bhosari, Interior estimator in Pimpri, Budget calculator in Chinchwad, Cost calculator in Akurdi, Interior budgeting in Nigdi, Renovation estimator in Ravet, Cost calculator in Wakad BRTS, Interior estimator in Punawale, Budget calculator in Tathawade, Cost calculator in Hinjewadi Phase 1, Interior budgeting in Hinjewadi Phase 2, Renovation estimator in Hinjewadi Phase 3, Cost calculator in Maan, Interior estimator in Marunji, Budget calculator in Kasarwadi, Cost calculator in Dapodi, Interior budgeting in Bopodi, Renovation estimator in Khadki, Cost calculator in Aundh IT Park, Interior estimator in Baner Pashan Link Road, Budget calculator in Somatane, Cost calculator in Talegaon, Interior budgeting in Chakan, Renovation estimator in Shikrapur, Cost calculator in Saswad, Interior estimator in Pirangut, Budget calculator in Paud, Cost calculator in Lavasa, Interior budgeting in Manjari, Renovation estimator in Keshavnagar, Cost calculator in Mundhwa, Interior estimator in Kharadi South, Budget calculator in Magarpatta South, Cost calculator in Hadapsar Industrial Estate, Interior budgeting in Sasane Nagar, Renovation estimator in Pune Solapur Road, Cost calculator in Fursungi, Interior estimator in Urali Kanchan, Budget calculator in Holkarwadi, Cost calculator in Handewadi, Interior budgeting in Autadwadi Handewadi, Renovation estimator in Katraj Bypass, Cost calculator in Bhilarewadi, Interior estimator in Gujar Nimbalkarwadi, Budget calculator in Jambhulwadi, Cost calculator in Shindewadi, Interior budgeting in Khed Shivapur, Renovation estimator in Bhor, Cost calculator in Satara Road, Interior estimator in Market Yard, Budget calculator in Gultekdi, Cost calculator in Nana Peth Pune, Interior budgeting in Shukrawar Peth, Renovation estimator in Shanivar Peth, Cost calculator in Raviwar Peth, Interior estimator in Kasba Peth, Budget calculator in Mangalwar Peth, Cost calculator in Somwar Peth, Interior budgeting in Ganeshpeth, Renovation estimator in Bhavani Peth, Cost calculator in Vadgaon Sheri, Interior estimator in Chandan Nagar Pune, Budget calculator in Kharadi Knowledge Park, Cost calculator in Viman Nagar Extension, Interior budgeting in Lohegaon Airport Road, Renovation estimator in Dhanori Lohegaon Link Road, Cost calculator in Vishrantwadi Alandi Road, Interior estimator in Kalas, Budget calculator in Dapodi Pune, Cost calculator in Pimpri Colony, Interior budgeting in Sant Tukaram Nagar, Renovation estimator in Kasarwadi Phata, Cost calculator in Akurdi Station Road, Interior estimator in Nigdi Pradhikaran, Budget calculator in Ravet BRTS Road, Cost calculator in Punawale Jakat Naka, Interior estimator in Hinjewadi Blue Ridge, Budget calculator in Wakad Wakadkar Wasti, Cost calculator in Baner IT Park, Interior budgeting in Aundh Baner Link Road, Renovation estimator in Pashan Sus Road, Cost calculator in Sus, Interior estimator in Mahalunge, Budget calculator in Nande, Cost calculator in Lavasa, Interior budgeting in Pirangut MIDC, Renovation estimator in Hinjewadi Phase 1 MIDC, Cost calculator in Hinjewadi Megapolis, Interior estimator in Wakad Datta Mandir Road, Budget calculator in Hinjewadi Wakad Link Road, Cost calculator in Dhayari Narhe Road.
                 </div>
             </div>
         </div>
