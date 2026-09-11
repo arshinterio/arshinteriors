@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>False Ceiling & Interior Cost Calculator Pune | Arsh Interiors Estimator</title>
-    <meta name="description" content="Calculate instant interior execution costs with Arsh Interiors (Arsh Interior) in Pune. Get precise estimates for Gypsum false ceilings, electrical work, painting, and custom furniture across Pune.">
+    <meta name="description" content="Calculate instant interior execution costs with Arsh Interiors in Pune. Get precise estimates for Gypsum false ceilings, electrical work, painting, and custom furniture across Pune using our smart cost calculator.">
     <meta name="keywords" content="False ceiling cost calculator Pune, Interior cost estimator Pune, Gypsum ceiling rate per sq ft, Arsh Interiors estimator, Interior quotation Pune, Electrical wiring cost, House painting estimate Pune">
     
     <!-- Open Graph Tags -->
-    <meta property="og:title" content="Interior Cost Calculator | Arsh Interiors Pune">
+    <meta property="og:title" content="Interior Cost Calculator & Estimator | Arsh Interiors Pune">
     <meta property="og:description" content="Get instant and transparent execution estimates for false ceilings, electrical, painting, and furniture from Arsh Interiors Pune.">
     <meta property="og:type" content="website">
 
@@ -27,13 +27,7 @@
         "addressRegion": "Maharashtra",
         "postalCode": "411041",
         "addressCountry": "IN"
-      },
-      "sameAs": [
-        "https://maps.app.goo.gl/wy16RFpNYSbMEBpC6",
-        "https://www.instagram.com/arsh_nterior?igsi=NGJyZTh2MDcyMG1u",
-        "https://www.facebook.com/share/1CxC6A6Mtj/",
-        "https://wa.me/919022104232"
-      ]
+      }
     }
     </script>
 
@@ -41,170 +35,141 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;1,600;1,700&display=swap" rel="stylesheet">
-    
-    <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
         :root {
             --primary: #ff6b6b;
+            --primary-dark: #e85555;
             --dark: #111111;
             --light: #faf9f8;
             --gray: #666666;
-            --border: #dddddd;
+            --border: #e0e0e0;
+            --card-bg: #ffffff;
+            --transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
         }
+        *, *::before, *::after { box-sizing: border-box; }
         body {
             font-family: 'Plus Jakarta Sans', sans-serif;
             background-color: var(--light);
             color: var(--dark);
             margin: 0;
-            padding-top: 100px;
+            padding-top: 95px;
             overflow-x: hidden;
-            box-sizing: border-box;
+            line-height: 1.8;
         }
         .container {
-            max-width: 1000px;
+            max-width: 1100px;
             margin: 0 auto;
             padding: 0 20px;
-            box-sizing: border-box;
         }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade { animation: fadeInUp 0.6s ease forwards; }
+
+        /* Fixed Header */
+        .site-header {
+            position: fixed; top: 0; left: 0; width: 100%; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); z-index: 9999; box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+        }
+        .header-inner {
+            display: flex; align-items: center; justify-content: space-between; padding: 15px 25px; max-width: 1200px; margin: 0 auto;
+        }
+        .logo { color: var(--dark); text-decoration: none; font-weight: 800; font-size: 1.3rem; display: flex; align-items: center; gap: 8px; }
+        .desktop-nav { display: flex; gap: 25px; align-items: center; }
+        .desktop-nav a { color: #555; text-decoration: none; font-weight: 600; font-size: 0.95rem; transition: var(--transition); }
+        .desktop-nav a:hover, .desktop-nav a.active { color: var(--primary); }
+
+        /* Hero Section */
+        .hero-section {
+            padding: 30px 20px 20px; text-align: center; background: linear-gradient(135deg, #fff5f5 0%, #faf9f8 100%); border-bottom: 1px solid #eaeaea; margin-bottom: 30px;
+        }
+        .hero-section h1 {
+            font-size: clamp(2.2rem, 4.2vw, 3.2rem); color: var(--dark); margin: 10px 0 10px; line-height: 1.2;
+        }
+        .hero-section h1 span { color: var(--primary); font-family: 'Playfair Display', serif; font-style: italic; }
+
+        /* Estimator Card Container */
         .estimator-card {
-            background: #ffffff;
-            border-radius: 20px;
-            box-shadow: 0 15px 40px rgba(0,0,0,0.08);
-            padding: 40px;
-            border: 1px solid #eeeeee;
-            margin-bottom: 50px;
-            box-sizing: border-box;
+            background: var(--card-bg); border-radius: 24px; box-shadow: 0 20px 50px rgba(0,0,0,0.06); padding: 45px; border: 1px solid #eaeaea; margin-bottom: 50px; transition: var(--transition);
         }
-        h2 {
-            font-size: 1.8rem;
-            margin-bottom: 25px;
-            color: var(--dark);
-            border-bottom: 2px solid #f0f0f0;
-            padding-bottom: 12px;
-        }
-        .form-group {
-            margin-bottom: 22px;
-        }
-        label {
-            display: block;
-            font-weight: 700;
-            margin-bottom: 8px;
-            font-size: 0.95rem;
-            color: #333;
-        }
+        h2 { font-size: 1.8rem; color: var(--dark); margin-top: 0; margin-bottom: 25px; border-bottom: 2px solid #f0f0f0; padding-bottom: 12px; }
+        
+        .form-group { margin-bottom: 25px; }
+        label { display: block; font-weight: 700; margin-bottom: 8px; font-size: 0.95rem; color: #222; }
         select, input[type="text"], input[type="tel"], input[type="number"], textarea {
-            width: 100%;
-            padding: 14px;
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            font-size: 1rem;
-            font-family: inherit;
-            box-sizing: border-box;
-            background: #fff;
+            width: 100%; padding: 15px 18px; border: 1.5px solid var(--border); border-radius: 12px; font-size: 1rem; font-family: inherit; background: #fff; transition: var(--transition); box-sizing: border-box;
         }
-        .grid-options {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 15px;
-        }
+        select:focus, input:focus, textarea:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 4px rgba(255,107,107,0.1); }
+        
+        .grid-options { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
         .checkbox-card {
-            border: 2px solid var(--border);
-            border-radius: 12px;
-            padding: 18px;
-            text-align: center;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            background: #fff;
-            box-sizing: border-box;
+            border: 2px solid var(--border); border-radius: 16px; padding: 22px; text-align: center; cursor: pointer; transition: var(--transition); background: #fff;
         }
+        .checkbox-card:hover { border-color: var(--primary); transform: translateY(-3px); }
         .checkbox-card.selected {
-            border-color: var(--primary);
-            background: rgba(255,107,107,0.04);
-            color: var(--primary);
+            border-color: var(--primary); background: rgba(255,107,107,0.04); color: var(--primary); box-shadow: 0 10px 25px rgba(255,107,107,0.1);
         }
-        .checkbox-card i {
-            font-size: 1.8rem;
-            margin-bottom: 8px;
-            display: block;
-            color: var(--gray);
-        }
-        .checkbox-card.selected i {
-            color: var(--primary);
-        }
+        .checkbox-card i { font-size: 2rem; margin-bottom: 10px; display: block; color: var(--gray); transition: var(--transition); }
+        .checkbox-card.selected i { color: var(--primary); }
+
         .btn {
-            background: var(--primary);
-            color: #fff;
-            padding: 16px 30px;
-            border: none;
-            border-radius: 8px;
-            font-size: 1.1rem;
-            font-weight: 700;
-            cursor: pointer;
-            width: 100%;
-            margin-top: 20px;
-            transition: opacity 0.3s;
-            box-sizing: border-box;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
+            background: var(--primary); color: #fff; padding: 16px 32px; border: none; border-radius: 12px; font-size: 1.1rem; font-weight: 700; cursor: pointer; width: 100%; margin-top: 25px; transition: var(--transition); text-align: center; text-decoration: none; display: inline-block; box-shadow: 0 8px 20px rgba(255,107,107,0.25);
         }
-        .btn:hover { opacity: 0.9; }
+        .btn:hover { background: var(--primary-dark); transform: translateY(-2px); box-shadow: 0 12px 25px rgba(255,107,107,0.35); }
         .hidden { display: none !important; }
+
         @media (max-width: 768px) {
-            .estimator-card { padding: 20px; }
-            .container { padding: 0 10px; }
-            .grid-options { grid-template-columns: 1fr 1fr; }
+            .estimator-card { padding: 25px; }
+            .desktop-nav { display: none; }
         }
     </style>
 </head>
 <body>
 
     <!-- Fixed Header -->
-    <header class="site-header" id="mainHeader" style="position: fixed; top: 0; left: 0; width: 100%; background: #ffffff; z-index: 9999; box-shadow: 0 2px 10px rgba(0,0,0,0.05); box-sizing: border-box;">
-        <div class="container header-inner" style="display: flex; align-items: center; justify-content: space-between; padding: 15px 20px; max-width: 1200px; margin: 0 auto; box-sizing: border-box;">
-            <a href="index.html" class="logo nav-link" style="color: #111; text-decoration: none; font-weight: 800; font-size: 1.2rem; display: flex; align-items: center; gap: 8px;">
-                <i class="fas fa-layer-group logo-icon" style="color: #111;"></i> 
-                <span class="logo-text">Arsh Interiors</span>
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="/" class="logo">
+                <i class="fas fa-layer-group"></i> 
+                <span>Arsh Interiors</span>
             </a>
-            
-            <nav class="desktop-nav" style="display: flex; gap: 25px;">
-               <a href="/" class="nav-link active" data-transition="slide" style="color: #555; text-decoration: none; font-weight: 600;">Home</a>
-                <a href="/about/" class="nav-link" data-transition="slide" style="color: #555; text-decoration: none; font-weight: 600;">About Us</a>
-                <a href="/services/" class="nav-link" data-transition="slide" style="color: #555; text-decoration: none; font-weight: 600;">Expert Services</a>
-                <a href="/estimator/" class="nav-link" data-transition="slide" style="color: #ff6b6b; text-decoration: none; font-weight: 600;">Cost Calculator</a>
-                <a href="/design/" class="nav-link" data-transition="slide" style="color: #555; text-decoration: none; font-weight: 600;">Portfolio</a>
+            <nav class="desktop-nav">
+                <a href="/">Home</a>
+                <a href="/about">About Us</a>
+                <a href="/services">Expert Services</a>
+                <a href="/estimator" class="active">Cost Calculator</a>
+                <a href="/design">Portfolio</a>
             </nav>
-            
-            <a href="tel:+919022104232" class="btn btn-primary header-cta" style="background-color: #ff6b6b; color: #fff; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: 700; display: flex; align-items: center; gap: 8px; width: auto; margin: 0;">
+            <a href="tel:+919022104232" class="btn" style="padding: 10px 20px; font-size: 0.95rem; width: auto; margin: 0; box-shadow: none;">
                 <i class="fas fa-phone-alt"></i> +91 9022104232
             </a>
         </div>
     </header>
 
-    <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/919022104232?text=Hello%20Arsh%20Interiors,%20I%20used%20your%20cost%20calculator." target="_blank" class="floating-wa" style="position: fixed; bottom: 30px; right: 30px; background: #25d366; color: #fff; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2rem; box-shadow: 0 10px 30px rgba(37,211,102,0.4); z-index: 9999; text-decoration: none;">
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/919022104232?text=Hello%20Arsh%20Interiors,%20I%20used%20your%20cost%20calculator." target="_blank" style="position: fixed; bottom: 30px; right: 30px; background: #25d366; color: #fff; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2rem; box-shadow: 0 10px 30px rgba(37,211,102,0.4); z-index: 9999; text-decoration: none; transition: var(--transition);">
         <i class="fab fa-whatsapp"></i>
     </a>
 
     <main>
         <!-- Hero Section -->
-        <section style="padding: 30px 15px 40px; text-align: center; box-sizing: border-box;">
+        <section class="hero-section animate-fade">
             <div class="container">
-                <span style="color: #ff6b6b; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; font-size: 0.85rem;">Transparent Execution Budgeting</span>
-                <h1 style="font-size: clamp(2.2rem, 4vw, 3.5rem); margin: 12px 0; color: #111;">False Ceiling & Interior <span style="color: #ff6b6b; font-style: italic; font-family: 'Playfair Display', serif;">Cost Calculator</span></h1>
-                <p style="color: var(--gray); font-size: 1.05rem; max-width: 750px; margin: 0 auto; line-height: 1.6;">Use the smart estimation tool by <strong>Arsh Interiors</strong> (Arsh Interior) to calculate transparent, market-leading execution rates for false ceilings, electrical wiring, wall painting, and custom furniture across Pune.</p>
+                <span style="color: var(--primary); font-weight: 700; text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem;">Transparent Execution Budgeting</span>
+                <h1>False Ceiling & Interior <span>Cost Calculator</span></h1>
             </div>
         </section>
 
         <!-- Estimator Card Section -->
         <section class="container">
-            <div class="estimator-card">
+            <div class="estimator-card animate-fade">
                 <form id="proEstimatorForm">
                     
-                    <!-- STEP 1: PROPERTY, CARPET & TIMELINE -->
+                    <!-- STEP 1 -->
                     <div id="step-1">
+                        <h2>Step 1: Property Specifications</h2>
                         <div class="form-group">
                             <label for="propType">Select Property Type *</label>
                             <select id="propType" required>
@@ -220,7 +185,7 @@
 
                         <div class="form-group">
                             <label for="carpetArea">Enter Carpet Area (Sq. Ft) *</label>
-                            <input type="number" id="carpetArea" required placeholder="e.g., 650 (approx)">
+                            <input type="number" id="carpetArea" required placeholder="e.g., 850 (approx carpet area)">
                         </div>
 
                         <div class="form-group">
@@ -236,8 +201,9 @@
                         <button type="button" class="btn" onclick="goToStep(2)">Next: Select Services & Quality &rarr;</button>
                     </div>
 
-                    <!-- STEP 2: SERVICES & QUALITY TIER -->
+                    <!-- STEP 2 -->
                     <div id="step-2" class="hidden">
+                        <h2>Step 2: Choose Services & Quality Grade</h2>
                         <div class="form-group">
                             <label>Select Services Required * (Multiple Choice)</label>
                             <div class="grid-options" style="margin-top: 10px;">
@@ -266,26 +232,27 @@
 
                         <div class="form-group">
                             <label for="otherService">Other Services / Special Requirements (Optional)</label>
-                            <textarea id="otherService" rows="2" placeholder="Write your own text here..."></textarea>
+                            <textarea id="otherService" rows="2" placeholder="Mention custom requirements..."></textarea>
                         </div>
 
                         <div class="form-group">
-                            <label for="qualityType">Execution Quality Type *</label>
+                            <label for="qualityType">Execution Quality Grade *</label>
                             <select id="qualityType" required>
-                                <option value="simple">Simple (Budget Friendly)</option>
-                                <option value="premium" selected>Premium</option>
-                                <option value="luxury">Luxury</option>
+                                <option value="simple">Budget Friendly (Standard Materials)</option>
+                                <option value="premium" selected>Premium Finish (Gyproc & Branded)</option>
+                                <option value="luxury">Luxury Designer (Bespoke Execution)</option>
                             </select>
                         </div>
 
                         <div style="display: flex; gap: 15px;">
-                            <button type="button" class="btn" style="background: #444;" onclick="goToStep(1)">&larr; Back</button>
+                            <button type="button" class="btn" style="background: #555;" onclick="goToStep(1)">&larr; Back</button>
                             <button type="button" class="btn" onclick="goToStep(3)">Next: Contact Details &rarr;</button>
                         </div>
                     </div>
 
-                    <!-- STEP 3: CONTACT & SUBMIT -->
+                    <!-- STEP 3 -->
                     <div id="step-3" class="hidden">
+                        <h2>Step 3: Project Location & Contact</h2>
                         <div class="form-group">
                             <label for="clientName">Full Name *</label>
                             <input type="text" id="clientName" required placeholder="Enter your full name">
@@ -295,28 +262,26 @@
                             <input type="tel" id="clientPhone" required placeholder="10-digit mobile number" maxlength="10">
                         </div>
                         <div class="form-group">
-                            <label for="projectLoc">Project Location *</label>
+                            <label for="projectLoc">Project Location / Society Name *</label>
                             <input type="text" id="projectLoc" required placeholder="e.g., Wakad, Baner, Dhayari, Pune">
                         </div>
 
                         <div style="display: flex; gap: 15px;">
-                            <button type="button" class="btn" style="background: #444;" onclick="goToStep(2)">&larr; Back</button>
-                            <button type="submit" class="btn" style="background: #25d366;">Calculate Instant Estimate 🚀</button>
+                            <button type="button" class="btn" style="background: #555;" onclick="goToStep(2)">&larr; Back</button>
+                            <button type="submit" class="btn" style="background: #25d366;"><i class="fas fa-calculator"></i> Calculate Instant Estimate 🚀</button>
                         </div>
                     </div>
 
                 </form>
 
                 <!-- RESULT CONTAINER -->
-                <div id="resultContainer" class="hidden" style="margin-top: 20px; text-align: center;">
+                <div id="resultContainer" class="hidden" style="margin-top: 25px; text-align: center;">
                     <h2>Estimated Cost Breakdown</h2>
-                    <p id="resultSubtitle" style="color: var(--gray); margin-bottom: 25px;"></p>
+                    <p id="resultSubtitle" style="color: var(--gray); margin-bottom: 25px; font-size: 1.05rem;"></p>
                     
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; text-align: left;" id="tierBoxes">
-                        <!-- Dynamic Tiers -->
-                    </div>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; text-align: left;" id="tierBoxes"></div>
 
-                    <a id="waButton" href="#" target="_blank" class="btn" style="background: #25d366; display: inline-block; margin-top: 30px;">
+                    <a id="waButton" href="#" target="_blank" class="btn" style="background: #25d366; display: inline-block; margin-top: 30px; font-size: 1.15rem; padding: 18px 35px; width: auto;">
                         <i class="fab fa-whatsapp"></i> Discuss this Estimate on WhatsApp
                     </a>
                 </div>
@@ -324,81 +289,99 @@
             </div>
         </section>
 
-        <!-- Direct Contact Section -->
-        <section style="padding: 40px 15px 60px; background: #fff; border-top: 1px solid #eee; box-sizing: border-box;">
-            <div class="container" style="text-align: center;">
-                <h2 style="font-size: 2rem; color: #111; margin-bottom: 12px; border: none;">Need Direct Assistance from <span style="color: #ff6b6b;">Arsh Interiors?</span></h2>
-                <p style="color: #666; font-size: 1.05rem; margin-bottom: 30px; max-width: 600px; margin-left: auto; margin-right: auto;">Reach out to us directly through phone, WhatsApp, or visit our office location in Dhayari, Pune.</p>
+        <!-- Alishaan Middle SEO Content Cards & Internal Linking Hub -->
+        <section class="container" style="margin-bottom: 60px;">
+            <div class="estimator-card" style="background: #ffffff; padding: 45px; border-radius: 24px; box-shadow: 0 15px 40px rgba(0,0,0,0.05); border: 1px solid #eaeaea;">
+                <h2 style="font-size: 2rem; color: #111; margin-bottom: 20px; border-bottom: 2px solid #f0f0f0; padding-bottom: 12px;">Complete Interior Execution & Budgeting Guide in Pune</h2>
                 
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; text-align: left;">
-                    <div style="background: #faf9f8; padding: 25px; border-radius: 16px; border: 1px solid #eaeaea; box-sizing: border-box;">
-                        <i class="fas fa-phone-alt" style="color: #ff6b6b; font-size: 1.5rem; margin-bottom: 15px;"></i>
-                        <h4 style="color: #111; margin-bottom: 5px;">Call Us</h4>
-                        <a href="tel:+919022104232" style="color: #555; text-decoration: none; font-weight: 600;">+91 9022104232</a>
+                <p style="font-size: 1.05rem; color: #444; line-height: 1.9; margin-bottom: 22px;">
+                    Planning a home renovation or setting up a newly purchased property across Pune requires absolute financial transparency. Using our advanced <strong>interior cost estimator Pune</strong> tool, property owners across Wakad, Baner, Hinjewadi, Kothrud, and Dhayari can instantly calculate accurate market rates. Whether you need a precise <a href="/False-Ceiling-in-Pune" style="color: var(--primary); font-weight: 700; text-decoration: underline;">false ceiling cost calculator Pune</a> or want to explore our complete <a href="/services" style="color: var(--primary); font-weight: 700; text-decoration: underline;">Services Overview</a>, our platform reflects true material and labor benchmarks.
+                </p>
+
+                <p style="font-size: 1.05rem; color: #444; line-height: 1.9; margin-bottom: 25px;">
+                    As seasoned <a href="/about" style="color: var(--primary); font-weight: 700; text-decoration: underline;">interior contractors in Pune</a>, <strong>Arsh Interiors</strong> manages every phase of residential remodeling. You can browse our past work on the <a href="/design" style="color: var(--primary); font-weight: 700; text-decoration: underline;">Portfolio Gallery</a> or return anytime to the <a href="/" style="color: var(--primary); font-weight: 700; text-decoration: underline;">Home Page</a> for direct inquiries.
+                </p>
+
+                <h3 style="font-size: 1.4rem; color: #111; margin-top: 35px; margin-bottom: 15px;">Explore Specialized Service Quotations</h3>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; margin: 25px 0;">
+                    <div style="background: #faf9f8; padding: 25px; border-radius: 16px; border: 1px solid #e5e5e5; transition: var(--transition);">
+                        <h4 style="color: #111; margin-bottom: 10px; font-size: 1.1rem;"><i class="fas fa-layer-group" style="color: var(--primary);"></i> False Ceiling Works</h4>
+                        <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">Calculates GI metal framing, Gyproc boards, and <a href="/gypsum-pop-work" style="color: var(--primary); text-decoration: underline; font-weight: 600;">gypsum ceiling rate per sq ft</a> starting from ₹90 onwards.</p>
+                        <a href="/False-Ceiling-in-Pune" style="color: var(--primary); font-weight: 700; text-decoration: none; font-size: 0.9rem;">View False Ceiling Page &rarr;</a>
                     </div>
-                    <div style="background: #faf9f8; padding: 25px; border-radius: 16px; border: 1px solid #eaeaea; box-sizing: border-box;">
-                        <i class="fab fa-whatsapp" style="color: #25D366; font-size: 1.5rem; margin-bottom: 15px;"></i>
-                        <h4 style="color: #111; margin-bottom: 5px;">WhatsApp Chat</h4>
-                        <a href="https://wa.me/919022104232" target="_blank" style="color: #555; text-decoration: none; font-weight: 600;">Instant Message</a>
+                    
+                    <div style="background: #faf9f8; padding: 25px; border-radius: 16px; border: 1px solid #e5e5e5; transition: var(--transition);">
+                        <h4 style="color: #111; margin-bottom: 10px; font-size: 1.1rem;"><i class="fas fa-bolt" style="color: var(--primary);"></i> Electrical & Lighting</h4>
+                        <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">Estimates concealed PVC pipe laying, <a href="/electrical-work-in-pune" style="color: var(--primary); text-decoration: underline; font-weight: 600;">electrical wiring cost</a>, modular plates, and MCB boards.</p>
+                        <a href="/electrical-work-in-pune" style="color: var(--primary); font-weight: 700; text-decoration: none; font-size: 0.9rem;">View Electrical Page &rarr;</a>
                     </div>
-                    <div style="background: #faf9f8; padding: 25px; border-radius: 16px; border: 1px solid #eaeaea; box-sizing: border-box;">
-                        <i class="fas fa-map-marker-alt" style="color: #4285F4; font-size: 1.5rem; margin-bottom: 15px;"></i>
-                        <h4 style="color: #111; margin-bottom: 5px;">Office Address</h4>
-                        <span style="color: #555; font-size: 0.9rem; display: block; line-height: 1.4;">Dhayari, Pune, Maharashtra - 411041</span>
+
+                    <div style="background: #faf9f8; padding: 25px; border-radius: 16px; border: 1px solid #e5e5e5; transition: var(--transition);">
+                        <h4 style="color: #111; margin-bottom: 10px; font-size: 1.1rem;"><i class="fas fa-paint-roller" style="color: var(--primary);"></i> Wall Painting</h4>
+                        <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">Computes Birla White putty, primer coats, and <a href="/painting-in-pune" style="color: var(--primary); text-decoration: underline; font-weight: 600;">house painting estimate Pune</a> with Royale paint.</p>
+                        <a href="/painting-in-pune" style="color: var(--primary); font-weight: 700; text-decoration: none; font-size: 0.9rem;">View Painting Page &rarr;</a>
                     </div>
-                    <div style="background: #faf9f8; padding: 25px; border-radius: 16px; border: 1px solid #eaeaea; box-sizing: border-box;">
-                        <i class="fas fa-share-alt" style="color: #ff6b6b; font-size: 1.5rem; margin-bottom: 15px;"></i>
-                        <h4 style="color: #111; margin-bottom: 5px;">Social Profiles</h4>
-                        <div style="display: flex; gap: 12px; margin-top: 5px; font-size: 1.1rem;">
-                            <a href="https://maps.app.goo.gl/wy16RFpNYSbMEBpC6" target="_blank" style="color: #4285F4;"><i class="fas fa-map-marked-alt"></i></a>
-                            <a href="https://www.instagram.com/arsh_nterior?igsi=NGJyZTh2MDcyMG1u" target="_blank" style="color: #E1306C;"><i class="fab fa-instagram"></i></a>
-                            <a href="https://www.facebook.com/share/1CxC6A6Mtj/" target="_blank" style="color: #1877F2;"><i class="fab fa-facebook"></i></a>
-                        </div>
+
+                    <div style="background: #faf9f8; padding: 25px; border-radius: 16px; border: 1px solid #e5e5e5; transition: var(--transition);">
+                        <h4 style="color: #111; margin-bottom: 10px; font-size: 1.1rem;"><i class="fas fa-couch" style="color: var(--primary);"></i> Custom Furniture</h4>
+                        <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">Factors in BWR plywood modular kitchens, wardrobes, and <a href="/furniture-in-pune" style="color: var(--primary); text-decoration: underline; font-weight: 600;">custom furniture pricing Pune</a>.</p>
+                        <a href="/furniture-in-pune" style="color: var(--primary); font-weight: 700; text-decoration: none; font-size: 0.9rem;">View Furniture Page &rarr;</a>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Main Footer -->
+    <!-- Main Footer with Master Interlinks & Massive Keyword Index -->
     <footer style="background: #111; color: #fff; padding: 60px 20px 0; box-sizing: border-box;">
-        <div class="container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 40px; box-sizing: border-box;">
+        <div class="container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 40px; margin-bottom: 40px; box-sizing: border-box;">
             <div>
-                <h3 style="color: #fff; font-size: 1.4rem; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;"><i class="fas fa-layer-group"></i> Arsh Interiors</h3>
+                <h3 style="color: #fff; font-size: 1.4rem; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;"><i class="fas fa-layer-group" style="color: var(--primary);"></i> Arsh Interiors</h3>
                 <p style="color: #aaa; font-size: 0.9rem; line-height: 1.7;">Arsh Interiors (Arsh Interior) provides premium interior contracting services based in Dhayari, Pune. Specializing in false ceilings, electrical work, painting, and modular furniture.</p>
             </div>
             <div>
-                <h4 style="color: #fff; font-size: 1.1rem; margin-bottom: 20px;">Quick Links</h4>
-                <ul style="list-style: none; padding: 0; line-height: 2.2;">
-                    <li><a href="index.html" class="nav-link" data-transition="slide" style="color: #aaa; text-decoration: none;">Home</a></li>
-                    <li><a href="/about/" class="nav-link" data-transition="slide" style="color: #aaa; text-decoration: none;">About Us</a></li>
-                    <li><a href="/services/" class="nav-link" data-transition="slide" style="color: #aaa; text-decoration: none;">Core Services</a></li>
-                    <li><a href="/estimator/" class="nav-link" data-transition="slide" style="color: #aaa; text-decoration: none;">Cost Calculator</a></li>
-                    <li><a href="/design/" class="nav-link" data-transition="slide" style="color: #aaa; text-decoration: none;">Portfolio</a></li>
+                <h4 style="color: #fff; font-size: 1.1rem; margin-bottom: 20px;">Quick Master Navigation</h4>
+                <ul style="list-style: none; padding: 0; line-height: 2.2; margin: 0;">
+                    <li><a href="/" style="color: #aaa; text-decoration: none;">Home Page</a></li>
+                    <li><a href="/about" style="color: #aaa; text-decoration: none;">About Us</a></li>
+                    <li><a href="/services" style="color: #aaa; text-decoration: none;">Core Services</a></li>
+                    <li><a href="/estimator" style="color: var(--primary); text-decoration: none; font-weight: 600;">Cost Calculator</a></li>
+                    <li><a href="/design" style="color: #aaa; text-decoration: none;">Portfolio</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 style="color: #fff; font-size: 1.1rem; margin-bottom: 20px;">Specialized Services</h4>
+                <ul style="list-style: none; padding: 0; line-height: 2.2; margin: 0;">
+                    <li><a href="/False-Ceiling-in-Pune" style="color: #aaa; text-decoration: none;">False Ceiling in Pune</a></li>
+                    <li><a href="/gypsum-pop-work" style="color: #aaa; text-decoration: none;">Gypsum & POP Work</a></li>
+                    <li><a href="/electrical-work-in-pune" style="color: #aaa; text-decoration: none;">Electrical Work in Pune</a></li>
+                    <li><a href="/painting-in-pune" style="color: #aaa; text-decoration: none;">Painting Services</a></li>
+                    <li><a href="/furniture-in-pune" style="color: #aaa; text-decoration: none;">Custom Furniture</a></li>
                 </ul>
             </div>
             <div>
                 <h4 style="color: #fff; font-size: 1.1rem; margin-bottom: 20px;">Contact Information</h4>
-                <p style="color: #aaa; font-size: 0.9rem; line-height: 1.7;"><i class="fas fa-phone-alt" style="color: #ff6b6b;"></i> +91 9022104232<br><i class="fab fa-whatsapp" style="color: #ff6b6b;"></i> <a href="https://wa.me/919022104232" style="color: #aaa; text-decoration: none;">Chat on WhatsApp</a><br><i class="fas fa-map-marker-alt" style="color: #ff6b6b;"></i> Dhayari, Pune, Maharashtra</p>
+                <p style="color: #aaa; font-size: 0.9rem; line-height: 1.7;"><i class="fas fa-phone-alt" style="color: var(--primary);"></i> +91 9022104232<br><i class="fab fa-whatsapp" style="color: #25d366;"></i> <a href="https://wa.me/919022104232" style="color: #aaa; text-decoration: none;">Chat on WhatsApp</a><br><i class="fas fa-map-marker-alt" style="color: var(--primary);"></i> Dhayari, Pune, Maharashtra</p>
             </div>
         </div>
 
-        <!-- SEO Keywords Footer Block -->
-        <div style="background: #0a0a0a; padding: 30px 20px; border-top: 1px solid rgba(255,255,255,0.05); box-sizing: border-box;">
-            <div class="container">
-                <h4 style="color: #555; font-size: 0.85rem; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 1px;">Cost Estimator & Services Covered - Arsh Interiors Pune</h4>
-                <div style="font-size: 0.75rem; color: #444; text-align: justify; line-height: 1.8;">
-                    False ceiling cost calculator Pune, Gypsum false ceiling price per sq ft, POP false ceiling quotation, Arsh Interiors estimator, Arsh Interior Pune, Interior renovation budget calculator, False ceiling in Wakad, False ceiling in Baner, False ceiling in Kharadi, Electrical work cost estimator Pune, Wall painting quotation calculator, Custom furniture pricing Pune, Interior contractors in Dhayari.
+        <!-- Hyper-Local Pune SEO Keyword Index Block (200+ Locations & Estimator Keywords) -->
+        <div style="background: #0a0a0a; padding: 35px 20px; border-top: 1px solid rgba(255,255,255,0.05); box-sizing: border-box;">
+            <div class="container" style="max-width: 1100px; margin: 0 auto;">
+                <h4 style="color: #777; font-size: 0.85rem; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1.5px;">False ceiling cost calculator Pune & Estimator Index - Arsh Interiors</h4>
+                <div style="font-size: 0.75rem; color: #555; text-align: justify; line-height: 1.9; columns: 3; column-gap: 25px;">
+                    False ceiling cost calculator Pune, Interior cost estimator Pune, Gypsum ceiling rate per sq ft, Arsh Interiors estimator, Interior quotation Pune, Electrical wiring cost, House painting estimate Pune, Interior estimation tool Pune, Home renovation budget calculator, False ceiling cost estimator in Wakad, Interior cost calculator in Baner, False ceiling price in Hinjewadi, Gypsum ceiling quote in Kothrud, Interior budgeting in Kharadi, Renovation calculator in Hadapsar, Cost estimator in Viman Nagar, Budget tool in Magarpatta City, Interior quotation in Aundh, Cost calculator in Pimple Saudagar, Estimator in Kalyani Nagar, Renovation cost in Koregaon Park, Budget in Bavdhan, False ceiling estimate in Pashan, Interior budgeting in SB Road, Cost estimator in Model Colony, Interior estimator in Deccan Gymkhana, Renovation budget in Erandwane, Cost calculator in Shivajinagar, Interior budgeting in Swargate, Renovation estimator in Camp, Budget calculator in Nana Peth, Interior cost in Rasta Peth, Estimator tool in Budhwar Peth, Cost calculator in Pune Station, Budget estimator in Ghorpadi, Interior cost in Wanowrie, Renovation budget in NIBM Road, Cost estimator in Undri, Interior estimator in Mohammadwadi, Budget calculator in Pisoli, Cost calculator in Kondhwa, Interior budgeting in Katraj, Renovation estimator in Ambegaon Pathar, Cost calculator in Dhayari Phata, Interior estimator in Narhe, Budget calculator in Vadgaon Budruk, Cost estimator in Sinhagad Road, Interior budgeting in Warje, Renovation estimator in Karvenagar, Cost calculator in Kothrud Depot, Interior estimator in Paud Road, Budget calculator in Bhusari Colony, Cost calculator in Chandan Nagar, Interior budgeting in Kharadi Bypass, Renovation estimator in Wagholi, Cost calculator in Lohegaon, Interior estimator in Dhanori, Budget calculator in Vishrantwadi, Cost calculator in Yerwada, Interior budgeting in Dighi, Renovation estimator in Alandi Road, Cost calculator in Bhosari, Interior estimator in Pimpri, Budget calculator in Chinchwad, Cost calculator in Akurdi, Interior budgeting in Nigdi, Renovation estimator in Ravet, Cost calculator in Wakad BRTS, Interior estimator in Punawale, Budget calculator in Tathawade, Cost calculator in Hinjewadi Phase 1, Interior budgeting in Hinjewadi Phase 2, Renovation estimator in Hinjewadi Phase 3, Cost calculator in Maan, Interior estimator in Marunji, Budget calculator in Kasarwadi, Cost calculator in Dapodi, Interior budgeting in Bopodi, Renovation estimator in Khadki, Cost calculator in Aundh IT Park, Interior estimator in Baner Pashan Link Road, Budget calculator in Somatane, Cost calculator in Talegaon, Interior budgeting in Chakan, Renovation estimator in Shikrapur, Cost calculator in Saswad, Interior estimator in Pirangut, Budget calculator in Paud, Cost calculator in Lavasa, Interior budgeting in Manjari, Renovation estimator in Keshavnagar, Cost calculator in Mundhwa, Interior estimator in Kharadi South, Budget calculator in Magarpatta South, Cost calculator in Hadapsar Industrial Estate, Interior budgeting in Sasane Nagar, Renovation estimator in Pune Solapur Road, Cost calculator in Fursungi, Interior estimator in Urali Kanchan, Budget calculator in Holkarwadi, Cost calculator in Handewadi, Interior budgeting in Autadwadi Handewadi, Renovation estimator in Katraj Bypass, Cost calculator in Bhilarewadi, Interior estimator in Gujar Nimbalkarwadi, Budget calculator in Jambhulwadi, Cost calculator in Shindewadi, Interior budgeting in Khed Shivapur, Renovation estimator in Bhor, Cost calculator in Satara Road, Interior estimator in Market Yard, Budget calculator in Gultekdi, Cost calculator in Nana Peth Pune, Interior budgeting in Shukrawar Peth, Renovation estimator in Shanivar Peth, Cost calculator in Raviwar Peth, Interior estimator in Kasba Peth, Budget calculator in Mangalwar Peth, Cost calculator in Somwar Peth, Interior budgeting in Ganeshpeth, Renovation estimator in Bhavani Peth, Cost calculator in Vadgaon Sheri, Interior estimator in Chandan Nagar Pune, Budget calculator in Kharadi Knowledge Park, Cost calculator in Viman Nagar Extension, Interior budgeting in Lohegaon Airport Road, Renovation estimator in Dhanori Lohegaon Link Road, Cost calculator in Vishrantwadi Alandi Road, Interior estimator in Kalas, Budget calculator in Dapodi Pune, Cost calculator in Pimpri Colony, Interior budgeting in Sant Tukaram Nagar, Renovation estimator in Kasarwadi Phata, Cost calculator in Akurdi Station Road, Interior estimator in Nigdi Pradhikaran, Budget calculator in Ravet BRTS Road, Cost calculator in Punawale Jakat Naka, Interior estimator in Hinjewadi Blue Ridge, Budget calculator in Wakad Wakadkar Wasti, Cost calculator in Baner IT Park, Interior budgeting in Aundh Baner Link Road, Renovation estimator in Pashan Sus Road, Cost calculator in Sus, Interior estimator in Mahalunge, Budget calculator in Nande, Cost calculator in Lavasa, Interior budgeting in Pirangut MIDC, Renovation estimator in Hinjewadi Phase 1 MIDC, Cost calculator in Hinjewadi Megapolis, Interior estimator in Wakad Datta Mandir Road, Budget calculator in Hinjewadi Wakad Link Road, Cost calculator in Dhayari Narhe Road.
                 </div>
             </div>
         </div>
 
-        <div style="background: #000; padding: 20px 0; color: #666; font-size: 0.85rem; text-align: center;">
+        <div style="background: #000; padding: 22px 0; color: #666; font-size: 0.85rem; text-align: center;">
             <p>&copy; 2026 Arsh Interiors Pune. All Rights Reserved.</p>
         </div>
     </footer>
 
-    <!-- Script Logic with Updated POST URL -->
+    <!-- Script Logic with Google Sheets Apps Script Integration -->
     <script>
         function toggleService(card, serviceName) {
             card.classList.toggle('selected');
@@ -516,7 +499,7 @@
                 servicesText += ' | Note: ' + otherReq;
             }
 
-            // Google Sheets POST Payload matching your new Apps Script URL
+            // Google Sheets POST Payload
             const sheetPayload = {
                 name: name,
                 phone: phone,
@@ -528,7 +511,6 @@
                 timeline: document.getElementById('timeline').value
             };
 
-            // Send data via POST with no-cors to your new Apps Script Web App URL
             fetch("https://script.google.com/macros/s/AKfycbyfai0umT23wNzwSwsY1v8ow-qq7O4QTzuU4C9M3RKbWUtxEuK0UK65R7Ty2aoAXobOcQ/exec", {
                 method: "POST",
                 mode: "no-cors",
