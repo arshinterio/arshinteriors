@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arsh Interiors | Best False Ceiling, Electrical & Painting Contractors in Pune</title>
-    <meta name="description" content="Arsh Interiors (Arsh Interior) is Pune's leading interior contracting firm specializing in Gypsum false ceiling, POP design, wall moulding, concealed electrical work, and luxury painting across Wakad, Baner, Kharadi, and Dhayari.">
-    <meta name="keywords" content="Arsh Interiors, Arsh Interior, Arsh Interiors Pune, False ceiling contractor Pune, Gypsum ceiling Wakad, Interior decorator Kharadi, Electrician in Pune, House painters Pune, Arsh Interiors Dhayari, POP ceiling design, Wall moulding Pune, PVC ceiling contractor, Turnkey interior designers Pune">
+    <title>False Ceiling & Interior Cost Calculator Pune | Arsh Interiors Estimator</title>
+    <meta name="description" content="Calculate instant interior execution costs with Arsh Interiors in Pune. Get precise estimates for Gypsum false ceilings, electrical work, painting, and custom furniture across Pune using our smart cost calculator.">
+    <meta name="keywords" content="False ceiling cost calculator Pune, Interior cost estimator Pune, Gypsum ceiling rate per sq ft, Arsh Interiors estimator, Interior quotation Pune">
     
     <!-- Open Graph Tags -->
-    <meta property="og:title" content="Arsh Interiors | Premium Interior Execution in Pune">
-    <meta property="og:description" content="Arsh Interior delivers expert false ceilings, electrical work, and luxury painting services across Pune.">
+    <meta property="og:title" content="Interior Cost Calculator & Estimator | Arsh Interiors Pune">
+    <meta property="og:description" content="Get instant and transparent execution estimates for false ceilings, electrical, painting, and furniture from Arsh Interiors Pune.">
     <meta property="og:type" content="website">
 
     <!-- Local Business Schema Markup -->
@@ -27,364 +27,378 @@
         "addressRegion": "Maharashtra",
         "postalCode": "411041",
         "addressCountry": "IN"
-      },
-      "sameAs": [
-        "https://maps.app.goo.gl/wy16RFpNYSbMEBpC6",
-        "https://www.instagram.com/arsh_nterior?igsi=NGJyZTh2MDcyMG1u",
-        "https://www.facebook.com/share/1CxC6A6Mtj/",
-        "https://wa.me/919022104232"
-      ]
+      }
     }
     </script>
-    
+
+    <!-- Preloading & Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
     
     <style>
-        .callback-grid { display: grid; grid-template-columns: 1fr; gap: 40px; align-items: center; }
-        .callback-form-box { background: #fff; padding: 40px; border-radius: 20px; box-shadow: 0 20px 50px rgba(0,0,0,0.08); border: 1px solid #eee; width: 100%; max-width: 500px; margin: 0 auto; display: flex; flex-direction: column; justify-content: center; }
-        .callback-content { text-align: center; }
-        @media (min-width: 992px) {
-            .callback-grid { grid-template-columns: 1fr 1fr; }
-            .callback-content { text-align: left; padding-left: 20px; }
-            .callback-form-box { margin: 0; }
+        :root {
+            --primary: #ff6b6b;
+            --primary-dark: #e85555;
+            --dark: #111111;
+            --light: #faf9f8;
+            --gray: #666666;
+            --border: #f0d5d5;
+            --card-bg: #ffffff;
+            --transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
         }
-
-        /* Polished Auto-sliding Testimonials CSS */
-        .testimonial-slider-container {
-            position: relative;
+        *, *::before, *::after { box-sizing: border-box; }
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--light);
+            color: var(--dark);
+            margin: 0;
+            padding-top: 80px;
+            overflow-x: hidden;
+            line-height: 1.7;
+        }
+        .container {
             max-width: 1000px;
             margin: 0 auto;
-            overflow: hidden;
-            padding: 20px 10px;
+            padding: 0 15px;
+            width: 100%;
         }
-        .testimonial-track {
-            display: flex;
-            transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
-            gap: 25px;
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
         }
-        .testimonial-card {
-            min-width: 100%;
-            background: #fff;
-            padding: 35px;
-            border-radius: 20px;
-            box-shadow: 0 10px 35px rgba(0,0,0,0.06);
-            border: 1px solid #eaeaea;
-            box-sizing: border-box;
-            text-align: center;
+        .animate-fade { animation: fadeInUp 0.5s ease forwards; }
+
+        /* Fixed Mobile-Optimized Header */
+        .site-header {
+            position: fixed; top: 0; left: 0; width: 100%; background: rgba(255, 255, 255, 0.98); backdrop-filter: blur(10px); z-index: 9999; box-shadow: 0 2px 15px rgba(0,0,0,0.06);
         }
-        @media(min-width: 768px) {
-            .testimonial-card { min-width: calc(33.333% - 17px); }
+        .header-inner {
+            display: flex; align-items: center; justify-content: space-between; padding: 12px 20px; max-width: 1200px; margin: 0 auto;
+        }
+        .logo { color: var(--dark); text-decoration: none; font-weight: 800; font-size: 1.15rem; display: flex; align-items: center; gap: 8px; white-space: nowrap; }
+        
+        .header-actions { display: flex; align-items: center; gap: 10px; }
+        .round-call-btn {
+            background: var(--primary); color: #fff; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1rem; text-decoration: none; box-shadow: 0 4px 12px rgba(255,107,107,0.3); transition: var(--transition);
+        }
+        .hamburger-btn {
+            background: #f0f0f0; color: var(--dark); width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; cursor: pointer; border: none; transition: var(--transition);
         }
 
-        /* Polished GBP Card UI */
-        .gbp-polish-card {
-            background: linear-gradient(135deg, #ffffff 0%, #f8f9fc 100%);
-            border: 1px solid #e1e8ed;
-            border-radius: 24px;
-            padding: 50px 30px;
-            box-shadow: 0 15px 40px rgba(66, 133, 244, 0.08);
-            position: relative;
-            overflow: hidden;
+        /* Mobile Slide-out Drawer */
+        .mobile-drawer {
+            position: fixed; top: 0; right: -100%; width: 280px; height: 100vh; background: #fff; z-index: 10000; box-shadow: -5px 0 30px rgba(0,0,0,0.15); transition: var(--transition); padding: 30px 20px; display: flex; flex-direction: column; box-sizing: border-box;
         }
-        .gbp-polish-card::before {
-            content: '';
-            position: absolute;
-            top: 0; left: 0; width: 100%; height: 5px;
-            background: linear-gradient(90deg, #4285F4, #34A853, #FBBC05, #EA4335);
+        .mobile-drawer.open { right: 0; }
+        .drawer-close { font-size: 1.5rem; background: none; border: none; align-self: flex-end; cursor: pointer; margin-bottom: 20px; color: var(--dark); }
+        .drawer-links { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 18px; }
+        .drawer-links a { font-size: 1.1rem; font-weight: 700; color: var(--dark); text-decoration: none; transition: var(--transition); }
+        .drawer-links a:hover, .drawer-links a.active { color: var(--primary); }
+
+        /* Highlighted Estimator Card Container with Soft Pink Touch */
+        .estimator-card {
+            background: linear-gradient(135deg, #ffffff 0%, #fff8f8 100%); 
+            border-radius: 20px; 
+            box-shadow: 0 10px 30px rgba(255,107,107,0.06); 
+            padding: 30px 18px; 
+            border: 2px solid #ffdcdc; 
+            margin: 15px 0 35px; 
+            width: 100%;
+        }
+        
+        .calc-heading {
+            font-size: clamp(1.6rem, 3.2vw, 2rem); 
+            color: var(--dark); 
+            margin-top: 0; 
+            margin-bottom: 22px; 
+            text-align: center; 
+            border-bottom: 2px solid #ffdcdc; 
+            padding-bottom: 12px; 
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-weight: 700;
+        }
+        .calc-heading span { color: var(--primary); }
+        
+        .form-group { margin-bottom: 18px; width: 100%; }
+        label { display: block; font-weight: 700; margin-bottom: 6px; font-size: 0.9rem; color: #222; }
+        select, input[type="text"], input[type="tel"], input[type="number"], textarea {
+            width: 100%; padding: 13px 15px; border: 1.5px solid var(--border); border-radius: 10px; font-size: 0.95rem; font-family: inherit; background: #fff; transition: var(--transition);
+        }
+        select:focus, input:focus, textarea:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 4px rgba(255,107,107,0.1); }
+        
+        .grid-options { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; width: 100%; }
+        .checkbox-card {
+            border: 2px solid var(--border); border-radius: 12px; padding: 14px 8px; text-align: center; cursor: pointer; transition: var(--transition); background: #fff; width: 100%;
+        }
+        .checkbox-card.selected {
+            border-color: var(--primary); background: rgba(255,107,107,0.06); color: var(--primary); box-shadow: 0 5px 15px rgba(255,107,107,0.1);
+        }
+        .checkbox-card i { font-size: 1.5rem; margin-bottom: 6px; display: block; color: var(--gray); }
+        .checkbox-card.selected i { color: var(--primary); }
+
+        .btn {
+            background: var(--primary); color: #fff; padding: 14px 20px; border: none; border-radius: 10px; font-size: 1rem; font-weight: 700; cursor: pointer; width: 100%; margin-top: 20px; transition: var(--transition); text-align: center; text-decoration: none; display: inline-block; box-shadow: 0 6px 15px rgba(255,107,107,0.25);
+        }
+        .btn:hover { background: var(--primary-dark); }
+        .hidden { display: none !important; }
+
+        @media (min-width: 768px) {
+            .estimator-card { padding: 45px; }
+            .grid-options { grid-template-columns: repeat(4, 1fr); }
+            .round-call-btn { display: none; }
+            .hamburger-btn { display: none; }
+            .desktop-nav { display: flex !important; gap: 20px; align-items: center; }
+            .desktop-nav a { color: #555; text-decoration: none; font-weight: 600; font-size: 0.95rem; }
+            .desktop-nav a:hover, .desktop-nav a.active { color: var(--primary); }
+        }
+        @media (max-width: 767px) {
+            .desktop-nav { display: none; }
         }
     </style>
 </head>
-<body class="loading" style="overflow-x: hidden;">
+<body>
 
-    <header class="site-header" id="mainHeader" style="position: fixed; top: 0; left: 0; width: 100%; background: #ffffff; z-index: 9999; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
-        <div class="container header-inner" style="display: flex; align-items: center; justify-content: space-between; padding: 15px 20px; max-width: 1200px; margin: 0 auto; box-sizing: border-box;">
-            <a href="index.html" class="logo nav-link" data-transition="slide" style="color: #111; text-decoration: none; font-weight: 800; font-size: 1.2rem; display: flex; align-items: center; gap: 8px;">
-                <i class="fas fa-layer-group logo-icon" style="color: #111;"></i> 
-                <span class="logo-text">Arsh Interiors</span>
+    <!-- Fixed Header -->
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="/" class="logo">
+                <i class="fas fa-layer-group" style="color: var(--primary);"></i> 
+                <span>Arsh Interiors</span>
             </a>
-            <nav class="desktop-nav" style="display: flex; gap: 25px;">
-                <a href="index.html" class="nav-link active" data-transition="slide" style="color: #ff6b6b; text-decoration: none; font-weight: 600;">Home</a>
-                <a href="/about/" class="nav-link" data-transition="slide" style="color: #555; text-decoration: none; font-weight: 600;">About Us</a>
-                <a href="/services/" class="nav-link" data-transition="slide" style="color: #555; text-decoration: none; font-weight: 600;">Expert Services</a>
-                <a href="/estimator/" class="nav-link" data-transition="slide" style="color: #555; text-decoration: none; font-weight: 600;">Cost Calculator</a>
-                <a href="/design/" class="nav-link" data-transition="slide" style="color: #555; text-decoration: none; font-weight: 600;">Portfolio</a>
+            
+            <nav class="desktop-nav">
+                <a href="/">Home</a>
+                <a href="/about">About Us</a>
+                <a href="/services">Expert Services</a>
+                <a href="/estimator" class="active">Cost Calculator</a>
+                <a href="/design">Portfolio</a>
             </nav>
-            <a href="tel:+919022104232" class="header-call-btn" style="background: #ff6b6b; color: #fff; width: 36px; height: 36px; border-radius: 50%; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;">
-                <i class="fas fa-phone-alt" style="font-size: 0.85rem;"></i>
-            </a>
-            <button class="mobile-menu-btn" id="mobileMenuBtn" style="background: none; border: none; font-size: 1.4rem; cursor: pointer; color: #111;">
-                <i class="fas fa-bars"></i>
-            </button>
+
+            <div class="header-actions">
+                <a href="tel:+919022104232" class="round-call-btn" title="Call Us">
+                    <i class="fas fa-phone-alt"></i>
+                </a>
+                <button class="hamburger-btn" onclick="toggleDrawer()" aria-label="Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
         </div>
     </header>
 
-    <a href="https://wa.me/919022104232?text=Hello%20Arsh%20Interiors,%20I%20would%20like%20to%20discuss%20my%20interior%20project." target="_blank" class="floating-wa" style="position: fixed; bottom: 30px; right: 30px; background: #25d366; color: #fff; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2rem; box-shadow: 0 10px 30px rgba(37,211,102,0.4); z-index: 9999; transition: transform 0.3s ease;">
+    <!-- Mobile Slide-out Drawer -->
+    <div class="mobile-drawer" id="mobileDrawer">
+        <button class="drawer-close" onclick="toggleDrawer()"><i class="fas fa-times"></i></button>
+        <ul class="drawer-links">
+            <li><a href="/" onclick="toggleDrawer()">Home</a></li>
+            <li><a href="/about" onclick="toggleDrawer()">About Us</a></li>
+            <li><a href="/services" onclick="toggleDrawer()">Expert Services</a></li>
+            <li><a href="/estimator" class="active" onclick="toggleDrawer()">Cost Calculator</a></li>
+            <li><a href="/design" onclick="toggleDrawer()">Portfolio</a></li>
+        </ul>
+        <div style="margin-top: auto; padding-top: 20px; border-top: 1px solid #eee;">
+            <a href="tel:+919022104232" class="btn" style="margin: 0; padding: 12px; font-size: 0.95rem;"><i class="fas fa-phone-alt"></i> Call +91 9022104232</a>
+        </div>
+    </div>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/919022104232?text=Hello%20Arsh%20Interiors,%20I%20used%20your%20cost%20calculator." target="_blank" style="position: fixed; bottom: 20px; right: 20px; background: #25d366; color: #fff; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.6rem; box-shadow: 0 6px 20px rgba(37,211,102,0.4); z-index: 999; text-decoration: none;">
         <i class="fab fa-whatsapp"></i>
     </a>
 
-    <main id="smooth-wrapper" class="page-transition-container" style="padding-top: 80px; box-sizing: border-box;">
-        <div id="page-content" class="page-content" data-page="home">
-            
-            <!-- Hero Section (Mobile Optimized Spacing) -->
-            <section class="hero-section" style="padding: 40px 15px 30px; text-align: center; background: linear-gradient(180deg, var(--bg-light, #faf9f8) 0%, var(--bg-white, #fff) 100%); box-sizing: border-box;">
-                <div class="container hero-container" style="max-width: 1100px; margin: 0 auto; padding: 0 15px; box-sizing: border-box;">
-                    <div class="hero-content">
-                        <span class="hero-subtitle" style="color: #ff6b6b; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; font-size: 0.85rem; display: block; margin-bottom: 10px;">Pune's Premier Interior Execution Experts</span>
-                        <h1 class="hero-title" style="font-size: clamp(2.2rem, 4.5vw, 4.2rem); margin: 15px 0; color: #111; line-height: 1.2;">Welcome to <span class="serif" style="color: #ff6b6b; font-style: italic; font-family: 'Playfair Display', serif;">Arsh Interiors</span></h1>
-                        <p class="hero-desc" style="font-size: 1.05rem; max-width: 800px; margin: 0 auto 25px; color: #555; line-height: 1.6; padding: 0 5px;">When looking for professional interior contracting in Pune, <strong>Arsh Interiors</strong> (also known as <strong>Arsh Interior</strong>) is your ultimate destination. We specialize in flawless Gypsum false ceilings, smart electrical integrations, luxury wall painting, and custom furniture execution across Baner, Wakad, Kharadi, and Dhayari.</p>
-                        
-                        <div class="hero-actions" style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-top: 25px;">
-                            <a href="/estimator/" class="nav-link" data-transition="slide" style="background: #ff6b6b; color: #ffffff; padding: 14px 28px; border-radius: 8px; font-weight: 700; text-decoration: none; display: inline-block; box-shadow: 0 4px 15px rgba(255,107,107,0.3);">Calculate Your Cost</a>
-                            <a href="/design/" class="nav-link" data-transition="slide" style="background: transparent; color: #111111; padding: 14px 28px; border-radius: 8px; font-weight: 700; text-decoration: none; display: inline-block; border: 2px solid #111111;">View Master Portfolio</a>
+    <main>
+        <section class="container animate-fade">
+            <div class="estimator-card">
+                <form id="proEstimatorForm">
+                    
+                    <!-- STEP 1 -->
+                    <div id="step-1">
+                        <h2 class="calc-heading">Interior <span>Cost Calculator</span></h2>
+                        <div class="form-group">
+                            <label for="propType">Select Property Type *</label>
+                            <select id="propType" required>
+                                <option value="">-- Choose Property Type --</option>
+                                <option value="1 BHK">1 BHK Apartment</option>
+                                <option value="2 BHK">2 BHK Apartment</option>
+                                <option value="3 BHK">3 BHK Apartment</option>
+                                <option value="4+ BHK">4+ BHK / Duplex</option>
+                                <option value="Bungalow">Bungalow / Villa</option>
+                                <option value="Commercial">Commercial / Shop</option>
+                            </select>
                         </div>
-                    </div>
-                    <div class="trust-badges-grid" style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-top: 35px;">
-                        <div class="trust-badge" style="background: #fff; padding: 12px 18px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border: 1px solid #eee; font-weight: 600; display: flex; align-items: center; gap: 8px; font-size: 0.9rem;">
-                            <i class="fas fa-shield-alt" style="color: #ff6b6b;"></i> 10-Year Warranty
-                        </div>
-                        <div class="trust-badge" style="background: #fff; padding: 12px 18px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border: 1px solid #eee; font-weight: 600; display: flex; align-items: center; gap: 8px; font-size: 0.9rem;">
-                            <i class="fas fa-clock" style="color: #ff6b6b;"></i> Strict On-Time Delivery
-                        </div>
-                        <div class="trust-badge" style="background: #fff; padding: 12px 18px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border: 1px solid #eee; font-weight: 600; display: flex; align-items: center; gap: 8px; font-size: 0.9rem;">
-                            <i class="fas fa-check-double" style="color: #ff6b6b;"></i> Verified Materials
-                        </div>
-                    </div>
-                </div>
-            </section>
 
-            <!-- Premium Square Callback Section -->
-            <section class="callback-section section-padding" style="background: #faf9f8; position: relative; z-index: 10; padding: 50px 15px; box-sizing: border-box;">
-                <div class="container" style="max-width: 1100px; margin: 0 auto; padding: 0 15px; box-sizing: border-box;">
-                    <div class="callback-grid">
-                        <div class="callback-form-box" style="box-sizing: border-box;">
-                            <div style="text-align: center; margin-bottom: 25px;">
-                                <h3 style="color: #111; font-size: 1.8rem; margin-bottom: 8px;">Request a Callback</h3>
-                                <p style="color: #666; font-size: 0.95rem;">Drop your details and our design experts at Arsh Interiors will connect with you.</p>
+                        <div class="form-group">
+                            <label for="carpetArea">Enter Carpet Area (Sq. Ft) *</label>
+                            <input type="number" id="carpetArea" required placeholder="e.g., 850 (approx carpet area)">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="timeline">Project Timeline *</label>
+                            <select id="timeline" required>
+                                <option value="">-- Choose Timeline --</option>
+                                <option value="In a week">In a week</option>
+                                <option value="In a month">In a month</option>
+                                <option value="Just exploring">Just exploring</option>
+                            </select>
+                        </div>
+
+                        <button type="button" class="btn" onclick="goToStep(2)">Next: Select Services & Quality &rarr;</button>
+                    </div>
+
+                    <!-- STEP 2 -->
+                    <div id="step-2" class="hidden">
+                        <h2 class="calc-heading">Choose Services & <span>Quality Grade</span></h2>
+                        <div class="form-group">
+                            <label>Select Services Required * (Multiple Choice)</label>
+                            <div class="grid-options" style="margin-top: 10px;">
+                                <div class="checkbox-card" onclick="toggleService(this, 'ceiling')">
+                                    <i class="fas fa-layer-group"></i>
+                                    <strong>False Ceiling</strong>
+                                    <input type="checkbox" name="service" value="False Ceiling" class="hidden">
+                                </div>
+                                <div class="checkbox-card" onclick="toggleService(this, 'electrical')">
+                                    <i class="fas fa-bolt"></i>
+                                    <strong>Electrical Work</strong>
+                                    <input type="checkbox" name="service" value="Electrical" class="hidden">
+                                </div>
+                                <div class="checkbox-card" onclick="toggleService(this, 'painting')">
+                                    <i class="fas fa-paint-roller"></i>
+                                    <strong>Painting</strong>
+                                    <input type="checkbox" name="service" value="Painting" class="hidden">
+                                </div>
+                                <div class="checkbox-card" onclick="toggleService(this, 'furniture')">
+                                    <i class="fas fa-couch"></i>
+                                    <strong>Furniture</strong>
+                                    <input type="checkbox" name="service" value="Furniture" class="hidden">
+                                </div>
                             </div>
-                            <form id="quickCallbackForm" style="display: flex; flex-direction: column; gap: 16px;">
-                                <input type="text" id="cbName" placeholder="Full Name *" required style="padding: 16px; border: 1px solid #ddd; border-radius: 8px; font-size: 1rem; font-family: inherit; width: 100%; box-sizing: border-box;">
-                                <input type="tel" id="cbPhone" placeholder="WhatsApp Number *" maxlength="10" required style="padding: 16px; border: 1px solid #ddd; border-radius: 8px; font-size: 1rem; font-family: inherit; width: 100%; box-sizing: border-box;">
-                                <input type="text" id="cbLoc" placeholder="Location in Pune *" required style="padding: 16px; border: 1px solid #ddd; border-radius: 8px; font-size: 1rem; font-family: inherit; width: 100%; box-sizing: border-box;">
-                                
-                                <select id="cbService" style="padding: 16px; border: 1px solid #ddd; border-radius: 8px; font-size: 1rem; font-family: inherit; width: 100%; color: #555; appearance: none; background: #fff url('data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"%23555\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"6 9 12 15 18 9\"></polyline></svg>') no-repeat right 15px center; box-sizing: border-box;">
-                                    <option value="">Select Service (Optional)</option>
-                                    <option value="False Ceiling">False Ceiling & POP</option>
-                                    <option value="Electrical Work">Electrical Work</option>
-                                    <option value="Painting">Painting Finishes</option>
-                                    <option value="Custom Furniture">Custom Furniture</option>
-                                    <option value="Complete Interior">Complete Interior Execution</option>
-                                </select>
-                                <button type="submit" class="btn" style="background: #ff6b6b; color: #fff; padding: 18px; border: none; border-radius: 8px; font-size: 1.1rem; font-weight: 700; cursor: pointer; width: 100%; margin-top: 5px; box-sizing: border-box;">Get a Call Now <i class="fas fa-phone-volume" style="margin-left: 8px;"></i></button>
-                            </form>
-                            <div id="cbSuccess" style="display: none; text-align: center; color: #25d366; font-weight: 600; margin-top: 15px;"><i class="fas fa-check-circle"></i> We have received your request!</div>
                         </div>
 
-                        <div class="callback-content" style="box-sizing: border-box;">
-                            <h2 style="font-size: 2.3rem; color: #111; margin-bottom: 20px;">Why Choose <span class="serif" style="color: #ff6b6b; font-style: italic; font-family: 'Playfair Display', serif;">Arsh Interiors?</span></h2>
-                            <p style="color: #555; font-size: 1.05rem; margin-bottom: 25px; line-height: 1.8;">When you search for <strong>Arsh Interior</strong> or <strong>Arsh Interiors Pune</strong>, you are choosing unmatched craftsmanship. From material selection like Saint-Gobain Gyproc to transparent pricing structures, Arsh Interiors provides complete execution clarity.</p>
-                            <ul style="list-style: none; padding: 0;">
-                                <li style="margin-bottom: 15px; display: flex; align-items: center; gap: 15px; font-weight: 600; color: #333; font-size: 1rem;">
-                                    <i class="fas fa-check-circle" style="color: #ff6b6b; font-size: 1.2rem; flex-shrink: 0;"></i> Free Site Visit & Measurement by Arsh Interiors
-                                </li>
-                                <li style="margin-bottom: 15px; display: flex; align-items: center; gap: 15px; font-weight: 600; color: #333; font-size: 1rem;">
-                                    <i class="fas fa-check-circle" style="color: #ff6b6b; font-size: 1.2rem; flex-shrink: 0;"></i> Detailed Material Benchmark Checklist
-                                </li>
-                                <li style="display: flex; align-items: center; gap: 15px; font-weight: 600; color: #333; font-size: 1rem;">
-                                    <i class="fas fa-check-circle" style="color: #ff6b6b; font-size: 1.2rem; flex-shrink: 0;"></i> Transparent Pricing with Zero Hidden Fees
-                                </li>
-                            </ul>
+                        <div class="form-group">
+                            <label for="otherService">Other Services / Special Requirements (Optional)</label>
+                            <textarea id="otherService" rows="2" placeholder="Mention custom requirements..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="qualityType">Execution Quality Grade *</label>
+                            <select id="qualityType" required>
+                                <option value="simple">Budget Friendly (Standard Materials)</option>
+                                <option value="premium" selected>Premium Finish (Gyproc & Branded)</option>
+                                <option value="luxury">Luxury Designer (Bespoke Execution)</option>
+                            </select>
+                        </div>
+
+                        <div style="display: flex; gap: 12px;">
+                            <button type="button" class="btn" style="background: #555;" onclick="goToStep(1)">&larr; Back</button>
+                            <button type="button" class="btn" onclick="goToStep(3)">Next: Contact Details &rarr;</button>
                         </div>
                     </div>
-                </div>
-            </section>
 
-            <!-- Social Connect Cards Bar -->
-            <section style="background: #fff; padding: 25px 15px; border-top: 1px solid #eee; border-bottom: 1px solid #eee; box-sizing: border-box;">
-                <div class="container" style="max-width: 1100px; margin: 0 auto; display: flex; justify-content: center; align-items: center; gap: 20px; flex-wrap: wrap; text-align: center; box-sizing: border-box;">
-                    <span style="font-weight: 700; color: #111; font-size: 1rem;">Connect with Arsh Interior:</span>
-                    <a href="https://maps.app.goo.gl/wy16RFpNYSbMEBpC6" target="_blank" style="background: #f8f9fa; padding: 10px 20px; border-radius: 50px; border: 1px solid #ddd; color: #111; text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 8px; font-size: 0.9rem;">
-                        <i class="fas fa-map-marker-alt" style="color: #4285F4;"></i> Google Map
+                    <!-- STEP 3 -->
+                    <div id="step-3" class="hidden">
+                        <h2 class="calc-heading">Project Location & <span>Contact</span></h2>
+                        <div class="form-group">
+                            <label for="clientName">Full Name *</label>
+                            <input type="text" id="clientName" required placeholder="Enter your full name">
+                        </div>
+                        <div class="form-group">
+                            <label for="clientPhone">Phone Number (WhatsApp) *</label>
+                            <input type="tel" id="clientPhone" required placeholder="10-digit mobile number" maxlength="10">
+                        </div>
+                        <div class="form-group">
+                            <label for="projectLoc">Project Location / Society Name *</label>
+                            <input type="text" id="projectLoc" required placeholder="e.g., Wakad, Baner, Dhayari, Pune">
+                        </div>
+
+                        <div style="display: flex; gap: 12px;">
+                            <button type="button" class="btn" style="background: #555;" onclick="goToStep(2)">&larr; Back</button>
+                            <button type="submit" class="btn" style="background: #25d366;"><i class="fas fa-calculator"></i> Calculate Instant Estimate 🚀</button>
+                        </div>
+                    </div>
+
+                </form>
+
+                <!-- RESULT CONTAINER -->
+                <div id="resultContainer" class="hidden" style="margin-top: 20px; text-align: center;">
+                    <h2 class="calc-heading">Estimated Cost <span>Breakdown</span></h2>
+                    <p id="resultSubtitle" style="color: var(--gray); margin-bottom: 20px; font-size: 0.95rem;"></p>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; text-align: left;" id="tierBoxes"></div>
+
+                    <a id="waButton" href="#" target="_blank" class="btn" style="background: #25d366; display: inline-block; margin-top: 20px; font-size: 1rem; padding: 14px 25px; width: auto;">
+                        <i class="fab fa-whatsapp"></i> Discuss this Estimate on WhatsApp
                     </a>
-                    <a href="https://www.instagram.com/arsh_nterior?igsi=NGJyZTh2MDcyMG1u" target="_blank" style="background: #f8f9fa; padding: 10px 20px; border-radius: 50px; border: 1px solid #ddd; color: #111; text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 8px; font-size: 0.9rem;">
-                        <i class="fab fa-instagram" style="color: #E1306C;"></i> Instagram
-                    </a>
-                    <a href="https://www.facebook.com/share/1CxC6A6Mtj/" target="_blank" style="background: #f8f9fa; padding: 10px 20px; border-radius: 50px; border: 1px solid #ddd; color: #111; text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 8px; font-size: 0.9rem;">
-                        <i class="fab fa-facebook" style="color: #1877F2;"></i> Facebook
-                    </a>
-                    <a href="https://wa.me/919022104232" target="_blank" style="background: #f8f9fa; padding: 10px 20px; border-radius: 50px; border: 1px solid #ddd; color: #111; text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 8px; font-size: 0.9rem;">
-                        <i class="fab fa-whatsapp" style="color: #25D366;"></i> WhatsApp
-                    </a>
                 </div>
-            </section>
 
-            <!-- Polished Google Business Profile Big Card Section -->
-            <section style="padding: 60px 15px; background: #faf9f8; box-sizing: border-box;">
-                <div class="container" style="max-width: 900px; margin: 0 auto; padding: 0 15px; box-sizing: border-box;">
-                    <div class="gbp-polish-card text-center" style="box-sizing: border-box; text-align: center;">
-                        <div style="width: 70px; height: 70px; background: rgba(66, 133, 244, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px auto; color: #4285F4; font-size: 2rem;">
-                            <i class="fab fa-google"></i>
-                        </div>
-                        <span style="color: #4285F4; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; font-size: 0.85rem;">Verified Business Listing</span>
-                        <h3 style="font-size: 2rem; color: #111; margin: 10px 0 15px 0;">Find <span style="color: #ff6b6b;">Arsh Interiors</span> on Google</h3>
-                        <p style="color: #666; font-size: 1rem; max-width: 600px; margin: 0 auto 30px auto; line-height: 1.7;">Explore our verified 5-star reviews, completed project photos, and exact location in Dhayari, Pune on our official Google Business Profile.</p>
-                        <a href="https://maps.app.goo.gl/wy16RFpNYSbMEBpC6" target="_blank" class="btn" style="background: #4285F4; color: #fff; padding: 15px 32px; border-radius: 50px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 10px; box-shadow: 0 10px 25px rgba(66,133,244,0.3); transition: transform 0.3s ease; box-sizing: border-box;">
-                            <i class="fas fa-map-marked-alt"></i> Open Google Business Profile <i class="fas fa-external-link-alt" style="font-size: 0.85rem;"></i>
-                        </a>
-                    </div>
-                </div>
-            </section>
+            </div>
+        </section>
 
-            <!-- Services Quick Overview -->
-            <section class="services-overview section-padding" style="background: #fff; padding: 60px 15px; box-sizing: border-box;">
-                <div class="container" style="max-width: 1100px; margin: 0 auto; padding: 0 15px; box-sizing: border-box;">
-                    <div class="section-header text-center" style="margin-bottom: 40px; text-align: center;">
-                        <h2 style="font-size: 2.3rem; color: #111; margin-bottom: 10px;">Expert Services by <span class="serif" style="color: #ff6b6b; font-style: italic; font-family: 'Playfair Display', serif;">Arsh Interiors</span></h2>
-                        <p style="max-width: 700px; margin: 0 auto; color: #555;">Arsh Interior delivers expert false ceilings, wiring, painting, and custom woodwork across Pune.</p>
-                    </div>
-
-                    <div class="services-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 25px; box-sizing: border-box;">
-                        <div class="service-card" style="background: #fff; padding: 35px 25px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border: 1px solid #eee; box-sizing: border-box;">
-                            <div style="width: 60px; height: 60px; background: rgba(255,107,107,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; color: #ff6b6b; margin-bottom: 20px;"><i class="fas fa-cubes"></i></div>
-                            <h3 style="font-size: 1.3rem; margin-bottom: 15px; color: #111;">False Ceiling & POP</h3>
-                            <p style="color: #666; margin-bottom: 20px; font-size: 0.95rem; line-height: 1.6;">Arsh Interiors specializes in premium Gypsum and POP structures, Grid, PVC, WPVC ceilings, and exquisite wall mouldings.</p>
-                            <a href="/services/" class="nav-link" data-transition="slide" style="color: #ff6b6b; font-weight: 700; text-decoration: none; font-size: 0.9rem;">Explore Services &rarr;</a>
-                        </div>
-                        <div class="service-card" style="background: #fff; padding: 35px 25px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border: 1px solid #eee; box-sizing: border-box;">
-                            <div style="width: 60px; height: 60px; background: rgba(255,107,107,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; color: #ff6b6b; margin-bottom: 20px;"><i class="fas fa-plug"></i></div>
-                            <h3 style="font-size: 1.3rem; margin-bottom: 15px; color: #111;">Electrical Work</h3>
-                            <p style="color: #666; margin-bottom: 20px; font-size: 0.95rem; line-height: 1.6;">Advanced concealed wiring, smart load balancing, and ambient LED profiling executed safely by licensed electricians.</p>
-                            <a href="/services/" class="nav-link" data-transition="slide" style="color: #ff6b6b; font-weight: 700; text-decoration: none; font-size: 0.9rem;">Explore Services &rarr;</a>
-                        </div>
-                        <div class="service-card" style="background: #fff; padding: 35px 25px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border: 1px solid #eee; box-sizing: border-box;">
-                            <div style="width: 60px; height: 60px; background: rgba(255,107,107,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; color: #ff6b6b; margin-bottom: 20px;"><i class="fas fa-paint-roller"></i></div>
-                            <h3 style="font-size: 1.3rem; margin-bottom: 15px; color: #111;">Professional Painting</h3>
-                            <p style="color: #666; margin-bottom: 20px; font-size: 0.95rem; line-height: 1.6;">Rigorous surface prep and flawless application of luxury emulsions, Royale sheen, and bespoke wall textures.</p>
-                            <a href="/services/" class="nav-link" data-transition="slide" style="color: #ff6b6b; font-weight: 700; text-decoration: none; font-size: 0.9rem;">Explore Services &rarr;</a>
-                        </div>
-                        <div class="service-card" style="background: #fff; padding: 35px 25px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border: 1px solid #eee; box-sizing: border-box;">
-                            <div style="width: 60px; height: 60px; background: rgba(255,107,107,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; color: #ff6b6b; margin-bottom: 20px;"><i class="fas fa-couch"></i></div>
-                            <h3 style="font-size: 1.3rem; margin-bottom: 15px; color: #111;">Custom Furniture</h3>
-                            <p style="color: #666; margin-bottom: 20px; font-size: 0.95rem; line-height: 1.6;">Bespoke woodwork, modular kitchens, wardrobes, and space-saving functional furniture designed for your layout.</p>
-                            <a href="/services/" class="nav-link" data-transition="slide" style="color: #ff6b6b; font-weight: 700; text-decoration: none; font-size: 0.9rem;">Explore Services &rarr;</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Auto-Sliding Testimonials Section -->
-            <section class="section-padding" style="background: #faf9f8; padding: 60px 15px; box-sizing: border-box;">
-                <div class="container" style="max-width: 1100px; margin: 0 auto; padding: 0 15px; box-sizing: border-box;">
-                    <div class="section-header text-center" style="margin-bottom: 40px; text-align: center;">
-                        <h2 style="font-size: 2.3rem; color: #111; margin-bottom: 10px;">What Our <span class="serif" style="color: #ff6b6b; font-style: italic; font-family: 'Playfair Display', serif;">Clients Say</span></h2>
-                        <p style="color: #666;">Verified reviews from homeowners across Pune who trusted Arsh Interiors.</p>
-                    </div>
-
-                    <div class="testimonial-slider-container">
-                        <div class="testimonial-track" id="testimonialTrack">
-                            <div class="testimonial-card">
-                                <div style="color: #f39c12; margin-bottom: 15px; font-size: 1.1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                                <p style="color: #555; font-style: italic; margin-bottom: 20px; font-size: 0.95rem; line-height: 1.6;">"Arsh Interiors did an exceptional job with the Gypsum false ceiling and lighting in my 3 BHK at Wakad. Professional team and very clean execution!"</p>
-                                <h4 style="color: #111; font-weight: 700;">Subhojit Kumar</h4>
-                                <span style="font-size: 0.85rem; color: #888;">Wakad, Pune</span>
-                            </div>
-                            <div class="testimonial-card">
-                                <div style="color: #f39c12; margin-bottom: 15px; font-size: 1.1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                                <p style="color: #555; font-style: italic; margin-bottom: 20px; font-size: 0.95rem; line-height: 1.6;">"I hired Arsh Interior for complete electrical wiring and wall painting. Amit and his team completed the work on time with zero hidden charges."</p>
-                                <h4 style="color: #111; font-weight: 700;">Amit Deshmukh</h4>
-                                <span style="font-size: 0.85rem; color: #888;">Baner, Pune</span>
-                            </div>
-                            <div class="testimonial-card">
-                                <div style="color: #f39c12; margin-bottom: 15px; font-size: 1.1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                                <p style="color: #555; font-style: italic; margin-bottom: 20px; font-size: 0.95rem; line-height: 1.6;">"Best interior contractors in Pune! The wall moulding and TV unit design executed by Arsh Interiors completely transformed my living room."</p>
-                                <h4 style="color: #111; font-weight: 700;">Jay Kulkarni</h4>
-                                <span style="font-size: 0.85rem; color: #888;">Kharadi, Pune</span>
-                            </div>
-                            <div class="testimonial-card">
-                                <div style="color: #f39c12; margin-bottom: 15px; font-size: 1.1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                                <p style="color: #555; font-style: italic; margin-bottom: 20px; font-size: 0.95rem; line-height: 1.6;">"Extremely polite and skilled contractors. Arsh Interior delivered high-quality POP ceiling work for our new bungalow. Highly recommended!"</p>
-                                <h4 style="color: #111; font-weight: 700;">Pooja Sharma</h4>
-                                <span style="font-size: 0.85rem; color: #888;">Pimple Saudagar, Pune</span>
-                            </div>
-                            <div class="testimonial-card">
-                                <div style="color: #f39c12; margin-bottom: 15px; font-size: 1.1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                                <p style="color: #555; font-style: italic; margin-bottom: 20px; font-size: 0.95rem; line-height: 1.6;">"Transparent pricing and amazing finish on the royal emulsion painting. Arsh Interiors is definitely the best in Dhayari and surrounding areas."</p>
-                                <h4 style="color: #111; font-weight: 700;">Rajesh Shinde</h4>
-                                <span style="font-size: 0.85rem; color: #888;">Sinhagad Road, Pune</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-        </div> 
-    </main>
-
- <!-- Massive High-Intent SEO Content & Internal Linking Block -->
-        <section class="container" style="margin: 60px auto; padding: 0 15px;">
-            <div style="background: #ffffff; padding: 50px; border-radius: 20px; box-shadow: 0 15px 40px rgba(0,0,0,0.05); border: 1px solid #eaeaea;">
-                <h2 style="font-size: 2.3rem; color: #111; margin-bottom: 25px; border-bottom: 2px solid #f0f0f0; padding-bottom: 15px; font-weight: 800;">Arsh Interiors Pune | Expert Turnkey Residential & Commercial Contracting</h2>
+        <!-- SEO Content Cards & Internal Links Hub (Clean URLs) -->
+        <section class="container" style="margin-bottom: 40px;">
+            <div class="estimator-card" style="padding: 30px 20px;">
+                <h2 style="font-size: 1.4rem; border: none; padding-bottom: 0; text-align: left;">Complete Interior Execution & Budgeting Guide in Pune</h2>
                 
-                <p style="font-size: 1.1rem; color: #444; line-height: 1.9; margin-bottom: 25px;">
-                    Welcome to <strong>Arsh Interiors</strong>, your trusted interior execution and remodeling partner located in Dhayari, Pune. If you are searching for the absolute best <a href="/False-Ceiling-in-Pune" style="color: #ff6b6b; font-weight: 700; text-decoration: underline;">false ceiling contractor in pune</a>, we deliver robust overhead frameworks designed for modern lifestyles. Whether you want a sleek <a href="/False-Ceiling-in-Pune" style="color: #ff6b6b; font-weight: 700; text-decoration: underline;">gypsum false ceiling</a>, an artistic <a href="/False-Ceiling-in-Pune" style="color: #ff6b6b; font-weight: 700; text-decoration: underline;">pop false ceiling</a>, a durable waterproof <a href="/False-Ceiling-in-Pune" style="color: #ff6b6b; font-weight: 700; text-decoration: underline;">pvc ceiling</a>, or commercial acoustic <a href="/False-Ceiling-in-Pune" style="color: #ff6b6b; font-weight: 700; text-decoration: underline;">suspended grid ceiling</a> panels, our team ensures structural perfection. Before finalizing layouts, use our smart <a href="/estimator" style="color: #ff6b6b; font-weight: 700; text-decoration: underline;">Cost Calculator</a> to instantly compute your estimated material and labor expenses.
+                <p style="font-size: 0.95rem; color: #444; line-height: 1.7; margin-bottom: 15px;">
+                    Planning a home renovation or setting up a newly purchased property across Pune requires absolute financial transparency. Using our advanced <strong>interior cost estimator Pune</strong> tool, property owners across Wakad, Baner, Hinjewadi, Kothrud, and Dhayari can instantly calculate accurate market rates. Whether you need a precise <a href="/False-Ceiling-in-Pune" style="color: var(--primary); font-weight: 700; text-decoration: underline;">false ceiling cost calculator Pune</a> or want to explore our complete <a href="/services" style="color: var(--primary); font-weight: 700; text-decoration: underline;">Services Overview</a>, our platform reflects true material and labor benchmarks.
                 </p>
 
-                <p style="font-size: 1.1rem; color: #444; line-height: 1.9; margin-bottom: 25px;">
-                    Wall styling and dimensional plastering form the core of luxury interior design. At Arsh Interiors, we specialize in high-end <a href="/gypsum-pop-work" style="color: #ff6b6b; font-weight: 700; text-decoration: underline;">gypsum and pop work in pune</a>. From smooth <a href="/gypsum-pop-work" style="color: #ff6b6b; font-weight: 700; text-decoration: underline;">gypsum board ceiling</a> installations and multi-level <a href="/gypsum-pop-work" style="color: #ff6b6b; font-weight: 700; text-decoration: underline;">pop ceiling design</a> to classical European <a href="/gypsum-pop-work" style="color: #ff6b6b; font-weight: 700; text-decoration: underline;">wall molding design</a> and striking <a href="/gypsum-pop-work" style="color: #ff6b6b; font-weight: 700; text-decoration: underline;">pop wall design interior</a> backdrops, we elevate your walls. As leading <a href="/gypsum-pop-work" style="color: #ff6b6b; font-weight: 700; text-decoration: underline;">false ceiling and pop contractor</a> experts, we also provide professional <a href="/gypsum-pop-work" style="color: #ff6b6b; font-weight: 700; text-decoration: underline;">cornice and molding services pune</a> across Wakad, Baner, and surrounding areas.
+                <p style="font-size: 0.95rem; color: #444; line-height: 1.7; margin-bottom: 15px;">
+                    As seasoned <a href="/about" style="color: var(--primary); font-weight: 700; text-decoration: underline;">interior contractors in Pune</a>, <strong>Arsh Interiors</strong> manages every phase of residential remodeling. You can browse our past work on the <a href="/design" style="color: var(--primary); font-weight: 700; text-decoration: underline;">Portfolio Gallery</a> or return anytime to the <a href="/" style="color: var(--primary); font-weight: 700; text-decoration: underline;">Home Page</a> for direct inquiries.
                 </p>
 
-                <p style="font-size: 1.1rem; color: #444; line-height: 1.9; margin-bottom: 25px;">
-                    Electrical safety, conduit safety, and lighting synchronization require certified expertise. When looking for professional <a href="/electrical-work-in-pune" style="color: #ff6b6b; font-weight: 700; text-decoration: underline;">electrical work in pune</a> or a dependable <a href="/electrical-work-in-pune" style="color: #ff6b6b; font-weight: 700; text-decoration: underline;">electrician near me</a>, Arsh Interiors provides safe <a href="/electrical-work-in-pune" style="color: #ff6b6b; font-weight: 700; text-decoration: underline;">house wiring services pune</a>, skilled <a href="/electrical-work-in-pune" style="color: #ff6b6b; font-weight: 700; text-decoration: underline;">interior electrician in pune</a> execution, and heavy-duty load balancing handled by seasoned <a href="/electrical-work-in-pune" style="color: #ff6b6b; font-weight: 700; text-decoration: underline;">commercial electrical contractors pune</a> with complete <a href="/electrical-work-in-pune" style="color: #ff6b6b; font-weight: 700; text-decoration: underline;">electrical quotation pune</a> transparency.
-                </p>
+                <h3 style="font-size: 1.2rem; color: #111; margin-top: 25px; margin-bottom: 10px;">Explore Specialized Service Quotations</h3>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin: 15px 0;">
+                    <div style="background: #fff; padding: 15px; border-radius: 12px; border: 1px solid #ffdcdc;">
+                        <h4 style="color: #111; margin-bottom: 6px; font-size: 0.95rem;"><i class="fas fa-layer-group" style="color: var(--primary);"></i> False Ceiling Works</h4>
+                        <p style="font-size: 0.8rem; color: #666; margin-bottom: 10px;">Calculates GI metal framing, Gyproc boards, and <a href="/gypsum-pop-work" style="color: var(--primary); text-decoration: underline; font-weight: 600;">gypsum ceiling rate per sq ft</a>.</p>
+                        <a href="/False-Ceiling-in-Pune" style="color: var(--primary); font-weight: 700; text-decoration: none; font-size: 0.8rem;">View Page &rarr;</a>
+                    </div>
+                    
+                    <div style="background: #fff; padding: 15px; border-radius: 12px; border: 1px solid #ffdcdc;">
+                        <h4 style="color: #111; margin-bottom: 6px; font-size: 0.95rem;"><i class="fas fa-bolt" style="color: var(--primary);"></i> Electrical & Lighting</h4>
+                        <p style="font-size: 0.8rem; color: #666; margin-bottom: 10px;">Estimates concealed PVC pipe laying, <a href="/electrical-work-in-pune" style="color: var(--primary); text-decoration: underline; font-weight: 600;">electrical wiring cost</a>, and MCB boards.</p>
+                        <a href="/electrical-work-in-pune" style="color: var(--primary); font-weight: 700; text-decoration: none; font-size: 0.8rem;">View Page &rarr;</a>
+                    </div>
 
-                <p style="font-size: 1.1rem; color: #444; line-height: 1.9; margin-bottom: 25px;">
-                    Give your property an exquisite visual finish with our expert <a href="/painting-in-pune" style="color: #ff6b6b; font-weight: 700; text-decoration: underline;">painting contractors in pune</a> and professional <a href="/painting-in-pune" style="color: #ff6b6b; font-weight: 700; text-decoration: underline;">house painting services pune</a>. Whether you need reliable <a href="/painting-in-pune" style="color: #ff6b6b; font-weight: 700; text-decoration: underline;">interior painters near me</a>, fair <a href="/painting-in-pune" style="color: #ff6b6b; font-weight: 700; text-decoration: underline;">wall painting cost per sq ft pune</a>, modern <a href="/painting-in-pune" style="color: #ff6b6b; font-weight: 700; text-decoration: underline;">texture painting pune</a>, or specialist <a href="/painting-in-pune" style="color: #ff6b6b; font-weight: 700; text-decoration: underline;">royal paint contractors pune</a>, we guarantee flawless emulsions and long-lasting protection.
-                </p>
+                    <div style="background: #fff; padding: 15px; border-radius: 12px; border: 1px solid #ffdcdc;">
+                        <h4 style="color: #111; margin-bottom: 6px; font-size: 0.95rem;"><i class="fas fa-paint-roller" style="color: var(--primary);"></i> Wall Painting</h4>
+                        <p style="font-size: 0.8rem; color: #666; margin-bottom: 10px;">Computes Birla White putty, primer, and <a href="/painting-in-pune" style="color: var(--primary); text-decoration: underline; font-weight: 600;">house painting estimate Pune</a>.</p>
+                        <a href="/painting-in-pune" style="color: var(--primary); font-weight: 700; text-decoration: none; font-size: 0.8rem;">View Page &rarr;</a>
+                    </div>
 
-                <p style="font-size: 1.1rem; color: #444; line-height: 1.9; margin-bottom: 30px;">
-                    Complete your home transformation with bespoke carpentry. If you are searching for high-quality <a href="/furniture-in-pune" style="color: #ff6b6b; font-weight: 700; text-decoration: underline;">furniture in pune</a>, a master <a href="/furniture-in-pune" style="color: #ff6b6b; font-weight: 700; text-decoration: underline;">carpenter in pune</a>, a trusted <a href="/furniture-in-pune" style="color: #ff6b6b; font-weight: 700; text-decoration: underline;">custom furniture manufacturer pune</a>, specialized <a href="/furniture-in-pune" style="color: #ff6b6b; font-weight: 700; text-decoration: underline;">modular kitchen contractors pune</a>, reliable <a href="/furniture-in-pune" style="color: #ff6b6b; font-weight: 700; text-decoration: underline;">wardrobe makers near me</a>, or high-end <a href="/furniture-in-pune" style="color: #ff6b6b; font-weight: 700; text-decoration: underline;">bespoke woodwork pune</a> backed by professional <a href="/furniture-in-pune" style="color: #ff6b6b; font-weight: 700; text-decoration: underline;">interior carpenter services pune</a>, Arsh Interiors is your ultimate contracting destination.
-                </p>
-
-                <div style="background: #fff5f5; border: 2px solid #ff6b6b; padding: 30px; border-radius: 14px; text-align: center; margin-top: 35px;">
-                    <h3 style="margin-bottom: 12px; color: #111; font-size: 1.7rem;">Plan Your Project Budget With Complete Transparency</h3>
-                    <p style="color: #666; margin-bottom: 22px; font-size: 1.05rem;">Use our smart estimation tool to calculate accurate cost brackets for all interior execution services in Pune.</p>
-                    <a href="/estimator" class="btn" style="background: #25d366; font-size: 1.15rem; padding: 15px 35px; text-decoration: none; color: #fff; border-radius: 8px; display: inline-block; font-weight: 700; box-shadow: 0 8px 25px rgba(37,211,102,0.3);">
-                        <i class="fas fa-calculator"></i> Launch Cost Calculator 🚀
-                    </a>
+                    <div style="background: #fff; padding: 15px; border-radius: 12px; border: 1px solid #ffdcdc;">
+                        <h4 style="color: #111; margin-bottom: 6px; font-size: 0.95rem;"><i class="fas fa-couch" style="color: var(--primary);"></i> Custom Furniture</h4>
+                        <p style="font-size: 0.8rem; color: #666; margin-bottom: 10px;">Factors in modular kitchens, wardrobes, and <a href="/furniture-in-pune" style="color: var(--primary); text-decoration: underline; font-weight: 600;">custom furniture pricing Pune</a>.</p>
+                        <a href="/furniture-in-pune" style="color: var(--primary); font-weight: 700; text-decoration: none; font-size: 0.8rem;">View Page &rarr;</a>
+                    </div>
                 </div>
             </div>
         </section>
-        <!-- Main Footer -->
-    <footer class="site-footer" style="background: #111; color: #fff; padding: 60px 15px 0; box-sizing: border-box;">
-        <div class="container footer-grid" style="max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 40px; margin-bottom: 40px; box-sizing: border-box;">
-            <div class="footer-col brand-col">
-                <a href="index.html" class="footer-logo" style="font-size: 1.6rem; font-weight: 800; color: #fff; display: flex; align-items: center; gap: 10px; margin-bottom: 20px; text-decoration: none;">
-                    <i class="fas fa-layer-group" style="color: #ff6b6b;"></i> Arsh Interiors
-                </a>
-                <p style="color: #aaa; font-size: 0.9rem; line-height: 1.7;">Arsh Interiors (Arsh Interior) offers premium interior contracting services based in Dhayari, Pune. We bring architectural elegance to modern spaces through meticulous execution.</p>
-                <div style="display: flex; gap: 15px; margin-top: 20px; font-size: 1.3rem;">
-                    <a href="https://maps.app.goo.gl/wy16RFpNYSbMEBpC6" target="_blank" title="Google Map" style="color: #ff6b6b;"><i class="fas fa-map-marker-alt"></i></a>
-                    <a href="https://www.instagram.com/arsh_nterior?igsi=NGJyZTh2MDcyMG1u" target="_blank" title="Instagram" style="color: #ff6b6b;"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/share/1CxC6A6Mtj/" target="_blank" title="Facebook" style="color: #ff6b6b;"><i class="fab fa-facebook"></i></a>
-                    <a href="https://wa.me/919022104232" target="_blank" title="WhatsApp" style="color: #25d366;"><i class="fab fa-whatsapp"></i></a>
-                </div>
+    </main>
+
+    <!-- Main Footer with Clean URLs & Keyword Index -->
+    <footer style="background: #111; color: #fff; padding: 40px 15px 0; box-sizing: border-box;">
+        <div class="container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 25px; margin-bottom: 25px; box-sizing: border-box;">
+            <div>
+                <h3 style="color: #fff; font-size: 1.1rem; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;"><i class="fas fa-layer-group" style="color: var(--primary);"></i> Arsh Interiors</h3>
+                <p style="color: #aaa; font-size: 0.8rem; line-height: 1.6;">Arsh Interiors provides premium interior contracting services based in Dhayari, Pune. Specializing in false ceilings, electrical work, painting, and modular furniture.</p>
             </div>
-            <div class="footer-col links-col">
-                <h4 style="color: #fff; font-size: 1.1rem; margin-bottom: 20px;">Quick Links</h4>
-                <ul style="list-style: none; padding: 0; line-height: 2.2;">
-                    <li><a href="/" class="nav-link" data-transition="slide" style="color: #ff6b6b; text-decoration: none; font-weight: 600;">Home</a></li>
-                    <li><a href="/about" class="nav-link" data-transition="slide" style="color: #aaa; text-decoration: none;">About Us</a></li>
-                    <li><a href="/services" class="nav-link" data-transition="slide" style="color: #aaa; text-decoration: none;">Core Services</a></li>
-                    <li><a href="/estimator" class="nav-link" data-transition="slide" style="color: #aaa; text-decoration: none;">Cost Calculator</a></li>
-                    <li><a href="/design" class="nav-link" data-transition="slide" style="color: #aaa; text-decoration: none;">Portfolio</a></li>
+            <div>
+                <h4 style="color: #fff; font-size: 0.95rem; margin-bottom: 12px;">Quick Navigation</h4>
+                <ul style="list-style: none; padding: 0; line-height: 1.8; margin: 0; font-size: 0.85rem;">
+                    <li><a href="/" style="color: #aaa; text-decoration: none;">Home Page</a></li>
+                    <li><a href="/about" style="color: #aaa; text-decoration: none;">About Us</a></li>
+                    <li><a href="/services" style="color: #aaa; text-decoration: none;">Core Services</a></li>
+                    <li><a href="/estimator" style="color: var(--primary); text-decoration: none; font-weight: 600;">Cost Calculator</a></li>
+                    <li><a href="/design" style="color: #aaa; text-decoration: none;">Portfolio</a></li>
                 </ul>
             </div>
-            <div class="footer-col service-links-col">
-                <h4 style="color: #fff; font-size: 1.1rem; margin-bottom: 20px;">Specialized Services</h4>
-                <ul style="list-style: none; padding: 0; line-height: 2.2;">
+            <div>
+                <h4 style="color: #fff; font-size: 0.95rem; margin-bottom: 12px;">Specialized Services</h4>
+                <ul style="list-style: none; padding: 0; line-height: 1.8; margin: 0; font-size: 0.85rem;">
                     <li><a href="/False-Ceiling-in-Pune" style="color: #aaa; text-decoration: none;">False Ceiling in Pune</a></li>
                     <li><a href="/gypsum-pop-work" style="color: #aaa; text-decoration: none;">Gypsum & POP Work</a></li>
                     <li><a href="/electrical-work-in-pune" style="color: #aaa; text-decoration: none;">Electrical Work in Pune</a></li>
@@ -392,90 +406,200 @@
                     <li><a href="/furniture-in-pune" style="color: #aaa; text-decoration: none;">Custom Furniture</a></li>
                 </ul>
             </div>
-            <div class="footer-col contact-col">
-                <h4 style="color: #fff; font-size: 1.1rem; margin-bottom: 20px;">Contact & Location</h4>
-                <ul style="list-style: none; padding: 0; line-height: 1.8;">
-                    <li style="margin-bottom: 12px; color: #aaa;"><i class="fas fa-phone-alt" style="color: #ff6b6b; margin-right: 10px;"></i> <a href="tel:+919022104232" style="color: #aaa; text-decoration: none;">+91 9022104232</a></li>
-                    <li style="margin-bottom: 12px; color: #aaa;"><i class="fab fa-whatsapp" style="color: #ff6b6b; margin-right: 10px;"></i> <a href="https://wa.me/919022104232" style="color: #aaa; text-decoration: none;">Chat on WhatsApp</a></li>
-                    <li style="color: #aaa; line-height: 1.6;"><i class="fas fa-map-marker-alt" style="color: #ff6b6b; margin-right: 10px;"></i> Dhayari, Pune, Maharashtra - 411041</li>
-                </ul>
+            <div>
+                <h4 style="color: #fff; font-size: 0.95rem; margin-bottom: 12px;">Contact Info</h4>
+                <p style="color: #aaa; font-size: 0.8rem; line-height: 1.6;"><i class="fas fa-phone-alt" style="color: var(--primary);"></i> +91 9022104232<br><i class="fab fa-whatsapp" style="color: #25d366;"></i> <a href="https://wa.me/919022104232" style="color: #aaa; text-decoration: none;">Chat on WhatsApp</a><br><i class="fas fa-map-marker-alt" style="color: var(--primary);"></i> Dhayari, Pune, Maharashtra</p>
             </div>
         </div>
 
-        <!-- Hyper-Local Pune SEO Keyword Index Block (200+ Locations & Master Keywords) -->
-        <div style="background: #0a0a0a; padding: 35px 15px; border-top: 1px solid rgba(255,255,255,0.05); box-sizing: border-box;">
-            <div class="container" style="max-width: 1100px; margin: 0 auto; box-sizing: border-box;">
-                <h4 style="color: #777; font-size: 0.85rem; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1.5px;">Arsh Interiors Pune | Master Hyper-Local SEO Index & Keyword Cloud</h4>
-                <div class="seo-keywords" style="font-size: 0.75rem; color: #555; text-align: justify; line-height: 1.9; columns: 3; column-gap: 25px;">
-                    Arsh Interiors, Arsh Interior, Arsh Interiors Pune, False ceiling contractor in Pune, Gypsum false ceiling in Wakad, Electrician near me in Baner, Painting contractors in Hinjewadi, Carpenter in Kothrud, PVC ceiling in Kharadi, POP work in Hadapsar, Interior designer in Viman Nagar, False ceiling in Magarpatta City, Electrical wiring in Aundh, Wall molding design in Pimple Saudagar, Custom furniture in Kalyani Nagar, False ceiling installation in Koregaon Park, House painters in Bavdhan, Gypsum board work in Pashan, Interior contractor in SB Road, False ceiling in Model Colony, Electrician in Deccan Gymkhana, Painting services in Erandwane, Carpentry work in Shivajinagar, Suspended grid ceiling in Swargate, POP ceiling design in Camp, False ceiling in Nana Peth, Electrical contractor in Rasta Peth, Interior decorators in Budhwar Peth, False ceiling in Pune Station, Painter in Ghorpadi, Carpenter in Wanowrie, False ceiling in NIBM Road, PVC ceiling in Undri, Gypsum work in Mohammadwadi, Electrical work in Pisoli, False ceiling in Kondhwa, Interior execution in Katraj, Carpenter in Ambegaon Pathar, False ceiling in Dhayari Phata, Painting work in Narhe, Electrical services in Vadgaon Budruk, False ceiling in Sinhagad Road, POP molding in Warje, Interior contractor in Karvenagar, False ceiling in Kothrud Depot, Electrician in Paud Road, Painting contractor in Bhusari Colony, Carpenter in Chandan Nagar, False ceiling in Kharadi Bypass, POP design in Wagholi, Electrical work in Lohegaon, False ceiling in Dhanori, Painting in Vishrantwadi, Carpentry in Yerwada, False ceiling in Dighi, Electrician in Alandi Road, False ceiling in Bhosari, Interior work in Pimpri, Carpentry in Chinchwad, False ceiling in Akurdi, Painting in Nigdi, Electrical work in Ravet, False ceiling in Wakad BRTS, POP design in Punawale, Interior contractor in Tathawade, False ceiling in Hinjewadi Phase 1, Electrician in Hinjewadi Phase 2, Carpentry in Hinjewadi Phase 3, Painting in Maan, False ceiling in Marunji, Interior work in Kasarwadi, False ceiling in Dapodi, Electrical contractor in Bopodi, Painting in Khadki, Carpenter in Aundh IT Park, False ceiling in Baner Pashan Link Road, POP work in Somatane, Interior execution in Talegaon, False ceiling in Chakan, Electrical work in Shikrapur, Painting in Saswad, False ceiling in Pirangut, Carpentry in Paud, False ceiling in Lavasa, Interior contractor in Manjari, POP molding in Keshavnagar, False ceiling in Mundhwa, Electrical work in Kharadi South, Painting contractor in Magarpatta South, Carpentry in Hadapsar Industrial Estate, False ceiling in Sasane Nagar, POP design in Pune Solapur Road, Interior execution in Fursungi, False ceiling in Urali Kanchan, Electrical contractor in Holkarwadi, Painting in Handewadi, Carpentry in Autadwadi Handewadi, False ceiling in Katraj Bypass, POP molding in Bhilarewadi, False ceiling in Gujar Nimbalkarwadi, Electrical work in Jambhulwadi, Painting in Shindewadi, Carpentry in Khed Shivapur, False ceiling in Bhor, Interior contractor in Satara Road, False ceiling in Market Yard, Electrical work in Gultekdi, Painting in Nana Peth Pune, Carpentry in Shukrawar Peth, False ceiling in Shanivar Peth, POP design in Raviwar Peth, Interior work in Kasba Peth, False ceiling in Mangalwar Peth, Electrical contractor in Somwar Peth, Painting in Ganeshpeth, Carpentry in Bhavani Peth, False ceiling in Vadgaon Sheri, POP molding in Chandan Nagar Pune, Interior execution in Kharadi Knowledge Park, False ceiling in Viman Nagar Extension, Electrical work in Lohegaon Airport Road, Painting in Dhanori Lohegaon Link Road, Carpentry in Vishrantwadi Alandi Road, False ceiling in Kalas, POP design in Dapodi Pune, Interior contractor in Pimpri Colony, False ceiling in Sant Tukaram Nagar, Electrical work in Kasarwadi Phata, Painting in Akurdi Station Road, Carpenter in Nigdi Pradhikaran, False ceiling in Ravet BRTS Road, POP molding in Punawale Jakat Naka, Interior execution in Hinjewadi Blue Ridge, False ceiling in Wakad Wakadkar Wasti, Electrical contractor in Baner IT Park, Painting in Aundh Baner Link Road, Carpentry in Pashan Sus Road, False ceiling in Sus, POP design in Mahalunge, Interior work in Nande, False ceiling in Lavale, Electrical work in Pirangut MIDC, Painting in Hinjewadi Phase 1 MIDC, Carpentry in Hinjewadi Megapolis, False ceiling in Wakad Datta Mandir Road, POP molding in Hinjewadi Wakad Link Road, Interior contractor in Dhayari Narhe Road.
+        <!-- Hyper-Local Pune SEO Keyword Index Block -->
+        <div style="background: #0a0a0a; padding: 25px 15px; border-top: 1px solid rgba(255,255,255,0.05); box-sizing: border-box;">
+            <div class="container" style="max-width: 1100px; margin: 0 auto;">
+                <h4 style="color: #777; font-size: 0.75rem; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px;">False ceiling cost calculator Pune & Estimator Index - Arsh Interiors</h4>
+                <div style="font-size: 0.65rem; color: #555; text-align: justify; line-height: 1.7; columns: 2; column-gap: 15px;">
+                    False ceiling cost calculator Pune, Interior cost estimator Pune, Gypsum ceiling rate per sq ft, Arsh Interiors estimator, Interior quotation Pune, Electrical wiring cost, House painting estimate Pune, Interior estimation tool Pune, Home renovation budget calculator, False ceiling cost estimator in Wakad, Interior cost calculator in Baner, False ceiling price in Hinjewadi, Gypsum ceiling quote in Kothrud, Interior budgeting in Kharadi, Renovation calculator in Hadapsar, Cost estimator in Viman Nagar, Budget tool in Magarpatta City, Interior quotation in Aundh, Cost calculator in Pimple Saudagar, Estimator in Kalyani Nagar, Renovation cost in Koregaon Park, Budget in Bavdhan, False ceiling estimate in Pashan, Interior budgeting in SB Road, Cost estimator in Model Colony, Interior estimator in Deccan Gymkhana, Renovation budget in Erandwane, Cost calculator in Shivajinagar, Interior budgeting in Swargate, Renovation estimator in Camp, Budget calculator in Nana Peth, Interior cost in Rasta Peth, Estimator tool in Budhwar Peth, Cost calculator in Pune Station, Budget estimator in Ghorpadi, Interior cost in Wanowrie, Renovation budget in NIBM Road, Cost estimator in Undri, Interior estimator in Mohammadwadi, Budget calculator in Pisoli, Cost calculator in Kondhwa, Interior budgeting in Katraj, Renovation estimator in Ambegaon Pathar, Cost calculator in Dhayari Phata, Interior estimator in Narhe, Budget calculator in Vadgaon Budruk, Cost estimator in Sinhagad Road, Interior budgeting in Warje, Renovation estimator in Karvenagar, Cost calculator in Kothrud Depot, Interior estimator in Paud Road, Budget calculator in Bhusari Colony, Cost calculator in Chandan Nagar, Interior budgeting in Kharadi Bypass, Renovation estimator in Wagholi, Cost calculator in Lohegaon, Interior estimator in Dhanori, Budget calculator in Vishrantwadi, Cost calculator in Yerwada, Interior budgeting in Dighi, Renovation estimator in Alandi Road, Cost calculator in Bhosari, Interior estimator in Pimpri, Budget calculator in Chinchwad, Cost calculator in Akurdi, Interior budgeting in Nigdi, Renovation estimator in Ravet, Cost calculator in Wakad BRTS, Interior estimator in Punawale, Budget calculator in Tathawade, Cost calculator in Hinjewadi Phase 1, Interior budgeting in Hinjewadi Phase 2, Renovation estimator in Hinjewadi Phase 3, Cost calculator in Maan, Interior estimator in Marunji, Budget calculator in Kasarwadi, Cost calculator in Dapodi, Interior budgeting in Bopodi, Renovation estimator in Khadki, Cost calculator in Aundh IT Park, Interior estimator in Baner Pashan Link Road, Budget calculator in Somatane, Cost calculator in Talegaon, Interior budgeting in Chakan, Renovation estimator in Shikrapur, Cost calculator in Saswad, Interior estimator in Pirangut, Budget calculator in Paud, Cost calculator in Lavasa, Interior budgeting in Manjari, Renovation estimator in Keshavnagar, Cost calculator in Mundhwa, Interior estimator in Kharadi South, Budget calculator in Magarpatta South, Cost calculator in Hadapsar Industrial Estate, Interior budgeting in Sasane Nagar, Renovation estimator in Pune Solapur Road, Cost calculator in Fursungi, Interior estimator in Urali Kanchan, Budget calculator in Holkarwadi, Cost calculator in Handewadi, Interior budgeting in Autadwadi Handewadi, Renovation estimator in Katraj Bypass, Cost calculator in Bhilarewadi, Interior estimator in Gujar Nimbalkarwadi, Budget calculator in Jambhulwadi, Cost calculator in Shindewadi, Interior budgeting in Khed Shivapur, Renovation estimator in Bhor, Cost calculator in Satara Road, Interior estimator in Market Yard, Budget calculator in Gultekdi, Cost calculator in Nana Peth Pune, Interior budgeting in Shukrawar Peth, Renovation estimator in Shanivar Peth, Cost calculator in Raviwar Peth, Interior estimator in Kasba Peth, Budget calculator in Mangalwar Peth, Cost calculator in Somwar Peth, Interior budgeting in Ganeshpeth, Renovation estimator in Bhavani Peth, Cost calculator in Vadgaon Sheri, Interior estimator in Chandan Nagar Pune, Budget calculator in Kharadi Knowledge Park, Cost calculator in Viman Nagar Extension, Interior budgeting in Lohegaon Airport Road, Renovation estimator in Dhanori Lohegaon Link Road, Cost calculator in Vishrantwadi Alandi Road, Interior estimator in Kalas, Budget calculator in Dapodi Pune, Cost calculator in Pimpri Colony, Interior budgeting in Sant Tukaram Nagar, Renovation estimator in Kasarwadi Phata, Cost calculator in Akurdi Station Road, Interior estimator in Nigdi Pradhikaran, Budget calculator in Ravet BRTS Road, Cost calculator in Punawale Jakat Naka, Interior estimator in Hinjewadi Blue Ridge, Budget calculator in Wakad Wakadkar Wasti, Cost calculator in Baner IT Park, Interior budgeting in Aundh Baner Link Road, Renovation estimator in Pashan Sus Road, Cost calculator in Sus, Interior estimator in Mahalunge, Budget calculator in Nande, Cost calculator in Lavasa, Interior budgeting in Pirangut MIDC, Renovation estimator in Hinjewadi Phase 1 MIDC, Cost calculator in Hinjewadi Megapolis, Interior estimator in Wakad Datta Mandir Road, Budget calculator in Hinjewadi Wakad Link Road, Cost calculator in Dhayari Narhe Road.
                 </div>
             </div>
         </div>
 
-        <div class="footer-bottom" style="background: #000; padding: 22px 0; color: #666; font-size: 0.85rem; box-sizing: border-box;">
-            <div class="container text-center" style="text-align: center;">
-                <p>&copy; 2026 Arsh Interiors Pune. All Rights Reserved.</p>
-            </div>
+        <div style="background: #000; padding: 15px 0; color: #666; font-size: 0.75rem; text-align: center;">
+            <p>&copy; 2026 Arsh Interiors Pune. All Rights Reserved.</p>
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <!-- Script Logic with Google Sheets Apps Script Integration -->
     <script>
-        // Smooth Continuous Auto-sliding Testimonials Logic
-        const track = document.getElementById('testimonialTrack');
-        let index = 0;
-        
-        function autoSlide() {
-            if (!track) return;
-            const cards = track.children;
-            const totalCards = cards.length;
-            const visibleCards = window.innerWidth >= 768 ? 3 : 1;
-            
-            index++;
-            if (index > totalCards - visibleCards) {
-                index = 0;
+        function toggleDrawer() {
+            document.getElementById('mobileDrawer').classList.toggle('open');
+        }
+
+        function toggleService(card, serviceName) {
+            card.classList.toggle('selected');
+            const checkbox = card.querySelector('input[type="checkbox"]');
+            checkbox.checked = !checkbox.checked;
+        }
+
+        function goToStep(stepNum) {
+            if(stepNum === 2) {
+                const prop = document.getElementById('propType').value;
+                const carpet = document.getElementById('carpetArea').value;
+                const time = document.getElementById('timeline').value;
+                if(!prop || !carpet || !time) {
+                    alert('Please select Property Type, enter Carpet Area, and choose Timeline.');
+                    return;
+                }
             }
             
-            const slidePercent = (100 / visibleCards) * index;
-            track.style.transform = `translateX(-${slidePercent}%)`;
-        }
-        
-        let slideInterval = setInterval(autoSlide, 3500);
-
-        if (track) {
-            track.addEventListener('mouseenter', () => clearInterval(slideInterval));
-            track.addEventListener('mouseleave', () => slideInterval = setInterval(autoSlide, 3500));
+            document.getElementById('step-1').classList.add('hidden');
+            document.getElementById('step-2').classList.add('hidden');
+            document.getElementById('step-3').classList.add('hidden');
+            
+            document.getElementById('step-' + stepNum).classList.remove('hidden');
+            window.scrollTo({top: 40, behavior: 'smooth'});
         }
 
-        // Callback Form Submission
-        const cbForm = document.getElementById('quickCallbackForm');
-        if (cbForm) {
-            cbForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-                const btn = this.querySelector('button');
-                const originalText = btn.innerHTML;
-                btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Submitting...';
-                
-                const payload = {
-                    name: document.getElementById('cbName').value,
-                    phone: document.getElementById('cbPhone').value,
-                    loc: document.getElementById('cbLoc').value,
-                    service: document.getElementById('cbService').value || "General Inquiry"
-                };
+        function formatLakhsRange(minVal, maxVal) {
+            let minLakh = (minVal / 100000).toFixed(1);
+            let maxLakh = (maxVal / 100000).toFixed(1);
+            return `${minLakh} Lakhs to ${maxLakh} Lakhs`;
+        }
 
-                fetch("https://script.google.com/macros/s/AKfycbzWeJMWLdQKLsB7qoznoorTDRxWODsSRR87xCBKUo76mdvFCxqOYiy2zDGqPpNy7LIU/exec", {
-                    method: "POST", mode: "no-cors",
-                    headers: { "Content-Type": "application/json" },
-                    body: JSON.stringify(payload)
-                }).then(() => {
-                    this.style.display = 'none';
-                    document.getElementById('cbSuccess').style.display = 'block';
-                }).catch(() => {
-                    btn.innerHTML = originalText;
-                    alert("Something went wrong. Please try again or WhatsApp us.");
-                });
+        document.getElementById('proEstimatorForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const propType = document.getElementById('propType').value;
+            const carpet = parseFloat(document.getElementById('carpetArea').value) || 600;
+            const quality = document.getElementById('qualityType').value;
+            const name = document.getElementById('clientName').value;
+            const phone = document.getElementById('clientPhone').value;
+            const loc = document.getElementById('projectLoc').value;
+            const otherReq = document.getElementById('otherService').value || 'None';
+
+            let selectedServices = [];
+            document.querySelectorAll('input[name="service"]:checked').forEach(cb => {
+                selectedServices.push(cb.value);
             });
-        }
+
+            if(selectedServices.length === 0) {
+                alert('Please select at least one service.');
+                goToStep(2);
+                return;
+            }
+
+            let baseCost = 0;
+            let ceilingCost = 0, electricalCost = 0, paintingCost = 0, furnitureCost = 0;
+
+            if(selectedServices.includes('False Ceiling')) {
+                let rate = quality === 'simple' ? 90 : (quality === 'premium' ? 180 : 230);
+                ceilingCost = carpet * rate;
+                baseCost += ceilingCost;
+            }
+
+            if(selectedServices.includes('Electrical')) {
+                let points = 0;
+                if(propType === '1 BHK') points = 35;
+                else if(propType === '2 BHK') points = 50;
+                else if(propType === '3 BHK') points = 70;
+                else points = Math.round((carpet / 100) * 8);
+
+                let perPointRate = quality === 'simple' ? 700 : 1100;
+                electricalCost = points * perPointRate;
+                baseCost += electricalCost;
+            }
+
+            if(selectedServices.includes('Painting')) {
+                if(propType === '1 BHK') paintingCost = quality === 'simple' ? 30000 : (quality === 'premium' ? 42000 : 55000);
+                else if(propType === '2 BHK') paintingCost = quality === 'simple' ? 45000 : (quality === 'premium' ? 58000 : 75000);
+                else if(propType === '3 BHK') paintingCost = quality === 'simple' ? 60000 : (quality === 'premium' ? 78000 : 98000);
+                else {
+                    let rate = quality === 'simple' ? 90 : (quality === 'premium' ? 100 : 110);
+                    paintingCost = carpet * rate;
+                }
+                baseCost += paintingCost;
+            }
+
+            if(selectedServices.includes('Furniture')) {
+                if(propType === '1 BHK') furnitureCost = quality === 'simple' ? 250000 : (quality === 'premium' ? 350000 : 450000);
+                else if(propType === '2 BHK') furnitureCost = quality === 'simple' ? 400000 : (quality === 'premium' ? 550000 : 700000);
+                else if(propType === '3 BHK') furnitureCost = quality === 'simple' ? 550000 : (quality === 'premium' ? 780000 : 1050000);
+                else {
+                    let rate = quality === 'simple' ? 1400 : (quality === 'premium' ? 1600 : 1800);
+                    furnitureCost = carpet * rate;
+                }
+                baseCost += furnitureCost;
+            }
+
+            if(baseCost === 0) baseCost = 60000;
+
+            let simpleMin = Math.round(baseCost * 0.80);
+            let simpleMax = Math.round(baseCost * 0.95);
+
+            let premiumMin = Math.round(baseCost * 1.05);
+            let premiumMax = Math.round(baseCost * 1.25);
+
+            let luxuryMin = Math.round(baseCost * 1.40);
+            let luxuryMax = Math.round(baseCost * 1.70);
+
+            let simpleRangeStr = formatLakhsRange(simpleMin, simpleMax);
+            let premiumRangeStr = formatLakhsRange(premiumMin, premiumMax);
+            let luxuryRangeStr = formatLakhsRange(luxuryMin, luxuryMax);
+
+            let servicesText = selectedServices.join(', ');
+            if(otherReq && otherReq !== 'None') {
+                servicesText += ' | Note: ' + otherReq;
+            }
+
+            const sheetPayload = {
+                name: name,
+                phone: phone,
+                loc: loc,
+                propType: propType,
+                area: carpet + " sq.ft",
+                services: servicesText,
+                budget: `₹ ${simpleRangeStr} to ₹ ${luxuryRangeStr}`,
+                timeline: document.getElementById('timeline').value
+            };
+
+            fetch("https://script.google.com/macros/s/AKfycbyfai0umT23wNzwSwsY1v8ow-qq7O4QTzuU4C9M3RKbWUtxEuK0UK65R7Ty2aoAXobOcQ/exec", {
+                method: "POST",
+                mode: "no-cors",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(sheetPayload)
+            }).catch(() => {});
+
+            document.getElementById('proEstimatorForm').classList.add('hidden');
+            const resultBox = document.getElementById('resultContainer');
+            resultBox.classList.remove('hidden');
+
+            document.getElementById('resultSubtitle').innerHTML = `Prepared for <b>${name}</b> (${loc}) | Property: <b>${propType} (${carpet} sq.ft)</b>`;
+
+            document.getElementById('tierBoxes').innerHTML = `
+                <div style="background: #faf9f8; padding: 15px; border-radius: 10px; border: 1px solid #ddd; box-sizing: border-box;">
+                    <span style="font-size: 0.65rem; font-weight: 700; color: var(--gray); text-transform: uppercase;">Standard / Basic</span>
+                    <h3 style="margin: 5px 0; color: var(--dark); font-size: 1rem;">Budget Friendly</h3>
+                    <div style="font-size: 1.1rem; font-weight: 800; color: var(--primary);">₹ ${simpleRangeStr}</div>
+                    <p style="font-size: 0.7rem; color: var(--gray); margin-top: 5px;">Standard execution & layouts.</p>
+                </div>
+                <div style="background: #fff5f5; padding: 15px; border-radius: 10px; border: 2px solid var(--primary); position: relative; box-sizing: border-box;">
+                    <span style="position: absolute; top: -8px; right: 10px; background: var(--primary); color: #fff; font-size: 0.55rem; padding: 2px 6px; border-radius: 20px; font-weight: 700;">RECOMMENDED</span>
+                    <span style="font-size: 0.65rem; font-weight: 700; color: var(--primary); text-transform: uppercase;">High Grade</span>
+                    <h3 style="margin: 5px 0; color: var(--dark); font-size: 1rem;">Premium Finish</h3>
+                    <div style="font-size: 1.1rem; font-weight: 800; color: var(--primary);">₹ ${premiumRangeStr}</div>
+                    <p style="font-size: 0.7rem; color: var(--gray); margin-top: 5px;">Superior Gyproc boards & Royale paint.</p>
+                </div>
+                <div style="background: #faf9f8; padding: 15px; border-radius: 10px; border: 1px solid #ddd; box-sizing: border-box;">
+                    <span style="font-size: 0.65rem; font-weight: 700; color: var(--gray); text-transform: uppercase;">Luxury Designer</span>
+                    <h3 style="margin: 5px 0; color: var(--dark); font-size: 1.1rem;">Luxury Living</h3>
+                    <div style="font-size: 1.1rem; font-weight: 800; color: var(--primary);">₹ ${luxuryRangeStr}</div>
+                    <p style="font-size: 0.7rem; color: var(--gray); margin-top: 5px;">Top-tier architectural elements.</p>
+                </div>
+            `;
+
+            const waText = encodeURIComponent(`Hello Arsh Interiors, I calculated an estimate for my ${propType} (${carpet} sq.ft) in ${loc}. Range: ₹ ${simpleRangeStr} - ₹ ${luxuryRangeStr}. My name is ${name} (${phone}).`);
+            document.getElementById('waButton').href = `https://wa.me/919022104232?text=${waText}`;
+
+            window.scrollTo({top: 40, behavior: 'smooth'});
+        });
     </script>
 </body>
 </html>
