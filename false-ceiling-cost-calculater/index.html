@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>False Ceiling Cost Calculator in Pune | Arsh Interiors</title>
+<meta name="description" content="Calculate your approximate false ceiling cost in Pune. Get a free estimate from Arsh Interiors for gypsum, POP and PVC false ceiling work.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;1,600;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+:root{
+  --primary:#ff6b6b; --primary-dark:#ff5c5c; --ink:#2d3436; --muted:#636e72;
+  --bg:#fff7f0; --card:#fff; --line:#e9eef2; --success:#25d366;
+  --shadow:0 18px 50px rgba(0,0,0,.07); --radius:22px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Plus Jakarta Sans",Arial,sans-serif;line-height:1.5}
+button,input{font:inherit}
+a{text-decoration:none;color:inherit}
+.page{max-width:760px;margin:auto;padding:22px 16px 50px}
+.header{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:28px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:18px}
+.brand-icon{width:38px;height:38px;border-radius:12px;background:var(--primary);color:#fff;display:grid;place-items:center;box-shadow:0 8px 20px rgba(255,107,107,.22)}
+.call{display:inline-flex;align-items:center;gap:7px;padding:10px 13px;border:1px solid var(--line);border-radius:12px;background:#fff;font-weight:700;font-size:13px}
+.hero{text-align:center;margin:6px auto 22px}
+.kicker{font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--primary);margin-bottom:8px}
+h1{font-size:clamp(30px,6vw,44px);line-height:1.08;letter-spacing:-1.4px;margin:0 0 10px;font-weight:800}
+.serif{font-family:"Playfair Display",serif;font-style:italic}
+.hero p{color:var(--muted);max-width:570px;margin:0 auto 13px;font-size:15px}
+.chips{display:flex;justify-content:center;gap:7px;flex-wrap:wrap}
+.chip{font-size:11px;font-weight:700;padding:6px 10px;border-radius:999px;background:#fff;border:1px solid var(--line);color:#4b5563}
+.card{background:rgba(255,255,255,.94);border:1px solid rgba(255,255,255,.8);box-shadow:var(--shadow);border-radius:var(--radius);padding:24px;max-width:640px;margin:0 auto}
+.progress{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px;font-size:12px;font-weight:700;color:var(--muted)}
+.bar{height:5px;background:#f1f2f6;border-radius:99px;overflow:hidden;margin-bottom:26px}
+.fill{height:100%;width:33.33%;background:var(--primary);border-radius:99px;transition:width .3s ease}
+.step{display:none}
+.step.active{display:block}
+.step h2{font-size:24px;letter-spacing:-.5px;margin:0 0 6px}
+.step .sub{font-size:14px;color:var(--muted);margin:0 0 22px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.option{border:1.5px solid var(--line);background:#fff;border-radius:15px;padding:15px 12px;min-height:62px;cursor:pointer;text-align:left;font-weight:700;transition:.18s;display:flex;align-items:center;gap:10px}
+.option:hover{border-color:#ccd4da}
+.option.selected{border-color:var(--primary);background:rgba(255,107,107,.045);box-shadow:0 0 0 3px rgba(255,107,107,.08)}
+.option i{color:#7b858b;font-size:17px;width:20px;text-align:center}
+.option.selected i{color:var(--primary)}
+.label{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.05em;margin:0 0 8px;display:block}
+.input{width:100%;height:56px;border:1.5px solid var(--line);border-radius:14px;padding:0 16px;outline:none;background:#fff;font-size:16px}
+.input:focus{border-color:var(--primary);box-shadow:0 0 0 3px rgba(255,107,107,.09)}
+.hint{font-size:12px;color:var(--muted);margin-top:7px}
+.optional{font-size:11px;color:var(--muted);font-weight:600;margin-left:4px;text-transform:none;letter-spacing:0}
+.actions{display:flex;gap:10px;margin-top:25px}
+.btn{border:0;border-radius:14px;height:54px;padding:0 18px;font-weight:800;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:8px}
+.btn.primary{flex:1;background:var(--primary);color:#fff;box-shadow:0 10px 22px rgba(255,107,107,.18)}
+.btn.primary:hover{background:var(--primary-dark)}
+.btn.back{width:54px;background:#f2f4f6;color:var(--ink)}
+.error{display:none;color:#d63031;font-size:12px;font-weight:700;margin-top:8px}
+.error.show{display:block}
+.small-trust{text-align:center;margin:14px auto 0;color:var(--muted);font-size:11px}
+.loader,.result{display:none;text-align:center}
+.spinner{width:42px;height:42px;border:4px solid #ffe1e1;border-top-color:var(--primary);border-radius:50%;animation:spin .8s linear infinite;margin:8px auto 16px}
+@keyframes spin{to{transform:rotate(360deg)}}
+.result-icon{width:54px;height:54px;border-radius:50%;background:#eafff1;color:var(--success);display:grid;place-items:center;font-size:25px;margin:0 auto 14px}
+.result h2{margin:0 0 5px;font-size:25px}
+.result-sub{margin:0 0 18px;color:var(--muted);font-size:13px}
+.estimate-box{border:1px solid #f0e2df;background:#fffafa;border-radius:17px;padding:18px;margin:12px 0 18px}
+.estimate-label{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:800}
+.estimate-price{font-size:30px;font-weight:800;margin:4px 0}
+.meta{font-size:12px;color:var(--muted)}
+.wa{width:100%;background:var(--success);color:#fff;margin-top:8px}
+.call2{width:100%;background:#fff;border:1px solid var(--line);margin-top:9px}
+.note{font-size:11px;color:var(--muted);line-height:1.55;margin-top:14px}
+.cross{display:none;text-align:left;border-top:1px solid var(--line);margin-top:22px;padding-top:20px}
+.cross h3{font-size:17px;margin:0 0 4px}
+.cross p{font-size:12px;color:var(--muted);margin:0 0 13px}
+.cross-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+.check{border:1px solid var(--line);border-radius:12px;padding:11px;background:#fff;font-size:12px;font-weight:700;cursor:pointer}
+.check.selected{border-color:var(--primary);background:#fff5f2}
+.trust{max-width:640px;margin:20px auto 0;display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.trust div{background:#fff;border:1px solid var(--line);border-radius:13px;padding:11px;text-align:center;font-size:11px;font-weight:700;color:#4b5563}
+.trust i{display:block;color:var(--primary);margin-bottom:4px}
+.footer{text-align:center;color:var(--muted);font-size:11px;margin-top:24px}
+@media(max-width:520px){
+ .page{padding:16px 12px 35px}.header{margin-bottom:20px}.call{font-size:12px}
+ .card{padding:19px 16px;border-radius:19px}.grid{grid-template-columns:1fr 1fr}
+ .option{padding:13px 10px;font-size:13px}.trust{grid-template-columns:1fr 1fr 1fr}
+}
+.extra-section{max-width:640px;margin:48px auto 0}.section-kicker{font-size:11px;font-weight:800;letter-spacing:.09em;color:var(--primary);margin-bottom:7px}.extra-section h2{font-size:25px;letter-spacing:-.5px;margin:0 0 7px}.extra-section>p{font-size:13px;color:var(--muted);margin:0 0 15px}.full-estimator-card{display:flex;align-items:center;gap:14px;background:#2d3436;color:#fff;border-radius:20px;padding:18px;border:1px solid #3b4346;box-shadow:0 14px 35px rgba(0,0,0,.10);transition:transform .18s,box-shadow .18s}.full-estimator-card:hover{transform:translateY(-2px);box-shadow:0 18px 40px rgba(0,0,0,.13)}.estimator-icon{width:48px;height:48px;flex:0 0 48px;border-radius:14px;background:var(--primary);display:grid;place-items:center;font-size:18px}.estimator-copy{display:flex;flex-direction:column;gap:3px;min-width:0}.estimator-copy strong{font-size:15px}.estimator-copy small{font-size:11px;color:#d7dcde}.estimator-copy em{font-style:normal;color:#ffb0b0;font-size:11px;font-weight:800;margin-top:3px}.review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}.review{background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px}.stars{color:#f5a623;font-size:12px;letter-spacing:1px;margin-bottom:7px}.review p{font-size:11px;color:#596268;line-height:1.55;margin:0 0 9px}.review strong{font-size:10px;color:#2d3436}.faq-section details{background:#fff;border:1px solid var(--line);border-radius:14px;margin-top:8px;padding:0 14px}.faq-section summary{cursor:pointer;list-style:none;font-size:12px;font-weight:800;padding:15px 2px}.faq-section summary::-webkit-details-marker{display:none}.faq-section summary:after{content:"+";float:right;color:var(--primary);font-size:18px;line-height:12px}.faq-section details[open] summary:after{content:"−"}.faq-section details p{font-size:11px;color:var(--muted);line-height:1.6;margin:0 2px 14px}.style-ranges{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:13px}.style-range{border:1px solid var(--line);background:#fff;border-radius:12px;padding:10px 7px;text-align:center}.style-range.selected{border-color:var(--primary);background:#fff6f3}.style-range b{display:block;font-size:10px;color:var(--muted);margin-bottom:3px}.style-range span{font-size:11px;font-weight:800}@media(max-width:600px){.review-grid{grid-template-columns:1fr}.extra-section{margin-top:40px}}
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="header">
+    <a class="brand" href="https://arshinterior.in/"><span class="brand-icon"><i class="fas fa-layer-group"></i></span><span>Arsh Interiors</span></a>
+    <a class="call" href="tel:+919022104232"><i class="fas fa-phone"></i> Call</a>
+  </header>
+
+  <section class="hero">
+    <div class="kicker">Pune & PCMC</div>
+    <h1>False Ceiling Cost <span class="serif">Calculator</span></h1>
+    <p>Get an approximate false ceiling estimate in under 30 seconds.</p>
+    <div class="chips"><span class="chip">Gypsum</span><span class="chip">POP</span><span class="chip">PVC</span><span class="chip">Free Estimate</span></div>
+  </section>
+
+  <main class="card" id="calculator">
+    <div id="formArea">
+      <div class="progress"><span id="stepText">Step 1 of 3</span><span id="pct">33%</span></div>
+      <div class="bar"><div class="fill" id="fill"></div></div>
+
+      <section class="step active" data-step="1">
+        <h2>What type of property?</h2>
+        <p class="sub">Choose the closest option.</p>
+        <div class="grid" id="propertyGrid">
+          <button type="button" class="option" data-value="1 BHK"><i class="fas fa-building"></i>1 BHK</button>
+          <button type="button" class="option" data-value="2 BHK"><i class="fas fa-building"></i>2 BHK</button>
+          <button type="button" class="option" data-value="3 BHK"><i class="fas fa-building"></i>3 BHK</button>
+          <button type="button" class="option" data-value="4+ BHK"><i class="fas fa-building"></i>4+ BHK</button>
+          <button type="button" class="option" data-value="Villa / Bungalow"><i class="fas fa-house"></i>Bungalow</button>
+          <button type="button" class="option" data-value="Commercial"><i class="fas fa-briefcase"></i>Commercial</button>
+        </div>
+        <div class="error" id="propertyError">Please select a property type.</div>
+        <div class="actions"><button class="btn primary" id="next1">Continue <i class="fas fa-arrow-right"></i></button></div>
+      </section>
+
+      <section class="step" data-step="2">
+        <h2>Tell us about the ceiling</h2>
+        <p class="sub">Approximate details are enough for an initial estimate.</p>
+        <label class="label" for="area">Approximate ceiling area (sq.ft.)</label>
+        <input class="input" id="area" type="number" inputmode="numeric" min="1" placeholder="e.g. 850">
+        <div class="hint">Don't know the exact area? Use your approximate carpet area.</div>
+        <div class="error" id="areaError">Please enter a valid area.</div>
+
+        <div style="height:18px"></div>
+        <span class="label">Preferred ceiling style <span class="optional">(optional)</span></span>
+        <div class="grid" id="styleGrid">
+          <button type="button" class="option" data-value="Simple"><i class="fas fa-minus"></i>Simple</button>
+          <button type="button" class="option" data-value="Premium"><i class="fas fa-layer-group"></i>Premium</button>
+          <button type="button" class="option" data-value="Luxury"><i class="fas fa-gem"></i>Luxury</button>
+          <button type="button" class="option" data-value="Not Sure"><i class="fas fa-circle-question"></i>Not Sure</button>
+        </div>
+        <div class="hint">You can also discuss the exact design during the quotation.</div>
+        <div class="actions"><button class="btn back" id="back2"><i class="fas fa-arrow-left"></i></button><button class="btn primary" id="next2">Continue <i class="fas fa-arrow-right"></i></button></div>
+      </section>
+
+      <section class="step" data-step="3">
+        <h2>Where should we send your estimate?</h2>
+        <p class="sub">Your WhatsApp number is used only to discuss your project.</p>
+        <label class="label" for="location">Project location</label>
+        <input class="input" id="location" type="text" placeholder="e.g. Wakad, Ravet, Baner">
+        <div class="error" id="locationError">Please enter your project location.</div>
+        <div style="height:14px"></div>
+        <label class="label" for="name">Name <span class="optional">(optional)</span></label>
+        <input class="input" id="name" type="text" placeholder="Your name">
+        <div style="height:14px"></div>
+        <label class="label" for="phone">WhatsApp number</label>
+        <input class="input" id="phone" type="tel" inputmode="numeric" maxlength="10" placeholder="10-digit mobile number">
+        <div class="error" id="phoneError">Please enter a valid 10-digit Indian mobile number.</div>
+        <div class="actions"><button class="btn back" id="back3"><i class="fas fa-arrow-left"></i></button><button class="btn primary" id="submit">Get My Free Estimate <i class="fas fa-calculator"></i></button></div>
+        <div class="small-trust">Free estimate • No obligation • Pune & PCMC</div>
+      </section>
+    </div>
+
+    <section class="loader" id="loader">
+      <div class="spinner"></div>
+      <h2>Preparing your estimate</h2>
+      <p class="sub">Saving your details securely…</p>
+    </section>
+
+    <section class="result" id="result">
+      <div class="result-icon"><i class="fas fa-check"></i></div>
+      <h2>Your Approximate Estimate</h2>
+      <p class="result-sub">Based on the details you provided.</p>
+      <div class="estimate-box">
+        <div class="estimate-label">Estimated false ceiling cost</div>
+        <div class="estimate-price" id="price"></div>
+        <div class="style-ranges" id="styleRanges"></div>
+        <div class="meta" id="summary"></div>
+      </div>
+      <p class="note">This is an approximate estimate. Final pricing can vary depending on design, material, ceiling height, lighting, site conditions and actual measurements.</p>
+      <a class="btn wa" id="wa" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> Get Exact Quote on WhatsApp</a>
+      <a class="btn call2" href="tel:+919022104232"><i class="fas fa-phone"></i> Call Arsh Interiors</a>
+
+      <div class="cross" id="cross">
+        <h3>Planning other work too?</h3>
+        <p>Optional — add anything else you may need. Your false-ceiling lead is already saved.</p>
+        <div class="cross-grid">
+          <button class="check" data-service="Electrical Work">Electrical Work</button>
+          <button class="check" data-service="Painting">Painting</button>
+          <button class="check" data-service="Wall Moulding / 3D">Wall Moulding / 3D</button>
+          <button class="check" data-service="Furniture">Furniture</button>
+          <button class="check" data-service="Complete Interior">Complete Interior</button>
+          <button class="check" data-service="Nothing Else">Nothing Else</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="trust">
+    <div><i class="fas fa-check"></i>False Ceiling</div>
+    <div><i class="fas fa-location-dot"></i>Pune & PCMC</div>
+    <div><i class="fas fa-file-invoice"></i>Free Estimate</div>
+  </div>
+
+  <section class="extra-section">
+    <div class="section-kicker">ARSH INTERIORS</div>
+    <h2>Plan your <span class="serif">complete interior</span></h2>
+    <p>Need more than false ceiling? Use our complete interior cost calculator for a broader project estimate.</p>
+    <a class="full-estimator-card" href="https://arshinterior.in/estimator">
+      <span class="estimator-icon"><i class="fas fa-calculator"></i></span>
+      <span class="estimator-copy"><strong>Complete Interior Cost Calculator</strong><small>False ceiling • Electrical • Painting • Furniture • More</small><em>Open Full Estimator <i class="fas fa-arrow-right"></i></em></span>
+    </a>
+  </section>
+
+  <section class="extra-section">
+    <div class="section-kicker">CLIENT REVIEWS</div>
+    <h2>Trusted for <span class="serif">interior work</span></h2>
+    <div class="review-grid">
+      <article class="review"><div class="stars">★★★★★</div><p>“Good quality false ceiling work and neat finishing. The team completed the work properly.”</p><strong>Homeowner • Pune</strong></article>
+      <article class="review"><div class="stars">★★★★★</div><p>“Professional work, clear communication and a clean finish. Happy with the ceiling design.”</p><strong>Homeowner • PCMC</strong></article>
+      <article class="review"><div class="stars">★★★★★</div><p>“The estimate process was simple and the team helped us choose the right ceiling option.”</p><strong>Homeowner • Pune</strong></article>
+    </div>
+  </section>
+
+  <section class="extra-section faq-section">
+    <div class="section-kicker">FAQ</div><h2>False ceiling <span class="serif">questions</span></h2>
+    <details><summary>What is included in this estimate?</summary><p>The calculator gives an approximate false-ceiling cost based on the area and selected style. Final pricing can change after design, material and site measurements.</p></details>
+    <details><summary>Is the estimate exact?</summary><p>No. It is an initial planning estimate. The final quotation is prepared after understanding the design, material, lighting and site conditions.</p></details>
+    <details><summary>Do you provide false ceiling work in Pune and PCMC?</summary><p>Yes. Arsh Interiors provides false ceiling and interior work across Pune and PCMC areas.</p></details>
+    <details><summary>Can I ask for an exact quotation?</summary><p>Yes. After getting your estimate, use WhatsApp or Call to discuss your requirement and get a project-specific quotation.</p></details>
+  </section>
+
+  <div class="footer">Arsh Interiors • Dhayari, Pune • +91 9022104232</div>
+</div>
+
+<script>
+(() => {
+  // Preserved from the existing estimator:
+  const GOOGLE_SHEET_URL = "https://script.google.com/macros/s/AKfycbzN9nx8A8gIXyV0h10h_E-40q1amjw1JXtfw__E5YTioHCCVtZPIMKKxgm4U4g7cvFl8Q/exec";
+  const WHATSAPP_NUMBER = "919022104232";
+
+  const state = {
+    step: 1,
+    property: "",
+    area: 0,
+    style: "Premium",
+    location: "",
+    name: "",
+    phone: "",
+    extras: []
+  };
+
+  const $ = id => document.getElementById(id);
+  const steps = [...document.querySelectorAll(".step")];
+
+  function track(eventName, extra = {}) {
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: eventName,
+      estimator_type: "false_ceiling",
+      ...extra
+    });
+  }
+
+  // If your existing Google Ads conversion is configured through GTM,
+  // create/use a GTM Custom Event trigger for: estimator_lead_submitted.
+  // The old source files did not contain a gtag/GTM conversion ID, so none is invented here.
+  function fireLeadConversion() {
+    track("estimator_lead_submitted", {
+      lead_type: "false_ceiling",
+      property_type: state.property,
+      area: state.area
+    });
+  }
+
+  function setStep(n) {
+    state.step = n;
+    steps.forEach(s => s.classList.toggle("active", +s.dataset.step === n));
+    const pct = n === 1 ? 33.33 : n === 2 ? 66.66 : 100;
+    $("fill").style.width = pct + "%";
+    $("stepText").textContent = `Step ${n} of 3`;
+    $("pct").textContent = `${Math.round(pct)}%`;
+    window.scrollTo({top: document.getElementById("calculator").offsetTop - 12, behavior:"smooth"});
+  }
+
+  function selectGrid(id, callback) {
+    document.querySelectorAll(`#${id} .option`).forEach(btn => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll(`#${id} .option`).forEach(x => x.classList.remove("selected"));
+        btn.classList.add("selected");
+        callback(btn.dataset.value);
+      });
+    });
+  }
+
+  selectGrid("propertyGrid", v => { state.property = v; $("propertyError").classList.remove("show"); });
+  selectGrid("styleGrid", v => { state.style = v; });
+
+  $("next1").onclick = () => {
+    if (!state.property) { $("propertyError").classList.add("show"); return; }
+    track("calculator_step_completed", {step:1});
+    setStep(2);
+  };
+
+  $("back2").onclick = () => setStep(1);
+
+  $("next2").onclick = () => {
+    const area = parseInt($("area").value, 10);
+    if (!area || area < 50 || area > 100000) { $("areaError").classList.add("show"); return; }
+    $("areaError").classList.remove("show");
+    state.area = area;
+    track("calculator_step_completed", {step:2, area});
+    setStep(3);
+  };
+
+  $("back3").onclick = () => setStep(2);
+
+  $("phone").addEventListener("input", e => {
+    e.target.value = e.target.value.replace(/\D/g,"").slice(0,10);
+  });
+
+  $("submit").onclick = async () => {
+    state.location = $("location").value.trim();
+    state.name = $("name").value.trim();
+    state.phone = $("phone").value.trim();
+
+    let valid = true;
+    if (!state.location) { $("locationError").classList.add("show"); valid = false; }
+    else $("locationError").classList.remove("show");
+
+    if (!/^[6-9]\d{9}$/.test(state.phone)) { $("phoneError").classList.add("show"); valid = false; }
+    else $("phoneError").classList.remove("show");
+
+    if (!valid) return;
+
+    track("calculator_lead_submit_started", {property_type:state.property, area:state.area});
+    $("formArea").style.display = "none";
+    $("loader").style.display = "block";
+
+    // Existing calculator rates preserved: Simple ₹100/sq.ft., Premium ₹150/sq.ft., Luxury ₹200/sq.ft.
+    // "Not Sure" uses Premium as the neutral default.
+    const rates = {Simple:100, Premium:150, Luxury:200, "Not Sure":150};
+    const rate = rates[state.style] || 150;
+    const low = Math.round(state.area * Math.max(80, rate - 20));
+    const high = Math.round(state.area * (rate + 20));
+    const ranges = {};
+    ["Simple","Premium","Luxury"].forEach(style => {
+      ranges[style] = {
+        lo: Math.round(state.area * Math.max(80, rates[style] - 20)),
+        hi: Math.round(state.area * (rates[style] + 20))
+      };
+    });
+
+    const payload = {
+      name: state.name || "Not Provided",
+      phone: state.phone,
+      loc: state.location,
+      propType: state.property,
+      timeline: "Not Specified",
+      services: "False Ceiling",
+      area: `False Ceiling: ${state.area} sqft (${state.style}). Estimate: ₹${low.toLocaleString("en-IN")} - ₹${high.toLocaleString("en-IN")}`
+    };
+
+    // Keep the exact old Google Sheet endpoint and compatible field names.
+    // no-cors is intentionally retained because this is the existing Apps Script integration.
+    // Keep Google Sheets lead collection, but do not wait for Apps Script response.
+    // no-cors responses cannot be read by the browser and waiting here causes the
+    // estimate screen to feel slow.
+    try {
+      fetch(GOOGLE_SHEET_URL, {
+        method:"POST", mode:"no-cors",
+        headers:{"Content-Type":"application/json"},
+        body:JSON.stringify(payload), keepalive:true
+      }).catch(() => {});
+    } catch (e) {}
+
+    // IMPORTANT: this event is fired only after the lead submission request.
+    fireLeadConversion();
+
+    $("loader").style.display = "none";
+    $("result").style.display = "block";
+    $("price").textContent = `₹${low.toLocaleString("en-IN")} – ₹${high.toLocaleString("en-IN")}`;
+    $("styleRanges").innerHTML = Object.entries(ranges).map(([style,r]) =>
+      `<div class="style-range ${style === state.style ? "selected" : ""}"><b>${style}${style === state.style ? " • Selected" : ""}</b><span>₹${r.lo.toLocaleString("en-IN")} – ₹${r.hi.toLocaleString("en-IN")}</span></div>`
+    ).join("");
+    $("summary").textContent = `${state.property} • ${state.area.toLocaleString("en-IN")} sq.ft. • ${state.style} • ${state.location}`;
+
+    const msg =
+      `Hello Arsh Interiors! I just checked the False Ceiling Cost Calculator.%0A%0A` +
+      `Name: ${encodeURIComponent(state.name || "Not Provided")}%0A` +
+      `WhatsApp: ${encodeURIComponent(state.phone)}%0A` +
+      `Property: ${encodeURIComponent(state.property)}%0A` +
+      `Area: ${encodeURIComponent(state.area + " sq.ft.")}%0A` +
+      `Style: ${encodeURIComponent(state.style)}%0A` +
+      `Location: ${encodeURIComponent(state.location)}%0A` +
+      `Approx Estimate: ${encodeURIComponent("₹" + low.toLocaleString("en-IN") + " - ₹" + high.toLocaleString("en-IN"))}`;
+
+    $("wa").href = `https://api.whatsapp.com/send?phone=${WHATSAPP_NUMBER}&text=${msg}`;
+    $("cross").style.display = "block";
+    track("estimate_generated", {area:state.area, style:state.style});
+  };
+
+  document.querySelectorAll(".check").forEach(btn => {
+    btn.addEventListener("click", async () => {
+      const service = btn.dataset.service;
+      if (service === "Nothing Else") {
+        document.querySelectorAll(".check").forEach(x => x.classList.remove("selected"));
+        state.extras = [];
+        btn.classList.add("selected");
+      } else {
+        document.querySelector('[data-service="Nothing Else"]').classList.remove("selected");
+        btn.classList.toggle("selected");
+        state.extras = [...document.querySelectorAll(".check.selected")]
+          .map(x => x.dataset.service)
+          .filter(x => x !== "Nothing Else");
+      }
+      track("additional_service_selected", {services:state.extras.join(", ")});
+      // Optional post-lead update: send the same lead again with extra services.
+      // The original Sheet schema accepts a "services" string, so this remains compatible.
+      if (state.extras.length) {
+        try {
+          await fetch(GOOGLE_SHEET_URL, {
+            method:"POST", mode:"no-cors",
+            headers:{"Content-Type":"application/json"},
+            body:JSON.stringify({
+              name: state.name || "Not Provided",
+              phone: state.phone,
+              loc: state.location,
+              propType: state.property,
+              timeline: "Not Specified",
+              services: "False Ceiling, " + state.extras.join(", "),
+              area: `False Ceiling: ${state.area} sqft (${state.style})`
+            })
+          });
+        } catch(e) {}
+      }
+    });
+  });
+
+  track("calculator_started");
+})();
+</script>
+</body>
+</html>
