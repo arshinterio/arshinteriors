@@ -76,20 +76,26 @@
             --border: #f3d6d0;
             --card-bg: #ffffff;
             --success: #25d366;
-            --transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+            --transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
         }
         *, *::before, *::after { box-sizing: border-box; }
+        
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
         body {
             font-family: 'Plus Jakarta Sans', sans-serif;
             background-color: var(--light);
             color: var(--dark);
-            margin: 0;
-            padding: 70px 12px 30px;
-            min-height: 100vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            padding: 16px;
+            overflow-x: hidden;
         }
 
         /* Minimal Header */
@@ -102,7 +108,7 @@
         }
         .header-inner {
             display: flex; align-items: center; justify-content: space-between; 
-            padding: 10px 16px; max-width: 600px; margin: 0 auto;
+            padding: 10px 16px; max-width: 520px; margin: 0 auto;
         }
         .logo { color: var(--dark); text-decoration: none; font-weight: 800; font-size: 1.1rem; display: flex; align-items: center; gap: 8px; }
         .header-cta-group { display: flex; gap: 8px; align-items: center; }
@@ -113,24 +119,26 @@
         }
         .header-btn.wa { background: #e7f8ed; color: var(--success); }
 
-        /* Main Wrapper */
+        /* Main Wrapper - Perfect Vertical Centering & Spacing */
         .wrapper {
             width: 100%;
-            max-width: 520px;
-            margin: 0 auto;
+            max-width: 500px;
+            margin: auto;
+            padding-top: 45px;
+            padding-bottom: 10px;
         }
 
         /* Hero Subtitle */
         .hero-mini {
             text-align: center;
-            margin-bottom: 18px;
+            margin-bottom: 14px;
         }
         .brand-tag {
-            font-size: 0.7rem; font-weight: 800; text-transform: uppercase; 
-            letter-spacing: 1.2px; color: var(--primary); margin-bottom: 4px; display: block;
+            font-size: 0.65rem; font-weight: 800; text-transform: uppercase; 
+            letter-spacing: 1.2px; color: var(--primary); margin-bottom: 2px; display: block;
         }
         h1 {
-            font-size: clamp(1.5rem, 3.5vw, 2rem); font-weight: 800; 
+            font-size: clamp(1.4rem, 3.2vw, 1.8rem); font-weight: 800; 
             color: var(--dark); margin: 0; letter-spacing: -0.5px;
         }
         h1 span { color: var(--primary); font-family: 'Playfair Display', serif; font-style: italic; }
@@ -138,117 +146,116 @@
         /* Calculator Card */
         .calc-card {
             background: var(--card-bg); 
-            border-radius: 24px; 
-            box-shadow: 0 20px 40px rgba(255,107,107,0.08); 
-            padding: 28px 20px; 
+            border-radius: 22px; 
+            box-shadow: 0 15px 35px rgba(255,107,107,0.08); 
+            padding: 24px 18px; 
             border: 2px solid #fcedec; 
             position: relative;
-            scroll-margin-top: 80px;
         }
         
         .progress-indicator {
             font-size: 0.7rem; font-weight: 800; text-transform: uppercase;
-            color: var(--primary); letter-spacing: 1px; margin-bottom: 10px;
+            color: var(--primary); letter-spacing: 1px; margin-bottom: 8px;
             display: flex; justify-content: space-between; align-items: center;
         }
 
         .step-title {
-            font-size: 1.25rem; font-weight: 700; color: var(--dark); margin-bottom: 18px; line-height: 1.3;
+            font-size: 1.2rem; font-weight: 700; color: var(--dark); margin-bottom: 14px; line-height: 1.3;
         }
 
         /* Options Grid */
         .options-grid {
-            display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-bottom: 16px;
+            display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-bottom: 14px;
         }
         .option-card {
-            border: 2px solid #f1f2f6; border-radius: 14px; padding: 14px 12px;
+            border: 2px solid #f1f2f6; border-radius: 12px; padding: 13px 10px;
             text-align: center; cursor: pointer; transition: var(--transition);
-            background: #fafbfc; font-weight: 700; font-size: 0.95rem; color: #374151;
+            background: #fafbfc; font-weight: 700; font-size: 0.92rem; color: #374151;
         }
-        .option-card:hover { border-color: var(--primary); background: #fff5f4; transform: translateY(-1px); }
+        .option-card:hover { border-color: var(--primary); background: #fff5f4; }
         .option-card.selected {
             border-color: var(--primary); background: rgba(255,107,107,0.08); color: var(--primary);
             box-shadow: 0 4px 12px rgba(255,107,107,0.1);
         }
 
         /* Form Inputs */
-        .form-group { margin-bottom: 16px; }
-        .form-label { display: block; font-weight: 700; font-size: 0.85rem; margin-bottom: 6px; color: var(--dark); }
+        .form-group { margin-bottom: 14px; }
+        .form-label { display: block; font-weight: 700; font-size: 0.82rem; margin-bottom: 5px; color: var(--dark); }
         .form-input {
-            width: 100%; padding: 13px 16px; border: 2px solid #f1f2f6; 
-            border-radius: 12px; font-size: 1rem; font-family: inherit; background: #fafbfc;
+            width: 100%; padding: 12px 14px; border: 2px solid #f1f2f6; 
+            border-radius: 12px; font-size: 0.98rem; font-family: inherit; background: #fafbfc;
             transition: var(--transition);
         }
         .form-input:focus { outline: none; border-color: var(--primary); background: #fff; box-shadow: 0 0 0 3px rgba(255,107,107,0.1); }
         
         .helper-link {
-            font-size: 0.8rem; color: var(--primary); font-weight: 700; cursor: pointer;
-            display: inline-block; margin-top: 6px; text-decoration: underline;
+            font-size: 0.78rem; color: var(--primary); font-weight: 700; cursor: pointer;
+            display: inline-block; margin-top: 5px; text-decoration: underline;
         }
-        .error-msg { color: #dc2626; font-size: 0.75rem; margin-top: 4px; display: none; font-weight: 700; }
+        .error-msg { color: #dc2626; font-size: 0.72rem; margin-top: 4px; display: none; font-weight: 700; }
 
         /* Buttons */
         .btn {
-            background: var(--primary); color: #fff; padding: 14px 20px; 
-            border: none; border-radius: 12px; font-size: 1rem; font-weight: 800; 
+            background: var(--primary); color: #fff; padding: 13px 18px; 
+            border: none; border-radius: 12px; font-size: 0.98rem; font-weight: 800; 
             cursor: pointer; width: 100%; transition: var(--transition); 
             text-align: center; text-decoration: none; display: inline-block;
-            box-shadow: 0 6px 16px rgba(255,107,107,0.25);
+            box-shadow: 0 5px 14px rgba(255,107,107,0.22);
         }
-        .btn:hover { background: var(--primary-dark); transform: translateY(-1px); }
+        .btn:hover { background: var(--primary-dark); }
         .btn-secondary { background: #f3f4f6; color: #4b5563; box-shadow: none; }
         .btn-secondary:hover { background: #e5e7eb; color: #111; }
-        .btn-row { display: flex; gap: 10px; margin-top: 18px; }
+        .btn-row { display: flex; gap: 10px; margin-top: 14px; }
 
         .hidden { display: none !important; }
 
         /* Estimate Result */
         .result-box {
             background: #fff5f4; border: 2px solid var(--primary); 
-            border-radius: 16px; padding: 20px; text-align: center; margin-bottom: 18px;
+            border-radius: 16px; padding: 18px 14px; text-align: center; margin-bottom: 16px;
         }
         .result-price {
-            font-size: clamp(1.7rem, 4vw, 2.2rem); font-weight: 800; 
-            color: var(--primary); margin: 8px 0;
+            font-size: clamp(1.6rem, 3.8vw, 2.1rem); font-weight: 800; 
+            color: var(--primary); margin: 6px 0;
         }
-        .result-meta { font-size: 0.85rem; color: var(--gray); background: #fff; padding: 10px; border-radius: 10px; margin-top: 12px; border: 1px solid #f1f2f6; }
-        .disclaimer { font-size: 0.7rem; color: var(--gray); margin-top: 10px; line-height: 1.4; }
+        .result-meta { font-size: 0.82rem; color: var(--gray); background: #fff; padding: 10px; border-radius: 10px; margin-top: 10px; border: 1px solid #f1f2f6; }
+        .disclaimer { font-size: 0.68rem; color: var(--gray); margin-top: 8px; line-height: 1.4; }
 
         /* Beautified Suggestion / Upsell Box */
         .upsell-section {
             background: linear-gradient(135deg, #fff9f8 0%, #fff2f0 100%); 
             border: 2px solid #ffdcdc; 
-            border-radius: 18px;
-            padding: 20px 16px; 
-            margin-bottom: 20px; 
+            border-radius: 16px;
+            padding: 16px 14px; 
+            margin-bottom: 16px; 
             text-align: left;
-            box-shadow: 0 8px 20px rgba(255,107,107,0.05);
+            box-shadow: 0 6px 16px rgba(255,107,107,0.04);
         }
         .upsell-title { 
             font-weight: 800; 
-            font-size: 0.95rem; 
-            margin-bottom: 12px; 
+            font-size: 0.9rem; 
+            margin-bottom: 10px; 
             color: var(--dark); 
             display: flex; 
             align-items: center; 
-            gap: 8px; 
+            gap: 6px; 
         }
         .checkbox-grid { 
             display: grid; 
             grid-template-columns: 1fr 1fr; 
-            gap: 10px; 
-            font-size: 0.85rem; 
+            gap: 8px; 
+            font-size: 0.82rem; 
             font-weight: 700; 
             color: #374151;
         }
         .checkbox-item { 
             display: flex; 
             align-items: center; 
-            gap: 8px; 
+            gap: 6px; 
             cursor: pointer; 
             background: #fff; 
-            padding: 8px 10px; 
-            border-radius: 10px; 
+            padding: 7px 9px; 
+            border-radius: 9px; 
             border: 1px solid #f0e1df; 
             transition: var(--transition);
         }
@@ -258,16 +265,16 @@
         }
         .checkbox-item input[type="checkbox"] {
             accent-color: var(--primary);
-            width: 16px;
-            height: 16px;
+            width: 15px;
+            height: 15px;
             cursor: pointer;
         }
 
         /* Floating WhatsApp */
         .floating-wa {
             position: fixed; bottom: 20px; right: 20px; background: #25d366; color: #fff; 
-            width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; 
-            justify-content: center; font-size: 1.6rem; box-shadow: 0 6px 20px rgba(37,211,102,0.4); 
+            width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; 
+            justify-content: center; font-size: 1.5rem; box-shadow: 0 6px 20px rgba(37,211,102,0.4); 
             z-index: 999; text-decoration: none;
         }
 
@@ -344,13 +351,13 @@
                         <div class="error-msg" id="areaError">Please enter a valid area.</div>
                     </div>
 
-                    <div id="homeSizeSelector" class="hidden form-group" style="margin-top: 14px;">
+                    <div id="homeSizeSelector" class="hidden form-group" style="margin-top: 12px;">
                         <label class="form-label">Select home size:</label>
                         <div class="options-grid">
-                            <div class="option-card" onclick="selectHomeSize('1 BHK', 600, this)" style="padding:10px; font-size:0.85rem;">1 BHK (600 sq.ft)</div>
-                            <div class="option-card" onclick="selectHomeSize('2 BHK', 900, this)" style="padding:10px; font-size:0.85rem;">2 BHK (900 sq.ft)</div>
-                            <div class="option-card" onclick="selectHomeSize('3 BHK', 1250, this)" style="padding:10px; font-size:0.85rem;">3 BHK (1250 sq.ft)</div>
-                            <div class="option-card" onclick="selectHomeSize('4 BHK', 1600, this)" style="padding:10px; font-size:0.85rem;">4 BHK (1600 sq.ft)</div>
+                            <div class="option-card" onclick="selectHomeSize('1 BHK', 600, this)" style="padding:10px; font-size:0.82rem;">1 BHK (600 sq.ft)</div>
+                            <div class="option-card" onclick="selectHomeSize('2 BHK', 900, this)" style="padding:10px; font-size:0.82rem;">2 BHK (900 sq.ft)</div>
+                            <div class="option-card" onclick="selectHomeSize('3 BHK', 1250, this)" style="padding:10px; font-size:0.82rem;">3 BHK (1250 sq.ft)</div>
+                            <div class="option-card" onclick="selectHomeSize('4 BHK', 1600, this)" style="padding:10px; font-size:0.82rem;">4 BHK (1600 sq.ft)</div>
                         </div>
                     </div>
 
@@ -384,7 +391,7 @@
                     </div>
                 </div>
 
-                <!-- STEP 4: CEILING STYLE -->
+                <!-- STEP 4: CEILING STYLE (With Next Button) -->
                 <div class="calc-step hidden" id="step4">
                     <div class="progress-indicator">
                         <span>Step 4 of 5</span>
@@ -393,14 +400,15 @@
                     <div class="step-title">Select Ceiling Style Complexity</div>
                     
                     <div class="options-grid" style="grid-template-columns: repeat(3, 1fr);">
-                        <div class="option-card" onclick="selectStyleAndNext('Simple', this)">Simple</div>
-                        <div class="option-card selected" onclick="selectStyleAndNext('Premium', this)">Premium</div>
-                        <div class="option-card" onclick="selectStyleAndNext('Luxury', this)">Luxury</div>
+                        <div class="option-card" onclick="selectStyleCard('Simple', this)">Simple</div>
+                        <div class="option-card selected" onclick="selectStyleCard('Premium', this)">Premium</div>
+                        <div class="option-card" onclick="selectStyleCard('Luxury', this)">Luxury</div>
                     </div>
                     <input type="hidden" id="ceilingStyle" value="Premium">
 
                     <div class="btn-row">
                         <button type="button" class="btn btn-secondary" onclick="goToStep(3)">&larr; Back</button>
+                        <button type="button" class="btn" onclick="goToStep(5)">Next</button>
                     </div>
                 </div>
 
@@ -441,9 +449,9 @@
             <!-- ESTIMATE RESULT DISPLAY -->
             <div id="estimateResultContainer" class="hidden" style="text-align: center;">
                 <div class="result-box">
-                    <span style="font-size: 0.75rem; font-weight: 800; text-transform: uppercase; color: var(--gray);">Your Approximate Estimate</span>
+                    <span style="font-size: 0.72rem; font-weight: 800; text-transform: uppercase; color: var(--gray);">Your Approximate Estimate</span>
                     <div class="result-price" id="priceDisplayRange">₹--</div>
-                    <p style="font-size: 0.85rem; margin: 4px 0 0; color: var(--dark); font-weight: 700;">Estimated False Ceiling Cost</p>
+                    <p style="font-size: 0.82rem; margin: 4px 0 0; color: var(--dark); font-weight: 700;">Estimated False Ceiling Cost</p>
                     
                     <div class="result-meta" id="resultMetaText">
                         Based on: 2 BHK • 900 sq.ft. • Gypsum • Premium • Wakad
@@ -465,7 +473,7 @@
                         <label class="checkbox-item"><input type="checkbox" name="additional_service" value="Complete Interior"> Complete Interior</label>
                         <label class="checkbox-item"><input type="checkbox" name="additional_service" value="Nothing Else" checked> Nothing Else</label>
                     </div>
-                    <button type="button" class="btn btn-secondary" style="margin-top: 14px; font-size: 0.85rem; padding: 10px; background: #fff; border: 1px solid var(--primary); color: var(--primary);" onclick="submitAdditionalServices()">Update Requirements</button>
+                    <button type="button" class="btn btn-secondary" style="margin-top: 12px; font-size: 0.82rem; padding: 10px; background: #fff; border: 1px solid var(--primary); color: var(--primary);" onclick="submitAdditionalServices()">Update Requirements</button>
                 </div>
 
                 <!-- Post Estimate Actions -->
@@ -499,8 +507,7 @@
         };
 
         function centerCalculator() {
-            const card = document.getElementById('calculatorCard');
-            card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
         function goToStep(stepNumber) {
@@ -555,18 +562,14 @@
             }, 200);
         }
 
-        function selectStyleAndNext(val, element) {
+        function selectStyleCard(val, element) {
             document.getElementById('ceilingStyle').value = val;
             document.querySelectorAll('#step4 .option-card').forEach(el => el.classList.remove('selected'));
             element.classList.add('selected');
             calcData.ceilingStyle = val;
-
-            setTimeout(() => {
-                goToStep(5);
-            }, 200);
         }
 
-        async function submitLeadAndShowEstimate() {
+        function submitLeadAndShowEstimate() {
             const nameInput = document.getElementById('clientName');
             const phoneInput = document.getElementById('clientPhone');
             const locInput = document.getElementById('projectLoc');
@@ -622,21 +625,7 @@
                 services: "False Ceiling Only"
             };
 
-            try {
-                await fetch(GOOGLE_SHEET_URL, {
-                    method: "POST",
-                    mode: "no-cors",
-                    headers: { "Content-Type": "application/json" },
-                    body: JSON.stringify(payload)
-                });
-            } catch (e) {
-                console.log("Lead sent to sheet");
-            }
-
-            gtag_report_conversion();
-            trackEvent('calculator_lead_submitted', payload);
-            trackEvent('estimate_generated');
-
+            // INSTANT UI Transition (No hanging/waiting delay)
             document.getElementById('ceilingCalculatorForm').classList.add('hidden');
             document.getElementById('estimateResultContainer').classList.remove('hidden');
 
@@ -647,6 +636,20 @@
             document.getElementById('waExactBtn').href = `https://wa.me/919022104232?text=${waText}`;
 
             centerCalculator();
+
+            // Background Google Ads Conversion & Sheet Dispatch
+            try {
+                gtag_report_conversion();
+                trackEvent('calculator_lead_submitted', payload);
+                trackEvent('estimate_generated');
+
+                fetch(GOOGLE_SHEET_URL, {
+                    method: "POST",
+                    mode: "no-cors",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(payload)
+                });
+            } catch (e) {}
         }
 
         async function submitAdditionalServices() {
@@ -671,7 +674,7 @@
             };
 
             try {
-                await fetch(GOOGLE_SHEET_URL, {
+                fetch(GOOGLE_SHEET_URL, {
                     method: "POST",
                     mode: "no-cors",
                     headers: { "Content-Type": "application/json" },
