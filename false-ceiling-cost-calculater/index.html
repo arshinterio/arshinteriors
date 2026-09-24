@@ -56,13 +56,7 @@
         "postalCode": "411041",
         "addressCountry": "IN"
       },
-      "areaServed": ["Pune", "PCMC"],
-      "sameAs": [
-        "https://maps.app.goo.gl/wy16RFpNYSbMEBpC6",
-        "https://www.instagram.com/arsh_nterior",
-        "https://www.facebook.com/share/1CxC6A6Mtj/",
-        "https://wa.me/919022104232"
-      ]
+      "areaServed": ["Pune", "PCMC"]
     }
     </script>
 
@@ -76,10 +70,10 @@
         :root {
             --primary: #ff6b6b;
             --primary-dark: #e85555;
-            --dark: #111111;
-            --light: #faf9f8;
-            --gray: #666666;
-            --border: #f0d5d5;
+            --dark: #1a1a1a;
+            --light: #fff8f6;
+            --gray: #6b7280;
+            --border: #f3d6d0;
             --card-bg: #ffffff;
             --success: #25d366;
             --transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
@@ -90,181 +84,184 @@
             background-color: var(--light);
             color: var(--dark);
             margin: 0;
-            padding-top: 75px;
-            overflow-x: hidden;
-            line-height: 1.7;
-        }
-        .container {
-            max-width: 680px;
-            margin: 0 auto;
-            padding: 0 16px;
+            padding: 70px 12px 30px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
 
         /* Minimal Header */
         .site-header {
             position: fixed; top: 0; left: 0; width: 100%; 
-            background: rgba(255, 255, 255, 0.98); 
+            background: rgba(255, 255, 255, 0.95); 
             backdrop-filter: blur(10px); 
             z-index: 9999; 
-            border-bottom: 1px solid #e2e8f0;
+            border-bottom: 1px solid #f0e1df;
         }
         .header-inner {
             display: flex; align-items: center; justify-content: space-between; 
-            padding: 12px 20px; max-width: 1100px; margin: 0 auto;
+            padding: 10px 16px; max-width: 600px; margin: 0 auto;
         }
-        .logo { color: var(--dark); text-decoration: none; font-weight: 800; font-size: 1.15rem; display: flex; align-items: center; gap: 8px; }
+        .logo { color: var(--dark); text-decoration: none; font-weight: 800; font-size: 1.1rem; display: flex; align-items: center; gap: 8px; }
         .header-cta-group { display: flex; gap: 8px; align-items: center; }
         .header-btn {
-            background: #f1f5f9; color: var(--dark); width: 38px; height: 38px; 
+            background: #fdf2f2; color: var(--dark); width: 36px; height: 36px; 
             border-radius: 50%; display: flex; align-items: center; justify-content: center; 
-            text-decoration: none; font-size: 0.95rem; transition: var(--transition); border: none; cursor: pointer;
+            text-decoration: none; font-size: 0.9rem; transition: var(--transition); border: none; cursor: pointer;
         }
         .header-btn.wa { background: #e7f8ed; color: var(--success); }
 
-        /* Mobile Slide-out Drawer */
-        .mobile-drawer {
-            position: fixed; top: 0; right: -100%; width: 280px; height: 100vh; background: #fff; z-index: 10000; box-shadow: -5px 0 30px rgba(0,0,0,0.15); transition: var(--transition); padding: 30px 20px; display: flex; flex-direction: column; box-sizing: border-box;
+        /* Main Wrapper */
+        .wrapper {
+            width: 100%;
+            max-width: 520px;
+            margin: 0 auto;
         }
-        .mobile-drawer.open { right: 0; }
-        .drawer-close { font-size: 1.5rem; background: none; border: none; align-self: flex-end; cursor: pointer; margin-bottom: 20px; color: var(--dark); }
-        .drawer-links { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 18px; }
-        .drawer-links a { font-size: 1.1rem; font-weight: 700; color: var(--dark); text-decoration: none; transition: var(--transition); }
-        .drawer-links a:hover, .drawer-links a.active { color: var(--primary); }
 
-        /* Hero Section */
-        .hero-section {
-            padding: 20px 16px 15px; text-align: center;
+        /* Hero Subtitle */
+        .hero-mini {
+            text-align: center;
+            margin-bottom: 18px;
         }
         .brand-tag {
-            font-size: 0.75rem; font-weight: 700; text-transform: uppercase; 
-            letter-spacing: 1.5px; color: var(--primary); margin-bottom: 6px; display: block;
+            font-size: 0.7rem; font-weight: 800; text-transform: uppercase; 
+            letter-spacing: 1.2px; color: var(--primary); margin-bottom: 4px; display: block;
         }
         h1 {
-            font-size: clamp(1.8rem, 4vw, 2.4rem); font-weight: 800; 
-            color: var(--dark); margin: 0 0 8px; letter-spacing: -0.5px;
+            font-size: clamp(1.5rem, 3.5vw, 2rem); font-weight: 800; 
+            color: var(--dark); margin: 0; letter-spacing: -0.5px;
         }
         h1 span { color: var(--primary); font-family: 'Playfair Display', serif; font-style: italic; }
-        .hero-sub { font-size: 0.95rem; color: var(--gray); max-width: 480px; margin: 0 auto 12px; }
-        .trust-badge-line {
-            font-size: 0.8rem; font-weight: 600; color: var(--dark); 
-            background: #f8fafc; display: inline-block; padding: 4px 12px; 
-            border-radius: 20px; border: 1px solid #e2e8f0; margin-bottom: 16px;
-        }
 
-        /* Calculator Card with Soft Pink Touch */
+        /* Calculator Card */
         .calc-card {
-            background: linear-gradient(135deg, #ffffff 0%, #fff8f8 100%); 
-            border-radius: 20px; 
-            box-shadow: 0 15px 35px rgba(255,107,107,0.08); 
-            padding: 28px 22px; 
-            border: 2px solid #ffdcdc; 
-            margin-bottom: 40px; 
+            background: var(--card-bg); 
+            border-radius: 24px; 
+            box-shadow: 0 20px 40px rgba(255,107,107,0.08); 
+            padding: 28px 20px; 
+            border: 2px solid #fcedec; 
             position: relative;
-            scroll-margin-top: 100px;
+            scroll-margin-top: 80px;
         }
         
         .progress-indicator {
-            font-size: 0.75rem; font-weight: 700; text-transform: uppercase;
-            color: var(--primary); letter-spacing: 1px; margin-bottom: 12px;
+            font-size: 0.7rem; font-weight: 800; text-transform: uppercase;
+            color: var(--primary); letter-spacing: 1px; margin-bottom: 10px;
             display: flex; justify-content: space-between; align-items: center;
         }
 
         .step-title {
-            font-size: 1.25rem; font-weight: 700; color: var(--dark); margin-bottom: 16px;
+            font-size: 1.25rem; font-weight: 700; color: var(--dark); margin-bottom: 18px; line-height: 1.3;
         }
 
         /* Options Grid */
         .options-grid {
-            display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-bottom: 20px;
+            display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-bottom: 16px;
         }
         .option-card {
-            border: 2px solid var(--border); border-radius: 12px; padding: 14px 12px;
+            border: 2px solid #f1f2f6; border-radius: 14px; padding: 14px 12px;
             text-align: center; cursor: pointer; transition: var(--transition);
-            background: #fff; font-weight: 600; font-size: 0.95rem; color: var(--dark);
+            background: #fafbfc; font-weight: 700; font-size: 0.95rem; color: #374151;
         }
-        .option-card:hover { border-color: var(--primary); background: #fffafa; transform: translateY(-2px); }
+        .option-card:hover { border-color: var(--primary); background: #fff5f4; transform: translateY(-1px); }
         .option-card.selected {
             border-color: var(--primary); background: rgba(255,107,107,0.08); color: var(--primary);
-            box-shadow: 0 5px 15px rgba(255,107,107,0.12);
+            box-shadow: 0 4px 12px rgba(255,107,107,0.1);
         }
 
         /* Form Inputs */
         .form-group { margin-bottom: 16px; }
-        .form-label { display: block; font-weight: 600; font-size: 0.85rem; margin-bottom: 6px; color: var(--dark); }
+        .form-label { display: block; font-weight: 700; font-size: 0.85rem; margin-bottom: 6px; color: var(--dark); }
         .form-input {
-            width: 100%; padding: 12px 14px; border: 1.5px solid var(--border); 
-            border-radius: 10px; font-size: 1rem; font-family: inherit; background: #fff;
+            width: 100%; padding: 13px 16px; border: 2px solid #f1f2f6; 
+            border-radius: 12px; font-size: 1rem; font-family: inherit; background: #fafbfc;
             transition: var(--transition);
         }
-        .form-input:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px rgba(255,107,107,0.1); }
+        .form-input:focus { outline: none; border-color: var(--primary); background: #fff; box-shadow: 0 0 0 3px rgba(255,107,107,0.1); }
         
         .helper-link {
-            font-size: 0.8rem; color: var(--primary); font-weight: 600; cursor: pointer;
+            font-size: 0.8rem; color: var(--primary); font-weight: 700; cursor: pointer;
             display: inline-block; margin-top: 6px; text-decoration: underline;
         }
-        .helper-note { font-size: 0.75rem; color: var(--gray); margin-top: 4px; }
-        .error-msg { color: #dc2626; font-size: 0.75rem; margin-top: 4px; display: none; }
+        .error-msg { color: #dc2626; font-size: 0.75rem; margin-top: 4px; display: none; font-weight: 700; }
 
         /* Buttons */
         .btn {
-            background: var(--primary); color: #fff; padding: 14px 24px; 
-            border: none; border-radius: 10px; font-size: 1rem; font-weight: 700; 
+            background: var(--primary); color: #fff; padding: 14px 20px; 
+            border: none; border-radius: 12px; font-size: 1rem; font-weight: 800; 
             cursor: pointer; width: 100%; transition: var(--transition); 
             text-align: center; text-decoration: none; display: inline-block;
             box-shadow: 0 6px 16px rgba(255,107,107,0.25);
         }
         .btn:hover { background: var(--primary-dark); transform: translateY(-1px); }
-        .btn-secondary { background: #f1f5f9; color: var(--dark); box-shadow: none; }
-        .btn-secondary:hover { background: #e2e8f0; }
-        .btn-row { display: flex; gap: 10px; margin-top: 16px; }
+        .btn-secondary { background: #f3f4f6; color: #4b5563; box-shadow: none; }
+        .btn-secondary:hover { background: #e5e7eb; color: #111; }
+        .btn-row { display: flex; gap: 10px; margin-top: 18px; }
 
         .hidden { display: none !important; }
 
         /* Estimate Result */
         .result-box {
-            background: #fff5f5; border: 2px solid var(--primary); 
-            border-radius: 14px; padding: 20px; text-align: center; margin-bottom: 20px;
+            background: #fff5f4; border: 2px solid var(--primary); 
+            border-radius: 16px; padding: 20px; text-align: center; margin-bottom: 18px;
         }
         .result-price {
-            font-size: clamp(1.6rem, 4vw, 2.2rem); font-weight: 800; 
+            font-size: clamp(1.7rem, 4vw, 2.2rem); font-weight: 800; 
             color: var(--primary); margin: 8px 0;
         }
-        .result-meta { font-size: 0.85rem; color: var(--gray); background: #fff; padding: 10px; border-radius: 8px; margin-top: 12px; border: 1px solid var(--border); }
+        .result-meta { font-size: 0.85rem; color: var(--gray); background: #fff; padding: 10px; border-radius: 10px; margin-top: 12px; border: 1px solid #f1f2f6; }
         .disclaimer { font-size: 0.7rem; color: var(--gray); margin-top: 10px; line-height: 1.4; }
 
-        /* Upsell */
+        /* Beautified Suggestion / Upsell Box */
         .upsell-section {
-            background: #f8fafc; border: 1px solid var(--border); border-radius: 12px;
-            padding: 16px; margin-bottom: 20px; text-align: left;
+            background: linear-gradient(135deg, #fff9f8 0%, #fff2f0 100%); 
+            border: 2px solid #ffdcdc; 
+            border-radius: 18px;
+            padding: 20px 16px; 
+            margin-bottom: 20px; 
+            text-align: left;
+            box-shadow: 0 8px 20px rgba(255,107,107,0.05);
         }
-        .upsell-title { font-weight: 700; font-size: 0.9rem; margin-bottom: 10px; }
-        .checkbox-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; font-size: 0.85rem; }
-        .checkbox-item { display: flex; align-items: center; gap: 6px; cursor: pointer; }
-
-        /* Sections & FAQ */
-        .section-title { font-size: 1.3rem; font-weight: 800; text-align: center; margin-bottom: 6px; }
-        .section-sub { font-size: 0.85rem; color: var(--gray); text-align: center; margin-bottom: 20px; }
-        .trust-grid {
-            display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); 
-            gap: 10px; margin-top: 15px; text-align: left;
+        .upsell-title { 
+            font-weight: 800; 
+            font-size: 0.95rem; 
+            margin-bottom: 12px; 
+            color: var(--dark); 
+            display: flex; 
+            align-items: center; 
+            gap: 8px; 
         }
-        .trust-item {
-            background: #fff; padding: 12px; border-radius: 10px; 
-            border: 1px solid var(--border); font-size: 0.8rem; font-weight: 600;
-            display: flex; align-items: center; gap: 8px;
+        .checkbox-grid { 
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            gap: 10px; 
+            font-size: 0.85rem; 
+            font-weight: 700; 
+            color: #374151;
         }
-        .trust-item i { color: var(--primary); }
-
-        .faq-item {
-            background: #fff; border: 1px solid var(--border); border-radius: 10px;
-            margin-bottom: 8px; overflow: hidden; text-align: left;
+        .checkbox-item { 
+            display: flex; 
+            align-items: center; 
+            gap: 8px; 
+            cursor: pointer; 
+            background: #fff; 
+            padding: 8px 10px; 
+            border-radius: 10px; 
+            border: 1px solid #f0e1df; 
+            transition: var(--transition);
         }
-        .faq-q {
-            padding: 12px 14px; font-weight: 700; font-size: 0.85rem; cursor: pointer;
-            display: flex; justify-content: space-between; align-items: center;
+        .checkbox-item:hover {
+            border-color: var(--primary);
+            background: #fff5f4;
         }
-        .faq-a { padding: 0 14px 12px; font-size: 0.8rem; color: var(--gray); display: none; }
-        .faq-item.active .faq-a { display: block; }
+        .checkbox-item input[type="checkbox"] {
+            accent-color: var(--primary);
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+        }
 
         /* Floating WhatsApp */
         .floating-wa {
@@ -276,15 +273,14 @@
 
         @media(min-width: 768px) {
             .options-grid { grid-template-columns: repeat(3, 1fr); }
-            .container { max-width: 800px; }
         }
     </style>
 </head>
 <body>
 
-    <!-- Minimal Header with Logo Home Link & Hamburger Drawer -->
+    <!-- Minimal Header -->
     <header class="site-header">
-        <div class="header-inner" style="max-width: 1100px; margin: 0 auto;">
+        <div class="header-inner">
             <a href="/" class="logo">
                 <i class="fas fa-layer-group" style="color: var(--primary);"></i> 
                 <span>Arsh Interiors</span>
@@ -292,57 +288,36 @@
             <div class="header-cta-group">
                 <a href="https://wa.me/919022104232?text=Hi%20Arsh%20Interiors,%20I%20want%20a%20false%20ceiling%20quote." class="header-btn wa" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                 <a href="tel:+919022104232" class="header-btn" title="Call Us"><i class="fas fa-phone-alt"></i></a>
-                <button class="header-btn" onclick="toggleDrawer()" aria-label="Menu" style="background:#f0f0f0;"><i class="fas fa-bars"></i></button>
             </div>
         </div>
     </header>
-
-    <!-- Mobile Slide-out Drawer -->
-    <div class="mobile-drawer" id="mobileDrawer">
-        <button class="drawer-close" onclick="toggleDrawer()"><i class="fas fa-times"></i></button>
-        <ul class="drawer-links">
-            <li><a href="/" onclick="toggleDrawer()">Home</a></li>
-            <li><a href="/about" onclick="toggleDrawer()">About Us</a></li>
-            <li><a href="/services" onclick="toggleDrawer()">Expert Services</a></li>
-            <li><a href="/estimator" onclick="toggleDrawer()">Master Cost Calculator</a></li>
-            <li><a href="/false-ceiling-cost-calculator" class="active" onclick="toggleDrawer()">False Ceiling Calculator</a></li>
-            <li><a href="/design" onclick="toggleDrawer()">Portfolio Gallery</a></li>
-        </ul>
-        <div style="margin-top: auto; padding-top: 20px; border-top: 1px solid #eee;">
-            <a href="tel:+919022104232" class="btn" style="margin: 0; padding: 12px; font-size: 0.95rem;"><i class="fas fa-phone-alt"></i> Call +91 9022104232</a>
-        </div>
-    </div>
 
     <!-- Floating WhatsApp -->
     <a href="https://wa.me/919022104232?text=Hi%20Arsh%20Interiors,%20I%20want%20a%20false%20ceiling%20quote." target="_blank" class="floating-wa">
         <i class="fab fa-whatsapp"></i>
     </a>
 
-    <main class="container">
+    <div class="wrapper">
         
-        <!-- Hero Section -->
-        <section class="hero-section">
-            <span class="brand-tag">Arsh Interiors • Pune & PCMC</span>
+        <!-- Hero Header -->
+        <div class="hero-mini">
+            <span class="brand-tag">Pune & PCMC • Fast Estimator</span>
             <h1>False Ceiling Cost <span>Calculator</span></h1>
-            <p class="hero-sub">Get an approximate false ceiling estimate in under 30 seconds. No obligation.</p>
-            <div class="trust-badge-line">
-                <i class="fas fa-check-circle" style="color: var(--primary);"></i> Gypsum • POP • PVC • WPVC • Acrylic
-            </div>
-        </section>
+        </div>
 
         <!-- Calculator Card -->
         <div class="calc-card" id="calculatorCard">
             <form id="ceilingCalculatorForm" novalidate>
                 
-                <!-- STEP 1: PROPERTY TYPE (Auto-Advances on click) -->
+                <!-- STEP 1: PROPERTY TYPE -->
                 <div class="calc-step" id="step1">
                     <div class="progress-indicator">
-                        <span>Step 1 of 4</span>
+                        <span>Step 1 of 5</span>
                         <span>Property Type</span>
                     </div>
                     <div class="step-title">What type of property is it?</div>
                     
-                    <div class="options-grid">
+                    <div class="options-grid" style="grid-template-columns: repeat(2, 1fr);">
                         <div class="option-card" onclick="selectPropertyAndNext('1 BHK', this)">1 BHK</div>
                         <div class="option-card" onclick="selectPropertyAndNext('2 BHK', this)">2 BHK</div>
                         <div class="option-card" onclick="selectPropertyAndNext('3 BHK', this)">3 BHK</div>
@@ -357,114 +332,118 @@
                 <!-- STEP 2: AREA -->
                 <div class="calc-step hidden" id="step2">
                     <div class="progress-indicator">
-                        <span>Step 2 of 4</span>
+                        <span>Step 2 of 5</span>
                         <span>Approximate Area</span>
                     </div>
-                    <div class="step-title">What is the approximate area?</div>
+                    <div class="step-title">What is the approximate ceiling area?</div>
                     
                     <div class="form-group">
                         <label class="form-label" for="carpetArea">Approx. Area (sq. ft.)</label>
                         <input type="number" id="carpetArea" class="form-input" placeholder="e.g. 900" inputmode="numeric">
-                        <span class="helper-link" onclick="toggleAreaSelector()">I don't know the exact area</span>
-                        <div class="error-msg" id="areaError">Please enter a valid area or select a home size.</div>
+                        <span class="helper-link" onclick="toggleAreaSelector()">I don't know exact area (Use home size)</span>
+                        <div class="error-msg" id="areaError">Please enter a valid area.</div>
                     </div>
 
-                    <div id="homeSizeSelector" class="hidden form-group">
-                        <label class="form-label">Select your home size:</label>
+                    <div id="homeSizeSelector" class="hidden form-group" style="margin-top: 14px;">
+                        <label class="form-label">Select home size:</label>
                         <div class="options-grid">
-                            <div class="option-card" onclick="selectHomeSize('1 BHK', 600, this)">1 BHK (600 sq.ft)</div>
-                            <div class="option-card" onclick="selectHomeSize('2 BHK', 900, this)">2 BHK (900 sq.ft)</div>
-                            <div class="option-card" onclick="selectHomeSize('3 BHK', 1250, this)">3 BHK (1250 sq.ft)</div>
-                            <div class="option-card" onclick="selectHomeSize('4 BHK', 1600, this)">4 BHK (1600 sq.ft)</div>
-                            <div class="option-card" onclick="selectHomeSize('Bungalow', 2200, this)">Bungalow (2200 sq.ft)</div>
+                            <div class="option-card" onclick="selectHomeSize('1 BHK', 600, this)" style="padding:10px; font-size:0.85rem;">1 BHK (600 sq.ft)</div>
+                            <div class="option-card" onclick="selectHomeSize('2 BHK', 900, this)" style="padding:10px; font-size:0.85rem;">2 BHK (900 sq.ft)</div>
+                            <div class="option-card" onclick="selectHomeSize('3 BHK', 1250, this)" style="padding:10px; font-size:0.85rem;">3 BHK (1250 sq.ft)</div>
+                            <div class="option-card" onclick="selectHomeSize('4 BHK', 1600, this)" style="padding:10px; font-size:0.85rem;">4 BHK (1600 sq.ft)</div>
                         </div>
                     </div>
 
-                    <p class="helper-note">Approximate area is enough for an initial estimate.</p>
-
                     <div class="btn-row">
-                        <button type="button" class="btn btn-secondary" onclick="nextStep(1)">&larr; Back</button>
-                        <button type="button" class="btn" onclick="nextStep(3)">Next Step &rarr;</button>
+                        <button type="button" class="btn btn-secondary" onclick="goToStep(1)">&larr; Back</button>
+                        <button type="button" class="btn" onclick="validateAndGoToStep(3)">Next</button>
                     </div>
                 </div>
 
-                <!-- STEP 3: MATERIAL & STYLE (Material Selection Auto-Advances) -->
+                <!-- STEP 3: MATERIAL TYPE -->
                 <div class="calc-step hidden" id="step3">
                     <div class="progress-indicator">
-                        <span>Step 3 of 4</span>
-                        <span>Material & Style</span>
+                        <span>Step 3 of 5</span>
+                        <span>Material Type</span>
                     </div>
-                    <div class="step-title">Select Material & Ceiling Style</div>
+                    <div class="step-title">Select False Ceiling Material</div>
                     
-                    <div class="form-group">
-                        <label class="form-label">Material Type (Select to proceed)</label>
-                        <div class="options-grid" style="grid-template-columns: repeat(2, 1fr);">
-                            <div class="option-card" onclick="selectMaterialAndNext('Gypsum', this)">Gypsum (Gyproc)</div>
-                            <div class="option-card" onclick="selectMaterialAndNext('POP', this)">POP</div>
-                            <div class="option-card" onclick="selectMaterialAndNext('PVC', this)">PVC</div>
-                            <div class="option-card" onclick="selectMaterialAndNext('WPVC', this)">WPVC</div>
-                            <div class="option-card" onclick="selectMaterialAndNext('Acrylic', this)">Acrylic</div>
-                            <div class="option-card" onclick="selectMaterialAndNext('Other', this)">Other / Not Sure</div>
-                        </div>
-                        <input type="hidden" id="materialType" required>
-                        <div class="error-msg" id="materialError">Please select a material type.</div>
+                    <div class="options-grid" style="grid-template-columns: repeat(2, 1fr);">
+                        <div class="option-card" onclick="selectMaterialAndNext('Gypsum', this)">Gypsum</div>
+                        <div class="option-card" onclick="selectMaterialAndNext('POP', this)">POP</div>
+                        <div class="option-card" onclick="selectMaterialAndNext('PVC', this)">PVC</div>
+                        <div class="option-card" onclick="selectMaterialAndNext('WPVC', this)">WPVC</div>
+                        <div class="option-card" onclick="selectMaterialAndNext('Acrylic', this)">Acrylic</div>
+                        <div class="option-card" onclick="selectMaterialAndNext('Other', this)">Other</div>
                     </div>
-
-                    <div class="form-group" style="margin-top: 15px;">
-                        <label class="form-label">Ceiling Style / Design Complexity</label>
-                        <div class="options-grid" style="grid-template-columns: repeat(3, 1fr);">
-                            <div class="option-card" onclick="selectStyle('Simple', this)" style="font-size: 0.85rem; padding: 10px;">Simple (1.3x)</div>
-                            <div class="option-card selected" onclick="selectStyle('Premium', this)" style="font-size: 0.85rem; padding: 10px;">Premium (1.7x)</div>
-                            <div class="option-card" onclick="selectStyle('Luxury', this)" style="font-size: 0.85rem; padding: 10px;">Luxury (2.2x)</div>
-                        </div>
-                        <input type="hidden" id="ceilingStyle" value="Premium">
-                    </div>
+                    <input type="hidden" id="materialType" required>
+                    <div class="error-msg" id="materialError">Please select a material type.</div>
 
                     <div class="btn-row">
-                        <button type="button" class="btn btn-secondary" onclick="nextStep(2)">&larr; Back</button>
-                        <button type="button" class="btn" onclick="validateAndGoToStep4()">Next: Contact Details &rarr;</button>
+                        <button type="button" class="btn btn-secondary" onclick="goToStep(2)">&larr; Back</button>
                     </div>
                 </div>
 
-                <!-- STEP 4: LOCATION & LEAD DETAILS -->
+                <!-- STEP 4: CEILING STYLE -->
                 <div class="calc-step hidden" id="step4">
                     <div class="progress-indicator">
-                        <span>Step 4 of 4</span>
-                        <span>Contact & Location</span>
+                        <span>Step 4 of 5</span>
+                        <span>Ceiling Style</span>
                     </div>
-                    <div class="step-title">Where is your project located?</div>
+                    <div class="step-title">Select Ceiling Style Complexity</div>
+                    
+                    <div class="options-grid" style="grid-template-columns: repeat(3, 1fr);">
+                        <div class="option-card" onclick="selectStyleAndNext('Simple', this)">Simple</div>
+                        <div class="option-card selected" onclick="selectStyleAndNext('Premium', this)">Premium</div>
+                        <div class="option-card" onclick="selectStyleAndNext('Luxury', this)">Luxury</div>
+                    </div>
+                    <input type="hidden" id="ceilingStyle" value="Premium">
+
+                    <div class="btn-row">
+                        <button type="button" class="btn btn-secondary" onclick="goToStep(3)">&larr; Back</button>
+                    </div>
+                </div>
+
+                <!-- STEP 5: CONTACT DETAILS (Name -> Phone -> Location) -->
+                <div class="calc-step hidden" id="step5">
+                    <div class="progress-indicator">
+                        <span>Step 5 of 5</span>
+                        <span>Contact Details</span>
+                    </div>
+                    <div class="step-title">Where should we send your estimate?</div>
                     
                     <div class="form-group">
-                        <label class="form-label" for="projectLoc">Project Location *</label>
-                        <input type="text" id="projectLoc" class="form-input" placeholder="Wakad, Ravet, Baner, Kharadi..." required>
-                        <div class="error-msg" id="locError">Please enter your project location.</div>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="form-label" for="clientName">Your Name</label>
-                        <input type="text" id="clientName" class="form-input" placeholder="Enter your name">
+                        <label class="form-label" for="clientName">Your Name *</label>
+                        <input type="text" id="clientName" class="form-input" placeholder="Enter your name" required>
+                        <div class="error-msg" id="nameError">Please enter your name.</div>
                     </div>
 
                     <div class="form-group">
                         <label class="form-label" for="clientPhone">WhatsApp Number *</label>
                         <input type="tel" id="clientPhone" class="form-input" placeholder="10-digit mobile number" maxlength="10" inputmode="numeric" required>
-                        <div class="error-msg" id="phoneError">Please enter a valid 10-digit mobile number.</div>
+                        <div class="error-msg" id="phoneError">Please enter valid 10-digit mobile number.</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="projectLoc">Project Location *</label>
+                        <input type="text" id="projectLoc" class="form-input" placeholder="e.g. Wakad, Baner, Hinjewadi" required>
+                        <div class="error-msg" id="locError">Please enter your project location.</div>
                     </div>
 
                     <div class="btn-row">
-                        <button type="button" class="btn btn-secondary" onclick="nextStep(3)">&larr; Back</button>
-                        <button type="button" class="btn" onclick="submitLeadAndShowEstimate()" id="submitLeadBtn" style="background: var(--success);"><i class="fas fa-calculator"></i> GET MY FREE ESTIMATE 🚀</button>
+                        <button type="button" class="btn btn-secondary" onclick="goToStep(4)">&larr; Back</button>
+                        <button type="button" class="btn" onclick="submitLeadAndShowEstimate()" id="submitLeadBtn">Get My Free Estimate</button>
                     </div>
                 </div>
 
             </form>
 
             <!-- ESTIMATE RESULT DISPLAY -->
-            <div id="estimateResultContainer" class="hidden" style="margin-top: 10px; text-align: center;">
+            <div id="estimateResultContainer" class="hidden" style="text-align: center;">
                 <div class="result-box">
-                    <span style="font-size: 0.8rem; font-weight: 700; text-transform: uppercase; color: var(--gray);">Your Approximate Estimate</span>
+                    <span style="font-size: 0.75rem; font-weight: 800; text-transform: uppercase; color: var(--gray);">Your Approximate Estimate</span>
                     <div class="result-price" id="priceDisplayRange">₹--</div>
-                    <p style="font-size: 0.85rem; margin: 4px 0 0; color: var(--dark); font-weight: 600;">Estimated False Ceiling Cost</p>
+                    <p style="font-size: 0.85rem; margin: 4px 0 0; color: var(--dark); font-weight: 700;">Estimated False Ceiling Cost</p>
                     
                     <div class="result-meta" id="resultMetaText">
                         Based on: 2 BHK • 900 sq.ft. • Gypsum • Premium • Wakad
@@ -475,42 +454,38 @@
                     </p>
                 </div>
 
-                <!-- Secondary Services Upsell -->
+                <!-- Beautified Suggestion / Upsell Box -->
                 <div class="upsell-section" id="upsellSection">
-                    <div class="upsell-title"><i class="fas fa-plus-circle" style="color: var(--primary);"></i> Planning Other Work Too?</div>
+                    <div class="upsell-title"><i class="fas fa-sparkles" style="color: var(--primary);"></i> Planning other work too? (Optional)</div>
                     <div class="checkbox-grid">
                         <label class="checkbox-item"><input type="checkbox" name="additional_service" value="Electrical Work"> Electrical Work</label>
                         <label class="checkbox-item"><input type="checkbox" name="additional_service" value="Painting"> Painting</label>
-                        <label class="checkbox-item"><input type="checkbox" name="additional_service" value="Wall Moulding / 3D"> Wall Moulding / 3D</label>
+                        <label class="checkbox-item"><input type="checkbox" name="additional_service" value="Wall Moulding"> Wall Moulding</label>
                         <label class="checkbox-item"><input type="checkbox" name="additional_service" value="Furniture"> Furniture</label>
                         <label class="checkbox-item"><input type="checkbox" name="additional_service" value="Complete Interior"> Complete Interior</label>
                         <label class="checkbox-item"><input type="checkbox" name="additional_service" value="Nothing Else" checked> Nothing Else</label>
                     </div>
-                    <button type="button" class="btn btn-secondary" style="margin-top: 12px; font-size: 0.85rem; padding: 10px;" onclick="submitAdditionalServices()">Request Complete Quotation</button>
+                    <button type="button" class="btn btn-secondary" style="margin-top: 14px; font-size: 0.85rem; padding: 10px; background: #fff; border: 1px solid var(--primary); color: var(--primary);" onclick="submitAdditionalServices()">Update Requirements</button>
                 </div>
 
                 <!-- Post Estimate Actions -->
                 <div style="display: flex; flex-direction: column; gap: 10px;">
-                    <a id="waExactBtn" href="#" target="_blank" class="btn" style="background: var(--success);"><i class="fab fa-whatsapp"></i> GET EXACT QUOTATION ON WHATSAPP</a>
-                    <a href="tel:+919022104232" class="btn btn-secondary"><i class="fas fa-phone-alt"></i> CALL ARSH INTERIORS</a>
+                    <a id="waExactBtn" href="#" target="_blank" class="btn" style="background: var(--success);"><i class="fab fa-whatsapp"></i> Get Exact Quotation on WhatsApp</a>
+                    <a href="tel:+919022104232" class="btn btn-secondary"><i class="fas fa-phone-alt"></i> Call Arsh Interiors</a>
                 </div>
             </div>
 
         </div>
 
-    </main>
+    </div>
 
-    <!-- Script Logic with Auto-Advance & Auto-Centering -->
+    <!-- Script Logic -->
     <script>
         const GOOGLE_SHEET_URL = "https://script.google.com/macros/s/AKfycbyTAectUxuV_-yowzo5v6YSNLSSp7GsY9WxfcEcqtYWB4KeRUXq6phEG5w0B7sgBzlv/exec";
 
         window.addEventListener('DOMContentLoaded', () => {
             trackEvent('calculator_started');
         });
-
-        function toggleDrawer() {
-            document.getElementById('mobileDrawer').classList.toggle('open');
-        }
 
         const calcData = {
             propertyType: '',
@@ -528,7 +503,13 @@
             card.scrollIntoView({ behavior: 'smooth', block: 'center' });
         }
 
-        function nextStep(stepNumber) {
+        function goToStep(stepNumber) {
+            document.querySelectorAll('.calc-step').forEach(el => el.classList.add('hidden'));
+            document.getElementById('step' + stepNumber).classList.remove('hidden');
+            centerCalculator();
+        }
+
+        function validateAndGoToStep(stepNumber) {
             if (stepNumber === 3) {
                 const areaVal = document.getElementById('carpetArea').value;
                 if (!areaVal || areaVal <= 0) {
@@ -538,31 +519,9 @@
                 document.getElementById('areaError').style.display = 'none';
                 calcData.area = parseFloat(areaVal);
             }
-
-            document.querySelectorAll('.calc-step').forEach(el => el.classList.add('hidden'));
-            document.getElementById('step' + stepNumber).classList.remove('hidden');
-            
-            trackEvent('calculator_step_completed', { step: stepNumber - 1 });
-            centerCalculator();
+            goToStep(stepNumber);
         }
 
-        function validateAndGoToStep4() {
-            const matVal = document.getElementById('materialType').value;
-            if (!matVal) {
-                document.getElementById('materialError').style.display = 'block';
-                return;
-            }
-            document.getElementById('materialError').style.display = 'none';
-            calcData.materialType = matVal;
-            calcData.ceilingStyle = document.getElementById('ceilingStyle').value;
-
-            document.querySelectorAll('.calc-step').forEach(el => el.classList.add('hidden'));
-            document.getElementById('step4').classList.remove('hidden');
-            trackEvent('calculator_step_completed', { step: 3 });
-            centerCalculator();
-        }
-
-        // Auto-advance Step 1 on Property Type click
         function selectPropertyAndNext(val, element) {
             document.getElementById('propertyType').value = val;
             document.querySelectorAll('#step1 .option-card').forEach(el => el.classList.remove('selected'));
@@ -570,9 +529,8 @@
             document.getElementById('propertyError').style.display = 'none';
             calcData.propertyType = val;
 
-            // Chhota sa delay taaki user ko selection animation dikhe aur turant next step aaye
             setTimeout(() => {
-                nextStep(2);
+                goToStep(2);
             }, 200);
         }
 
@@ -586,40 +544,39 @@
             element.classList.add('selected');
         }
 
-        // Auto-advance Step 3 on Material Type click
         function selectMaterialAndNext(val, element) {
             document.getElementById('materialType').value = val;
-            document.querySelectorAll('#step3 .options-grid:first-of-type .option-card').forEach(el => el.classList.remove('selected'));
+            document.querySelectorAll('#step3 .option-card').forEach(el => el.classList.remove('selected'));
             element.classList.add('selected');
-            document.getElementById('materialError').style.display = 'none';
             calcData.materialType = val;
-            calcData.ceilingStyle = document.getElementById('ceilingStyle').value;
 
             setTimeout(() => {
-                document.querySelectorAll('.calc-step').forEach(el => el.classList.add('hidden'));
-                document.getElementById('step4').classList.remove('hidden');
-                trackEvent('calculator_step_completed', { step: 3 });
-                centerCalculator();
+                goToStep(4);
             }, 200);
         }
 
-        function selectStyle(val, element) {
+        function selectStyleAndNext(val, element) {
             document.getElementById('ceilingStyle').value = val;
-            document.querySelectorAll('#step3 .options-grid:last-of-type .option-card').forEach(el => el.classList.remove('selected'));
+            document.querySelectorAll('#step4 .option-card').forEach(el => el.classList.remove('selected'));
             element.classList.add('selected');
+            calcData.ceilingStyle = val;
+
+            setTimeout(() => {
+                goToStep(5);
+            }, 200);
         }
 
         async function submitLeadAndShowEstimate() {
-            const locInput = document.getElementById('projectLoc');
-            const phoneInput = document.getElementById('clientPhone');
             const nameInput = document.getElementById('clientName');
+            const phoneInput = document.getElementById('clientPhone');
+            const locInput = document.getElementById('projectLoc');
 
             let isValid = true;
-            if (!locInput.value.trim()) {
-                document.getElementById('locError').style.display = 'block';
+            if (!nameInput.value.trim()) {
+                document.getElementById('nameError').style.display = 'block';
                 isValid = false;
             } else {
-                document.getElementById('locError').style.display = 'none';
+                document.getElementById('nameError').style.display = 'none';
             }
 
             const phoneRegex = /^[6-9]\d{9}$/;
@@ -630,13 +587,19 @@
                 document.getElementById('phoneError').style.display = 'none';
             }
 
+            if (!locInput.value.trim()) {
+                document.getElementById('locError').style.display = 'block';
+                isValid = false;
+            } else {
+                document.getElementById('locError').style.display = 'none';
+            }
+
             if (!isValid) return;
 
-            calcData.location = locInput.value.trim();
-            calcData.name = nameInput.value.trim() || 'Not Provided';
+            calcData.name = nameInput.value.trim();
             calcData.phone = phoneInput.value.trim();
+            calcData.location = locInput.value.trim();
 
-            // Pricing logic calculation
             const baseRates = { 'Gypsum': 95, 'POP': 70, 'PVC': 100, 'WPVC': 180, 'Acrylic': 150, 'Other': 95 };
             const multipliers = { 'Simple': 1.3, 'Premium': 1.7, 'Luxury': 2.2 };
 
@@ -659,7 +622,6 @@
                 services: "False Ceiling Only"
             };
 
-            // Submit to Google Sheet
             try {
                 await fetch(GOOGLE_SHEET_URL, {
                     method: "POST",
@@ -671,12 +633,10 @@
                 console.log("Lead sent to sheet");
             }
 
-            // Fire Google Ads Conversion Event
             gtag_report_conversion();
             trackEvent('calculator_lead_submitted', payload);
             trackEvent('estimate_generated');
 
-            // Render Result
             document.getElementById('ceilingCalculatorForm').classList.add('hidden');
             document.getElementById('estimateResultContainer').classList.remove('hidden');
 
@@ -719,7 +679,7 @@
                 });
             } catch (e) {}
 
-            alert("Thank you! Additional requirements attached to your lead. Our expert will contact you shortly.");
+            alert("Thank you! Additional requirements updated successfully.");
         }
 
         function trackEvent(eventName, payload = {}) {
