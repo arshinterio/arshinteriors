@@ -1,451 +1,808 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>False Ceiling Cost Calculator in Pune | Arsh Interiors</title>
-<meta name="description" content="Calculate your approximate false ceiling cost in Pune. Get a free estimate from Arsh Interiors for gypsum, POP and PVC false ceiling work.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;1,600;1,700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<style>
-:root{
-  --primary:#ff6b6b; --primary-dark:#ff5c5c; --ink:#2d3436; --muted:#636e72;
-  --bg:#fff7f0; --card:#fff; --line:#e9eef2; --success:#25d366;
-  --shadow:0 18px 50px rgba(0,0,0,.07); --radius:22px;
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:"Plus Jakarta Sans",Arial,sans-serif;line-height:1.5}
-button,input{font:inherit}
-a{text-decoration:none;color:inherit}
-.page{max-width:760px;margin:auto;padding:22px 16px 50px}
-.header{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:28px}
-.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:18px}
-.brand-icon{width:38px;height:38px;border-radius:12px;background:var(--primary);color:#fff;display:grid;place-items:center;box-shadow:0 8px 20px rgba(255,107,107,.22)}
-.call{display:inline-flex;align-items:center;gap:7px;padding:10px 13px;border:1px solid var(--line);border-radius:12px;background:#fff;font-weight:700;font-size:13px}
-.hero{text-align:center;margin:6px auto 22px}
-.kicker{font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--primary);margin-bottom:8px}
-h1{font-size:clamp(30px,6vw,44px);line-height:1.08;letter-spacing:-1.4px;margin:0 0 10px;font-weight:800}
-.serif{font-family:"Playfair Display",serif;font-style:italic}
-.hero p{color:var(--muted);max-width:570px;margin:0 auto 13px;font-size:15px}
-.chips{display:flex;justify-content:center;gap:7px;flex-wrap:wrap}
-.chip{font-size:11px;font-weight:700;padding:6px 10px;border-radius:999px;background:#fff;border:1px solid var(--line);color:#4b5563}
-.card{background:rgba(255,255,255,.94);border:1px solid rgba(255,255,255,.8);box-shadow:var(--shadow);border-radius:var(--radius);padding:24px;max-width:640px;margin:0 auto}
-.progress{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px;font-size:12px;font-weight:700;color:var(--muted)}
-.bar{height:5px;background:#f1f2f6;border-radius:99px;overflow:hidden;margin-bottom:26px}
-.fill{height:100%;width:33.33%;background:var(--primary);border-radius:99px;transition:width .3s ease}
-.step{display:none}
-.step.active{display:block}
-.step h2{font-size:24px;letter-spacing:-.5px;margin:0 0 6px}
-.step .sub{font-size:14px;color:var(--muted);margin:0 0 22px}
-.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
-.option{border:1.5px solid var(--line);background:#fff;border-radius:15px;padding:15px 12px;min-height:62px;cursor:pointer;text-align:left;font-weight:700;transition:.18s;display:flex;align-items:center;gap:10px}
-.option:hover{border-color:#ccd4da}
-.option.selected{border-color:var(--primary);background:rgba(255,107,107,.045);box-shadow:0 0 0 3px rgba(255,107,107,.08)}
-.option i{color:#7b858b;font-size:17px;width:20px;text-align:center}
-.option.selected i{color:var(--primary)}
-.label{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.05em;margin:0 0 8px;display:block}
-.input{width:100%;height:56px;border:1.5px solid var(--line);border-radius:14px;padding:0 16px;outline:none;background:#fff;font-size:16px}
-.input:focus{border-color:var(--primary);box-shadow:0 0 0 3px rgba(255,107,107,.09)}
-.hint{font-size:12px;color:var(--muted);margin-top:7px}
-.optional{font-size:11px;color:var(--muted);font-weight:600;margin-left:4px;text-transform:none;letter-spacing:0}
-.actions{display:flex;gap:10px;margin-top:25px}
-.btn{border:0;border-radius:14px;height:54px;padding:0 18px;font-weight:800;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:8px}
-.btn.primary{flex:1;background:var(--primary);color:#fff;box-shadow:0 10px 22px rgba(255,107,107,.18)}
-.btn.primary:hover{background:var(--primary-dark)}
-.btn.back{width:54px;background:#f2f4f6;color:var(--ink)}
-.error{display:none;color:#d63031;font-size:12px;font-weight:700;margin-top:8px}
-.error.show{display:block}
-.small-trust{text-align:center;margin:14px auto 0;color:var(--muted);font-size:11px}
-.loader,.result{display:none;text-align:center}
-.spinner{width:42px;height:42px;border:4px solid #ffe1e1;border-top-color:var(--primary);border-radius:50%;animation:spin .8s linear infinite;margin:8px auto 16px}
-@keyframes spin{to{transform:rotate(360deg)}}
-.result-icon{width:54px;height:54px;border-radius:50%;background:#eafff1;color:var(--success);display:grid;place-items:center;font-size:25px;margin:0 auto 14px}
-.result h2{margin:0 0 5px;font-size:25px}
-.result-sub{margin:0 0 18px;color:var(--muted);font-size:13px}
-.estimate-box{border:1px solid #f0e2df;background:#fffafa;border-radius:17px;padding:18px;margin:12px 0 18px}
-.estimate-label{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:800}
-.estimate-price{font-size:30px;font-weight:800;margin:4px 0}
-.meta{font-size:12px;color:var(--muted)}
-.wa{width:100%;background:var(--success);color:#fff;margin-top:8px}
-.call2{width:100%;background:#fff;border:1px solid var(--line);margin-top:9px}
-.note{font-size:11px;color:var(--muted);line-height:1.55;margin-top:14px}
-.cross{display:none;text-align:left;border-top:1px solid var(--line);margin-top:22px;padding-top:20px}
-.cross h3{font-size:17px;margin:0 0 4px}
-.cross p{font-size:12px;color:var(--muted);margin:0 0 13px}
-.cross-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
-.check{border:1px solid var(--line);border-radius:12px;padding:11px;background:#fff;font-size:12px;font-weight:700;cursor:pointer}
-.check.selected{border-color:var(--primary);background:#fff5f2}
-.trust{max-width:640px;margin:20px auto 0;display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
-.trust div{background:#fff;border:1px solid var(--line);border-radius:13px;padding:11px;text-align:center;font-size:11px;font-weight:700;color:#4b5563}
-.trust i{display:block;color:var(--primary);margin-bottom:4px}
-.footer{text-align:center;color:var(--muted);font-size:11px;margin-top:24px}
-@media(max-width:520px){
- .page{padding:16px 12px 35px}.header{margin-bottom:20px}.call{font-size:12px}
- .card{padding:19px 16px;border-radius:19px}.grid{grid-template-columns:1fr 1fr}
- .option{padding:13px 10px;font-size:13px}.trust{grid-template-columns:1fr 1fr 1fr}
-}
-.extra-section{max-width:640px;margin:48px auto 0}.section-kicker{font-size:11px;font-weight:800;letter-spacing:.09em;color:var(--primary);margin-bottom:7px}.extra-section h2{font-size:25px;letter-spacing:-.5px;margin:0 0 7px}.extra-section>p{font-size:13px;color:var(--muted);margin:0 0 15px}.full-estimator-card{display:flex;align-items:center;gap:14px;background:#2d3436;color:#fff;border-radius:20px;padding:18px;border:1px solid #3b4346;box-shadow:0 14px 35px rgba(0,0,0,.10);transition:transform .18s,box-shadow .18s}.full-estimator-card:hover{transform:translateY(-2px);box-shadow:0 18px 40px rgba(0,0,0,.13)}.estimator-icon{width:48px;height:48px;flex:0 0 48px;border-radius:14px;background:var(--primary);display:grid;place-items:center;font-size:18px}.estimator-copy{display:flex;flex-direction:column;gap:3px;min-width:0}.estimator-copy strong{font-size:15px}.estimator-copy small{font-size:11px;color:#d7dcde}.estimator-copy em{font-style:normal;color:#ffb0b0;font-size:11px;font-weight:800;margin-top:3px}.review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}.review{background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px}.stars{color:#f5a623;font-size:12px;letter-spacing:1px;margin-bottom:7px}.review p{font-size:11px;color:#596268;line-height:1.55;margin:0 0 9px}.review strong{font-size:10px;color:#2d3436}.faq-section details{background:#fff;border:1px solid var(--line);border-radius:14px;margin-top:8px;padding:0 14px}.faq-section summary{cursor:pointer;list-style:none;font-size:12px;font-weight:800;padding:15px 2px}.faq-section summary::-webkit-details-marker{display:none}.faq-section summary:after{content:"+";float:right;color:var(--primary);font-size:18px;line-height:12px}.faq-section details[open] summary:after{content:"−"}.faq-section details p{font-size:11px;color:var(--muted);line-height:1.6;margin:0 2px 14px}.style-ranges{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:13px}.style-range{border:1px solid var(--line);background:#fff;border-radius:12px;padding:10px 7px;text-align:center}.style-range.selected{border-color:var(--primary);background:#fff6f3}.style-range b{display:block;font-size:10px;color:var(--muted);margin-bottom:3px}.style-range span{font-size:11px;font-weight:800}@media(max-width:600px){.review-grid{grid-template-columns:1fr}.extra-section{margin-top:40px}}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>False Ceiling Cost Calculator in Pune | Arsh Interiors Estimator</title>
+    <link rel="icon" type="image/png" href="/arsh-fevicon.png">
+    <meta name="description" content="Calculate your approximate false ceiling cost in Pune & PCMC instantly. Get accurate estimates for Gypsum, POP, PVC, WPVC & Acrylic false ceilings from Arsh Interiors.">
+    <meta name="keywords" content="false ceiling cost calculator pune, false ceiling cost in pune, false ceiling price in pune, gypsum false ceiling cost, pop false ceiling cost, pvc false ceiling cost, false ceiling contractor pune">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="False Ceiling Cost Calculator in Pune | Arsh Interiors">
+    <meta property="og:description" content="Calculate approximate false ceiling cost for Gypsum, POP, PVC, WPVC and Acrylic in under 30 seconds with Arsh Interiors Pune.">
+    <meta property="og:type" content="website">
 
-.header-wa{display:inline-flex;align-items:center;gap:7px;padding:10px 13px;border-radius:12px;background:#25d366;color:#fff;font-weight:800;font-size:13px;box-shadow:0 8px 18px rgba(37,211,102,.16)}
-.floating-wa{position:fixed;right:18px;bottom:18px;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:#25d366;color:#fff;font-size:28px;box-shadow:0 12px 30px rgba(0,0,0,.18);z-index:99}
-@media(max-width:520px){.header-wa{padding:10px 11px;font-size:11px}.floating-wa{right:14px;bottom:14px;width:54px;height:54px;font-size:26px}}
-</style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-10955118130"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-10955118130');
+    </script>
+
+    <!-- Google Ads Conversion Reporting Function -->
+    <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-10955118130/fUDECPSNptscELKs5-co',
+          'value': 1.0,
+          'currency': 'INR',
+          'event_callback': callback
+      });
+      return false;
+    }
+    </script>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Arsh Interiors",
+      "alternateName": "Arsh Interior",
+      "telephone": "+919022104232",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Dhayari",
+        "addressLocality": "Pune",
+        "addressRegion": "Maharashtra",
+        "postalCode": "411041",
+        "addressCountry": "IN"
+      },
+      "areaServed": ["Pune", "PCMC"],
+      "sameAs": [
+        "https://maps.app.goo.gl/wy16RFpNYSbMEBpC6",
+        "https://www.instagram.com/arsh_nterior",
+        "https://www.facebook.com/share/1CxC6A6Mtj/",
+        "https://wa.me/919022104232"
+      ]
+    }
+    </script>
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary: #ff6b6b;
+            --primary-dark: #e85555;
+            --dark: #111111;
+            --light: #faf9f8;
+            --gray: #666666;
+            --border: #f0d5d5;
+            --card-bg: #ffffff;
+            --success: #25d366;
+            --transition: all 0.3s ease;
+        }
+        *, *::before, *::after { box-sizing: border-box; }
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--light);
+            color: var(--dark);
+            margin: 0;
+            padding-top: 75px;
+            overflow-x: hidden;
+            line-height: 1.7;
+        }
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 0 16px;
+        }
+
+        /* Minimal Header */
+        .site-header {
+            position: fixed; top: 0; left: 0; width: 100%; 
+            background: rgba(255, 255, 255, 0.98); 
+            backdrop-filter: blur(10px); 
+            z-index: 9999; 
+            border-bottom: 1px solid #e2e8f0;
+        }
+        .header-inner {
+            display: flex; align-items: center; justify-content: space-between; 
+            padding: 12px 20px; max-width: 1100px; margin: 0 auto;
+        }
+        .logo { color: var(--dark); text-decoration: none; font-weight: 800; font-size: 1.15rem; display: flex; align-items: center; gap: 8px; }
+        .header-cta-group { display: flex; gap: 8px; align-items: center; }
+        .header-btn {
+            background: #f1f5f9; color: var(--dark); width: 38px; height: 38px; 
+            border-radius: 50%; display: flex; align-items: center; justify-content: center; 
+            text-decoration: none; font-size: 0.95rem; transition: var(--transition); border: none; cursor: pointer;
+        }
+        .header-btn.wa { background: #e7f8ed; color: var(--success); }
+
+        /* Mobile Slide-out Drawer */
+        .mobile-drawer {
+            position: fixed; top: 0; right: -100%; width: 280px; height: 100vh; background: #fff; z-index: 10000; box-shadow: -5px 0 30px rgba(0,0,0,0.15); transition: var(--transition); padding: 30px 20px; display: flex; flex-direction: column; box-sizing: border-box;
+        }
+        .mobile-drawer.open { right: 0; }
+        .drawer-close { font-size: 1.5rem; background: none; border: none; align-self: flex-end; cursor: pointer; margin-bottom: 20px; color: var(--dark); }
+        .drawer-links { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 18px; }
+        .drawer-links a { font-size: 1.1rem; font-weight: 700; color: var(--dark); text-decoration: none; transition: var(--transition); }
+        .drawer-links a:hover, .drawer-links a.active { color: var(--primary); }
+
+        /* Hero Section */
+        .hero-section {
+            padding: 20px 16px 15px; text-align: center;
+        }
+        .brand-tag {
+            font-size: 0.75rem; font-weight: 700; text-transform: uppercase; 
+            letter-spacing: 1.5px; color: var(--primary); margin-bottom: 6px; display: block;
+        }
+        h1 {
+            font-size: clamp(1.8rem, 4vw, 2.4rem); font-weight: 800; 
+            color: var(--dark); margin: 0 0 8px; letter-spacing: -0.5px;
+        }
+        h1 span { color: var(--primary); font-family: 'Playfair Display', serif; font-style: italic; }
+        .hero-sub { font-size: 0.95rem; color: var(--gray); max-width: 480px; margin: 0 auto 12px; }
+        .trust-badge-line {
+            font-size: 0.8rem; font-weight: 600; color: var(--dark); 
+            background: #f8fafc; display: inline-block; padding: 4px 12px; 
+            border-radius: 20px; border: 1px solid #e2e8f0; margin-bottom: 16px;
+        }
+
+        /* Calculator Card with Soft Pink Touch */
+        .calc-card {
+            background: linear-gradient(135deg, #ffffff 0%, #fff8f8 100%); 
+            border-radius: 20px; 
+            box-shadow: 0 10px 30px rgba(255,107,107,0.06); 
+            padding: 24px 20px; 
+            border: 2px solid #ffdcdc; 
+            margin-bottom: 40px; 
+            position: relative;
+        }
+        
+        .progress-indicator {
+            font-size: 0.75rem; font-weight: 700; text-transform: uppercase;
+            color: var(--primary); letter-spacing: 1px; margin-bottom: 12px;
+            display: flex; justify-content: space-between; align-items: center;
+        }
+
+        .step-title {
+            font-size: 1.25rem; font-weight: 700; color: var(--dark); margin-bottom: 16px;
+        }
+
+        /* Options Grid */
+        .options-grid {
+            display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-bottom: 20px;
+        }
+        .option-card {
+            border: 2px solid var(--border); border-radius: 12px; padding: 14px 12px;
+            text-align: center; cursor: pointer; transition: var(--transition);
+            background: #fff; font-weight: 600; font-size: 0.95rem; color: var(--dark);
+        }
+        .option-card:hover { border-color: var(--primary); background: #fffafa; }
+        .option-card.selected {
+            border-color: var(--primary); background: rgba(255,107,107,0.06); color: var(--primary);
+            box-shadow: 0 5px 15px rgba(255,107,107,0.1);
+        }
+
+        /* Form Inputs */
+        .form-group { margin-bottom: 16px; }
+        .form-label { display: block; font-weight: 600; font-size: 0.85rem; margin-bottom: 6px; color: var(--dark); }
+        .form-input {
+            width: 100%; padding: 12px 14px; border: 1.5px solid var(--border); 
+            border-radius: 10px; font-size: 1rem; font-family: inherit; background: #fff;
+            transition: var(--transition);
+        }
+        .form-input:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px rgba(255,107,107,0.1); }
+        
+        .helper-link {
+            font-size: 0.8rem; color: var(--primary); font-weight: 600; cursor: pointer;
+            display: inline-block; margin-top: 6px; text-decoration: underline;
+        }
+        .helper-note { font-size: 0.75rem; color: var(--gray); margin-top: 4px; }
+        .error-msg { color: #dc2626; font-size: 0.75rem; margin-top: 4px; display: none; }
+
+        /* Buttons */
+        .btn {
+            background: var(--primary); color: #fff; padding: 14px 24px; 
+            border: none; border-radius: 10px; font-size: 1rem; font-weight: 700; 
+            cursor: pointer; width: 100%; transition: var(--transition); 
+            text-align: center; text-decoration: none; display: inline-block;
+            box-shadow: 0 4px 12px rgba(255,107,107,0.2);
+        }
+        .btn:hover { background: var(--primary-dark); transform: translateY(-1px); }
+        .btn-secondary { background: #f1f5f9; color: var(--dark); box-shadow: none; }
+        .btn-secondary:hover { background: #e2e8f0; }
+        .btn-row { display: flex; gap: 10px; margin-top: 16px; }
+
+        .hidden { display: none !important; }
+
+        /* Estimate Result */
+        .result-box {
+            background: #fff5f5; border: 2px solid var(--primary); 
+            border-radius: 14px; padding: 20px; text-align: center; margin-bottom: 20px;
+        }
+        .result-price {
+            font-size: clamp(1.6rem, 4vw, 2.2rem); font-weight: 800; 
+            color: var(--primary); margin: 8px 0;
+        }
+        .result-meta { font-size: 0.85rem; color: var(--gray); background: #fff; padding: 10px; border-radius: 8px; margin-top: 12px; border: 1px solid var(--border); }
+        .disclaimer { font-size: 0.7rem; color: var(--gray); margin-top: 10px; line-height: 1.4; }
+
+        /* Upsell */
+        .upsell-section {
+            background: #f8fafc; border: 1px solid var(--border); border-radius: 12px;
+            padding: 16px; margin-bottom: 20px; text-align: left;
+        }
+        .upsell-title { font-weight: 700; font-size: 0.9rem; margin-bottom: 10px; }
+        .checkbox-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; font-size: 0.85rem; }
+        .checkbox-item { display: flex; align-items: center; gap: 6px; cursor: pointer; }
+
+        /* Sections & FAQ */
+        .section-title { font-size: 1.3rem; font-weight: 800; text-align: center; margin-bottom: 6px; }
+        .section-sub { font-size: 0.85rem; color: var(--gray); text-align: center; margin-bottom: 20px; }
+        .trust-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); 
+            gap: 10px; margin-top: 15px; text-align: left;
+        }
+        .trust-item {
+            background: #fff; padding: 12px; border-radius: 10px; 
+            border: 1px solid var(--border); font-size: 0.8rem; font-weight: 600;
+            display: flex; align-items: center; gap: 8px;
+        }
+        .trust-item i { color: var(--primary); }
+
+        .faq-item {
+            background: #fff; border: 1px solid var(--border); border-radius: 10px;
+            margin-bottom: 8px; overflow: hidden; text-align: left;
+        }
+        .faq-q {
+            padding: 12px 14px; font-weight: 700; font-size: 0.85rem; cursor: pointer;
+            display: flex; justify-content: space-between; align-items: center;
+        }
+        .faq-a { padding: 0 14px 12px; font-size: 0.8rem; color: var(--gray); display: none; }
+        .faq-item.active .faq-a { display: block; }
+
+        /* Floating WhatsApp */
+        .floating-wa {
+            position: fixed; bottom: 20px; right: 20px; background: #25d366; color: #fff; 
+            width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; 
+            justify-content: center; font-size: 1.6rem; box-shadow: 0 6px 20px rgba(37,211,102,0.4); 
+            z-index: 999; text-decoration: none;
+        }
+
+        @media(min-width: 768px) {
+            .options-grid { grid-template-columns: repeat(3, 1fr); }
+            .container { max-width: 800px; }
+        }
+    </style>
 </head>
 <body>
-<div class="page">
-  <header class="header">
-    <a class="brand" href="https://arshinterior.in/"><span class="brand-icon"><i class="fas fa-layer-group"></i></span><span>Arsh Interiors</span></a>
-    <div style="display:flex;gap:8px;align-items:center"><a class="header-wa" href="https://wa.me/919022104232" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp</a><a class="call" href="tel:+919022104232"><i class="fas fa-phone"></i> Call</a></div>
-  </header>
 
-  <section class="hero">
-    <div class="kicker">Pune & PCMC</div>
-    <h1>False Ceiling Cost <span class="serif">Calculator</span></h1>
-    <p>Get an approximate false ceiling estimate in under 30 seconds.</p>
-    <div class="chips"><span class="chip">Gypsum</span><span class="chip">POP</span><span class="chip">PVC</span><span class="chip">Free Estimate</span></div>
-  </section>
-
-  <main class="card" id="calculator">
-    <div id="formArea">
-      <div class="progress"><span id="stepText">Step 1 of 3</span><span id="pct">33%</span></div>
-      <div class="bar"><div class="fill" id="fill"></div></div>
-
-      <section class="step active" data-step="1">
-        <h2>What type of property?</h2>
-        <p class="sub">Choose the closest option.</p>
-        <div class="grid" id="propertyGrid">
-          <button type="button" class="option" data-value="1 BHK"><i class="fas fa-building"></i>1 BHK</button>
-          <button type="button" class="option" data-value="2 BHK"><i class="fas fa-building"></i>2 BHK</button>
-          <button type="button" class="option" data-value="3 BHK"><i class="fas fa-building"></i>3 BHK</button>
-          <button type="button" class="option" data-value="4+ BHK"><i class="fas fa-building"></i>4+ BHK</button>
-          <button type="button" class="option" data-value="Villa / Bungalow"><i class="fas fa-house"></i>Bungalow</button>
-          <button type="button" class="option" data-value="Commercial"><i class="fas fa-briefcase"></i>Commercial</button>
+    <!-- Minimal Header with Logo Home Link & Hamburger Drawer -->
+    <header class="site-header">
+        <div class="header-inner" style="max-width: 1100px; margin: 0 auto;">
+            <a href="/" class="logo">
+                <i class="fas fa-layer-group" style="color: var(--primary);"></i> 
+                <span>Arsh Interiors</span>
+            </a>
+            <div class="header-cta-group">
+                <a href="https://wa.me/919022104232?text=Hi%20Arsh%20Interiors,%20I%20want%20a%20false%20ceiling%20quote." class="header-btn wa" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a href="tel:+919022104232" class="header-btn" title="Call Us"><i class="fas fa-phone-alt"></i></a>
+                <button class="header-btn" onclick="toggleDrawer()" aria-label="Menu" style="background:#f0f0f0;"><i class="fas fa-bars"></i></button>
+            </div>
         </div>
-        <div class="error" id="propertyError">Please select a property type.</div>
-        <div class="actions"><button class="btn primary" id="next1">Continue <i class="fas fa-arrow-right"></i></button></div>
-      </section>
+    </header>
 
-      <section class="step" data-step="2">
-        <h2>Tell us about the ceiling</h2>
-        <p class="sub">Approximate details are enough for an initial estimate.</p>
-        <label class="label" for="area">Approximate ceiling area (sq.ft.)</label>
-        <input class="input" id="area" type="number" inputmode="numeric" min="1" placeholder="e.g. 850">
-        <div class="hint">Don't know the exact area? Use your approximate carpet area.</div>
-        <div class="error" id="areaError">Please enter a valid area.</div>
-
-        <div style="height:18px"></div>
-        <span class="label">Preferred ceiling style <span class="optional">(optional)</span></span>
-        <div class="grid" id="styleGrid">
-          <button type="button" class="option" data-value="Simple"><i class="fas fa-minus"></i>Simple</button>
-          <button type="button" class="option" data-value="Premium"><i class="fas fa-layer-group"></i>Premium</button>
-          <button type="button" class="option" data-value="Luxury"><i class="fas fa-gem"></i>Luxury</button>
-          <button type="button" class="option" data-value="Not Sure"><i class="fas fa-circle-question"></i>Not Sure</button>
+    <!-- Mobile Slide-out Drawer (Clean URLs) -->
+    <div class="mobile-drawer" id="mobileDrawer">
+        <button class="drawer-close" onclick="toggleDrawer()"><i class="fas fa-times"></i></button>
+        <ul class="drawer-links">
+            <li><a href="/" onclick="toggleDrawer()">Home</a></li>
+            <li><a href="/about" onclick="toggleDrawer()">About Us</a></li>
+            <li><a href="/services" onclick="toggleDrawer()">Expert Services</a></li>
+            <li><a href="/estimator" onclick="toggleDrawer()">Master Cost Calculator</a></li>
+            <li><a href="/false-ceiling-cost-calculator" class="active" onclick="toggleDrawer()">False Ceiling Calculator</a></li>
+            <li><a href="/design" onclick="toggleDrawer()">Portfolio Gallery</a></li>
+        </ul>
+        <div style="margin-top: auto; padding-top: 20px; border-top: 1px solid #eee;">
+            <a href="tel:+919022104232" class="btn" style="margin: 0; padding: 12px; font-size: 0.95rem;"><i class="fas fa-phone-alt"></i> Call +91 9022104232</a>
         </div>
-        <div class="hint">You can also discuss the exact design during the quotation.</div>
-        <div class="actions"><button class="btn back" id="back2"><i class="fas fa-arrow-left"></i></button><button class="btn primary" id="next2">Continue <i class="fas fa-arrow-right"></i></button></div>
-      </section>
-
-      <section class="step" data-step="3">
-        <h2>Where should we send your estimate?</h2>
-        <p class="sub">Your WhatsApp number is used only to discuss your project.</p>
-        <label class="label" for="location">Project location</label>
-        <input class="input" id="location" type="text" placeholder="e.g. Wakad, Ravet, Baner">
-        <div class="error" id="locationError">Please enter your project location.</div>
-        <div style="height:14px"></div>
-        <label class="label" for="name">Name <span class="optional">(optional)</span></label>
-        <input class="input" id="name" type="text" placeholder="Your name">
-        <div style="height:14px"></div>
-        <label class="label" for="phone">WhatsApp number</label>
-        <input class="input" id="phone" type="tel" inputmode="numeric" maxlength="10" placeholder="10-digit mobile number">
-        <div class="error" id="phoneError">Please enter a valid 10-digit Indian mobile number.</div>
-        <div class="actions"><button class="btn back" id="back3"><i class="fas fa-arrow-left"></i></button><button class="btn primary" id="submit">Get My Free Estimate <i class="fas fa-calculator"></i></button></div>
-        <div class="small-trust">Free estimate • No obligation • Pune & PCMC</div>
-      </section>
     </div>
 
-    <section class="loader" id="loader">
-      <div class="spinner"></div>
-      <h2>Preparing your estimate</h2>
-      <p class="sub">Saving your details securely…</p>
-    </section>
-
-    <section class="result" id="result">
-      <div class="result-icon"><i class="fas fa-check"></i></div>
-      <h2>Your Approximate Estimate</h2>
-      <p class="result-sub">Based on the details you provided.</p>
-      <div class="estimate-box">
-        <div class="estimate-label">Estimated false ceiling cost</div>
-        <div class="estimate-price" id="price"></div>
-        <div class="style-ranges" id="styleRanges"></div>
-        <div class="meta" id="summary"></div>
-      </div>
-      <p class="note">This is an approximate estimate. Final pricing can vary depending on design, material, ceiling height, lighting, site conditions and actual measurements.</p>
-      <a class="btn wa" id="wa" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> Get Exact Quote on WhatsApp</a>
-      <a class="btn call2" href="tel:+919022104232"><i class="fas fa-phone"></i> Call Arsh Interiors</a>
-
-      <div class="cross" id="cross">
-        <h3>Planning other work too?</h3>
-        <p>Optional — add anything else you may need. Your false-ceiling lead is already saved.</p>
-        <div class="cross-grid">
-          <button class="check" data-service="Electrical Work">Electrical Work</button>
-          <button class="check" data-service="Painting">Painting</button>
-          <button class="check" data-service="Wall Moulding / 3D">Wall Moulding / 3D</button>
-          <button class="check" data-service="Furniture">Furniture</button>
-          <button class="check" data-service="Complete Interior">Complete Interior</button>
-          <button class="check" data-service="Nothing Else">Nothing Else</button>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <div class="trust">
-    <div><i class="fas fa-check"></i>False Ceiling</div>
-    <div><i class="fas fa-location-dot"></i>Pune & PCMC</div>
-    <div><i class="fas fa-file-invoice"></i>Free Estimate</div>
-  </div>
-
-  <section class="extra-section">
-    <div class="section-kicker">ARSH INTERIORS</div>
-    <h2>Plan your <span class="serif">complete interior</span></h2>
-    <p>Need more than false ceiling? Use our complete interior cost calculator for a broader project estimate.</p>
-    <a class="full-estimator-card" href="https://arshinterior.in/estimator">
-      <span class="estimator-icon"><i class="fas fa-calculator"></i></span>
-      <span class="estimator-copy"><strong>Complete Interior Cost Calculator</strong><small>False ceiling • Electrical • Painting • Furniture • More</small><em>Open Full Estimator <i class="fas fa-arrow-right"></i></em></span>
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/919022104232?text=Hi%20Arsh%20Interiors,%20I%20want%20a%20false%20ceiling%20quote." target="_blank" class="floating-wa">
+        <i class="fab fa-whatsapp"></i>
     </a>
-  </section>
 
-  <section class="extra-section">
-    <div class="section-kicker">CLIENT REVIEWS</div>
-    <h2>Trusted for <span class="serif">interior work</span></h2>
-    <div class="review-grid">
-      <article class="review"><div class="stars">★★★★★</div><p>“Good quality false ceiling work and neat finishing. The team completed the work properly.”</p><strong>Homeowner • Pune</strong></article>
-      <article class="review"><div class="stars">★★★★★</div><p>“Professional work, clear communication and a clean finish. Happy with the ceiling design.”</p><strong>Homeowner • PCMC</strong></article>
-      <article class="review"><div class="stars">★★★★★</div><p>“The estimate process was simple and the team helped us choose the right ceiling option.”</p><strong>Homeowner • Pune</strong></article>
-    </div>
-  </section>
+    <main class="container">
+        
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <span class="brand-tag">Arsh Interiors • Pune & PCMC</span>
+            <h1>False Ceiling Cost <span>Calculator</span></h1>
+            <p class="hero-sub">Get an approximate false ceiling estimate in under 30 seconds. No obligation.</p>
+            <div class="trust-badge-line">
+                <i class="fas fa-check-circle" style="color: var(--primary);"></i> Gypsum • POP • PVC • WPVC • Acrylic
+            </div>
+        </section>
 
-  <section class="extra-section faq-section">
-    <div class="section-kicker">FAQ</div><h2>False ceiling <span class="serif">questions</span></h2>
-    <details><summary>What is included in this estimate?</summary><p>The calculator gives an approximate false-ceiling cost based on the area and selected style. Final pricing can change after design, material and site measurements.</p></details>
-    <details><summary>Is the estimate exact?</summary><p>No. It is an initial planning estimate. The final quotation is prepared after understanding the design, material, lighting and site conditions.</p></details>
-    <details><summary>Do you provide false ceiling work in Pune and PCMC?</summary><p>Yes. Arsh Interiors provides false ceiling and interior work across Pune and PCMC areas.</p></details>
-    <details><summary>Can I ask for an exact quotation?</summary><p>Yes. After getting your estimate, use WhatsApp or Call to discuss your requirement and get a project-specific quotation.</p></details>
-  </section>
+        <!-- Calculator Card -->
+        <div class="calc-card" id="calculatorCard">
+            <form id="ceilingCalculatorForm" novalidate>
+                
+                <!-- STEP 1: PROPERTY TYPE -->
+                <div class="calc-step" id="step1">
+                    <div class="progress-indicator">
+                        <span>Step 1 of 4</span>
+                        <span>Property Type</span>
+                    </div>
+                    <div class="step-title">What type of property is it?</div>
+                    
+                    <div class="options-grid">
+                        <div class="option-card" onclick="selectProperty('1 BHK', this)">1 BHK</div>
+                        <div class="option-card" onclick="selectProperty('2 BHK', this)">2 BHK</div>
+                        <div class="option-card" onclick="selectProperty('3 BHK', this)">3 BHK</div>
+                        <div class="option-card" onclick="selectProperty('4 BHK', this)">4 BHK</div>
+                        <div class="option-card" onclick="selectProperty('Bungalow', this)">Bungalow</div>
+                        <div class="option-card" onclick="selectProperty('Commercial', this)">Commercial</div>
+                    </div>
+                    <input type="hidden" id="propertyType" required>
+                    <div class="error-msg" id="propertyError">Please select a property type.</div>
+                    
+                    <button type="button" class="btn" onclick="nextStep(2)">Next Step &rarr;</button>
+                </div>
 
-  <a class="floating-wa" href="https://wa.me/919022104232" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <!-- STEP 2: AREA -->
+                <div class="calc-step hidden" id="step2">
+                    <div class="progress-indicator">
+                        <span>Step 2 of 4</span>
+                        <span>Approximate Area</span>
+                    </div>
+                    <div class="step-title">What is the approximate area?</div>
+                    
+                    <div class="form-group">
+                        <label class="form-label" for="carpetArea">Approx. Area (sq. ft.)</label>
+                        <input type="number" id="carpetArea" class="form-input" placeholder="900" inputmode="numeric">
+                        <span class="helper-link" onclick="toggleAreaSelector()">I don't know the exact area</span>
+                        <div class="error-msg" id="areaError">Please enter a valid area or select a home size.</div>
+                    </div>
 
-  <div class="footer">Arsh Interiors • Dhayari, Pune • +91 9022104232</div>
-</div>
+                    <div id="homeSizeSelector" class="hidden form-group">
+                        <label class="form-label">Select your home size:</label>
+                        <div class="options-grid">
+                            <div class="option-card" onclick="selectHomeSize('1 BHK', 600, this)">1 BHK (600 sq.ft)</div>
+                            <div class="option-card" onclick="selectHomeSize('2 BHK', 900, this)">2 BHK (900 sq.ft)</div>
+                            <div class="option-card" onclick="selectHomeSize('3 BHK', 1250, this)">3 BHK (1250 sq.ft)</div>
+                            <div class="option-card" onclick="selectHomeSize('4 BHK', 1600, this)">4 BHK (1600 sq.ft)</div>
+                            <div class="option-card" onclick="selectHomeSize('Bungalow', 2200, this)">Bungalow (2200 sq.ft)</div>
+                        </div>
+                    </div>
 
-<script>
-(() => {
-  // Preserved from the existing estimator:
-  const GOOGLE_SHEET_URL = "https://script.google.com/macros/s/AKfycbyTAectUxuV_-yowzo5v6YSNLSSp7GsY9WxfcEcqtYWB4KeRUXq6phEG5w0B7sgBzlv/exec";
-  const WHATSAPP_NUMBER = "919022104232";
+                    <p class="helper-note">Approximate area is enough for an initial estimate.</p>
 
-  const state = {
-    step: 1,
-    property: "",
-    area: 0,
-    style: "Premium",
-    location: "",
-    name: "",
-    phone: "",
-    extras: []
-  };
+                    <div class="btn-row">
+                        <button type="button" class="btn btn-secondary" onclick="nextStep(1)">&larr; Back</button>
+                        <button type="button" class="btn" onclick="nextStep(3)">Next Step &rarr;</button>
+                    </div>
+                </div>
 
-  const $ = id => document.getElementById(id);
-  const steps = [...document.querySelectorAll(".step")];
+                <!-- STEP 3: MATERIAL & STYLE -->
+                <div class="calc-step hidden" id="step3">
+                    <div class="progress-indicator">
+                        <span>Step 3 of 4</span>
+                        <span>Material & Style</span>
+                    </div>
+                    <div class="step-title">Select Material & Ceiling Style</div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Material Type</label>
+                        <div class="options-grid" style="grid-template-columns: repeat(2, 1fr);">
+                            <div class="option-card" onclick="selectMaterial('Gypsum', this)">Gypsum (Gyproc)</div>
+                            <div class="option-card" onclick="selectMaterial('POP', this)">POP</div>
+                            <div class="option-card" onclick="selectMaterial('PVC', this)">PVC</div>
+                            <div class="option-card" onclick="selectMaterial('WPVC', this)">WPVC</div>
+                            <div class="option-card" onclick="selectMaterial('Acrylic', this)">Acrylic</div>
+                            <div class="option-card" onclick="selectMaterial('Other', this)">Other / Not Sure</div>
+                        </div>
+                        <input type="hidden" id="materialType" required>
+                        <div class="error-msg" id="materialError">Please select a material type.</div>
+                    </div>
 
-  function track(eventName, extra = {}) {
-    window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push({
-      event: eventName,
-      estimator_type: "false_ceiling",
-      ...extra
-    });
-  }
+                    <div class="form-group" style="margin-top: 15px;">
+                        <label class="form-label">Ceiling Style / Design Complexity</label>
+                        <div class="options-grid" style="grid-template-columns: repeat(3, 1fr);">
+                            <div class="option-card" onclick="selectStyle('Simple', this)" style="font-size: 0.85rem; padding: 10px;">Simple (1.3x)</div>
+                            <div class="option-card selected" onclick="selectStyle('Premium', this)" style="font-size: 0.85rem; padding: 10px;">Premium (1.7x)</div>
+                            <div class="option-card" onclick="selectStyle('Luxury', this)" style="font-size: 0.85rem; padding: 10px;">Luxury (2.2x)</div>
+                        </div>
+                        <input type="hidden" id="ceilingStyle" value="Premium">
+                    </div>
 
-  // If your existing Google Ads conversion is configured through GTM,
-  // create/use a GTM Custom Event trigger for: estimator_lead_submitted.
-  // The old source files did not contain a gtag/GTM conversion ID, so none is invented here.
-  function fireLeadConversion() {
-    track("estimator_lead_submitted", {
-      lead_type: "false_ceiling",
-      property_type: state.property,
-      area: state.area
-    });
-  }
+                    <div class="btn-row">
+                        <button type="button" class="btn btn-secondary" onclick="nextStep(2)">&larr; Back</button>
+                        <button type="button" class="btn" onclick="nextStep(4)">Next Step &rarr;</button>
+                    </div>
+                </div>
 
-  function setStep(n) {
-    state.step = n;
-    steps.forEach(s => s.classList.toggle("active", +s.dataset.step === n));
-    const pct = n === 1 ? 33.33 : n === 2 ? 66.66 : 100;
-    $("fill").style.width = pct + "%";
-    $("stepText").textContent = `Step ${n} of 3`;
-    $("pct").textContent = `${Math.round(pct)}%`;
-    window.scrollTo({top: document.getElementById("calculator").offsetTop - 12, behavior:"smooth"});
-  }
+                <!-- STEP 4: LOCATION & LEAD DETAILS -->
+                <div class="calc-step hidden" id="step4">
+                    <div class="progress-indicator">
+                        <span>Step 4 of 4</span>
+                        <span>Contact & Location</span>
+                    </div>
+                    <div class="step-title">Where is your project located?</div>
+                    
+                    <div class="form-group">
+                        <label class="form-label" for="projectLoc">Project Location *</label>
+                        <input type="text" id="projectLoc" class="form-input" placeholder="Wakad, Ravet, Baner, Kharadi..." required>
+                        <div class="error-msg" id="locError">Please enter your project location.</div>
+                    </div>
 
-  function selectGrid(id, callback) {
-    document.querySelectorAll(`#${id} .option`).forEach(btn => {
-      btn.addEventListener("click", () => {
-        document.querySelectorAll(`#${id} .option`).forEach(x => x.classList.remove("selected"));
-        btn.classList.add("selected");
-        callback(btn.dataset.value);
-      });
-    });
-  }
+                    <div class="form-group">
+                        <label class="form-label" for="clientName">Your Name</label>
+                        <input type="text" id="clientName" class="form-input" placeholder="Enter your name">
+                    </div>
 
-  selectGrid("propertyGrid", v => { state.property = v; $("propertyError").classList.remove("show"); });
-  selectGrid("styleGrid", v => { state.style = v; });
+                    <div class="form-group">
+                        <label class="form-label" for="clientPhone">WhatsApp Number *</label>
+                        <input type="tel" id="clientPhone" class="form-input" placeholder="10-digit mobile number" maxlength="10" inputmode="numeric" required>
+                        <div class="error-msg" id="phoneError">Please enter a valid 10-digit mobile number.</div>
+                    </div>
 
-  $("next1").onclick = () => {
-    if (!state.property) { $("propertyError").classList.add("show"); return; }
-    track("calculator_step_completed", {step:1});
-    setStep(2);
-  };
+                    <div class="btn-row">
+                        <button type="button" class="btn btn-secondary" onclick="nextStep(3)">&larr; Back</button>
+                        <button type="button" class="btn" onclick="submitLeadAndShowEstimate()" id="submitLeadBtn">GET MY FREE ESTIMATE</button>
+                    </div>
+                </div>
 
-  $("back2").onclick = () => setStep(1);
+            </form>
 
-  $("next2").onclick = () => {
-    const area = parseInt($("area").value, 10);
-    if (!area || area < 50 || area > 100000) { $("areaError").classList.add("show"); return; }
-    $("areaError").classList.remove("show");
-    state.area = area;
-    track("calculator_step_completed", {step:2, area});
-    setStep(3);
-  };
+            <!-- ESTIMATE RESULT DISPLAY -->
+            <div id="estimateResultContainer" class="hidden" style="margin-top: 10px; text-align: center;">
+                <div class="result-box">
+                    <span style="font-size: 0.8rem; font-weight: 700; text-transform: uppercase; color: var(--gray);">Your Approximate Estimate</span>
+                    <div class="result-price" id="priceDisplayRange">₹--</div>
+                    <p style="font-size: 0.85rem; margin: 4px 0 0; color: var(--dark); font-weight: 600;">Estimated False Ceiling Cost</p>
+                    
+                    <div class="result-meta" id="resultMetaText">
+                        Based on: 2 BHK • 900 sq.ft. • Gypsum • Premium • Wakad
+                    </div>
 
-  $("back3").onclick = () => setStep(2);
+                    <p class="disclaimer">
+                        "This is an approximate estimate. Final pricing may vary depending on design, material, ceiling height, lighting requirements and site conditions."
+                    </p>
+                </div>
 
-  $("phone").addEventListener("input", e => {
-    e.target.value = e.target.value.replace(/\D/g,"").slice(0,10);
-  });
+                <!-- Secondary Services Upsell -->
+                <div class="upsell-section" id="upsellSection">
+                    <div class="upsell-title"><i class="fas fa-plus-circle" style="color: var(--primary);"></i> Planning Other Work Too?</div>
+                    <div class="checkbox-grid">
+                        <label class="checkbox-item"><input type="checkbox" name="additional_service" value="Electrical Work"> Electrical Work</label>
+                        <label class="checkbox-item"><input type="checkbox" name="additional_service" value="Painting"> Painting</label>
+                        <label class="checkbox-item"><input type="checkbox" name="additional_service" value="Wall Moulding / 3D"> Wall Moulding / 3D</label>
+                        <label class="checkbox-item"><input type="checkbox" name="additional_service" value="Furniture"> Furniture</label>
+                        <label class="checkbox-item"><input type="checkbox" name="additional_service" value="Complete Interior"> Complete Interior</label>
+                        <label class="checkbox-item"><input type="checkbox" name="additional_service" value="Nothing Else" checked> Nothing Else</label>
+                    </div>
+                    <button type="button" class="btn btn-secondary" style="margin-top: 12px; font-size: 0.85rem; padding: 10px;" onclick="submitAdditionalServices()">Request Complete Quotation</button>
+                </div>
 
-  $("submit").onclick = async () => {
-    state.location = $("location").value.trim();
-    state.name = $("name").value.trim();
-    state.phone = $("phone").value.trim();
+                <!-- Post Estimate Actions -->
+                <div style="display: flex; flex-direction: column; gap: 10px;">
+                    <a id="waExactBtn" href="#" target="_blank" class="btn" style="background: var(--success);"><i class="fab fa-whatsapp"></i> GET EXACT QUOTATION ON WHATSAPP</a>
+                    <a href="tel:+919022104232" class="btn btn-secondary"><i class="fas fa-phone-alt"></i> CALL ARSH INTERIORS</a>
+                </div>
+            </div>
 
-    let valid = true;
-    if (!state.location) { $("locationError").classList.add("show"); valid = false; }
-    else $("locationError").classList.remove("show");
+        </div>
 
-    if (!/^[6-9]\d{9}$/.test(state.phone)) { $("phoneError").classList.add("show"); valid = false; }
-    else $("phoneError").classList.remove("show");
+        <!-- SEO Content Cards & Internal Links Hub (Clean URLs) -->
+        <section class="container" style="margin-bottom: 40px; max-width: 680px; padding: 0;">
+            <div class="calc-card" style="padding: 25px 20px; text-align: left;">
+                <h2 style="font-size: 1.3rem; margin-top: 0; border: none; padding-bottom: 0;">Complete False Ceiling Execution & Pricing in Pune</h2>
+                
+                <p style="font-size: 0.9rem; color: #444; line-height: 1.7; margin-bottom: 15px;">
+                    Planning a home renovation or setting up a newly purchased property across Pune requires absolute financial transparency. Using our advanced <strong>false ceiling cost calculator Pune</strong> tool, property owners across Wakad, Baner, Hinjewadi, Kothrud, and Dhayari can instantly calculate accurate market rates. Whether you need a precise <a href="/False-Ceiling-in-Pune" style="color: var(--primary); font-weight: 700; text-decoration: underline;">false ceiling contractor in Pune</a> or want to explore our complete <a href="/services" style="color: var(--primary); font-weight: 700; text-decoration: underline;">Services Overview</a>, our platform reflects true material and labor benchmarks.
+                </p>
 
-    if (!valid) return;
+                <p style="font-size: 0.9rem; color: #444; line-height: 1.7; margin-bottom: 15px;">
+                    As seasoned <a href="/about" style="color: var(--primary); font-weight: 700; text-decoration: underline;">interior contractors in Pune</a>, <strong>Arsh Interiors</strong> manages every phase of residential remodeling. You can browse our past work on the <a href="/design" style="color: var(--primary); font-weight: 700; text-decoration: underline;">Portfolio Gallery</a> or return anytime to the <a href="/" style="color: var(--primary); font-weight: 700; text-decoration: underline;">Home Page</a> for direct inquiries.
+                </p>
 
-    track("calculator_lead_submit_started", {property_type:state.property, area:state.area});
-    $("formArea").style.display = "none";
-    $("loader").style.display = "block";
+                <h3 style="font-size: 1.1rem; color: #111; margin-top: 20px; margin-bottom: 10px;">Explore Specialized Service Quotations</h3>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; margin: 15px 0;">
+                    <div style="background: #fff; padding: 12px; border-radius: 10px; border: 1px solid #ffdcdc;">
+                        <h4 style="color: #111; margin-bottom: 4px; font-size: 0.9rem;"><i class="fas fa-layer-group" style="color: var(--primary);"></i> Gypsum & POP</h4>
+                        <p style="font-size: 0.75rem; color: #666; margin-bottom: 8px;">Detailed <a href="/gypsum-pop-work" style="color: var(--primary); text-decoration: underline; font-weight: 600;">gypsum and pop work in pune</a>.</p>
+                        <a href="/False-Ceiling-in-Pune" style="color: var(--primary); font-weight: 700; text-decoration: none; font-size: 0.75rem;">View Page &rarr;</a>
+                    </div>
+                    
+                    <div style="background: #fff; padding: 12px; border-radius: 10px; border: 1px solid #ffdcdc;">
+                        <h4 style="color: #111; margin-bottom: 4px; font-size: 0.9rem;"><i class="fas fa-bolt" style="color: var(--primary);"></i> Electrical Wiring</h4>
+                        <p style="font-size: 0.75rem; color: #666; margin-bottom: 8px;">Professional <a href="/electrical-work-in-pune" style="color: var(--primary); text-decoration: underline; font-weight: 600;">house wiring services pune</a>.</p>
+                        <a href="/electrical-work-in-pune" style="color: var(--primary); font-weight: 700; text-decoration: none; font-size: 0.75rem;">View Page &rarr;</a>
+                    </div>
 
-    // Existing calculator rates preserved: Simple ₹100/sq.ft., Premium ₹150/sq.ft., Luxury ₹200/sq.ft.
-    // "Not Sure" uses Premium as the neutral default.
-    const rates = {Simple:100, Premium:150, Luxury:200, "Not Sure":150};
-    const rate = rates[state.style] || 150;
-    const low = Math.round(state.area * Math.max(80, rate - 20));
-    const high = Math.round(state.area * (rate + 20));
-    const ranges = {};
-    ["Simple","Premium","Luxury"].forEach(style => {
-      ranges[style] = {
-        lo: Math.round(state.area * Math.max(80, rates[style] - 20)),
-        hi: Math.round(state.area * (rates[style] + 20))
-      };
-    });
+                    <div style="background: #fff; padding: 12px; border-radius: 10px; border: 1px solid #ffdcdc;">
+                        <h4 style="color: #111; margin-bottom: 4px; font-size: 0.9rem;"><i class="fas fa-paint-roller" style="color: var(--primary);"></i> Wall Painting</h4>
+                        <p style="font-size: 0.75rem; color: #666; margin-bottom: 8px;">Expert <a href="/painting-in-pune" style="color: var(--primary); text-decoration: underline; font-weight: 600;">house painting services pune</a>.</p>
+                        <a href="/painting-in-pune" style="color: var(--primary); font-weight: 700; text-decoration: none; font-size: 0.75rem;">View Page &rarr;</a>
+                    </div>
 
-    const payload = {
-      name: state.name || "Not Provided",
-      phone: state.phone,
-      loc: state.location,
-      propType: state.property,
-      timeline: "Not Specified",
-      services: "False Ceiling",
-      area: `False Ceiling: ${state.area} sqft (${state.style}). Estimate: ₹${low.toLocaleString("en-IN")} - ₹${high.toLocaleString("en-IN")}`
-    };
+                    <div style="background: #fff; padding: 12px; border-radius: 10px; border: 1px solid #ffdcdc;">
+                        <h4 style="color: #111; margin-bottom: 4px; font-size: 0.9rem;"><i class="fas fa-couch" style="color: var(--primary);"></i> Custom Furniture</h4>
+                        <p style="font-size: 0.75rem; color: #666; margin-bottom: 8px;">Hire <a href="/furniture-in-pune" style="color: var(--primary); text-decoration: underline; font-weight: 600;">custom furniture manufacturer pune</a>.</p>
+                        <a href="/furniture-in-pune" style="color: var(--primary); font-weight: 700; text-decoration: none; font-size: 0.75rem;">View Page &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    // Keep the exact old Google Sheet endpoint and compatible field names.
-    // no-cors is intentionally retained because this is the existing Apps Script integration.
-    // Keep Google Sheets lead collection, but do not wait for Apps Script response.
-    // no-cors responses cannot be read by the browser and waiting here causes the
-    // estimate screen to feel slow.
-    try {
-      fetch(GOOGLE_SHEET_URL, {
-        method:"POST", mode:"no-cors",
-        headers:{"Content-Type":"text/plain;charset=UTF-8"},
-        body:JSON.stringify(payload), keepalive:true
-      }).catch(() => {});
-    } catch (e) {}
+    <!-- Main Footer with Clean URLs & Massive 200+ Pune Location Keyword Index -->
+    <footer style="background: #111; color: #fff; padding: 40px 15px 0; box-sizing: border-box;">
+        <div class="container" style="max-width: 1100px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 25px; margin-bottom: 25px; box-sizing: border-box;">
+            <div>
+                <h3 style="color: #fff; font-size: 1.1rem; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;"><i class="fas fa-layer-group" style="color: var(--primary);"></i> Arsh Interiors</h3>
+                <p style="color: #aaa; font-size: 0.8rem; line-height: 1.6;">Arsh Interiors provides premium interior contracting services based in Dhayari, Pune. Specializing in false ceilings, electrical work, painting, and modular furniture.</p>
+            </div>
+            <div>
+                <h4 style="color: #fff; font-size: 0.95rem; margin-bottom: 12px;">Quick Master Navigation</h4>
+                <ul style="list-style: none; padding: 0; line-height: 1.8; margin: 0; font-size: 0.85rem;">
+                    <li><a href="/" style="color: #aaa; text-decoration: none;">Home Page</a></li>
+                    <li><a href="/about" style="color: #aaa; text-decoration: none;">About Us</a></li>
+                    <li><a href="/services" style="color: #aaa; text-decoration: none;">Core Services</a></li>
+                    <li><a href="/estimator" style="color: #aaa; text-decoration: none;">Master Cost Calculator</a></li>
+                    <li><a href="/false-ceiling-cost-calculator" style="color: var(--primary); text-decoration: none; font-weight: 600;">False Ceiling Calculator</a></li>
+                    <li><a href="/design" style="color: #aaa; text-decoration: none;">Portfolio Gallery</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 style="color: #fff; font-size: 0.95rem; margin-bottom: 12px;">Specialized Services</h4>
+                <ul style="list-style: none; padding: 0; line-height: 1.8; margin: 0; font-size: 0.85rem;">
+                    <li><a href="/False-Ceiling-in-Pune" style="color: #aaa; text-decoration: none;">False Ceiling in Pune</a></li>
+                    <li><a href="/gypsum-pop-work" style="color: #aaa; text-decoration: none;">Gypsum & POP Work</a></li>
+                    <li><a href="/electrical-work-in-pune" style="color: #aaa; text-decoration: none;">Electrical Work in Pune</a></li>
+                    <li><a href="/painting-in-pune" style="color: #aaa; text-decoration: none;">Painting Services</a></li>
+                    <li><a href="/furniture-in-pune" style="color: #aaa; text-decoration: none;">Custom Furniture</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 style="color: #fff; font-size: 0.95rem; margin-bottom: 12px;">Contact Info</h4>
+                <p style="color: #aaa; font-size: 0.8rem; line-height: 1.6;"><i class="fas fa-phone-alt" style="color: var(--primary);"></i> +91 9022104232<br><i class="fab fa-whatsapp" style="color: #25d366;"></i> <a href="https://wa.me/919022104232" style="color: #aaa; text-decoration: none;">Chat on WhatsApp</a><br><i class="fas fa-map-marker-alt" style="color: var(--primary);"></i> Dhayari, Pune, Maharashtra - 411041</p>
+            </div>
+        </div>
 
-    // IMPORTANT: this event is fired only after the lead submission request.
-    fireLeadConversion();
+        <!-- Hyper-Local Pune SEO Keyword Index Block (200+ Locations) -->
+        <div style="background: #0a0a0a; padding: 25px 15px; border-top: 1px solid rgba(255,255,255,0.05); box-sizing: border-box;">
+            <div class="container" style="max-width: 1100px; margin: 0 auto;">
+                <h4 style="color: #777; font-size: 0.75rem; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px;">False ceiling cost calculator Pune & Hyper-Local SEO Index - Arsh Interiors</h4>
+                <div style="font-size: 0.65rem; color: #555; text-align: justify; line-height: 1.7; columns: 2; column-gap: 15px;">
+                    False ceiling cost calculator Pune, Interior cost estimator Pune, Gypsum ceiling rate per sq ft, Arsh Interiors estimator, Interior quotation Pune, Electrical wiring cost, House painting estimate Pune, Interior estimation tool Pune, Home renovation budget calculator, False ceiling cost estimator in Wakad, Interior cost calculator in Baner, False ceiling price in Hinjewadi, Gypsum ceiling quote in Kothrud, Interior budgeting in Kharadi, Renovation calculator in Hadapsar, Cost estimator in Viman Nagar, Budget tool in Magarpatta City, Interior quotation in Aundh, Cost calculator in Pimple Saudagar, Estimator in Kalyani Nagar, Renovation cost in Koregaon Park, Budget in Bavdhan, False ceiling estimate in Pashan, Interior budgeting in SB Road, Cost estimator in Model Colony, Interior estimator in Deccan Gymkhana, Renovation budget in Erandwane, Cost calculator in Shivajinagar, Interior budgeting in Swargate, Renovation estimator in Camp, Budget calculator in Nana Peth, Interior cost in Rasta Peth, Estimator tool in Budhwar Peth, Cost calculator in Pune Station, Budget estimator in Ghorpadi, Interior cost in Wanowrie, Renovation budget in NIBM Road, Cost estimator in Undri, Interior estimator in Mohammadwadi, Budget calculator in Pisoli, Cost calculator in Kondhwa, Interior budgeting in Katraj, Renovation estimator in Ambegaon Pathar, Cost calculator in Dhayari Phata, Interior estimator in Narhe, Budget calculator in Vadgaon Budruk, Cost calculator in Sinhagad Road, Interior budgeting in Warje, Renovation estimator in Karvenagar, Cost calculator in Kothrud Depot, Interior estimator in Paud Road, Budget calculator in Bhusari Colony, Cost calculator in Chandan Nagar, Interior budgeting in Kharadi Bypass, Renovation estimator in Wagholi, Cost calculator in Lohegaon, Interior estimator in Dhanori, Budget calculator in Vishrantwadi, Cost calculator in Yerwada, Interior budgeting in Dighi, Renovation estimator in Alandi Road, Cost calculator in Bhosari, Interior estimator in Pimpri, Budget calculator in Chinchwad, Cost calculator in Akurdi, Interior budgeting in Nigdi, Renovation estimator in Ravet, Cost calculator in Wakad BRTS, Interior estimator in Punawale, Budget calculator in Tathawade, Cost calculator in Hinjewadi Phase 1, Interior budgeting in Hinjewadi Phase 2, Renovation estimator in Hinjewadi Phase 3, Cost calculator in Maan, Interior estimator in Marunji, Budget calculator in Kasarwadi, Cost calculator in Dapodi, Interior budgeting in Bopodi, Renovation estimator in Khadki, Cost calculator in Aundh IT Park, Interior estimator in Baner Pashan Link Road, Budget calculator in Somatane, Cost calculator in Talegaon, Interior budgeting in Chakan, Renovation estimator in Shikrapur, Cost calculator in Saswad, Interior estimator in Pirangut, Budget calculator in Paud, Cost calculator in Lavasa, Interior budgeting in Manjari, Renovation estimator in Keshavnagar, Cost calculator in Mundhwa, Interior estimator in Kharadi South, Budget calculator in Magarpatta South, Cost calculator in Hadapsar Industrial Estate, Interior budgeting in Sasane Nagar, Renovation estimator in Pune Solapur Road, Cost calculator in Fursungi, Interior estimator in Urali Kanchan, Budget calculator in Holkarwadi, Cost calculator in Handewadi, Interior budgeting in Autadwadi Handewadi, Renovation estimator in Katraj Bypass, Cost calculator in Bhilarewadi, Interior estimator in Gujar Nimbalkarwadi, Budget calculator in Jambhulwadi, Cost calculator in Shindewadi, Interior budgeting in Khed Shivapur, Renovation estimator in Bhor, Cost calculator in Satara Road, Interior estimator in Market Yard, Budget calculator in Gultekdi, Cost calculator in Nana Peth Pune, Interior budgeting in Shukrawar Peth, Renovation estimator in Shanivar Peth, Cost calculator in Raviwar Peth, Interior estimator in Kasba Peth, Budget calculator in Mangalwar Peth, Cost calculator in Somwar Peth, Interior budgeting in Ganeshpeth, Renovation estimator in Bhavani Peth, Cost calculator in Vadgaon Sheri, Interior estimator in Chandan Nagar Pune, Budget calculator in Kharadi Knowledge Park, Cost calculator in Viman Nagar Extension, Interior budgeting in Lohegaon Airport Road, Renovation estimator in Dhanori Lohegaon Link Road, Cost calculator in Vishrantwadi Alandi Road, Interior estimator in Kalas, Budget calculator in Dapodi Pune, Cost calculator in Pimpri Colony, Interior budgeting in Sant Tukaram Nagar, Renovation estimator in Kasarwadi Phata, Cost calculator in Akurdi Station Road, Interior estimator in Nigdi Pradhikaran, Budget calculator in Ravet BRTS Road, Cost calculator in Punawale Jakat Naka, Interior estimator in Hinjewadi Blue Ridge, Budget calculator in Wakad Wakadkar Wasti, Cost calculator in Baner IT Park, Interior budgeting in Aundh Baner Link Road, Renovation estimator in Pashan Sus Road, Cost calculator in Sus, Interior estimator in Mahalunge, Budget calculator in Nande, Cost calculator in Lavasa, Interior budgeting in Pirangut MIDC, Renovation estimator in Hinjewadi Phase 1 MIDC, Cost calculator in Hinjewadi Megapolis, Interior estimator in Wakad Datta Mandir Road, Budget calculator in Hinjewadi Wakad Link Road, Cost calculator in Dhayari Narhe Road.
+                </div>
+            </div>
+        </div>
 
-    $("loader").style.display = "none";
-    $("result").style.display = "block";
-    $("price").textContent = `₹${low.toLocaleString("en-IN")} – ₹${high.toLocaleString("en-IN")}`;
-    $("styleRanges").innerHTML = Object.entries(ranges).map(([style,r]) =>
-      `<div class="style-range ${style === state.style ? "selected" : ""}"><b>${style}${style === state.style ? " • Selected" : ""}</b><span>₹${r.lo.toLocaleString("en-IN")} – ₹${r.hi.toLocaleString("en-IN")}</span></div>`
-    ).join("");
-    $("summary").textContent = `${state.property} • ${state.area.toLocaleString("en-IN")} sq.ft. • ${state.style} • ${state.location}`;
+        <div style="background: #000; padding: 15px 0; color: #666; font-size: 0.75rem; text-align: center;">
+            <p>&copy; 2026 Arsh Interiors Pune. All Rights Reserved.</p>
+        </div>
+    </footer>
 
-    const msg =
-      `Hello Arsh Interiors! I just checked the False Ceiling Cost Calculator.%0A%0A` +
-      `Name: ${encodeURIComponent(state.name || "Not Provided")}%0A` +
-      `WhatsApp: ${encodeURIComponent(state.phone)}%0A` +
-      `Property: ${encodeURIComponent(state.property)}%0A` +
-      `Area: ${encodeURIComponent(state.area + " sq.ft.")}%0A` +
-      `Style: ${encodeURIComponent(state.style)}%0A` +
-      `Location: ${encodeURIComponent(state.location)}%0A` +
-      `Approx Estimate: ${encodeURIComponent("₹" + low.toLocaleString("en-IN") + " - ₹" + high.toLocaleString("en-IN"))}`;
+    <!-- Script Logic with Google Sheets Apps Script Integration & Google Ads Conversion Reporting -->
+    <script>
+        const GOOGLE_SHEET_URL = "https://script.google.com/macros/s/AKfycbyTAectUxuV_-yowzo5v6YSNLSSp7GsY9WxfcEcqtYWB4KeRUXq6phEG5w0B7sgBzlv/exec";
 
-    $("wa").href = `https://api.whatsapp.com/send?phone=${WHATSAPP_NUMBER}&text=${msg}`;
-    $("cross").style.display = "block";
-    track("estimate_generated", {area:state.area, style:state.style});
-  };
+        window.addEventListener('DOMContentLoaded', () => {
+            trackEvent('calculator_started');
+        });
 
-  document.querySelectorAll(".check").forEach(btn => {
-    btn.addEventListener("click", async () => {
-      const service = btn.dataset.service;
-      if (service === "Nothing Else") {
-        document.querySelectorAll(".check").forEach(x => x.classList.remove("selected"));
-        state.extras = [];
-        btn.classList.add("selected");
-      } else {
-        document.querySelector('[data-service="Nothing Else"]').classList.remove("selected");
-        btn.classList.toggle("selected");
-        state.extras = [...document.querySelectorAll(".check.selected")]
-          .map(x => x.dataset.service)
-          .filter(x => x !== "Nothing Else");
-      }
-      track("additional_service_selected", {services:state.extras.join(", ")});
-      // Optional post-lead update: send the same lead again with extra services.
-      // The original Sheet schema accepts a "services" string, so this remains compatible.
-      if (state.extras.length) {
-        try {
-          await fetch(GOOGLE_SHEET_URL, {
-            method:"POST", mode:"no-cors",
-            headers:{"Content-Type":"text/plain;charset=UTF-8"},
-            body:JSON.stringify({
-              name: state.name || "Not Provided",
-              phone: state.phone,
-              loc: state.location,
-              propType: state.property,
-              timeline: "Not Specified",
-              services: "False Ceiling, " + state.extras.join(", "),
-              area: `False Ceiling: ${state.area} sqft (${state.style})`
-            })
-          });
-        } catch(e) {}
-      }
-    });
-  });
+        function toggleDrawer() {
+            document.getElementById('mobileDrawer').classList.toggle('open');
+        }
 
-  track("calculator_started");
-})();
-</script>
+        const calcData = {
+            propertyType: '',
+            area: 0,
+            materialType: '',
+            ceilingStyle: 'Premium',
+            location: '',
+            name: '',
+            phone: '',
+            additionalServices: []
+        };
+
+        function nextStep(stepNumber) {
+            if (stepNumber === 2) {
+                const prop = document.getElementById('propertyType').value;
+                if (!prop) {
+                    document.getElementById('propertyError').style.display = 'block';
+                    return;
+                }
+                document.getElementById('propertyError').style.display = 'none';
+                calcData.propertyType = prop;
+            }
+            
+            if (stepNumber === 3) {
+                const areaVal = document.getElementById('carpetArea').value;
+                if (!areaVal || areaVal <= 0) {
+                    document.getElementById('areaError').style.display = 'block';
+                    return;
+                }
+                document.getElementById('areaError').style.display = 'none';
+                calcData.area = parseFloat(areaVal);
+            }
+
+            if (stepNumber === 4) {
+                const matVal = document.getElementById('materialType').value;
+                if (!matVal) {
+                    document.getElementById('materialError').style.display = 'block';
+                    return;
+                }
+                document.getElementById('materialError').style.display = 'none';
+                calcData.materialType = matVal;
+                calcData.ceilingStyle = document.getElementById('ceilingStyle').value;
+            }
+
+            document.querySelectorAll('.calc-step').forEach(el => el.classList.add('hidden'));
+            document.getElementById('step' + stepNumber).classList.remove('hidden');
+            
+            trackEvent('calculator_step_completed', { step: stepNumber - 1 });
+            window.scrollTo({ top: document.getElementById('calculatorCard').offsetTop - 80, behavior: 'smooth' });
+        }
+
+        function selectProperty(val, element) {
+            document.getElementById('propertyType').value = val;
+            document.querySelectorAll('#step1 .option-card').forEach(el => el.classList.remove('selected'));
+            element.classList.add('selected');
+        }
+
+        function toggleAreaSelector() {
+            document.getElementById('homeSizeSelector').classList.toggle('hidden');
+        }
+
+        function selectHomeSize(size, defaultArea, element) {
+            document.getElementById('carpetArea').value = defaultArea;
+            document.querySelectorAll('#homeSizeSelector .option-card').forEach(el => el.classList.remove('selected'));
+            element.classList.add('selected');
+        }
+
+        function selectMaterial(val, element) {
+            document.getElementById('materialType').value = val;
+            document.querySelectorAll('#step3 .options-grid:first-of-type .option-card').forEach(el => el.classList.remove('selected'));
+            element.classList.add('selected');
+        }
+
+        function selectStyle(val, element) {
+            document.getElementById('ceilingStyle').value = val;
+            document.querySelectorAll('#step3 .options-grid:last-of-type .option-card').forEach(el => el.classList.remove('selected'));
+            element.classList.add('selected');
+        }
+
+        function toggleFaq(header) {
+            header.parentElement.classList.toggle('active');
+        }
+
+        async function submitLeadAndShowEstimate() {
+            const locInput = document.getElementById('projectLoc');
+            const phoneInput = document.getElementById('clientPhone');
+            const nameInput = document.getElementById('clientName');
+
+            let isValid = true;
+            if (!locInput.value.trim()) {
+                document.getElementById('locError').style.display = 'block';
+                isValid = false;
+            } else {
+                document.getElementById('locError').style.display = 'none';
+            }
+
+            const phoneRegex = /^[6-9]\d{9}$/;
+            if (!phoneRegex.test(phoneInput.value.trim())) {
+                document.getElementById('phoneError').style.display = 'block';
+                isValid = false;
+            } else {
+                document.getElementById('phoneError').style.display = 'none';
+            }
+
+            if (!isValid) return;
+
+            calcData.location = locInput.value.trim();
+            calcData.name = nameInput.value.trim() || 'Not Provided';
+            calcData.phone = phoneInput.value.trim();
+
+            // Pricing logic calculation
+            const baseRates = { 'Gypsum': 95, 'POP': 70, 'PVC': 100, 'WPVC': 180, 'Acrylic': 150, 'Other': 95 };
+            const multipliers = { 'Simple': 1.3, 'Premium': 1.7, 'Luxury': 2.2 };
+
+            let baseRate = baseRates[calcData.materialType] || 95;
+            let multiplier = multipliers[calcData.ceilingStyle] || 1.7;
+
+            let calculatedTotal = calcData.area * baseRate * multiplier;
+            let minEstimate = Math.round(calculatedTotal * 0.9 / 1000) * 1000;
+            let maxEstimate = Math.round(calculatedTotal * 1.15 / 1000) * 1000;
+
+            const payload = {
+                name: calcData.name,
+                phone: calcData.phone,
+                loc: calcData.location,
+                propType: calcData.propertyType,
+                area: calcData.area + " sq.ft",
+                material: calcData.materialType,
+                style: calcData.ceilingStyle,
+                estimatedPrice: `₹${minEstimate.toLocaleString('en-IN')} - ₹${maxEstimate.toLocaleString('en-IN')}`,
+                services: "False Ceiling Only"
+            };
+
+            // Submit to Google Sheet
+            try {
+                await fetch(GOOGLE_SHEET_URL, {
+                    method: "POST",
+                    mode: "no-cors",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(payload)
+                });
+            } catch (e) {
+                console.log("Lead sent to sheet");
+            }
+
+            // Fire Google Ads Conversion Event using the provided snippet function
+            gtag_report_conversion();
+            trackEvent('calculator_lead_submitted', payload);
+            trackEvent('estimate_generated');
+
+            // Render Result
+            document.getElementById('ceilingCalculatorForm').classList.add('hidden');
+            document.getElementById('estimateResultContainer').classList.remove('hidden');
+
+            document.getElementById('priceDisplayRange').innerText = `₹${minEstimate.toLocaleString('en-IN')} – ₹${maxEstimate.toLocaleString('en-IN')}`;
+            document.getElementById('resultMetaText').innerHTML = `Based on: <b>${calcData.propertyType}</b> • <b>${calcData.area} sq.ft.</b> • <b>${calcData.materialType} (${calcData.ceilingStyle})</b> • <b>${calcData.location}</b>`;
+
+            const waText = encodeURIComponent(`Hi Arsh Interiors, I calculated my false ceiling estimate. Name: ${calcData.name}, Property: ${calcData.propertyType}, Area: ${calcData.area} sq.ft, Material: ${calcData.materialType} (${calcData.ceilingStyle}), Location: ${calcData.location}. Estimate: ₹${minEstimate.toLocaleString('en-IN')} - ₹${maxEstimate.toLocaleString('en-IN')}.`);
+            document.getElementById('waExactBtn').href = `https://wa.me/919022104232?text=${waText}`;
+
+            window.scrollTo({ top: document.getElementById('calculatorCard').offsetTop - 80, behavior: 'smooth' });
+        }
+
+        async function submitAdditionalServices() {
+            const selectedServices = [];
+            document.querySelectorAll('input[name="additional_service"]:checked').forEach(cb => {
+                selectedServices.push(cb.value);
+            });
+            calcData.additionalServices = selectedServices;
+
+            trackEvent('additional_service_selected', { services: selectedServices });
+
+            const payload = {
+                name: calcData.name,
+                phone: calcData.phone,
+                loc: calcData.location,
+                propType: calcData.propertyType,
+                area: calcData.area + " sq.ft",
+                material: calcData.materialType,
+                style: calcData.ceilingStyle,
+                estimatedPrice: document.getElementById('priceDisplayRange').innerText,
+                services: "False Ceiling, " + selectedServices.join(', ')
+            };
+
+            try {
+                await fetch(GOOGLE_SHEET_URL, {
+                    method: "POST",
+                    mode: "no-cors",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(payload)
+                });
+            } catch (e) {}
+
+            alert("Thank you! Additional requirements attached to your lead. Our expert will contact you shortly.");
+        }
+
+        function trackEvent(eventName, payload = {}) {
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({ event: eventName, ...payload });
+        }
+    </script>
 </body>
 </html>
