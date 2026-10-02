@@ -81,4 +81,18 @@
         <priority>0.9</priority>
     </url>
 
+    <!-- Planning Guides Index -->
+    <url>
+        <loc>https://arshinterior.in/guides/</loc>
+        <lastmod>2026-10-02</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <!-- False Ceiling Planning Guide -->
+    <url>
+        <loc>https://arshinterior.in/guides/false-ceiling-planning-pune/</loc>
+        <lastmod>2026-10-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
 </urlset>
