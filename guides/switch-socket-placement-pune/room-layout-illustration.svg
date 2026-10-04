@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+<title id="title">Illustrative bedroom and living-room switch and socket plan</title>
+<desc id="desc">A top-down planning diagram showing a bedroom bed, living-room sofa and television, with example switch and socket points marked on the walls. It is an illustration, not an installation drawing.</desc>
+<rect width="1200" height="760" rx="28" fill="#f7f5f2"/>
+<text x="60" y="70" fill="#171717" font-family="Arial,sans-serif" font-size="34" font-weight="700">Plan points around furniture</text>
+<text x="60" y="108" fill="#5d5d5d" font-family="Arial,sans-serif" font-size="18">Illustrative only · confirm final positions with your electrician</text>
+<!-- Bedroom card -->
+<rect x="48" y="145" width="530" height="490" rx="22" fill="#fff" stroke="#ddd5cf" stroke-width="3"/>
+<text x="78" y="190" fill="#171717" font-family="Arial,sans-serif" font-size="25" font-weight="700">Bedroom</text>
+<rect x="90" y="225" width="440" height="330" rx="8" fill="#faf9f8" stroke="#8f9699" stroke-width="8"/>
+<path d="M90 460 L90 555 L185 555" fill="none" stroke="#faf9f8" stroke-width="12"/>
+<path d="M90 460 A95 95 0 0 1 185 555" fill="none" stroke="#8f9699" stroke-width="3"/>
+<rect x="220" y="285" width="210" height="190" rx="14" fill="#e8e3de" stroke="#b8b0a8" stroke-width="3"/>
+<rect x="236" y="300" width="178" height="56" rx="8" fill="#fff" stroke="#c9c1ba" stroke-width="2"/>
+<text x="280" y="405" fill="#5d5d5d" font-family="Arial,sans-serif" font-size="19">Bed</text>
+<rect x="155" y="305" width="50" height="52" rx="8" fill="#eee8e3" stroke="#c9c1ba" stroke-width="2"/>
+<rect x="445" y="305" width="50" height="52" rx="8" fill="#eee8e3" stroke="#c9c1ba" stroke-width="2"/>
+<rect x="112" y="245" width="34" height="34" rx="6" fill="#ffe7e1" stroke="#e85555" stroke-width="3"/>
+<text x="119" y="269" fill="#b83232" font-family="Arial,sans-serif" font-size="16" font-weight="700">SW</text>
+<circle cx="180" cy="375" r="18" fill="#e85555"/><text x="174" y="382" fill="#fff" font-family="Arial,sans-serif" font-size="18" font-weight="700">S</text>
+<circle cx="470" cy="375" r="18" fill="#e85555"/><text x="464" y="382" fill="#fff" font-family="Arial,sans-serif" font-size="18" font-weight="700">S</text>
+<rect x="305" y="512" width="120" height="20" rx="6" fill="#ded7d1"/>
+<text x="330" y="547" fill="#5d5d5d" font-family="Arial,sans-serif" font-size="16">TV / desk wall</text>
+<!-- Living room card -->
+<rect x="622" y="145" width="530" height="490" rx="22" fill="#fff" stroke="#ddd5cf" stroke-width="3"/>
+<text x="652" y="190" fill="#171717" font-family="Arial,sans-serif" font-size="25" font-weight="700">Living room</text>
+<rect x="664" y="225" width="440" height="330" rx="8" fill="#faf9f8" stroke="#8f9699" stroke-width="8"/>
+<path d="M664 460 L664 555 L759 555" fill="none" stroke="#faf9f8" stroke-width="12"/>
+<path d="M664 460 A95 95 0 0 1 759 555" fill="none" stroke="#8f9699" stroke-width="3"/>
+<rect x="770" y="330" width="245" height="105" rx="18" fill="#e8e3de" stroke="#b8b0a8" stroke-width="3"/>
+<rect x="790" y="345" width="70" height="75" rx="12" fill="#f8f6f3" stroke="#b8b0a8" stroke-width="2"/>
+<rect x="875" y="345" width="70" height="75" rx="12" fill="#f8f6f3" stroke="#b8b0a8" stroke-width="2"/>
+<rect x="960" y="345" width="38" height="75" rx="12" fill="#f8f6f3" stroke="#b8b0a8" stroke-width="2"/>
+<text x="855" y="395" fill="#5d5d5d" font-family="Arial,sans-serif" font-size="18">Sofa</text>
+<rect x="815" y="255" width="150" height="32" rx="7" fill="#ded7d1"/>
+<rect x="855" y="239" width="72" height="22" rx="4" fill="#171717"/>
+<text x="855" y="280" fill="#5d5d5d" font-family="Arial,sans-serif" font-size="15">TV wall</text>
+<rect x="686" y="245" width="34" height="34" rx="6" fill="#ffe7e1" stroke="#e85555" stroke-width="3"/>
+<text x="693" y="269" fill="#b83232" font-family="Arial,sans-serif" font-size="16" font-weight="700">SW</text>
+<circle cx="1028" cy="282" r="18" fill="#e85555"/><text x="1022" y="289" fill="#fff" font-family="Arial,sans-serif" font-size="18" font-weight="700">S</text>
+<circle cx="750" cy="475" r="18" fill="#e85555"/><text x="744" y="482" fill="#fff" font-family="Arial,sans-serif" font-size="18" font-weight="700">S</text>
+<circle cx="1028" cy="475" r="18" fill="#e85555"/><text x="1022" y="482" fill="#fff" font-family="Arial,sans-serif" font-size="18" font-weight="700">S</text>
+<text x="760" y="520" fill="#5d5d5d" font-family="Arial,sans-serif" font-size="16">Seating and lamp points</text>
+<!-- legend -->
+<circle cx="75" cy="690" r="15" fill="#e85555"/><text x="70" y="696" fill="#fff" font-family="Arial,sans-serif" font-size="15" font-weight="700">S</text>
+<text x="102" y="697" fill="#333" font-family="Arial,sans-serif" font-size="18">Example socket point</text>
+<rect x="370" y="675" width="30" height="30" rx="5" fill="#ffe7e1" stroke="#e85555" stroke-width="3"/>
+<text x="375" y="696" fill="#b83232" font-family="Arial,sans-serif" font-size="13" font-weight="700">SW</text>
+<text x="414" y="697" fill="#333" font-family="Arial,sans-serif" font-size="18">Example switchboard</text>
+<text x="690" y="697" fill="#5d5d5d" font-family="Arial,sans-serif" font-size="17">Map actual furniture and appliance needs first.</text>
+</svg>
