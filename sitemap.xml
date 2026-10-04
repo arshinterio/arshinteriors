@@ -88,6 +88,13 @@
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
     </url>
+    <!-- Switch and Socket Planning Guide -->
+    <url>
+        <loc>https://arshinterior.in/guides/switch-socket-placement-pune/</loc>
+        <lastmod>2026-10-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
     <!-- False Ceiling Planning Guide -->
     <url>
         <loc>https://arshinterior.in/guides/false-ceiling-planning-pune/</loc>
