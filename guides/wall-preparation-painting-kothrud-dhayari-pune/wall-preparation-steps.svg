@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" role="img" aria-labelledby="title desc">
+  <title id="title">Four steps for preparing an interior wall before painting</title>
+  <desc id="desc">An original illustrative diagram showing inspection, repair, surface preparation, and primer before the finish coats.</desc>
+  <rect width="1200" height="620" rx="28" fill="#f8f6f4"/>
+  <text x="60" y="78" fill="#23201e" font-family="Arial,sans-serif" font-size="34" font-weight="700">A sound finish starts with a prepared wall</text>
+  <text x="60" y="116" fill="#5d5651" font-family="Arial,sans-serif" font-size="20">A homeowner's sequence to discuss with the painting team</text>
+  <g font-family="Arial,sans-serif">
+    <g transform="translate(48 164)">
+      <rect width="258" height="350" rx="20" fill="#fff" stroke="#ded8d3" stroke-width="3"/>
+      <circle cx="129" cy="90" r="52" fill="#fce6df"/>
+      <path d="M102 103h54M112 88h34M120 72h18" stroke="#b4463d" stroke-width="7" stroke-linecap="round"/>
+      <text x="24" y="184" fill="#b4463d" font-size="19" font-weight="700">01 · INSPECT</text>
+      <text x="24" y="222" fill="#282421" font-size="21" font-weight="700">Find the cause</text>
+      <text x="24" y="256" fill="#5d5651" font-size="17">Look for loose paint,</text>
+      <text x="24" y="283" fill="#5d5651" font-size="17">cracks, damp patches</text>
+      <text x="24" y="310" fill="#5d5651" font-size="17">and earlier repairs.</text>
+    </g>
+    <path d="M318 338h34" stroke="#b4463d" stroke-width="5" stroke-linecap="round"/>
+    <path d="m343 327 12 11-12 11" fill="none" stroke="#b4463d" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <g transform="translate(370 164)">
+      <rect width="258" height="350" rx="20" fill="#fff" stroke="#ded8d3" stroke-width="3"/>
+      <circle cx="129" cy="90" r="52" fill="#fce6df"/>
+      <path d="m102 100 27-30 27 30v24h-54zM114 96h30" fill="none" stroke="#b4463d" stroke-width="7" stroke-linejoin="round"/>
+      <text x="24" y="184" fill="#b4463d" font-size="19" font-weight="700">02 · REPAIR</text>
+      <text x="24" y="222" fill="#282421" font-size="21" font-weight="700">Fix before coating</text>
+      <text x="24" y="256" fill="#5d5651" font-size="17">Remove failing material</text>
+      <text x="24" y="283" fill="#5d5651" font-size="17">and agree how cracks or</text>
+      <text x="24" y="310" fill="#5d5651" font-size="17">uneven areas are handled.</text>
+    </g>
+    <path d="M640 338h34" stroke="#b4463d" stroke-width="5" stroke-linecap="round"/>
+    <path d="m665 327 12 11-12 11" fill="none" stroke="#b4463d" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <g transform="translate(692 164)">
+      <rect width="258" height="350" rx="20" fill="#fff" stroke="#ded8d3" stroke-width="3"/>
+      <circle cx="129" cy="90" r="52" fill="#fce6df"/>
+      <path d="M100 111 145 66l18 18-45 45-23 5zM139 72l12-12 18 18-12 12" fill="none" stroke="#b4463d" stroke-width="7" stroke-linejoin="round"/>
+      <text x="24" y="184" fill="#b4463d" font-size="19" font-weight="700">03 · PREPARE</text>
+      <text x="24" y="222" fill="#282421" font-size="21" font-weight="700">Smooth and clean</text>
+      <text x="24" y="256" fill="#5d5651" font-size="17">Sand repaired areas as</text>
+      <text x="24" y="283" fill="#5d5651" font-size="17">needed, then remove dust</text>
+      <text x="24" y="310" fill="#5d5651" font-size="17">before the next coat.</text>
+    </g>
+    <path d="M962 338h34" stroke="#b4463d" stroke-width="5" stroke-linecap="round"/>
+    <path d="m987 327 12 11-12 11" fill="none" stroke="#b4463d" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <g transform="translate(1014 164)">
+      <rect width="138" height="350" rx="20" fill="#fff" stroke="#ded8d3" stroke-width="3"/>
+      <circle cx="69" cy="90" r="52" fill="#fce6df"/>
+      <path d="M48 112h42M53 100h32M60 65h18l9 35H51z" fill="none" stroke="#b4463d" stroke-width="6" stroke-linejoin="round"/>
+      <text x="20" y="184" fill="#b4463d" font-size="17" font-weight="700">04 · PRIME</text>
+      <text x="20" y="222" fill="#282421" font-size="19" font-weight="700">Follow the</text>
+      <text x="20" y="248" fill="#282421" font-size="19" font-weight="700">paint system</text>
+      <text x="20" y="286" fill="#5d5651" font-size="15">Use the specified</text>
+      <text x="20" y="310" fill="#5d5651" font-size="15">primer and drying</text>
+      <text x="20" y="334" fill="#5d5651" font-size="15">guidance.</text>
+    </g>
+  </g>
+</svg>
