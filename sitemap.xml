@@ -88,10 +88,17 @@
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
+    <!-- Custom Wardrobe Measurements and Storage Planning in Wakad Guide -->
+    <url>
+        <loc>https://arshinterior.in/guides/custom-wardrobe-measurements-wakad-pune/</loc>
+        <lastmod>2026-10-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
 <!-- Planning Guides Index -->
     <url>
         <loc>https://arshinterior.in/guides/</loc>
-        <lastmod>2026-10-05</lastmod>
+        <lastmod>2026-10-06</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
     </url>
