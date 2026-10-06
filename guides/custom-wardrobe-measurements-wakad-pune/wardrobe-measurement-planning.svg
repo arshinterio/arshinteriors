@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 690" role="img" aria-labelledby="title desc">
+  <title id="title">Measure a room and plan storage before ordering a custom wardrobe</title>
+  <desc id="desc">Original diagram with a wardrobe front elevation, width and height measurement arrows, and example hanging, shelf, drawer and loft zones.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto-start-reverse"><path d="M0 0 10 5 0 10Z" fill="#e85555"/></marker>
+  </defs>
+  <rect width="1200" height="690" rx="28" fill="#faf9f8"/>
+  <text x="56" y="74" fill="#111" font-family="Arial,sans-serif" font-size="34" font-weight="700">Measure the room. Map what needs to fit.</text>
+  <text x="56" y="112" fill="#666" font-family="Arial,sans-serif" font-size="20">Planning illustration only · final dimensions need an on-site check</text>
+  <g transform="translate(185 170)">
+    <rect x="80" y="18" width="570" height="390" rx="8" fill="#fff" stroke="#282421" stroke-width="7"/>
+    <rect x="98" y="36" width="534" height="55" fill="#ffe6e2" stroke="#e8b7b1" stroke-width="2"/>
+    <text x="365" y="72" text-anchor="middle" fill="#9f3934" font-family="Arial,sans-serif" font-size="21" font-weight="700">TOP STORAGE / LOFT</text>
+    <line x1="365" y1="96" x2="365" y2="390" stroke="#777" stroke-width="4"/>
+    <rect x="104" y="104" width="250" height="274" fill="#fffaf8" stroke="#ded6d1" stroke-width="2"/>
+    <rect x="376" y="104" width="246" height="146" fill="#fffaf8" stroke="#ded6d1" stroke-width="2"/>
+    <line x1="376" y1="250" x2="622" y2="250" stroke="#777" stroke-width="4"/>
+    <rect x="376" y="259" width="246" height="116" fill="#fffaf8" stroke="#ded6d1" stroke-width="2"/>
+    <text x="229" y="137" text-anchor="middle" fill="#b83d3d" font-family="Arial,sans-serif" font-size="19" font-weight="700">HANGING ZONE</text>
+    <path d="M205 175h48l-7 14h-34zM229 189v72m-34 0h68" fill="none" stroke="#e85555" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="499" y="143" text-anchor="middle" fill="#b83d3d" font-family="Arial,sans-serif" font-size="18" font-weight="700">ADJUSTABLE SHELVES</text>
+    <path d="M398 176h202m-202 35h202" stroke="#777" stroke-width="4"/>
+    <text x="499" y="294" text-anchor="middle" fill="#b83d3d" font-family="Arial,sans-serif" font-size="19" font-weight="700">DRAWERS</text>
+    <rect x="408" y="310" width="74" height="47" rx="5" fill="#ffe6e2" stroke="#e85555" stroke-width="3"/>
+    <rect x="495" y="310" width="74" height="47" rx="5" fill="#ffe6e2" stroke="#e85555" stroke-width="3"/>
+    <line x1="438" y1="332" x2="452" y2="332" stroke="#9f3934" stroke-width="4" stroke-linecap="round"/>
+    <line x1="525" y1="332" x2="539" y2="332" stroke="#9f3934" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="123" cy="234" r="8" fill="#e85555"/><circle cx="613" cy="234" r="8" fill="#e85555"/>
+    <line x1="78" y1="0" x2="652" y2="0" stroke="#e85555" stroke-width="4" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+    <text x="365" y="-13" text-anchor="middle" fill="#9f3934" font-family="Arial,sans-serif" font-size="20" font-weight="700">AVAILABLE WIDTH</text>
+    <line x1="24" y1="18" x2="24" y2="408" stroke="#e85555" stroke-width="4" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+    <text x="4" y="220" text-anchor="middle" transform="rotate(-90 4 220)" fill="#9f3934" font-family="Arial,sans-serif" font-size="20" font-weight="700">FLOOR-TO-CEILING HEIGHT</text>
+    <line x1="80" y1="430" x2="650" y2="430" stroke="#555" stroke-width="4"/>
+    <text x="365" y="468" text-anchor="middle" fill="#555" font-family="Arial,sans-serif" font-size="18">Plan doors and drawers around real room clearance</text>
+  </g>
+  <rect x="862" y="186" width="275" height="330" rx="18" fill="#fff" stroke="#e0e0e0" stroke-width="3"/>
+  <text x="892" y="232" fill="#111" font-family="Arial,sans-serif" font-size="21" font-weight="700">Measure more than once</text>
+  <g fill="#555" font-family="Arial,sans-serif" font-size="18">
+    <circle cx="896" cy="278" r="5" fill="#ff6b6b"/><text x="914" y="284">Width at top, middle, base</text>
+    <circle cx="896" cy="326" r="5" fill="#ff6b6b"/><text x="914" y="332">Height at more than one point</text>
+    <circle cx="896" cy="374" r="5" fill="#ff6b6b"/><text x="914" y="380">Skirting, beams and fittings</text>
+    <circle cx="896" cy="422" r="5" fill="#ff6b6b"/><text x="914" y="428">Door, bed and walkway clearance</text>
+    <circle cx="896" cy="470" r="5" fill="#ff6b6b"/><text x="914" y="476">Items and storage priorities</text>
+  </g>
+</svg>
