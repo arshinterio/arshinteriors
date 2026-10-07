@@ -1,0 +1,61 @@
+name: Publish queued ceiling pages
+
+on:
+  schedule:
+    - cron: "15 9 * * *"
+      timezone: "Asia/Kolkata"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Preview the next queued page without publishing"
+        type: boolean
+        required: true
+        default: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ceiling-page-publisher
+  cancel-in-progress: false
+
+jobs:
+  publish-one:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the published site
+        uses: actions/checkout@v6
+        with:
+          ref: main
+          path: site
+
+      - name: Check out the unpublished page queue
+        uses: actions/checkout@v6
+        with:
+          ref: seo-ceiling-queue
+          path: queue
+          persist-credentials: false
+
+      - name: Prepare at most one page for today
+        id: publish
+        working-directory: site
+        env:
+          DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run || false }}
+        run: |
+          python3 ../queue/seo-queue/publish_next.py \
+            --site . \
+            --queue ../queue/seo-queue \
+            --dry-run "$DRY_RUN" >> "$GITHUB_OUTPUT"
+
+      - name: Commit the page to the Pages source branch
+        if: steps.publish.outputs.result == 'published'
+        working-directory: site
+        env:
+          PAGE_PATH: ${{ steps.publish.outputs.page_path }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- "$PAGE_PATH" "ceiling-services-pune/" "index.html" "sitemap.xml" ".github/ceiling-schedule-state.json"
+          git diff --cached --quiet && exit 0
+          git commit -m "Publish ceiling page: ${PAGE_PATH%/index.html}"
+          git push origin HEAD:main
