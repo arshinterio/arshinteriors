@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" role="img" aria-labelledby="t d">
+<title id="t">Four ceiling system planning sketches</title>
+<desc id="d">Illustrative comparison of gypsum board, POP detail, PVC panel and modular grid ceiling construction options.</desc>
+<rect width="1000" height="560" rx="28" fill="#faf9f8"/>
+<text x="54" y="66" fill="#111" font-family="Arial,sans-serif" font-size="30" font-weight="700">Ceiling systems: compare the complete plan</text>
+<text x="54" y="102" fill="#555" font-family="Arial,sans-serif" font-size="17">Illustrative sections only — confirm product and site details with the installer.</text>
+<g transform="translate(50 142)">
+<rect width="430" height="165" rx="18" fill="#fff" stroke="#eadfdb" stroke-width="3"/>
+<text x="24" y="38" fill="#e85555" font-family="Arial" font-size="20" font-weight="700">GYPSUM BOARD</text>
+<path d="M34 100H396" stroke="#111" stroke-width="6"/><path d="M34 119H396" stroke="#ff6b6b" stroke-width="13"/>
+<path d="M130 119v-19m170 19v-19" stroke="#b7a8a3" stroke-width="3" stroke-dasharray="5 5"/>
+<text x="34" y="150" fill="#555" font-family="Arial" font-size="14">Frame • board joints • light openings</text>
+</g>
+<g transform="translate(520 142)">
+<rect width="430" height="165" rx="18" fill="#fff" stroke="#eadfdb" stroke-width="3"/>
+<text x="24" y="38" fill="#e85555" font-family="Arial" font-size="20" font-weight="700">POP DETAIL</text>
+<path d="M34 115H396" stroke="#111" stroke-width="5"/><path d="M34 115h58v-22h276v22h28" fill="none" stroke="#ff6b6b" stroke-width="12"/>
+<path d="M130 105h170" stroke="#ffd1cc" stroke-width="6"/>
+<text x="34" y="150" fill="#555" font-family="Arial" font-size="14">Profile size • edge • cove section</text>
+</g>
+<g transform="translate(50 335)">
+<rect width="430" height="165" rx="18" fill="#fff" stroke="#eadfdb" stroke-width="3"/>
+<text x="24" y="38" fill="#e85555" font-family="Arial" font-size="20" font-weight="700">PVC PANELS</text>
+<path d="M34 100H396" stroke="#111" stroke-width="6"/>
+<path d="M34 119H396M120 110v18M205 110v18M290 110v18" stroke="#ff6b6b" stroke-width="9"/>
+<text x="34" y="150" fill="#555" font-family="Arial" font-size="14">Product sheet • seams • access</text>
+</g>
+<g transform="translate(520 335)">
+<rect width="430" height="165" rx="18" fill="#fff" stroke="#eadfdb" stroke-width="3"/>
+<text x="24" y="38" fill="#e85555" font-family="Arial" font-size="20" font-weight="700">GRID CEILING</text>
+<path d="M34 92H396M34 136H396M105 78V150M194 78V150M283 78V150M370 78V150" fill="none" stroke="#ff6b6b" stroke-width="5"/>
+<path d="M130 105h42m70 0h42" stroke="#111" stroke-width="12"/>
+<text x="34" y="158" fill="#555" font-family="Arial" font-size="14">Module • fixtures • removable tiles</text>
+</g>
+</svg>
