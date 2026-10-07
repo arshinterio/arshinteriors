@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 650" role="img" aria-labelledby="title desc">
+  <title id="title">TV unit planning diagram with measurements, power and ventilation</title>
+  <desc id="desc">Original illustrative front elevation showing a screen, storage cabinets, measured wall width, a planned cable route, accessible power points and airflow around electronics.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto-start-reverse"><path d="M0 0 10 5 0 10Z" fill="#e85555"/></marker>
+  </defs>
+  <rect width="1200" height="650" rx="28" fill="#faf9f8"/>
+  <text x="54" y="70" fill="#111" font-family="Arial,sans-serif" font-size="34" font-weight="700">Map the wall, equipment and cable path together</text>
+  <text x="54" y="108" fill="#666" font-family="Arial,sans-serif" font-size="19">Planning illustration only · confirm electrical details with a qualified electrician</text>
+  <g transform="translate(88 166)">
+    <line x1="72" y1="0" x2="762" y2="0" stroke="#e85555" stroke-width="4" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+    <text x="417" y="-14" text-anchor="middle" fill="#b83d3d" font-family="Arial,sans-serif" font-size="20" font-weight="700">AVAILABLE WALL WIDTH</text>
+    <rect x="72" y="22" width="690" height="345" rx="8" fill="#fff" stroke="#302b28" stroke-width="6"/>
+    <rect x="247" y="48" width="340" height="192" rx="10" fill="#272523" stroke="#bfb8b3" stroke-width="5"/>
+    <rect x="261" y="62" width="312" height="164" rx="4" fill="#e8eef2"/>
+    <path d="M261 192 349 111l65 53 51-41 108 75v28H261Z" fill="#d7e1e7"/>
+    <text x="417" y="136" text-anchor="middle" fill="#5d646a" font-family="Arial,sans-serif" font-size="18" font-weight="700">SCREEN POSITION</text>
+    <rect x="107" y="252" width="620" height="96" rx="7" fill="#fff5f5" stroke="#e85555" stroke-width="3"/>
+    <line x1="107" y1="284" x2="727" y2="284" stroke="#c9b9b4" stroke-width="3"/>
+    <line x1="310" y1="252" x2="310" y2="348" stroke="#c9b9b4" stroke-width="3"/>
+    <line x1="516" y1="252" x2="516" y2="348" stroke="#c9b9b4" stroke-width="3"/>
+    <text x="207" y="278" text-anchor="middle" fill="#9d3934" font-family="Arial,sans-serif" font-size="16" font-weight="700">OPEN / VENTED BAY</text>
+    <text x="414" y="278" text-anchor="middle" fill="#9d3934" font-family="Arial,sans-serif" font-size="16" font-weight="700">DEVICE SPACE</text>
+    <text x="621" y="278" text-anchor="middle" fill="#9d3934" font-family="Arial,sans-serif" font-size="16" font-weight="700">STORAGE</text>
+    <path d="M190 309v-18m-10 9h20m245 0h32m-16-16v32" stroke="#e85555" stroke-width="5" stroke-linecap="round"/>
+    <path d="M322 237v-51h44v-42h70" fill="none" stroke="#ff6b6b" stroke-width="6" stroke-dasharray="9 9" stroke-linejoin="round"/>
+    <circle cx="322" cy="237" r="8" fill="#e85555"/><circle cx="436" cy="144" r="8" fill="#e85555"/>
+    <path d="M410 96c-10-12-10-23 0-35m18 35c-10-12-10-23 0-35m18 35c-10-12-10-23 0-35" fill="none" stroke="#e85555" stroke-width="4" stroke-linecap="round"/>
+    <text x="456" y="77" fill="#9d3934" font-family="Arial,sans-serif" font-size="16">airflow</text>
+    <text x="333" y="223" fill="#9d3934" font-family="Arial,sans-serif" font-size="15" font-weight="700">ACCESSIBLE POWER / DATA</text>
+    <line x1="72" y1="390" x2="762" y2="390" stroke="#555" stroke-width="4"/>
+    <text x="417" y="425" text-anchor="middle" fill="#555" font-family="Arial,sans-serif" font-size="18">Check screen, cabinet and equipment clearances against the room</text>
+  </g>
+  <rect x="902" y="173" width="244" height="360" rx="18" fill="#fff" stroke="#e0e0e0" stroke-width="3"/>
+  <text x="928" y="215" fill="#111" font-family="Arial,sans-serif" font-size="20" font-weight="700">Before the drawing</text>
+  <g fill="#555" font-family="Arial,sans-serif" font-size="16">
+    <circle cx="933" cy="255" r="5" fill="#ff6b6b"/><text x="950" y="261">Measure wall and skirting</text>
+    <circle cx="933" cy="301" r="5" fill="#ff6b6b"/><text x="950" y="307">List devices and connections</text>
+    <circle cx="933" cy="347" r="5" fill="#ff6b6b"/><text x="950" y="353">Mark power and data access</text>
+    <circle cx="933" cy="393" r="5" fill="#ff6b6b"/><text x="950" y="399">Allow airflow per manuals</text>
+    <circle cx="933" cy="439" r="5" fill="#ff6b6b"/><text x="950" y="445">Keep service points reachable</text>
+  </g>
+</svg>
