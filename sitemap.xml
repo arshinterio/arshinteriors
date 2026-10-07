@@ -95,10 +95,17 @@
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
+    <!-- TV Unit Planning in Baner Guide -->
+    <url>
+        <loc>https://arshinterior.in/guides/tv-unit-planning-baner-pune/</loc>
+        <lastmod>2026-10-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
 <!-- Planning Guides Index -->
     <url>
         <loc>https://arshinterior.in/guides/</loc>
-        <lastmod>2026-10-06</lastmod>
+        <lastmod>2026-10-07</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
     </url>
