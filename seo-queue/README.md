@@ -2,7 +2,7 @@
 
 This branch is a draft-only queue. GitHub Pages publishes from `main`; do not merge this branch into the published site.
 
-The GitHub Actions workflow publishes at most one page per local day, beginning with its next scheduled run on **8 October 2026 at 9:15 AM Asia/Kolkata**. It creates the guide, updates the guide directory and sitemap, then commits to `main). The workflow runs on GitHub-hosted runners, so the owner's PC can be off.
+The GitHub Actions workflow publishes at most one page per local day, beginning with its next scheduled run on **8 October 2026 at 9:15 AM Asia/Kolkata**. It creates the guide, updates the guide directory and sitemap, then commits to `main`. The workflow runs on GitHub-hosted runners, so the owner's PC can be off.
 
 Exactly five pages are active:
 
