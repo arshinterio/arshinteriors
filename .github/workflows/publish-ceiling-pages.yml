@@ -55,7 +55,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -- "$PAGE_PATH" "ceiling-services-pune/" "index.html" "sitemap.xml" ".github/ceiling-schedule-state.json"
+          git add -- "$PAGE_PATH" "guides/index.html" "ceiling-services-pune/" "index.html" "sitemap.xml" ".github/ceiling-schedule-state.json"
           git diff --cached --quiet && exit 0
           git commit -m "Publish ceiling page: ${PAGE_PATH%/index.html}"
           git push origin HEAD:main
