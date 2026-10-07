@@ -20,7 +20,7 @@ ACTION_CSS = """
 a{color:var(--coral-dark)}.site-header{position:fixed;z-index:20;top:0;left:0;right:0;background:#fff;box-shadow:0 2px 16px rgba(17,17,17,.07)}
 .header-inner{max-width:1100px;margin:auto;min-height:72px;padding:12px 22px;display:flex;align-items:center;justify-content:space-between;gap:18px}
 .brand{display:flex;align-items:center;gap:9px;color:var(--ink);font-weight:800;text-decoration:none}.brand-mark{color:var(--coral-dark);font-size:1.3rem}
-.site-nav{display:flex;align-items:center;gap:22px}.site-nav a{color:#444;text-decoration:none;font-weight:650}.site-nav a:hover,.site-nav a:focus-visible{color:var(--coral-dark)}
+.site-nav{display:flex;align-items:center;gap:22px}.site-nav a{color:#444;text-decoration:none;font-weight:650}.site-nav a:hover,.site-nav a:focus-visible{color:var(--coral-dark)}.site-nav a.nav-cta{display:inline-flex;align-items:center;justify-content:center;padding:10px 15px;border:2px solid var(--coral);border-radius:10px;background:var(--coral);color:#fff;font-weight:800;box-shadow:0 5px 14px rgba(255,107,107,.24)}.site-nav a.nav-cta:hover{border-color:var(--coral-dark);background:var(--coral-dark);color:#fff}.site-nav a.nav-cta:focus-visible{outline:3px solid #111;outline-offset:3px}
 .menu-toggle{display:none;border:1px solid var(--line);border-radius:10px;background:#fff;padding:9px 12px;font:inherit;font-weight:700;color:var(--ink)}
 main{max-width:930px;margin:35px auto 70px;padding:0 22px}.breadcrumb{font-size:.88rem;color:var(--muted);margin-bottom:12px}.breadcrumb a{color:var(--coral-dark)}
 .eyebrow{color:var(--coral-dark);font-size:.78rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;margin:12px 0 6px}
@@ -38,7 +38,7 @@ h2{font-size:1.55rem;margin:0 0 12px}h3{font-size:1.15rem;margin:18px 0 7px}
 .local-note{border-left:4px solid var(--coral);background:#fff;padding:17px 20px;border-radius:0 12px 12px 0;color:#414141}
 .related-links{display:flex;flex-wrap:wrap;gap:10px}.related-links a{display:inline-block;border:1px solid var(--line);background:#fff;border-radius:999px;padding:8px 13px;font-weight:700;text-decoration:none}
 footer{background:#111;color:#ddd;padding:30px 22px}.footer-inner{max-width:930px;margin:auto}footer p{margin:5px 0}footer a{color:#ff9a9a}
-@media(max-width:760px){.header-inner{min-height:66px;padding:9px 16px}.menu-toggle{display:block}.site-nav{display:none;position:absolute;top:66px;left:0;right:0;background:#fff;box-shadow:0 12px 18px rgba(0,0,0,.09);padding:18px 22px 22px;flex-direction:column;align-items:stretch;gap:0}.site-nav.open{display:flex}.site-nav a{padding:11px 0;border-bottom:1px solid #f0eeee}.cta-actions{grid-template-columns:1fr}.action-button{width:100%}main{padding:0 16px;margin-top:25px}.card,.cta-box{padding:20px;border-radius:16px}}
+@media(max-width:760px){.header-inner{min-height:66px;padding:9px 16px}.menu-toggle{display:block}.site-nav{display:none;position:absolute;top:66px;left:0;right:0;background:#fff;box-shadow:0 12px 18px rgba(0,0,0,.09);padding:18px 22px 22px;flex-direction:column;align-items:stretch;gap:0}.site-nav.open{display:flex}.site-nav a{padding:11px 0;border-bottom:1px solid #f0eeee}.site-nav a.nav-cta{width:max-content;margin-top:10px;padding:11px 16px;border:2px solid var(--coral);border-radius:10px}.cta-actions{grid-template-columns:1fr}.action-button{width:100%}main{padding:0 16px;margin-top:25px}.card,.cta-box{padding:20px;border-radius:16px}}
 """
 PAGE_TEMPLATE = """<!doctype html>
 <html lang="en">
@@ -65,7 +65,7 @@ PAGE_TEMPLATE = """<!doctype html>
 <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">▰</span>Arsh Interiors</a>
 <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" id="menu-toggle">Menu</button>
 <nav class="site-nav" id="site-nav" aria-label="Main navigation">
-<a href="/">Home</a><a href="/services/">Services</a><a href="/False-Ceiling-in-Pune/">False Ceilings</a><a href="/gypsum-pop-work/">Gypsum &amp; POP</a><a href="/guides/">Guides</a><a href="/estimator/">Cost Calculator</a>
+<a href="/">Home</a><a href="/services/">Services</a><a href="/False-Ceiling-in-Pune/">False Ceilings</a><a href="/gypsum-pop-work/">Gypsum &amp; POP</a><a href="/guides/">Guides</a><a class="nav-cta" href="/estimator/">Cost Calculator</a>
 </nav></div></header>
 <main>
 <p class="breadcrumb"><a href="/">Home</a> / <a href="/False-Ceiling-in-Pune/">False Ceiling Services</a> / $locality</p>
@@ -159,6 +159,27 @@ def build_hub(site, pages, today):
     target.parent.mkdir(parents=True,exist_ok=True)
     target.write_text(content,encoding="utf-8")
 
+def add_guides_index_link(path, entry):
+    content=path.read_text(encoding="utf-8")
+    href="/"+entry["slug"]+"/"
+    if 'href="'+href+'"' in content:
+        return
+    card=(
+        '    <article class="card">\\n'
+        '        <h2><a href="'+html.escape(href,quote=True)+'">'+html.escape(entry["title"])+'</a></h2>\\n'
+        '        <p>'+html.escape(entry["description"])+'</p>\\n'
+        '        <a href="'+html.escape(href,quote=True)+'">Read the guide →</a>\\n'
+        '    </article>\\n'
+    )
+    marker='    <article class="card">'
+    if marker in content:
+        content=content.replace(marker,card+marker,1)
+    elif "</main>" in content:
+        content=content.replace("</main>",card+"</main>",1)
+    else:
+        raise RuntimeError("Could not find a safe insertion point in guides/index.html")
+    path.write_text(content,encoding="utf-8")
+
 def add_sitemap_url(sitemap_path, url_path, today):
     sitemap=sitemap_path.read_text(encoding="utf-8")
     date=today.isoformat()
@@ -221,6 +242,7 @@ def main():
         raise RuntimeError("Refusing to overwrite an existing page: "+str(destination))
     destination.mkdir(parents=True)
     (destination/"index.html").write_text(rendered_page(candidate,today),encoding="utf-8")
+    add_guides_index_link(site/"guides"/"index.html",candidate)
     asset_dir=site/"ceiling-services-pune"
     asset_dir.mkdir(parents=True,exist_ok=True)
     source_asset=queue_dir/"ceiling-systems-comparison.svg"
