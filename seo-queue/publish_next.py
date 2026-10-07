@@ -165,11 +165,11 @@ def add_guides_index_link(path, entry):
     if 'href="'+href+'"' in content:
         return
     card=(
-        '    <article class="card">\\n'
-        '        <h2><a href="'+html.escape(href,quote=True)+'">'+html.escape(entry["title"])+'</a></h2>\\n'
-        '        <p>'+html.escape(entry["description"])+'</p>\\n'
-        '        <a href="'+html.escape(href,quote=True)+'">Read the guide →</a>\\n'
-        '    </article>\\n'
+        '    <article class="card">\n'
+        '        <h2><a href="'+html.escape(href,quote=True)+'">'+html.escape(entry["title"])+'</a></h2>\n'
+        '        <p>'+html.escape(entry["description"])+'</p>\n'
+        '        <a href="'+html.escape(href,quote=True)+'">Read the guide →</a>\n'
+        '    </article>\n'
     )
     marker='    <article class="card">'
     if marker in content:
