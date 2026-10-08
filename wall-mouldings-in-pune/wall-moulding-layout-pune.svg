@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" role="img" aria-labelledby="title desc">
+<title id="title">Wall moulding layout planning illustration</title>
+<desc id="desc">An illustrative front elevation shows balanced wall moulding panels around a window, with margins and spacing to measure before installation.</desc>
+<rect width="960" height="560" rx="28" fill="#faf9f8"/>
+<text x="58" y="64" fill="#111" font-family="Arial,sans-serif" font-size="28" font-weight="700">Plan the panel rhythm on a measured elevation</text>
+<rect x="90" y="112" width="780" height="350" rx="8" fill="#fff" stroke="#d9d2ce" stroke-width="4"/>
+<rect x="128" y="151" width="260" height="270" rx="3" fill="#fff8f6" stroke="#e85555" stroke-width="7"/>
+<rect x="500" y="151" width="332" height="270" rx="3" fill="#fff8f6" stroke="#e85555" stroke-width="7"/>
+<rect x="568" y="184" width="196" height="169" fill="#f2eeeb" stroke="#8b817c" stroke-width="5"/>
+<path d="M128 151h260M128 421h260M500 151h332M500 421h332" stroke="#ffb2a7" stroke-width="3" stroke-dasharray="10 8"/>
+<path d="M90 440h780" stroke="#111" stroke-width="8"/>
+<path d="M91 486v18m778-18v18M91 495h778" stroke="#111" stroke-width="3"/>
+<path d="M128 130v-17m260 17v-17M128 121h260" stroke="#e85555" stroke-width="3"/>
+<path d="M388 285h112" stroke="#e85555" stroke-width="3" stroke-dasharray="8 6"/>
+<text x="190" y="290" fill="#111" font-family="Arial,sans-serif" font-size="19">Panel A</text>
+<text x="620" y="390" fill="#111" font-family="Arial,sans-serif" font-size="19">Opening</text>
+<text x="198" y="110" fill="#e85555" font-family="Arial,sans-serif" font-size="16" font-weight="700">OUTER MARGIN</text>
+<text x="394" y="274" fill="#e85555" font-family="Arial,sans-serif" font-size="16" font-weight="700">SPACING</text>
+<text x="390" y="530" fill="#111" font-family="Arial,sans-serif" font-size="17">Measure full wall width, openings, switches and skirting before setting panel sizes.</text>
+</svg>
