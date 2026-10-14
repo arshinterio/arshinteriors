@@ -34,7 +34,6 @@ jobs:
         with:
           ref: seo-ceiling-queue
           path: queue
-          persist-credentials: false
 
       - name: Prepare at most one page for today
         id: publish
@@ -52,10 +51,31 @@ jobs:
         working-directory: site
         env:
           PAGE_PATH: ${{ steps.publish.outputs.page_path }}
+          PAGE_CATEGORY: ${{ steps.publish.outputs.page_category }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -- "$PAGE_PATH" "guides/index.html" "ceiling-services-pune/" "index.html" "sitemap.xml" ".github/ceiling-schedule-state.json"
-          git diff --cached --quiet && exit 0
-          git commit -m "Publish ceiling page: ${PAGE_PATH%/index.html}"
+          git add -- "$PAGE_PATH" "guides/index.html" "sitemap.xml" ".github/ceiling-schedule-state.json"
+          if [ "$PAGE_CATEGORY" = "ceiling" ]; then
+            git add -- "ceiling-services-pune/" "index.html"
+          fi
+          if git diff --cached --quiet; then
+            echo "No site changes to commit."
+            exit 0
+          fi
+          git commit -m "Publish scheduled SEO page: ${PAGE_PATH%/index.html}"
           git push origin HEAD:main
+
+      - name: Sync the publication result to the queue manifest
+        if: steps.publish.outputs.queue_changed == 'true'
+        working-directory: queue
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- "seo-queue/queue.json"
+          if git diff --cached --quiet; then
+            echo "Queue manifest already matches."
+            exit 0
+          fi
+          git commit -m "Record scheduled SEO publication result"
+          git push origin HEAD:seo-ceiling-queue
