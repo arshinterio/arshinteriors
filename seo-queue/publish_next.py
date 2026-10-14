@@ -41,66 +41,20 @@ footer{background:#111;color:#ddd;padding:30px 22px}.footer-inner{max-width:930p
 @media(max-width:760px){.header-inner{min-height:66px;padding:9px 16px}.menu-toggle{display:block}.site-nav{display:none;position:absolute;top:66px;left:0;right:0;background:#fff;box-shadow:0 12px 18px rgba(0,0,0,.09);padding:18px 22px 22px;flex-direction:column;align-items:stretch;gap:0}.site-nav.open{display:flex}.site-nav a{padding:11px 0;border-bottom:1px solid #f0eeee}.site-nav a.nav-cta{width:max-content;margin-top:10px;padding:11px 16px;border:2px solid var(--coral);border-radius:10px}.cta-actions{grid-template-columns:1fr}.action-button{width:100%}main{padding:0 16px;margin-top:25px}.card,.cta-box{padding:20px;border-radius:16px}}
 """
 PAGE_TEMPLATE = """<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>$title | Arsh Interiors</title>
-<meta name="description" content="$description">
-<link rel="canonical" href="$canonical">
-<meta name="robots" content="index,follow">
-<meta property="og:type" content="article">
-<meta property="og:title" content="$title | Arsh Interiors">
-<meta property="og:description" content="$description">
-<meta property="og:url" content="$canonical">
-<meta property="og:image" content="$image_url">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<style>$css</style>
-<script type="application/ld+json">$schema</script>
-</head>
-<body>
-<header class="site-header"><div class="header-inner">
-<a class="brand" href="/"><span class="brand-mark" aria-hidden="true">▰</span>Arsh Interiors</a>
-<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" id="menu-toggle">Menu</button>
-<nav class="site-nav" id="site-nav" aria-label="Main navigation">
-<a href="/">Home</a><a href="/services/">Services</a><a href="/False-Ceiling-in-Pune/">False Ceilings</a><a href="/gypsum-pop-work/">Gypsum &amp; POP</a><a href="/guides/">Guides</a><a class="nav-cta" href="/estimator/">Cost Calculator</a>
-</nav></div></header>
-<main>
-<p class="breadcrumb"><a href="/">Home</a> / <a href="/False-Ceiling-in-Pune/">False Ceiling Services</a> / $locality</p>
-<p class="eyebrow">$system · Pune homeowner planning</p>
-<h1>$title</h1>
-<p class="lead">$intro</p>
-<p class="published">Published $date_label · Ceiling planning page</p>
-<section class="cta-box" aria-labelledby="cta-title">
-<h2 id="cta-title">Discuss your ceiling plan</h2>
-<p>Share the room measurements and chosen ceiling system. Confirm visit availability for your exact address.</p>
-<div class="cta-actions">
-<a class="action-button" href="/estimator/">Cost Calculator</a>
-<a class="action-button" href="https://wa.me/919022104232">WhatsApp</a>
-<a class="action-button" href="tel:+919022104232">Call</a>
-</div></section>
-<figure class="card"><img class="hero-image" src="$image" alt="Original diagram comparing gypsum board, POP decorative detail, PVC panels and a modular grid ceiling; illustrative planning visual, not an Arsh Interiors project photo"><figcaption class="image-note">Original ceiling-system diagram for planning. It is illustrative and does not show a completed Arsh Interiors project. Confirm product suitability and dimensions on site.</figcaption></figure>
-$sections
-<p class="local-note"><strong>For $locality:</strong> This page offers general ceiling-planning guidance, not a claim about building conditions at a particular address. The site lists ceiling services in Pune. Contact Arsh Interiors to confirm current service availability for your exact address, system and project scope.</p>
-<section class="card"><h2>Related Arsh Interiors pages</h2><div class="related-links">
-<a href="/False-Ceiling-in-Pune/">False ceiling services in Pune</a>
-<a href="/gypsum-pop-work/">Gypsum and POP work</a>
-<a href="/electrical-work-in-pune/">Electrical work</a>
-<a href="/guides/">Planning guides</a>
-</div></section>
-</main>
-<footer><div class="footer-inner"><strong>Arsh Interiors · Pune</strong><p>False ceiling, gypsum, POP, PVC and grid ceiling planning.</p><p><a href="https://wa.me/919022104232">WhatsApp</a> · <a href="tel:+919022104232">Call +91 9022104232</a></p></div></footer>
-<script>
-const menuButton=document.getElementById('menu-toggle');
-const nav=document.getElementById('site-nav');
-menuButton.addEventListener('click',()=>{const open=menuButton.getAttribute('aria-expanded')==='true';menuButton.setAttribute('aria-expanded',String(!open));nav.classList.toggle('open',!open);});
-nav.addEventListener('click',event=>{if(event.target.closest('a')){menuButton.setAttribute('aria-expanded','false');nav.classList.remove('open');}});
-</script>
-</body>
-</html>
-"""
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>@@seo@@</title><meta name="description" content="@@description@@"><link rel="canonical" href="@@canonical@@"><meta name="robots" content="index,follow"><meta name="theme-color" content="#ff6b6b">
+<meta property="og:type" content="article"><meta property="og:title" content="@@seo@@"><meta property="og:description" content="@@description@@"><meta property="og:url" content="@@canonical@@"><meta property="og:image" content="@@imageurl@@"><meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>@@css@@
+.card img{display:block;width:100%}.faq-item{padding:12px 0;border-top:1px solid #eee}.faq-item h3{font-size:1.05rem}</style>
+<script type="application/ld+json">@@schema@@</script></head><body data-content-engine="arsh-seo-v2">
+<header class="site-header"><div class="header-inner"><a class="brand" href="/"><span class="brand-mark" aria-hidden="true">▰</span>Arsh Interiors</a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" id="menu-toggle">Menu</button><nav class="site-nav" id="site-nav" aria-label="Main navigation"><a href="/">Home</a><a href="/services/">Services</a><a href="/False-Ceiling-in-Pune/">False Ceilings</a><a href="/gypsum-pop-work/">Gypsum &amp; POP</a><a href="/guides/">Guides</a><a class="nav-cta" href="/estimator/">Cost Calculator</a></nav></div></header>
+<main><p class="breadcrumb"><a href="/">Home</a> / <a href="/guides/">Planning Guides</a> / @@title@@</p><p class="eyebrow">@@service@@ · Pune homeowner planning</p><h1>@@h1@@</h1><p class="lead">@@intro@@</p><p class="published">Published @@date@@ · @@system@@</p>
+<section class="cta-box" aria-labelledby="cta-title"><h2 id="cta-title">@@ctatitle@@</h2><p>@@ctaintro@@</p><div class="cta-actions"><a class="action-button" href="/estimator/">Cost Calculator</a><a class="action-button" href="https://wa.me/919022104232" rel="noopener">WhatsApp</a><a class="action-button" href="tel:+919022104232">Call +91 9022104232</a></div></section>
+<figure class="card"><img class="hero-image" src="@@image@@" alt="@@alt@@" width="1200" height="470" loading="eager"><figcaption class="image-note">@@caption@@</figcaption></figure>
+@@sections@@<section class="card"><h2>Local planning note</h2><p>@@localnote@@</p></section><section class="card" aria-labelledby="faq-heading"><h2 id="faq-heading">Frequently asked questions</h2>@@faqs@@</section><section class="card"><h2>Related Arsh Interiors pages</h2><div class="related-links">@@links@@</div></section></main>
+<footer><div class="footer-inner"><strong>Arsh Interiors · Pune</strong><p>Interior planning information based on published service pages. Confirm scope and availability for your address.</p><p><a href="https://wa.me/919022104232" rel="noopener">WhatsApp</a> · <a href="tel:+919022104232">Call +91 9022104232</a></p></div></footer>
+<script>const b=document.getElementById('menu-toggle'),n=document.getElementById('site-nav');b.addEventListener('click',()=>{const o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!o));n.classList.toggle('open',!o);});n.addEventListener('click',e=>{if(e.target.closest('a')){b.setAttribute('aria-expanded','false');n.classList.remove('open');}});</script></body></html>"""
 HUB_TEMPLATE = """<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Ceiling Services Across Pune Areas | Arsh Interiors</title>
@@ -120,64 +74,54 @@ HUB_TEMPLATE = """<!doctype html>
 <script>const b=document.getElementById('menu-toggle'),n=document.getElementById('site-nav');b.addEventListener('click',()=>{const o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!o));n.classList.toggle('open',!o);});n.addEventListener('click',e=>{if(e.target.closest('a')){b.setAttribute('aria-expanded','false');n.classList.remove('open');}});</script>
 </body></html>
 """
+def public_path(entry):
+    return str(entry.get("path") or entry["slug"]).strip("/")
+
 def article_sections(entry):
     pieces=[]
-    for section in entry["sections"]:
-        checks="".join("<li>"+html.escape(item)+"</li>" for item in section["checks"])
-        paras="".join("<p>"+html.escape(p)+"</p>" for p in section["body"])
+    for section in entry.get("sections", []):
+        checks="".join("<li>"+html.escape(item)+"</li>" for item in section.get("checks", []))
+        paras="".join("<p>"+html.escape(p)+"</p>" for p in section.get("body", []))
         pieces.append('<section class="content-section"><h2>'+html.escape(section["heading"])+'</h2>'+paras+'<h3>Quick check</h3><ul class="checklist">'+checks+'</ul></section>')
     return "\n".join(pieces)
 
-def rendered_page(entry, today):
-    slug=entry["slug"]
-    canonical=f"{BASE}/{slug}/"
-    date_label=today.strftime("%-d %B %Y") if os.name!="nt" else today.strftime("%d %B %Y").lstrip("0")
-    schema={"@context":"https://schema.org","@type":"Article","headline":entry["title"],"description":entry["description"],"datePublished":today.isoformat(),"dateModified":today.isoformat(),"mainEntityOfPage":canonical,"image":BASE+ASSET,"publisher":{"@type":"Organization","name":"Arsh Interiors"}}
-    values={"title":html.escape(entry["title"]),"description":html.escape(entry["description"],quote=True),"canonical":canonical,"image_url":BASE+ASSET,"css":ACTION_CSS,"schema":html.escape(json.dumps(schema,ensure_ascii=False),quote=False),"locality":html.escape(entry["locality"]),"system":html.escape(entry["system"]),"intro":html.escape(entry["intro"]),"date_label":html.escape(date_label),"image":ASSET,"sections":article_sections(entry)}
-    return PAGE_TEMPLATE.replace("$title",values["title"]).replace("$description",values["description"]).replace("$canonical",values["canonical"]).replace("$image_url",values["image_url"]).replace("$css",values["css"]).replace("$schema",values["schema"]).replace("$locality",values["locality"]).replace("$system",values["system"]).replace("$intro",values["intro"]).replace("$date_label",values["date_label"]).replace("$image",values["image"]).replace("$sections",values["sections"])
+def article_faqs(entry):
+    return "\n".join('<div class="faq-item"><h3>'+html.escape(x["question"])+'</h3><p>'+html.escape(x["answer"])+'</p></div>' for x in entry.get("faqs", []))
 
-def write_output(result, page_path=""):
+def rendered_page(entry, today):
+    route=public_path(entry); canonical=f"{BASE}/{route}/"
+    image_path=(f"/{route}/{Path(entry['visual_file']).name}" if entry.get("visual_file") else ASSET)
+    date_label=today.strftime("%-d %B %Y") if os.name!="nt" else today.strftime("%d %B %Y").lstrip("0")
+    schema={"@context":"https://schema.org","@type":"Article","headline":entry["title"],"description":entry["description"],"datePublished":today.isoformat(),"dateModified":today.isoformat(),"mainEntityOfPage":canonical,"image":BASE+image_path,"author":{"@type":"Organization","name":"Arsh Interiors"},"publisher":{"@type":"Organization","name":"Arsh Interiors"}}
+    values={"@@seo@@":html.escape(entry.get("seo_title",entry["title"]+" | Arsh Interiors"),quote=True),"@@description@@":html.escape(entry["description"],quote=True),"@@canonical@@":canonical,"@@imageurl@@":BASE+image_path,"@@css@@":ACTION_CSS,"@@schema@@":json.dumps(schema,ensure_ascii=False).replace("</","<\\/"),"@@title@@":html.escape(entry["title"]),"@@service@@":html.escape(entry.get("service_name","Interior planning")),"@@h1@@":html.escape(entry.get("h1",entry["title"])),"@@intro@@":html.escape(entry["intro"]),"@@date@@":html.escape(date_label),"@@system@@":html.escape(entry.get("system",entry.get("category","Planning guide"))),"@@ctatitle@@":html.escape(entry.get("cta_heading","Discuss your interior project")),"@@ctaintro@@":html.escape(entry.get("cta_intro","Share project details to begin a discussion.")),"@@image@@":image_path,"@@alt@@":html.escape(entry.get("visual_alt","Illustrative interior planning visual."),quote=True),"@@caption@@":html.escape(entry.get("visual_caption","Original planning illustration; verify dimensions and product details on site.")),"@@sections@@":article_sections(entry),"@@localnote@@":html.escape(("This is general homeowner guidance for "+entry.get("locality","Pune")+"; it does not describe local building conditions or confirm address coverage. Contact Arsh Interiors to confirm current availability and the exact project scope.") if entry.get("locality","Pune").lower()!="pune" else "This is general planning guidance for a Pune project, not a site survey or a promise of service availability. Contact Arsh Interiors to confirm current scope and availability for your address."),"@@faqs@@":article_faqs(entry),"@@links@@":"".join('<a href="'+html.escape(x["href"],quote=True)+'">'+html.escape(x["text"])+'</a>' for x in entry.get("related_links",[]))}
+    page=PAGE_TEMPLATE
+    for key,value in values.items(): page=page.replace(key,value)
+    return page
+
+def write_output(result, page_path="", entry=None, queue_changed=False):
     output=os.environ.get("GITHUB_OUTPUT")
     if output:
         with open(output,"a",encoding="utf-8") as f:
-            f.write(f"result={result}\n")
-            if page_path:
-                f.write(f"page_path={page_path}\n")
+            f.write(f"result={result}\nqueue_changed={'true' if queue_changed else 'false'}\n")
+            if page_path: f.write(f"page_path={page_path}\n")
+            if entry:
+                f.write(f"page_category={entry.get('category','ceiling')}\npage_slug={entry['slug']}\nscheduled_date={entry.get('scheduled_date','')}\n")
     print(f"Queue result: {result}",file=sys.stderr)
 
 def build_hub(site, pages, today):
-    published=[]
-    for item in pages:
-        page_path=site/item["slug"]/"index.html"
-        if page_path.exists():
-            published.append(item)
-    cards=[]
-    for item in published:
-        cards.append('<article class="hub-card"><p class="eyebrow">'+html.escape(item["system"])+'</p><h2><a href="/'+html.escape(item["slug"])+'/">'+html.escape(item["title"])+'</a></h2><p>'+html.escape(item["description"])+'</p></article>')
-    content=HUB_TEMPLATE.replace("$css",ACTION_CSS).replace("$cards","\n".join(cards))
-    target=site/"ceiling-services-pune"/"index.html"
-    target.parent.mkdir(parents=True,exist_ok=True)
-    target.write_text(content,encoding="utf-8")
+    published=[item for item in pages if item.get("category","ceiling")=="ceiling" and (site/public_path(item)/"index.html").exists()]
+    cards=['<article class="hub-card"><p class="eyebrow">'+html.escape(item.get("system","Ceiling planning"))+'</p><h2><a href="/'+html.escape(public_path(item))+'/">'+html.escape(item["title"])+'</a></h2><p>'+html.escape(item["description"])+'</p></article>' for item in published]
+    target=site/"ceiling-services-pune"/"index.html";target.parent.mkdir(parents=True,exist_ok=True)
+    target.write_text(HUB_TEMPLATE.replace("$css",ACTION_CSS).replace("$cards","\n".join(cards)),encoding="utf-8")
 
 def add_guides_index_link(path, entry):
-    content=path.read_text(encoding="utf-8")
-    href="/"+entry["slug"]+"/"
-    if 'href="'+href+'"' in content:
-        return
-    card=(
-        '    <article class="card">\n'
-        '        <h2><a href="'+html.escape(href,quote=True)+'">'+html.escape(entry["title"])+'</a></h2>\n'
-        '        <p>'+html.escape(entry["description"])+'</p>\n'
-        '        <a href="'+html.escape(href,quote=True)+'">Read the guide →</a>\n'
-        '    </article>\n'
-    )
+    content=path.read_text(encoding="utf-8");href="/"+public_path(entry)+"/"
+    if 'href="'+href+'"' in content:return
+    card=('    <article class="card">\n        <h2><a href="'+html.escape(href,quote=True)+'">'+html.escape(entry["title"])+'</a></h2>\n        <p>'+html.escape(entry["description"])+'</p>\n        <a href="'+html.escape(href,quote=True)+'">Read the guide →</a>\n    </article>\n')
     marker='    <article class="card">'
-    if marker in content:
-        content=content.replace(marker,card+marker,1)
-    elif "</main>" in content:
-        content=content.replace("</main>",card+"</main>",1)
-    else:
-        raise RuntimeError("Could not find a safe insertion point in guides/index.html")
+    if marker in content:content=content.replace(marker,card+marker,1)
+    elif "</main>" in content:content=content.replace("</main>",card+"</main>",1)
+    else:raise RuntimeError("Could not find a safe insertion point in guides/index.html")
     path.write_text(content,encoding="utf-8")
 
 def add_sitemap_url(sitemap_path, url_path, today):
@@ -204,58 +148,61 @@ def add_home_link(path):
         path.write_text(content,encoding="utf-8")
 
 def main():
-    parser=argparse.ArgumentParser()
-    parser.add_argument("--site",required=True)
-    parser.add_argument("--queue",required=True)
-    parser.add_argument("--dry-run",default="false")
-    args=parser.parse_args()
-    site=Path(args.site).resolve()
-    queue_dir=Path(args.queue).resolve()
-    today=dt.datetime.now(TZ).date()
-    manifest=json.loads((queue_dir/"queue.json").read_text(encoding="utf-8"))
-    pages=manifest["pages"]
+    parser=argparse.ArgumentParser();parser.add_argument("--site",required=True);parser.add_argument("--queue",required=True);parser.add_argument("--dry-run",default="false");args=parser.parse_args()
+    site=Path(args.site).resolve();queue_dir=Path(args.queue).resolve();today=dt.datetime.now(TZ).date()
+    manifest_path=queue_dir/"queue.json";manifest=json.loads(manifest_path.read_text(encoding="utf-8"));pages=manifest["pages"]
     state_path=site/".github"/"ceiling-schedule-state.json"
-    if state_path.exists():
-        try:
-            state=json.loads(state_path.read_text(encoding="utf-8"))
-        except json.JSONDecodeError:
-            state={}
-        if state.get("last_published_date")==today.isoformat():
-            write_output("already_published")
-            return
+    try:state=json.loads(state_path.read_text(encoding="utf-8")) if state_path.exists() else {}
+    except json.JSONDecodeError:state={}
+    changed=False;history={x.get("slug"):x for x in state.get("published_posts",[]) if x.get("slug")}
+    for item in pages:
+        target=site/public_path(item)/"index.html"
+        if target.exists() and item.get("status")!="published":
+            item["status"]="published";record=history.get(item["slug"],{})
+            item["actual_published_date"]=record.get("actual_published_date") or item.get("scheduled_date")
+            item["actual_published_at"]=record.get("actual_published_at") or item.get("actual_published_date","")+"T09:15:00+05:30"
+            item["last_processing_result"]="existing_page_reconciled";changed=True
+        elif item.get("status")=="published" and not target.exists():raise RuntimeError("Manifest says published but page is missing: "+str(target))
+    if state.get("last_published_date")==today.isoformat():
+        if changed:manifest_path.write_text(json.dumps(manifest,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
+        write_output("already_published",queue_changed=changed);return
     sitemap_path=site/"sitemap.xml"
     if sitemap_path.exists():
         raw=sitemap_path.read_text(encoding="utf-8")
-        # If today's guide was published by another authorised publisher, skip this queue run.
-        if today.isoformat() in raw and re.search(r"<loc>https://arshinterior\.in/guides/[^<]+</loc>\s*<lastmod>"+re.escape(today.isoformat()),raw):
-            write_output("already_published")
-            return
-    candidate=next((item for item in pages if not (site/item["slug"]/"index.html").exists()),None)
+        if today.isoformat() in raw and re.search(r"<loc>https://arshinterior\\.in/(?:guides/)?[^<]+</loc>\\s*<lastmod>"+re.escape(today.isoformat()),raw):
+            if changed:manifest_path.write_text(json.dumps(manifest,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
+            write_output("already_published",queue_changed=changed);return
+    candidate=None
+    for item in sorted(pages,key=lambda x:x.get("scheduled_date","9999-12-31")):
+        if item.get("status")!="published" and not (site/public_path(item)/"index.html").exists():candidate=item;break
     if candidate is None:
-        write_output("queue_empty")
-        return
-    if str(args.dry_run).lower() in ("true","1","yes"):
-        write_output("dry_run",candidate["slug"]+"/index.html")
-        return
-    destination=site/candidate["slug"]
-    if destination.exists():
-        raise RuntimeError("Refusing to overwrite an existing page: "+str(destination))
+        if changed:manifest_path.write_text(json.dumps(manifest,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
+        write_output("queue_empty",queue_changed=changed);return
+    scheduled=dt.date.fromisoformat(candidate["scheduled_date"])
+    if scheduled>today:
+        if changed:manifest_path.write_text(json.dumps(manifest,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
+        write_output("not_due",entry=candidate,queue_changed=changed);return
+    route=public_path(candidate);page_rel=route+"/index.html"
+    if str(args.dry_run).lower() in ("true","1","yes"):write_output("dry_run",page_rel,candidate,changed);return
+    destination=site/route
+    if destination.exists():raise RuntimeError("Refusing to overwrite an existing page: "+str(destination))
     destination.mkdir(parents=True)
+    image_source=(queue_dir/candidate["visual_file"]) if candidate.get("visual_file") else queue_dir/"ceiling-systems-comparison.svg"
+    if not image_source.exists():raise RuntimeError("Required local illustration is missing: "+str(image_source))
+    shutil.copyfile(image_source,destination/image_source.name)
     (destination/"index.html").write_text(rendered_page(candidate,today),encoding="utf-8")
     add_guides_index_link(site/"guides"/"index.html",candidate)
-    asset_dir=site/"ceiling-services-pune"
-    asset_dir.mkdir(parents=True,exist_ok=True)
-    source_asset=queue_dir/"ceiling-systems-comparison.svg"
-    target_asset=asset_dir/"ceiling-systems-comparison.svg"
-    if not target_asset.exists():
-        shutil.copyfile(source_asset,target_asset)
-    build_hub(site,pages,today)
-    add_home_link(site/"index.html")
-    add_sitemap_url(sitemap_path,"ceiling-services-pune/",today)
-    add_sitemap_url(sitemap_path,candidate["slug"]+"/",today)
-    state_path.parent.mkdir(parents=True,exist_ok=True)
-    state_path.write_text(json.dumps({"last_published_date":today.isoformat(),"last_published_slug":candidate["slug"]},indent=2)+"\n",encoding="utf-8")
-    write_output("published",candidate["slug"]+"/index.html")
+    if candidate.get("category","ceiling")=="ceiling":
+        build_hub(site,pages,today);add_home_link(site/"index.html");add_sitemap_url(sitemap_path,"ceiling-services-pune/",today)
+    add_sitemap_url(sitemap_path,route,today)
+    now=dt.datetime.now(TZ);published_at=now.isoformat(timespec="seconds")
+    candidate.update({"status":"published","actual_published_date":today.isoformat(),"actual_published_at":published_at,"last_processing_result":"published"})
+    manifest["last_verified_published_date"]=today.isoformat();manifest_path.write_text(json.dumps(manifest,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
+    state_path.parent.mkdir(parents=True,exist_ok=True);history=state.get("published_posts",[]);history=[x for x in history if x.get("slug")!=candidate["slug"]]
+    history.append({"content_id":candidate.get("content_id",candidate["slug"]),"slug":candidate["slug"],"title":candidate["title"],"url":BASE+"/"+route+"/","category":candidate.get("category","ceiling"),"locality":candidate.get("locality","Pune"),"scheduled_date":candidate["scheduled_date"],"actual_published_date":today.isoformat(),"actual_published_at":published_at,"last_processing_result":"published"})
+    state.update({"last_published_date":today.isoformat(),"last_published_slug":candidate["slug"],"last_published_path":route+"/","last_processing_result":"published","published_posts":history})
+    state_path.write_text(json.dumps(state,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
+    write_output("published",page_rel,candidate,True)
 
 if __name__=="__main__":
     main()

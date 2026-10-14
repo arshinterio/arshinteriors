@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "timezone": "Asia/Kolkata",
   "publishPerDay": 1,
   "pages": [
@@ -47,7 +47,16 @@
             "Address availability confirmed before booking"
           ]
         }
-      ]
+      ],
+      "content_id": "false-ceiling-in-katraj-pune",
+      "path": "false-ceiling-in-katraj-pune",
+      "category": "ceiling",
+      "service_name": "Gypsum false ceiling",
+      "status": "published",
+      "scheduled_date": "2026-10-09",
+      "last_processing_result": "published",
+      "actual_published_date": "2026-10-09",
+      "actual_published_at": "2026-10-09T09:15:00+05:30"
     },
     {
       "slug": "false-ceiling-in-wagholi-pune",
@@ -93,7 +102,16 @@
             "Latest drawing shared with each installer"
           ]
         }
-      ]
+      ],
+      "content_id": "false-ceiling-in-wagholi-pune",
+      "path": "false-ceiling-in-wagholi-pune",
+      "category": "ceiling",
+      "service_name": "POP ceiling",
+      "status": "published",
+      "scheduled_date": "2026-10-10",
+      "last_processing_result": "published",
+      "actual_published_date": "2026-10-10",
+      "actual_published_at": "2026-10-10T09:15:00+05:30"
     },
     {
       "slug": "false-ceiling-in-dhayari-pune",
@@ -139,7 +157,16 @@
             "Address and work scope confirmed"
           ]
         }
-      ]
+      ],
+      "content_id": "false-ceiling-in-dhayari-pune",
+      "path": "false-ceiling-in-dhayari-pune",
+      "category": "ceiling",
+      "service_name": "Gypsum false ceiling",
+      "status": "published",
+      "scheduled_date": "2026-10-11",
+      "last_processing_result": "published",
+      "actual_published_date": "2026-10-11",
+      "actual_published_at": "2026-10-11T09:15:00+05:30"
     },
     {
       "slug": "grid-ceiling-in-sinhagad-road-pune",
@@ -185,7 +212,16 @@
             "System and address availability confirmed"
           ]
         }
-      ]
+      ],
+      "content_id": "grid-ceiling-in-sinhagad-road-pune",
+      "path": "grid-ceiling-in-sinhagad-road-pune",
+      "category": "ceiling",
+      "service_name": "Grid ceiling",
+      "status": "published",
+      "scheduled_date": "2026-10-12",
+      "last_processing_result": "published",
+      "actual_published_date": "2026-10-12",
+      "actual_published_at": "2026-10-12T09:15:00+05:30"
     },
     {
       "slug": "pvc-false-ceiling-kothrud-pune",
@@ -231,7 +267,16 @@
             "Address availability confirmed before booking"
           ]
         }
-      ]
+      ],
+      "content_id": "pvc-false-ceiling-kothrud-pune",
+      "path": "pvc-false-ceiling-kothrud-pune",
+      "category": "ceiling",
+      "service_name": "PVC false ceiling",
+      "status": "published",
+      "scheduled_date": "2026-10-13",
+      "last_processing_result": "published",
+      "actual_published_date": "2026-10-13",
+      "actual_published_at": "2026-10-13T09:15:00+05:30"
     },
     {
       "slug": "gypsum-false-ceiling-wakad-pune",
@@ -277,7 +322,14 @@
             "Exact address and combined scope confirmed"
           ]
         }
-      ]
+      ],
+      "content_id": "gypsum-false-ceiling-wakad-pune",
+      "path": "gypsum-false-ceiling-wakad-pune",
+      "category": "ceiling",
+      "service_name": "Gypsum false ceiling with lighting",
+      "status": "scheduled",
+      "scheduled_date": "2026-10-15",
+      "last_processing_result": "scheduled"
     },
     {
       "slug": "pop-ceiling-in-baner-pune",
@@ -323,7 +375,14 @@
             "Address availability confirmed"
           ]
         }
-      ]
+      ],
+      "content_id": "pop-ceiling-in-baner-pune",
+      "path": "pop-ceiling-in-baner-pune",
+      "category": "ceiling",
+      "service_name": "POP ceiling design",
+      "status": "scheduled",
+      "scheduled_date": "2026-10-16",
+      "last_processing_result": "scheduled"
     },
     {
       "slug": "pvc-ceiling-in-kharadi-pune",
@@ -369,7 +428,14 @@
             "Exact area and system availability confirmed"
           ]
         }
-      ]
+      ],
+      "content_id": "pvc-ceiling-in-kharadi-pune",
+      "path": "pvc-ceiling-in-kharadi-pune",
+      "category": "ceiling",
+      "service_name": "PVC ceiling",
+      "status": "scheduled",
+      "scheduled_date": "2026-10-17",
+      "last_processing_result": "scheduled"
     },
     {
       "slug": "grid-ceiling-in-hinjawadi-pune",
@@ -415,7 +481,14 @@
             "System and address coverage confirmed"
           ]
         }
-      ]
+      ],
+      "content_id": "grid-ceiling-in-hinjawadi-pune",
+      "path": "grid-ceiling-in-hinjawadi-pune",
+      "category": "ceiling",
+      "service_name": "Grid ceiling",
+      "status": "scheduled",
+      "scheduled_date": "2026-10-18",
+      "last_processing_result": "scheduled"
     },
     {
       "slug": "gypsum-ceiling-in-balewadi-pune",
@@ -461,7 +534,14 @@
             "Address and coordination availability confirmed"
           ]
         }
-      ]
+      ],
+      "content_id": "gypsum-ceiling-in-balewadi-pune",
+      "path": "gypsum-ceiling-in-balewadi-pune",
+      "category": "ceiling",
+      "service_name": "Gypsum false ceiling",
+      "status": "scheduled",
+      "scheduled_date": "2026-10-19",
+      "last_processing_result": "scheduled"
     },
     {
       "slug": "false-ceiling-in-mahalunge-pune",
@@ -507,7 +587,14 @@
             "Address availability confirmed"
           ]
         }
-      ]
+      ],
+      "content_id": "false-ceiling-in-mahalunge-pune",
+      "path": "false-ceiling-in-mahalunge-pune",
+      "category": "ceiling",
+      "service_name": "Gypsum, POP, PVC or grid ceiling",
+      "status": "scheduled",
+      "scheduled_date": "2026-10-20",
+      "last_processing_result": "scheduled"
     },
     {
       "slug": "pop-ceiling-in-tathawade-pune",
@@ -553,7 +640,14 @@
             "Exact address confirmed"
           ]
         }
-      ]
+      ],
+      "content_id": "pop-ceiling-in-tathawade-pune",
+      "path": "pop-ceiling-in-tathawade-pune",
+      "category": "ceiling",
+      "service_name": "POP ceiling",
+      "status": "scheduled",
+      "scheduled_date": "2026-10-21",
+      "last_processing_result": "scheduled"
     },
     {
       "slug": "pvc-ceiling-in-punawale-pune",
@@ -599,7 +693,14 @@
             "Address and system availability confirmed"
           ]
         }
-      ]
+      ],
+      "content_id": "pvc-ceiling-in-punawale-pune",
+      "path": "pvc-ceiling-in-punawale-pune",
+      "category": "ceiling",
+      "service_name": "PVC ceiling",
+      "status": "scheduled",
+      "scheduled_date": "2026-10-22",
+      "last_processing_result": "scheduled"
     },
     {
       "slug": "gypsum-ceiling-in-ravet-pune",
@@ -645,7 +746,14 @@
             "Address availability confirmed"
           ]
         }
-      ]
+      ],
+      "content_id": "gypsum-ceiling-in-ravet-pune",
+      "path": "gypsum-ceiling-in-ravet-pune",
+      "category": "ceiling",
+      "service_name": "Gypsum false ceiling",
+      "status": "scheduled",
+      "scheduled_date": "2026-10-23",
+      "last_processing_result": "scheduled"
     },
     {
       "slug": "grid-ceiling-in-hadapsar-pune",
@@ -691,7 +799,14 @@
             "Address and project availability confirmed"
           ]
         }
-      ]
+      ],
+      "content_id": "grid-ceiling-in-hadapsar-pune",
+      "path": "grid-ceiling-in-hadapsar-pune",
+      "category": "ceiling",
+      "service_name": "Grid ceiling",
+      "status": "scheduled",
+      "scheduled_date": "2026-10-24",
+      "last_processing_result": "scheduled"
     },
     {
       "slug": "pvc-ceiling-in-manjari-pune",
@@ -737,7 +852,14 @@
             "Exact address and system coverage confirmed"
           ]
         }
-      ]
+      ],
+      "content_id": "pvc-ceiling-in-manjari-pune",
+      "path": "pvc-ceiling-in-manjari-pune",
+      "category": "ceiling",
+      "service_name": "PVC ceiling",
+      "status": "scheduled",
+      "scheduled_date": "2026-10-25",
+      "last_processing_result": "scheduled"
     },
     {
       "slug": "gypsum-ceiling-in-viman-nagar-pune",
@@ -783,7 +905,14 @@
             "Availability confirmed for exact address"
           ]
         }
-      ]
+      ],
+      "content_id": "gypsum-ceiling-in-viman-nagar-pune",
+      "path": "gypsum-ceiling-in-viman-nagar-pune",
+      "category": "ceiling",
+      "service_name": "Gypsum bedroom ceiling",
+      "status": "scheduled",
+      "scheduled_date": "2026-10-26",
+      "last_processing_result": "scheduled"
     },
     {
       "slug": "pop-ceiling-in-kondhwa-pune",
@@ -829,7 +958,14 @@
             "Address coverage confirmed"
           ]
         }
-      ]
+      ],
+      "content_id": "pop-ceiling-in-kondhwa-pune",
+      "path": "pop-ceiling-in-kondhwa-pune",
+      "category": "ceiling",
+      "service_name": "POP ceiling",
+      "status": "scheduled",
+      "scheduled_date": "2026-10-27",
+      "last_processing_result": "scheduled"
     },
     {
       "slug": "false-ceiling-in-undri-pune",
@@ -875,7 +1011,14 @@
             "Exact area availability confirmed"
           ]
         }
-      ]
+      ],
+      "content_id": "false-ceiling-in-undri-pune",
+      "path": "false-ceiling-in-undri-pune",
+      "category": "ceiling",
+      "service_name": "False ceiling system selection",
+      "status": "scheduled",
+      "scheduled_date": "2026-10-28",
+      "last_processing_result": "scheduled"
     },
     {
       "slug": "gypsum-ceiling-in-sinhagad-road-pune",
@@ -921,7 +1064,14 @@
             "Address and service combination confirmed"
           ]
         }
-      ]
+      ],
+      "content_id": "gypsum-ceiling-in-sinhagad-road-pune",
+      "path": "gypsum-ceiling-in-sinhagad-road-pune",
+      "category": "ceiling",
+      "service_name": "Gypsum ceiling lighting coordination",
+      "status": "scheduled",
+      "scheduled_date": "2026-10-29",
+      "last_processing_result": "scheduled"
     },
     {
       "slug": "gypsum-ceiling-in-wakad-pune",
@@ -967,7 +1117,14 @@
             "Exact address confirmed"
           ]
         }
-      ]
+      ],
+      "content_id": "gypsum-ceiling-in-wakad-pune",
+      "path": "gypsum-ceiling-in-wakad-pune",
+      "category": "ceiling",
+      "service_name": "Gypsum false ceiling layout",
+      "status": "scheduled",
+      "scheduled_date": "2026-10-30",
+      "last_processing_result": "scheduled"
     },
     {
       "slug": "false-ceiling-in-kharadi-pune-grid",
@@ -1013,7 +1170,14 @@
             "Address coverage confirmed"
           ]
         }
-      ]
+      ],
+      "content_id": "false-ceiling-in-kharadi-pune-grid",
+      "path": "false-ceiling-in-kharadi-pune-grid",
+      "category": "ceiling",
+      "service_name": "Grid ceiling",
+      "status": "scheduled",
+      "scheduled_date": "2026-10-31",
+      "last_processing_result": "scheduled"
     },
     {
       "slug": "pop-ceiling-in-viman-nagar-pune",
@@ -1059,7 +1223,14 @@
             "Address availability confirmed"
           ]
         }
-      ]
+      ],
+      "content_id": "pop-ceiling-in-viman-nagar-pune",
+      "path": "pop-ceiling-in-viman-nagar-pune",
+      "category": "ceiling",
+      "service_name": "POP ceiling detail",
+      "status": "scheduled",
+      "scheduled_date": "2026-11-01",
+      "last_processing_result": "scheduled"
     },
     {
       "slug": "pvc-ceiling-in-ravet-pune",
@@ -1105,7 +1276,14 @@
             "Address availability checked"
           ]
         }
-      ]
+      ],
+      "content_id": "pvc-ceiling-in-ravet-pune",
+      "path": "pvc-ceiling-in-ravet-pune",
+      "category": "ceiling",
+      "service_name": "PVC ceiling planning",
+      "status": "scheduled",
+      "scheduled_date": "2026-11-02",
+      "last_processing_result": "scheduled"
     },
     {
       "slug": "gypsum-ceiling-in-mahalunge-pune",
@@ -1151,7 +1329,14 @@
             "Exact address confirmed"
           ]
         }
-      ]
+      ],
+      "content_id": "gypsum-ceiling-in-mahalunge-pune",
+      "path": "gypsum-ceiling-in-mahalunge-pune",
+      "category": "ceiling",
+      "service_name": "Gypsum false ceiling lighting plan",
+      "status": "scheduled",
+      "scheduled_date": "2026-11-03",
+      "last_processing_result": "scheduled"
     },
     {
       "slug": "pop-ceiling-in-manjari-pune",
@@ -1197,7 +1382,14 @@
             "Address coverage confirmed"
           ]
         }
-      ]
+      ],
+      "content_id": "pop-ceiling-in-manjari-pune",
+      "path": "pop-ceiling-in-manjari-pune",
+      "category": "ceiling",
+      "service_name": "POP ceiling design",
+      "status": "scheduled",
+      "scheduled_date": "2026-11-04",
+      "last_processing_result": "scheduled"
     },
     {
       "slug": "grid-ceiling-in-balewadi-pune",
@@ -1243,7 +1435,14 @@
             "Exact address and system confirmed"
           ]
         }
-      ]
+      ],
+      "content_id": "grid-ceiling-in-balewadi-pune",
+      "path": "grid-ceiling-in-balewadi-pune",
+      "category": "ceiling",
+      "service_name": "Grid ceiling",
+      "status": "scheduled",
+      "scheduled_date": "2026-11-05",
+      "last_processing_result": "scheduled"
     },
     {
       "slug": "gypsum-ceiling-in-tathawade-pune",
@@ -1289,7 +1488,14 @@
             "Exact address availability confirmed"
           ]
         }
-      ]
+      ],
+      "content_id": "gypsum-ceiling-in-tathawade-pune",
+      "path": "gypsum-ceiling-in-tathawade-pune",
+      "category": "ceiling",
+      "service_name": "Gypsum ceiling with cove",
+      "status": "scheduled",
+      "scheduled_date": "2026-11-06",
+      "last_processing_result": "scheduled"
     },
     {
       "slug": "gypsum-ceiling-in-punawale-pune",
@@ -1335,7 +1541,14 @@
             "Address and service coverage confirmed"
           ]
         }
-      ]
+      ],
+      "content_id": "gypsum-ceiling-in-punawale-pune",
+      "path": "gypsum-ceiling-in-punawale-pune",
+      "category": "ceiling",
+      "service_name": "Gypsum ceiling",
+      "status": "scheduled",
+      "scheduled_date": "2026-11-07",
+      "last_processing_result": "scheduled"
     },
     {
       "slug": "pop-ceiling-in-hadapsar-pune",
@@ -1381,7 +1594,14 @@
             "Address availability confirmed"
           ]
         }
-      ]
+      ],
+      "content_id": "pop-ceiling-in-hadapsar-pune",
+      "path": "pop-ceiling-in-hadapsar-pune",
+      "category": "ceiling",
+      "service_name": "POP ceiling",
+      "status": "scheduled",
+      "scheduled_date": "2026-11-08",
+      "last_processing_result": "scheduled"
     },
     {
       "slug": "grid-ceiling-in-manjari-pune",
@@ -1427,7 +1647,14 @@
             "Address and system availability confirmed"
           ]
         }
-      ]
+      ],
+      "content_id": "grid-ceiling-in-manjari-pune",
+      "path": "grid-ceiling-in-manjari-pune",
+      "category": "ceiling",
+      "service_name": "Grid ceiling",
+      "status": "scheduled",
+      "scheduled_date": "2026-11-09",
+      "last_processing_result": "scheduled"
     },
     {
       "slug": "gypsum-ceiling-in-viman-nagar-pune-bedroom",
@@ -1473,7 +1700,14 @@
             "Address availability confirmed"
           ]
         }
-      ]
+      ],
+      "content_id": "gypsum-ceiling-in-viman-nagar-pune-bedroom",
+      "path": "gypsum-ceiling-in-viman-nagar-pune-bedroom",
+      "category": "ceiling",
+      "service_name": "Gypsum bedroom ceiling",
+      "status": "scheduled",
+      "scheduled_date": "2026-11-10",
+      "last_processing_result": "scheduled"
     },
     {
       "slug": "false-ceiling-in-kondhwa-pune",
@@ -1519,7 +1753,14 @@
             "Exact address and scope confirmed"
           ]
         }
-      ]
+      ],
+      "content_id": "false-ceiling-in-kondhwa-pune",
+      "path": "false-ceiling-in-kondhwa-pune",
+      "category": "ceiling",
+      "service_name": "Gypsum false ceiling",
+      "status": "scheduled",
+      "scheduled_date": "2026-11-11",
+      "last_processing_result": "scheduled"
     },
     {
       "slug": "gypsum-ceiling-in-undri-pune",
@@ -1565,7 +1806,1422 @@
             "Address availability confirmed"
           ]
         }
-      ]
+      ],
+      "content_id": "gypsum-ceiling-in-undri-pune",
+      "path": "gypsum-ceiling-in-undri-pune",
+      "category": "ceiling",
+      "service_name": "Gypsum ceiling finish",
+      "status": "scheduled",
+      "scheduled_date": "2026-11-12",
+      "last_processing_result": "scheduled"
+    },
+    {
+      "slug": "gypsum-partition-planning-hinjawadi-pune",
+      "path": "guides/gypsum-partition-planning-hinjawadi-pune",
+      "content_id": "gypsum-partition-planning-hinjawadi-pune",
+      "category": "gypsum-partition",
+      "service_name": "Gypsum partition planning",
+      "locality": "Hinjawadi, Pune",
+      "system": "gypsum partition",
+      "title": "Gypsum Partition Planning in Hinjawadi, Pune: Layout, Services and Finish",
+      "seo_title": "Gypsum Partition Planning in Hinjawadi, Pune | Arsh Interiors",
+      "description": "Plan a gypsum partition in Hinjawadi with measured layout, door clearances, service routes, support points and a clear finish handover.",
+      "primary_keyword": "gypsum partition planning in Hinjawadi",
+      "supporting_keywords": [
+        "gypsum partition contractor Pune",
+        "office gypsum partition planning",
+        "partition electrical coordination"
+      ],
+      "search_intent": "Pune-area homeowners researching gypsum partition planning before requesting a project discussion.",
+      "intro": "A partition drawing should explain what the wall separates, where it starts and ends, and which fixtures or services pass through it. For a Hinjawadi project, coordinate those decisions before selecting finishes or comparing contractor scopes.",
+      "visual_steps": [
+        "Set the wall line and door",
+        "Plan support and services",
+        "Record finish handover"
+      ],
+      "visual_alt": "Illustrative gypsum partition diagram showing a measured wall line, door opening and service coordination points; not a completed project.",
+      "visual_caption": "Original planning illustration only. It is not a site survey or a photograph of a completed Arsh Interiors project; confirm dimensions, product details and suitability for the actual property.",
+      "related_links": [
+        {
+          "href": "/gypsum-pop-work/",
+          "text": "Gypsum and POP work"
+        },
+        {
+          "href": "/services/",
+          "text": "Interior services"
+        },
+        {
+          "href": "/estimator/",
+          "text": "Cost Calculator"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Draw the partition around how the room will work",
+          "body": [
+            "Mark the wall line, finished thickness, door opening, swing and route people need to use. Place desks, storage and switches on the same plan so the new wall does not block circulation or access.",
+            "Show how the partition meets the floor, ceiling and adjacent walls. If it joins a false ceiling, include the junction and level change in the drawing instead of leaving it to installation day."
+          ],
+          "checks": [
+            "Door and clearances marked",
+            "Ceiling and wall junctions drawn"
+          ]
+        },
+        {
+          "heading": "Decide what the partition must support",
+          "body": [
+            "List shelves, screens or cabinets that may attach to the wall. Tell the installer before framing so support can be specified for the actual load and board system; do not assume the board face alone suits every fixture.",
+            "If privacy, sound or moisture performance matters, describe the requirement and request the selected system's documentation. Avoid broad promises such as soundproof; performance depends on the complete assembly and junctions."
+          ],
+          "checks": [
+            "Future fixtures and positions listed",
+            "Performance claims tied to product documentation"
+          ]
+        },
+        {
+          "heading": "Coordinate service routes and finish handover",
+          "body": [
+            "Mark switches, sockets and data points on the elevation. Have the responsible electrician plan the route and connections, then agree who forms openings, inspects the work and closes the wall.",
+            "Record the board, joint treatment, corner detail and paint-ready handover. Save pre-close photos with the final drawing. Confirm current availability for the exact Hinjawadi address and scope."
+          ],
+          "checks": [
+            "Electrical locations shared before framing",
+            "Pre-close photos and finish scope saved"
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can a screen or cabinet hang from a gypsum partition?",
+          "answer": "It depends on the load and wall system. Identify the fixing locations before framing and ask the installer to specify suitable support."
+        },
+        {
+          "question": "Does gypsum automatically provide soundproofing?",
+          "answer": "No. Performance depends on the complete assembly, gaps, junctions and doors. Ask for product documentation for the intended requirement."
+        }
+      ],
+      "cta_heading": "Discuss gypsum partition planning",
+      "cta_intro": "Share the room plan, intended use and the work you want to coordinate. Confirm address and project-scope availability.",
+      "visual_file": "assets/gypsum-partition-planning-hinjawadi-pune.svg",
+      "canonical_url": "https://arshinterior.in/guides/gypsum-partition-planning-hinjawadi-pune/",
+      "scheduled_date": "2026-11-13",
+      "status": "scheduled",
+      "last_processing_result": "scheduled"
+    },
+    {
+      "slug": "electrical-renovation-point-planning-pune",
+      "path": "guides/electrical-renovation-point-planning-pune",
+      "content_id": "electrical-renovation-point-planning-pune",
+      "category": "electrical",
+      "service_name": "Interior electrical work",
+      "locality": "Pune",
+      "system": "electrical",
+      "title": "Electrical Renovation Planning in Pune: Make a Room-by-Room Point Schedule",
+      "seo_title": "Electrical Renovation Planning in Pune | Room-by-Room Checklist",
+      "description": "Prepare an electrical renovation schedule by listing appliances, furniture, lighting controls and questions for your electrician.",
+      "primary_keyword": "electrical renovation planning in Pune",
+      "supporting_keywords": [
+        "residential electrical work Pune",
+        "electrical point schedule",
+        "home wiring planning"
+      ],
+      "search_intent": "Pune-area homeowners researching interior electrical work before requesting a project discussion.",
+      "intro": "A room-by-room electrical schedule connects each point to an appliance, furniture position or lighting need. Use it to organise decisions; wiring design, circuit selection and installation belong to the responsible qualified electrician.",
+      "visual_steps": [
+        "List appliances by room",
+        "Mark furniture and light points",
+        "Review with the electrician"
+      ],
+      "visual_alt": "Illustrative room plan marking furniture, appliance and lighting discussion zones; not an electrical installation drawing.",
+      "visual_caption": "Original planning illustration only. It is not a site survey or a photograph of a completed Arsh Interiors project; confirm dimensions, product details and suitability for the actual property.",
+      "related_links": [
+        {
+          "href": "/electrical-work-in-pune/",
+          "text": "Electrical work in Pune"
+        },
+        {
+          "href": "/guides/switch-socket-placement-pune/",
+          "text": "Switch and socket planning"
+        },
+        {
+          "href": "/estimator/",
+          "text": "Cost Calculator"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Start with an appliance and furniture inventory",
+          "body": [
+            "List appliances you own or plan to add, then mark desks, beds, sofas, televisions and kitchen counters. A point schedule is more useful when it describes intended use instead of an unexplained count.",
+            "For items whose position may change, mark a preferred and alternate location. Check whether plugs remain reachable without moving heavy furniture, and note appliance requirements supplied by the manufacturer."
+          ],
+          "checks": [
+            "Appliances listed room by room",
+            "Furniture plan marked on the same drawing"
+          ]
+        },
+        {
+          "heading": "Coordinate lighting controls with the ceiling",
+          "body": [
+            "Mark the lights and the switches that control them. Decide which areas need separate control, then review the arrangement with the electrician before the ceiling plan is final.",
+            "For recessed lighting, coordinate the selected fitting, opening and driver access with the ceiling installer. Do not use this checklist to choose cable sizes or make electrical changes yourself."
+          ],
+          "checks": [
+            "Light groups labelled",
+            "Fitting access and openings coordinated"
+          ]
+        },
+        {
+          "heading": "Freeze a written schedule before work starts",
+          "body": [
+            "Give the electrician a dated plan showing point locations, intended use and known appliance details. Agree how changes will be recorded so all trades use the same revision.",
+            "For a Pune estimate, share room dimensions, photos and a list of new or relocated points. Coordinate routes with ceiling and carpentry decisions before finished surfaces are closed."
+          ],
+          "checks": [
+            "One dated schedule shared",
+            "Changes captured in a revised plan"
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Should I decide electrical points before furniture installation?",
+          "answer": "Yes. Mark planned furniture and appliances first so access and use can be discussed before finishes are closed."
+        },
+        {
+          "question": "Does this guide specify how to wire a home?",
+          "answer": "No. It helps prepare questions. A qualified electrician must determine technical details for the property."
+        }
+      ],
+      "cta_heading": "Discuss interior electrical work",
+      "cta_intro": "Share the room plan, intended use and the work you want to coordinate. Confirm address and project-scope availability.",
+      "visual_file": "assets/electrical-renovation-point-planning-pune.svg",
+      "canonical_url": "https://arshinterior.in/guides/electrical-renovation-point-planning-pune/",
+      "scheduled_date": "2026-11-14",
+      "status": "scheduled",
+      "last_processing_result": "scheduled"
+    },
+    {
+      "slug": "paint-sheen-by-room-use-pune",
+      "path": "guides/paint-sheen-by-room-use-pune",
+      "content_id": "paint-sheen-by-room-use-pune",
+      "category": "painting",
+      "service_name": "Interior painting and finishes",
+      "locality": "Pune",
+      "system": "painting",
+      "title": "How to Choose Paint Sheen by Room Use: A Pune Homeowner's Guide",
+      "seo_title": "Choose Paint Sheen by Room Use in Pune | Arsh Interiors",
+      "description": "Compare interior paint sheen by room use, wall condition, lighting and cleaning expectations before selecting a finish.",
+      "primary_keyword": "interior paint sheen guide Pune",
+      "supporting_keywords": [
+        "matte or satin paint for home",
+        "paint finish by room",
+        "interior painting Pune"
+      ],
+      "search_intent": "Pune-area homeowners researching interior painting and finishes before requesting a project discussion.",
+      "intro": "Paint sheen changes reflected light and how visible surface marks may appear. The right choice depends on room use, wall preparation, product instructions and personal preference—not one universal rule for every home.",
+      "visual_steps": [
+        "Compare sheen on a sample",
+        "Match finish to room activity",
+        "Review in room lighting"
+      ],
+      "visual_alt": "Illustrative matte, low-sheen and higher-sheen surface comparison; not a product sample or project photograph.",
+      "visual_caption": "Original planning illustration only. It is not a site survey or a photograph of a completed Arsh Interiors project; confirm dimensions, product details and suitability for the actual property.",
+      "related_links": [
+        {
+          "href": "/painting-in-pune/",
+          "text": "Painting services in Pune"
+        },
+        {
+          "href": "/guides/wall-preparation-painting-kothrud-dhayari-pune/",
+          "text": "Wall preparation guide"
+        },
+        {
+          "href": "/estimator/",
+          "text": "Cost Calculator"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Understand what sheen changes",
+          "body": [
+            "Matte and low-sheen finishes reflect less light; higher-sheen products reflect more. Product cleanability varies, so use the manufacturer's description rather than assuming the sheen alone determines maintenance.",
+            "Compare the actual product range and sample on a prepared wall. View it in daylight and with room lights on; labels and sheen scales can vary between manufacturers."
+          ],
+          "checks": [
+            "Product and sheen label recorded",
+            "Sample viewed under actual lighting"
+          ]
+        },
+        {
+          "heading": "Match the finish to room activity",
+          "body": [
+            "For a low-traffic bedroom, appearance may be the priority. In a corridor or frequently touched room, ask about the product's stated cleaning method and test the sample. Wet areas need a product suitable for their conditions; sheen alone does not make a coating moisture-safe.",
+            "Walls, ceilings and trim can use different finishes. Keep a room schedule so the painter knows which product and sheen belongs on each surface, especially where old coatings need preparation."
+          ],
+          "checks": [
+            "Cleaning expectations discussed by room",
+            "Wet areas checked against product use"
+          ]
+        },
+        {
+          "heading": "Use a sample rather than a screen image",
+          "body": [
+            "Apply a sample to a prepared area and inspect it from multiple angles and times of day. Reflected light can reveal surface variation, while room lighting changes colour appearance.",
+            "Before a Pune estimate, note rooms, approximate areas, repairs and finish preferences. Ask for product names and preparation steps so proposals can be compared on the same assumptions."
+          ],
+          "checks": [
+            "Sample approved on the actual wall",
+            "Preparation and products listed"
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Is matte paint always best for bedrooms?",
+          "answer": "Not always. Lighting, wall condition, product performance and cleaning preferences matter; compare a sample in the actual room."
+        },
+        {
+          "question": "Does higher sheen hide wall defects?",
+          "answer": "Reflected light can make surface variation more noticeable. Prepare the wall and inspect a sample before deciding."
+        }
+      ],
+      "cta_heading": "Discuss interior painting and finishes",
+      "cta_intro": "Share the room plan, intended use and the work you want to coordinate. Confirm address and project-scope availability.",
+      "visual_file": "assets/paint-sheen-by-room-use-pune.svg",
+      "canonical_url": "https://arshinterior.in/guides/paint-sheen-by-room-use-pune/",
+      "scheduled_date": "2026-11-15",
+      "status": "scheduled",
+      "last_processing_result": "scheduled"
+    },
+    {
+      "slug": "wardrobe-storage-layout-viman-nagar-pune",
+      "path": "guides/wardrobe-storage-layout-viman-nagar-pune",
+      "content_id": "wardrobe-storage-layout-viman-nagar-pune",
+      "category": "custom-furniture",
+      "service_name": "Custom wardrobes and furniture",
+      "locality": "Viman Nagar, Pune",
+      "system": "custom furniture",
+      "title": "Wardrobe Storage Layout in Viman Nagar, Pune: Plan the Inside Before the Doors",
+      "seo_title": "Wardrobe Storage Layout in Viman Nagar, Pune | Arsh Interiors",
+      "description": "Plan wardrobe storage around clothing, luggage, drawers, doors and access before approving custom furniture drawings in Viman Nagar.",
+      "primary_keyword": "custom wardrobe storage layout Viman Nagar",
+      "supporting_keywords": [
+        "wardrobe interior design Pune",
+        "custom wardrobe storage planning",
+        "wardrobe shelves and drawers"
+      ],
+      "search_intent": "Pune-area homeowners researching custom wardrobes and furniture before requesting a project discussion.",
+      "intro": "A wardrobe may look polished and still feel inconvenient if its inside does not match what you store. Before approving a custom furniture drawing in Viman Nagar, make an inventory and assign each shelf, drawer and hanging zone a purpose.",
+      "visual_steps": [
+        "Group items by use",
+        "Check doors and drawers",
+        "Approve measured elevations"
+      ],
+      "visual_alt": "Illustrative wardrobe elevation with hanging, folded-clothing, drawer and luggage zones; a planning graphic, not a completed project.",
+      "visual_caption": "Original planning illustration only. It is not a site survey or a photograph of a completed Arsh Interiors project; confirm dimensions, product details and suitability for the actual property.",
+      "related_links": [
+        {
+          "href": "/furniture-in-pune/",
+          "text": "Custom furniture in Pune"
+        },
+        {
+          "href": "/guides/custom-wardrobe-measurements-wakad-pune/",
+          "text": "Wardrobe measurement guide"
+        },
+        {
+          "href": "/estimator/",
+          "text": "Cost Calculator"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Inventory what the wardrobe must hold",
+          "body": [
+            "List daily clothes, long garments, folded items, accessories, bedding and luggage. Note who uses each section and how often so frequently used items do not depend on moving another person's storage.",
+            "Decide what belongs elsewhere before finalising the drawing. Use the inventory to compare the proposed layout against habits, not only a decorative reference image."
+          ],
+          "checks": [
+            "Items grouped by type and user",
+            "Frequent-use storage within easy reach"
+          ]
+        },
+        {
+          "heading": "Check drawers, doors and movement",
+          "body": [
+            "Review the wardrobe with doors open and drawers extended. Check bed clearance, room circulation and access to switches or windows; sliding and hinged doors need different clearances.",
+            "Ask how shelves adjust and how hardware is maintained. Plan upper storage realistically; do not assign heavy items high up simply because space is available."
+          ],
+          "checks": [
+            "Door and drawer movement shown",
+            "Nearby furniture and circulation checked"
+          ]
+        },
+        {
+          "heading": "Approve a measured elevation and finish schedule",
+          "body": [
+            "Request a front elevation with internal dimensions, materials, handles, finish and edge details. Confirm site measurements before fabrication and record gaps or uneven corners that affect fit.",
+            "For custom furniture near Viman Nagar, compare the same storage brief and finish assumptions. Confirm location availability, installation scope and how changes are approved."
+          ],
+          "checks": [
+            "Dimensions and finish shown",
+            "Site measurement and scope confirmed"
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How do I decide how many drawers I need?",
+          "answer": "Group the small items you actually store, then review drawer width, depth and access on the drawing."
+        },
+        {
+          "question": "Is this the same as measuring a wardrobe?",
+          "answer": "No. Measurement guidance records the space; this guide focuses on assigning useful storage zones inside the unit."
+        }
+      ],
+      "cta_heading": "Discuss custom wardrobes and furniture",
+      "cta_intro": "Share the room plan, intended use and the work you want to coordinate. Confirm address and project-scope availability.",
+      "visual_file": "assets/wardrobe-storage-layout-viman-nagar-pune.svg",
+      "canonical_url": "https://arshinterior.in/guides/wardrobe-storage-layout-viman-nagar-pune/",
+      "scheduled_date": "2026-11-16",
+      "status": "scheduled",
+      "last_processing_result": "scheduled"
+    },
+    {
+      "slug": "modular-kitchen-layout-planning-pune",
+      "path": "guides/modular-kitchen-layout-planning-pune",
+      "content_id": "modular-kitchen-layout-planning-pune",
+      "category": "modular-kitchen",
+      "service_name": "Modular kitchen planning",
+      "locality": "Pune",
+      "system": "modular kitchen",
+      "title": "Modular Kitchen Layout Planning in Pune: Start with Workflow and Clearances",
+      "seo_title": "Modular Kitchen Layout Planning in Pune | Arsh Interiors",
+      "description": "Plan a modular kitchen around cooking habits, appliance sizes, plumbing, storage and clearances before approving a layout.",
+      "primary_keyword": "modular kitchen layout planning Pune",
+      "supporting_keywords": [
+        "modular kitchen design Pune",
+        "small flat kitchen layout",
+        "kitchen storage planning"
+      ],
+      "search_intent": "Pune-area homeowners researching modular kitchen planning before requesting a project discussion.",
+      "intro": "A useful kitchen layout begins with how people cook, clean and move through the room. Record fixed services, appliance sizes and storage needs so the modular-kitchen drawing reflects the measured space.",
+      "visual_steps": [
+        "Map fixed services and appliances",
+        "Plan daily movement",
+        "Specify storage and scope"
+      ],
+      "visual_alt": "Illustrative modular kitchen plan marking preparation, cooking, washing and storage zones; conceptual, not a site-specific design.",
+      "visual_caption": "Original planning illustration only. It is not a site survey or a photograph of a completed Arsh Interiors project; confirm dimensions, product details and suitability for the actual property.",
+      "related_links": [
+        {
+          "href": "/furniture-in-pune/",
+          "text": "Furniture and modular kitchens"
+        },
+        {
+          "href": "/services/",
+          "text": "Interior services"
+        },
+        {
+          "href": "/estimator/",
+          "text": "Cost Calculator"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Record fixed points and appliance dimensions",
+          "body": [
+            "Measure doors, windows, plumbing and exhaust locations. List intended appliances and use manufacturer dimensions and installation clearances for the selected models.",
+            "Avoid assuming an appliance can be swapped later without changing cabinets. Mark confirmed choices separately from open selections and show which dimensions depend on a final model."
+          ],
+          "checks": [
+            "Fixed services and openings shown",
+            "Appliance dimensions recorded"
+          ]
+        },
+        {
+          "heading": "Arrange zones around daily movement",
+          "body": [
+            "Think through storing, washing, preparing and cooking. Place frequently used items near the activity, then check counter lengths, drawer access and routes between appliances.",
+            "Straight, parallel, L-shaped and U-shaped layouts have different trade-offs. Choose from the measured room and check aisle and door clearances on the actual drawing rather than relying on a layout label."
+          ],
+          "checks": [
+            "Workflow marked on plan",
+            "Door and drawer swings reviewed"
+          ]
+        },
+        {
+          "heading": "Specify storage before comparing estimates",
+          "body": [
+            "List drawers, shelves, tall units and accessories, then ask what is included. Record cabinet materials, exposed edges, finish and hardware so a drawing and estimate describe the same kitchen.",
+            "For a Pune proposal, provide the measured plan, appliance list, finish references and storage brief. Compare matching inclusions and confirm site-measurement and installation availability."
+          ],
+          "checks": [
+            "Storage and hardware itemised",
+            "Estimate assumptions aligned"
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Which kitchen shape is best for a flat?",
+          "answer": "It depends on the room, openings, fixed services, appliances and circulation. Compare measured drawings instead of choosing by shape name."
+        },
+        {
+          "question": "Should I choose finish before layout?",
+          "answer": "Confirm the layout and dimensions first, then select and record finishes against the approved design."
+        }
+      ],
+      "cta_heading": "Discuss modular kitchen planning",
+      "cta_intro": "Share the room plan, intended use and the work you want to coordinate. Confirm address and project-scope availability.",
+      "visual_file": "assets/modular-kitchen-layout-planning-pune.svg",
+      "canonical_url": "https://arshinterior.in/guides/modular-kitchen-layout-planning-pune/",
+      "scheduled_date": "2026-11-17",
+      "status": "scheduled",
+      "last_processing_result": "scheduled"
+    },
+    {
+      "slug": "living-room-wall-moulding-layout-pune",
+      "path": "guides/living-room-wall-moulding-layout-pune",
+      "content_id": "living-room-wall-moulding-layout-pune",
+      "category": "wall-moulding",
+      "service_name": "Wall moulding and POP decoration",
+      "locality": "Pune",
+      "system": "wall moulding",
+      "title": "Living-Room Wall Moulding Layout in Pune: Plan Around Openings and Furniture",
+      "seo_title": "Living-Room Wall Moulding Layout in Pune | Arsh Interiors",
+      "description": "Plan wall moulding proportions around doors, switches, curtains and furniture using a measured elevation and sample.",
+      "primary_keyword": "living room wall moulding layout Pune",
+      "supporting_keywords": [
+        "wall moulding design Pune",
+        "POP wall moulding contractor",
+        "decorative wall moulding planning"
+      ],
+      "search_intent": "Pune-area homeowners researching wall moulding and pop decoration before requesting a project discussion.",
+      "intro": "Wall mouldings feel intentional when their scale relates to the wall and furniture. Before selecting a profile, make an elevation that includes doors, switches, curtains and the pieces that will occupy the room.",
+      "visual_steps": [
+        "Measure the visible wall",
+        "Set profile and panel scale",
+        "Coordinate preparation and paint"
+      ],
+      "visual_alt": "Illustrative living-room elevation showing moulding panels arranged around a doorway, switch and sofa; conceptual, not a completed project.",
+      "visual_caption": "Original planning illustration only. It is not a site survey or a photograph of a completed Arsh Interiors project; confirm dimensions, product details and suitability for the actual property.",
+      "related_links": [
+        {
+          "href": "/wall-mouldings-in-pune/",
+          "text": "Wall moulding services"
+        },
+        {
+          "href": "/gypsum-pop-work/",
+          "text": "Gypsum and POP work"
+        },
+        {
+          "href": "/painting-in-pune/",
+          "text": "Painting and finishes"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Measure the wall that will be visible",
+          "body": [
+            "Record wall width and height, then mark doors, windows, skirting, switches and wall-mounted equipment. The remaining visible area is the real design canvas; an empty rectangle can lead to awkward interruptions.",
+            "Photograph the wall straight on and note whether the profile continues around a corner. Decide where the feature starts and ends before laying out panels."
+          ],
+          "checks": [
+            "Openings and fixed points measured",
+            "Corner transitions drawn"
+          ]
+        },
+        {
+          "heading": "Set panel proportions and profile scale",
+          "body": [
+            "Compare panel widths, vertical spacing and margins on the measured elevation. Try a small number of layouts and keep boundaries clear of switches; check the arrangement with the sofa or console in place.",
+            "Review an actual profile sample or full-scale corner mock-up. A small catalogue picture can hide the depth and shadow. Agree the corner joints and stop points before installation."
+          ],
+          "checks": [
+            "Panel spacing checked against elevation",
+            "Profile depth and corners reviewed"
+          ]
+        },
+        {
+          "heading": "Coordinate wall preparation and paint",
+          "body": [
+            "Confirm preparation before fixing and how joints are filled. Record whether the profile and wall share a finish or use contrast, then include paint product and sheen assumptions.",
+            "For a Pune estimate, share a photo, dimensions and profile reference. Ask which preparation, installation and painting tasks are included; confirm availability for the exact scope."
+          ],
+          "checks": [
+            "Surface prep and joint work assigned",
+            "Finish choices and estimate inclusions recorded"
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Should moulding panels align with a sofa?",
+          "answer": "Review the layout with furniture positions, but use an elevation to judge visual balance rather than forcing every line to match."
+        },
+        {
+          "question": "Can moulding be fixed to an uneven wall?",
+          "answer": "The installer should inspect the surface and discuss preparation; the method depends on the wall and selected profile."
+        }
+      ],
+      "cta_heading": "Discuss wall moulding and pop decoration",
+      "cta_intro": "Share the room plan, intended use and the work you want to coordinate. Confirm address and project-scope availability.",
+      "visual_file": "assets/living-room-wall-moulding-layout-pune.svg",
+      "canonical_url": "https://arshinterior.in/guides/living-room-wall-moulding-layout-pune/",
+      "scheduled_date": "2026-11-18",
+      "status": "scheduled",
+      "last_processing_result": "scheduled"
+    },
+    {
+      "slug": "layered-living-room-lighting-plan-pune",
+      "path": "guides/layered-living-room-lighting-plan-pune",
+      "content_id": "layered-living-room-lighting-plan-pune",
+      "category": "electrical-lighting",
+      "service_name": "Lighting and electrical coordination",
+      "locality": "Pune",
+      "system": "electrical lighting",
+      "title": "A Layered Living-Room Lighting Plan for Pune Homes: Ambient, Task and Accent",
+      "seo_title": "Living-Room Lighting Plan in Pune | Ambient, Task and Accent",
+      "description": "Plan living-room lighting by activity, fitting position, controls and ceiling coordination before finalising an interior layout.",
+      "primary_keyword": "living room lighting plan Pune",
+      "supporting_keywords": [
+        "ambient task accent lighting",
+        "ceiling lighting planning Pune",
+        "living room light points"
+      ],
+      "search_intent": "Pune-area homeowners researching lighting and electrical coordination before requesting a project discussion.",
+      "intro": "A living room may be used for conversation, reading and television at different times. Plan ambient, task and accent light as layers so you can discuss their purpose before the ceiling, switches and furniture layout are fixed.",
+      "visual_steps": [
+        "Give each light a purpose",
+        "Plan controls and access",
+        "Review with ceiling and electrician"
+      ],
+      "visual_alt": "Illustrative living-room lighting plan showing ambient, reading-task and accent zones; not an electrical installation plan.",
+      "visual_caption": "Original planning illustration only. It is not a site survey or a photograph of a completed Arsh Interiors project; confirm dimensions, product details and suitability for the actual property.",
+      "related_links": [
+        {
+          "href": "/electrical-work-in-pune/",
+          "text": "Electrical work"
+        },
+        {
+          "href": "/False-Ceiling-in-Pune/",
+          "text": "False ceiling services"
+        },
+        {
+          "href": "/guides/switch-socket-placement-pune/",
+          "text": "Switch and socket planning"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Assign each light a purpose",
+          "body": [
+            "Start with general ambient visibility, then consider task lighting for reading or work and accent lighting for a feature. Not every room needs all layers; choose them for real activities.",
+            "Mark sofa, television and circulation on the plan. A fitting centred in an empty room may not illuminate where people sit, so review locations from seated viewpoints and check glare."
+          ],
+          "checks": [
+            "Furniture and room activities marked",
+            "Each fitting linked to a purpose"
+          ]
+        },
+        {
+          "heading": "Plan controls, products and maintenance",
+          "body": [
+            "Decide which light groups may need separate controls and label them for review by the electrician. Use selected product requirements when discussing dimming or control compatibility.",
+            "Check cut-outs, driver access and maintenance instructions before approving a ceiling detail. Do not assume a decorative cove fits every fitting or hides all access needs."
+          ],
+          "checks": [
+            "Control groups named",
+            "Product and service access reviewed"
+          ]
+        },
+        {
+          "heading": "Review the reflected ceiling plan",
+          "body": [
+            "Compare light positions with fans, beams, curtains and access panels. Keep the ceiling and lighting drawings on the same revision and update both if a fitting moves.",
+            "Bring room dimensions, photos and fitting references to a Pune project discussion. A qualified professional should confirm electrical details for the actual site."
+          ],
+          "checks": [
+            "Ceiling and light drawings aligned",
+            "Site-specific technical decisions assigned"
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Do I need all three lighting layers?",
+          "answer": "No. Choose layers that support how the room is used; extra fittings without a purpose can complicate controls."
+        },
+        {
+          "question": "Should lighting be finalised before the false ceiling?",
+          "answer": "Coordinate it before the ceiling closes so positions, openings, controls and access can be reviewed together."
+        }
+      ],
+      "cta_heading": "Discuss lighting and electrical coordination",
+      "cta_intro": "Share the room plan, intended use and the work you want to coordinate. Confirm address and project-scope availability.",
+      "visual_file": "assets/layered-living-room-lighting-plan-pune.svg",
+      "canonical_url": "https://arshinterior.in/guides/layered-living-room-lighting-plan-pune/",
+      "scheduled_date": "2026-11-19",
+      "status": "scheduled",
+      "last_processing_result": "scheduled"
+    },
+    {
+      "slug": "interior-trade-sequence-pune-ceiling-electrical-painting",
+      "path": "guides/interior-trade-sequence-pune-ceiling-electrical-painting",
+      "content_id": "interior-trade-sequence-pune-ceiling-electrical-painting",
+      "category": "interior-planning",
+      "service_name": "Interior renovation coordination",
+      "locality": "Pune",
+      "system": "interior planning",
+      "title": "Coordinating Ceiling, Electrical, Painting and Carpentry Work in Pune",
+      "seo_title": "Interior Work Sequence in Pune | Ceiling, Electrical, Paint and Carpentry",
+      "description": "Coordinate Pune renovation trades with shared drawings, service checks, ceiling closure, paint handover and furniture installation.",
+      "primary_keyword": "interior work sequence Pune",
+      "supporting_keywords": [
+        "false ceiling electrical painting sequence",
+        "interior renovation coordination",
+        "carpentry painting handover"
+      ],
+      "search_intent": "Pune-area homeowners researching interior renovation coordination before requesting a project discussion.",
+      "intro": "When ceiling, electrical, painting and carpentry overlap, each trade can work from a different drawing or assume another team owns the handover. A shared sequence and clear sign-offs help reduce avoidable rework.",
+      "visual_steps": [
+        "Freeze drawings together",
+        "Inspect before surfaces close",
+        "Define finish handovers"
+      ],
+      "visual_alt": "Illustrative renovation flow from measured layout to service checks, ceiling closure, paint and furniture handover.",
+      "visual_caption": "Original planning illustration only. It is not a site survey or a photograph of a completed Arsh Interiors project; confirm dimensions, product details and suitability for the actual property.",
+      "related_links": [
+        {
+          "href": "/False-Ceiling-in-Pune/",
+          "text": "False ceiling services"
+        },
+        {
+          "href": "/electrical-work-in-pune/",
+          "text": "Electrical work"
+        },
+        {
+          "href": "/painting-in-pune/",
+          "text": "Painting services"
+        },
+        {
+          "href": "/furniture-in-pune/",
+          "text": "Custom furniture"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Freeze measurements and shared drawings",
+          "body": [
+            "Start with measured rooms and note what each trade needs: electrical points, ceiling levels, paint finishes and furniture footprints. Add a revision date and withdraw older versions from the active work area.",
+            "Record dependencies, such as a light position tied to the ceiling or wardrobe dimensions tied to finished walls. Ask which measurements must be rechecked after demolition or preparation."
+          ],
+          "checks": [
+            "One dated plan shared",
+            "Dependencies and remeasurement listed"
+          ]
+        },
+        {
+          "heading": "Inspect services before ceilings close",
+          "body": [
+            "Before boards conceal services, ask responsible trades to inspect their own work and confirm access. Photograph routes and note them on the project drawing for future reference.",
+            "Do not close a ceiling based on a visual assumption. The qualified electrician and ceiling installer should confirm their own connections, supports, openings and access requirements."
+          ],
+          "checks": [
+            "Trade sign-off completed",
+            "Pre-close photos saved"
+          ]
+        },
+        {
+          "heading": "Define finish handovers and protection",
+          "body": [
+            "Agree when joint preparation is paint-ready, what the painter receives and when furniture can be installed. Clarify who protects surfaces and repairs marks caused by later work.",
+            "Use a room-wise close-out list for touch-ups, doors, drawers, controls and product details. Write down each handover owner rather than relying on informal assumptions."
+          ],
+          "checks": [
+            "Ready-for-next-trade stage defined",
+            "Final checks assigned room by room"
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Which trade comes first?",
+          "answer": "The sequence depends on the scope and site. Plan around dependencies and inspect work before it is concealed or finished."
+        },
+        {
+          "question": "Why photograph services before ceiling closure?",
+          "answer": "A dated record helps locate routes later, alongside the final drawing and professional handover."
+        }
+      ],
+      "cta_heading": "Discuss interior renovation coordination",
+      "cta_intro": "Share the room plan, intended use and the work you want to coordinate. Confirm address and project-scope availability.",
+      "visual_file": "assets/interior-trade-sequence-pune-ceiling-electrical-painting.svg",
+      "canonical_url": "https://arshinterior.in/guides/interior-trade-sequence-pune-ceiling-electrical-painting/",
+      "scheduled_date": "2026-11-20",
+      "status": "scheduled",
+      "last_processing_result": "scheduled"
+    },
+    {
+      "slug": "custom-furniture-finish-comparison-pune",
+      "path": "guides/custom-furniture-finish-comparison-pune",
+      "content_id": "custom-furniture-finish-comparison-pune",
+      "category": "custom-furniture",
+      "service_name": "Custom furniture planning",
+      "locality": "Pune",
+      "system": "custom furniture",
+      "title": "Custom Furniture Finishes: Compare Laminate, Veneer and Painted Surfaces",
+      "seo_title": "Custom Furniture Finish Comparison in Pune | Arsh Interiors",
+      "description": "Compare common furniture finish questions—appearance, edges, maintenance and repair—before selecting a material for a Pune home.",
+      "primary_keyword": "custom furniture finishes Pune",
+      "supporting_keywords": [
+        "laminate vs veneer furniture",
+        "painted furniture finish",
+        "custom carpentry finish questions"
+      ],
+      "search_intent": "Pune-area homeowners researching custom furniture planning before requesting a project discussion.",
+      "intro": "A furniture finish affects colour, texture, edges and care. Laminate, veneer and painted surfaces have product-specific characteristics; compare samples and written specifications rather than choosing from a name alone.",
+      "visual_steps": [
+        "Compare actual samples",
+        "Inspect substrate and edges",
+        "Record finish codes and care"
+      ],
+      "visual_alt": "Illustrative side-by-side finish swatches labelled laminate, veneer and painted surface; not product samples or completed work.",
+      "visual_caption": "Original planning illustration only. It is not a site survey or a photograph of a completed Arsh Interiors project; confirm dimensions, product details and suitability for the actual property.",
+      "related_links": [
+        {
+          "href": "/furniture-in-pune/",
+          "text": "Custom furniture services"
+        },
+        {
+          "href": "/painting-in-pune/",
+          "text": "Painting and finishes"
+        },
+        {
+          "href": "/estimator/",
+          "text": "Cost Calculator"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Compare the actual surface",
+          "body": [
+            "Laminate is a manufactured surface; veneer uses a thin wood layer whose grain can vary; painted finishes depend on the coating system and application. These labels cover many products, so request manufacturer, product code and sample.",
+            "View the sample on the intended furniture and in the room's light. Check how the finish meets edges, corners and handles; a small square does not show full grain direction or repeated pattern."
+          ],
+          "checks": [
+            "Product code and sample recorded",
+            "Edges and corners compared"
+          ]
+        },
+        {
+          "heading": "Ask about the base, care and repair",
+          "body": [
+            "Ask what substrate is proposed, how exposed edges are treated and which areas may see water, heat or frequent contact. Follow product instructions for cleaning and maintenance.",
+            "Discuss how minor chips or scratches could be repaired. Repair options vary by product and colour match; ask for the specific care notes rather than relying on a general durability label."
+          ],
+          "checks": [
+            "Substrate and edge specification stated",
+            "Care and repair guidance requested"
+          ]
+        },
+        {
+          "heading": "Map the finish schedule to the drawing",
+          "body": [
+            "List a finish for each visible face, interior, edge and handle. Identify where materials meet and whether backs or undersides use another product.",
+            "For a Pune estimate, share dimensions, intended use and finish references. Confirm which options are available for the project and compare proposals with the same inclusions."
+          ],
+          "checks": [
+            "Finish codes mapped to parts",
+            "Selection and scope confirmed in writing"
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Is veneer the same as solid wood?",
+          "answer": "No. Veneer is a thin wood layer applied to a substrate; construction and care depend on the selected product."
+        },
+        {
+          "question": "Can I choose from a phone photo?",
+          "answer": "Use photos as references, then approve an actual sample under the room's lighting because screens change colour appearance."
+        }
+      ],
+      "cta_heading": "Discuss custom furniture planning",
+      "cta_intro": "Share the room plan, intended use and the work you want to coordinate. Confirm address and project-scope availability.",
+      "visual_file": "assets/custom-furniture-finish-comparison-pune.svg",
+      "canonical_url": "https://arshinterior.in/guides/custom-furniture-finish-comparison-pune/",
+      "scheduled_date": "2026-11-21",
+      "status": "scheduled",
+      "last_processing_result": "scheduled"
+    },
+    {
+      "slug": "modular-kitchen-materials-hardware-checklist-pune",
+      "path": "guides/modular-kitchen-materials-hardware-checklist-pune",
+      "content_id": "modular-kitchen-materials-hardware-checklist-pune",
+      "category": "modular-kitchen",
+      "service_name": "Modular kitchen and cabinetry planning",
+      "locality": "Pune",
+      "system": "modular kitchen",
+      "title": "Modular Kitchen Materials and Hardware Checklist for Pune Homeowners",
+      "seo_title": "Modular Kitchen Materials Checklist in Pune | Arsh Interiors",
+      "description": "Use a written cabinet, finish and hardware checklist to compare modular kitchen proposals without relying on vague labels.",
+      "primary_keyword": "modular kitchen materials checklist Pune",
+      "supporting_keywords": [
+        "kitchen cabinet material comparison",
+        "modular kitchen hardware checklist",
+        "kitchen estimate inclusions"
+      ],
+      "search_intent": "Pune-area homeowners researching modular kitchen and cabinetry planning before requesting a project discussion.",
+      "intro": "Two proposals can use the same broad labels but describe different cabinet construction, finishes and accessories. Ask for component-level specifications so the drawing and estimate state what is included.",
+      "visual_steps": [
+        "Name cabinet construction",
+        "Map hardware to cabinets",
+        "Compare estimate inclusions"
+      ],
+      "visual_alt": "Illustrative kitchen specification board showing cabinet box, door finish, edge and hardware categories.",
+      "visual_caption": "Original planning illustration only. It is not a site survey or a photograph of a completed Arsh Interiors project; confirm dimensions, product details and suitability for the actual property.",
+      "related_links": [
+        {
+          "href": "/furniture-in-pune/",
+          "text": "Furniture and modular kitchens"
+        },
+        {
+          "href": "/services/",
+          "text": "Interior services"
+        },
+        {
+          "href": "/estimator/",
+          "text": "Cost Calculator"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Name cabinet construction and exposed edges",
+          "body": [
+            "Ask what material is proposed for cabinet sides, shelves, backs and shutters, and whether the specification changes near a sink. Request the product name and supplier guidance rather than relying on an undefined board label.",
+            "Inspect a sample corner to see how edges are sealed and exposed sides look. Record which panels, fillers and end panels remain visible in the final room."
+          ],
+          "checks": [
+            "Box and shutter materials listed",
+            "Visible edges and panels shown"
+          ]
+        },
+        {
+          "heading": "List hardware by cabinet and operation",
+          "body": [
+            "The schedule should identify hinges, drawer runners and accessories by location. Review samples, adjustment and maintenance guidance from the manufacturer.",
+            "Match accessories to expected contents, then check usable opening against appliance doors, handles and adjacent cabinets on the plan."
+          ],
+          "checks": [
+            "Hardware mapped to cabinets",
+            "Openings and clearances checked"
+          ]
+        },
+        {
+          "heading": "Compare finish choices and inclusions",
+          "body": [
+            "Record door finish, internal finish, handles, edge treatment and accessories. Confirm whether cut-outs, delivery, installation, lighting and site adjustment are included or excluded.",
+            "Compare each proposal against the same final drawing. Mark undecided choices as pending selections, not confirmed specifications, and keep a revision date."
+          ],
+          "checks": [
+            "Finishes and exclusions explicit",
+            "Pending selections identified"
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What does a hardware warranty cover?",
+          "answer": "It varies by manufacturer and product. Ask for written terms, product identity and maintenance conditions."
+        },
+        {
+          "question": "Should every cabinet use the same material?",
+          "answer": "Not necessarily. Requirements can vary by location and exposure; request the product guidance for each area."
+        }
+      ],
+      "cta_heading": "Discuss modular kitchen and cabinetry planning",
+      "cta_intro": "Share the room plan, intended use and the work you want to coordinate. Confirm address and project-scope availability.",
+      "visual_file": "assets/modular-kitchen-materials-hardware-checklist-pune.svg",
+      "canonical_url": "https://arshinterior.in/guides/modular-kitchen-materials-hardware-checklist-pune/",
+      "scheduled_date": "2026-11-22",
+      "status": "scheduled",
+      "last_processing_result": "scheduled"
+    },
+    {
+      "slug": "new-flat-interior-planning-sequence-pune",
+      "path": "guides/new-flat-interior-planning-sequence-pune",
+      "content_id": "new-flat-interior-planning-sequence-pune",
+      "category": "complete-interiors",
+      "service_name": "Complete home interior planning",
+      "locality": "Pune",
+      "system": "complete interiors",
+      "title": "New Flat Interior Planning in Pune: A Practical Sequence Before Work Starts",
+      "seo_title": "New Flat Interior Planning Sequence in Pune | Arsh Interiors",
+      "description": "Organise a new-flat project with a room brief, measured plan, service decisions, finish schedule and coordinated handovers.",
+      "primary_keyword": "new flat interior planning Pune",
+      "supporting_keywords": [
+        "complete home interiors Pune",
+        "new apartment interior sequence",
+        "flat planning checklist"
+      ],
+      "search_intent": "Pune-area homeowners researching complete home interior planning before requesting a project discussion.",
+      "intro": "A new flat brings decisions about room use, lighting, storage, ceilings, paint and furniture. A simple sequence helps dependent choices happen in time and makes the project scope easier to compare.",
+      "visual_steps": [
+        "Write a room brief",
+        "Coordinate drawings and finishes",
+        "Plan handovers room by room"
+      ],
+      "visual_alt": "Illustrative new-flat planning flow from room brief through service coordination, finishes, furniture and handover.",
+      "visual_caption": "Original planning illustration only. It is not a site survey or a photograph of a completed Arsh Interiors project; confirm dimensions, product details and suitability for the actual property.",
+      "related_links": [
+        {
+          "href": "/services/",
+          "text": "Interior services"
+        },
+        {
+          "href": "/estimator/",
+          "text": "Cost Calculator"
+        },
+        {
+          "href": "/guides/",
+          "text": "All planning guides"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Write a room brief before selecting finishes",
+          "body": [
+            "For each room, note who uses it, main activities, storage needs and items you already own. Separate essential functions from optional choices so priorities stay clear if the scope changes.",
+            "Collect the available plan and flag dimensions that require site confirmation. Mark fixed services and any building restrictions provided to you; a marketing plan may not show every finished measurement."
+          ],
+          "checks": [
+            "Room use and priorities listed",
+            "Unconfirmed measurements flagged"
+          ]
+        },
+        {
+          "heading": "Resolve dependent decisions on shared plans",
+          "body": [
+            "Coordinate furniture sizes with switch locations, ceiling lights with the ceiling drawing, and paint choices with surface preparation. Dated layouts and finish schedules help trades follow the same decisions.",
+            "Keep a selection register with product, code, approval date and open questions. If a selection affects dimensions or access, show the revision on the drawing before installation."
+          ],
+          "checks": [
+            "Furniture and electrical plans reviewed together",
+            "Selections and approvals recorded"
+          ]
+        },
+        {
+          "heading": "Set installation handovers and final checks",
+          "body": [
+            "Agree scope, sequence, access and responsibility for protecting completed surfaces. Before concealed services close, ask the responsible trade to inspect them; before furniture arrives, verify room dimensions against drawings.",
+            "At handover, check doors, drawers, finishes and controls room by room. List each pending item with an owner and follow-up date."
+          ],
+          "checks": [
+            "Pre-close checks assigned",
+            "Room-wise handover list created"
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Should I begin with the colour palette?",
+          "answer": "Start with room use, dimensions and furniture priorities. Colour choices are easier once layout and finish surfaces are understood."
+        },
+        {
+          "question": "Can all interior work follow one fixed sequence?",
+          "answer": "No. It depends on included services and site needs; ask trades to agree their dependencies and handovers."
+        }
+      ],
+      "cta_heading": "Discuss complete home interior planning",
+      "cta_intro": "Share the room plan, intended use and the work you want to coordinate. Confirm address and project-scope availability.",
+      "visual_file": "assets/new-flat-interior-planning-sequence-pune.svg",
+      "canonical_url": "https://arshinterior.in/guides/new-flat-interior-planning-sequence-pune/",
+      "scheduled_date": "2026-11-23",
+      "status": "scheduled",
+      "last_processing_result": "scheduled"
+    },
+    {
+      "slug": "occupied-home-renovation-phasing-pune",
+      "path": "guides/occupied-home-renovation-phasing-pune",
+      "content_id": "occupied-home-renovation-phasing-pune",
+      "category": "renovation-planning",
+      "service_name": "Residential renovation planning",
+      "locality": "Pune",
+      "system": "renovation planning",
+      "title": "Planning an Interior Renovation While Living at Home in Pune",
+      "seo_title": "Occupied-Home Renovation Planning in Pune | Arsh Interiors",
+      "description": "Plan an occupied-home renovation by grouping rooms, keeping access clear and coordinating work zones, deliveries and handovers.",
+      "primary_keyword": "occupied home renovation planning Pune",
+      "supporting_keywords": [
+        "home interior renovation phasing",
+        "room by room renovation checklist",
+        "Pune home renovation"
+      ],
+      "search_intent": "Pune-area homeowners researching residential renovation planning before requesting a project discussion.",
+      "intro": "Living through a renovation adds constraints around access, noise, dust, storage and room availability. A written phasing plan helps you share those needs before trades and materials arrive.",
+      "visual_steps": [
+        "Choose work zones",
+        "Group tasks by dependencies",
+        "Agree communications and sign-offs"
+      ],
+      "visual_alt": "Illustrative room-by-room renovation phasing diagram with a work zone and an agreed access route.",
+      "visual_caption": "Original planning illustration only. It is not a site survey or a photograph of a completed Arsh Interiors project; confirm dimensions, product details and suitability for the actual property.",
+      "related_links": [
+        {
+          "href": "/services/",
+          "text": "Interior services"
+        },
+        {
+          "href": "/painting-in-pune/",
+          "text": "Painting services"
+        },
+        {
+          "href": "/guides/",
+          "text": "Planning guides"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Decide which spaces must remain usable",
+          "body": [
+            "List rooms, utilities and access routes your household needs every day. Note routines, work-from-home needs and storage that cannot move, then use them to discuss work zones and room availability.",
+            "Ask the contractor where tools, materials and waste will move. Agree how residents and visitors avoid active work and where temporary storage may go."
+          ],
+          "checks": [
+            "Essential rooms and routes prioritised",
+            "Storage and access discussed"
+          ]
+        },
+        {
+          "heading": "Group work around room dependencies",
+          "body": [
+            "A room may need electrical changes, ceiling work, painting and furniture. Ask each trade which tasks need the area clear and which surfaces must be protected before the next activity.",
+            "Avoid assuming a generic duration. Request a project-specific sequence and track selections or deliveries that could hold up the next zone."
+          ],
+          "checks": [
+            "Room-level task sequence written",
+            "Protection and cleanup ownership assigned"
+          ]
+        },
+        {
+          "heading": "Agree updates and room handovers",
+          "body": [
+            "Use one place to record changes, approvals, deliveries and access notes. Before a room changes hands, inspect the agreed finish and log open items with an owner and target date.",
+            "For a Pune project, confirm the work area, visit arrangements and current scope with the provider. Update the drawings and schedule when plans change so every trade sees the same instructions."
+          ],
+          "checks": [
+            "Change record maintained",
+            "Room handover list used"
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can work happen one room at a time?",
+          "answer": "Sometimes, but dependencies and shared access may require overlapping areas. Ask for a site-specific phasing plan."
+        },
+        {
+          "question": "How can disruption be reduced?",
+          "answer": "Share essential household access and timing needs early, then agree work zones, storage and communication expectations."
+        }
+      ],
+      "cta_heading": "Discuss residential renovation planning",
+      "cta_intro": "Share the room plan, intended use and the work you want to coordinate. Confirm address and project-scope availability.",
+      "visual_file": "assets/occupied-home-renovation-phasing-pune.svg",
+      "canonical_url": "https://arshinterior.in/guides/occupied-home-renovation-phasing-pune/",
+      "scheduled_date": "2026-11-24",
+      "status": "scheduled",
+      "last_processing_result": "scheduled"
+    },
+    {
+      "slug": "commercial-interior-coordination-checklist-pune",
+      "path": "guides/commercial-interior-coordination-checklist-pune",
+      "content_id": "commercial-interior-coordination-checklist-pune",
+      "category": "commercial-interiors",
+      "service_name": "Commercial interior coordination",
+      "locality": "Pune",
+      "system": "commercial interiors",
+      "title": "Commercial Interior Coordination Checklist for Pune Offices, Shops and Clinics",
+      "seo_title": "Commercial Interior Planning Checklist in Pune | Arsh Interiors",
+      "description": "Coordinate a commercial project brief with room use, circulation, electrical needs, partitions, finishes, access and specialist approvals.",
+      "primary_keyword": "commercial interior planning checklist Pune",
+      "supporting_keywords": [
+        "office interior coordination Pune",
+        "shop interior planning",
+        "clinic fit-out checklist"
+      ],
+      "search_intent": "Pune-area homeowners researching commercial interior coordination before requesting a project discussion.",
+      "intro": "Commercial interiors have operational needs that belong in the brief before layouts and finishes are approved. This checklist helps prepare an office, shop or clinic scope without assuming one design fits every use.",
+      "visual_steps": [
+        "Define operations and circulation",
+        "Coordinate partitions and services",
+        "Confirm specialist approvals"
+      ],
+      "visual_alt": "Illustrative commercial interior plan linking room use, partition layout, lighting discussion and finish approvals.",
+      "visual_caption": "Original planning illustration only. It is not a site survey or a photograph of a completed Arsh Interiors project; confirm dimensions, product details and suitability for the actual property.",
+      "related_links": [
+        {
+          "href": "/services/",
+          "text": "Interior services"
+        },
+        {
+          "href": "/electrical-work-in-pune/",
+          "text": "Electrical work"
+        },
+        {
+          "href": "/gypsum-pop-work/",
+          "text": "Gypsum and partition planning"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Translate operations into a room brief",
+          "body": [
+            "List activities, users, equipment, storage and privacy needs by area. Mark customer, staff and service routes, then check door swings, counters, workstations and waiting space.",
+            "For a clinic, take operational requirements to the appropriate specialist and verify applicable approvals independently; an interior planning guide does not establish regulatory compliance."
+          ],
+          "checks": [
+            "Uses and equipment listed",
+            "Movement routes shown"
+          ]
+        },
+        {
+          "heading": "Coordinate partitions, electrical and finishes",
+          "body": [
+            "Mark partition lines, openings, switches, lighting and equipment points on a coordinated plan. Qualified trades should assess their own technical requirements and state who supplies, installs and checks each component.",
+            "Agree finish samples, maintenance needs and access. Keep ceiling, electrical and partition drawings on the same revision so changes are reviewed across disciplines."
+          ],
+          "checks": [
+            "Layouts coordinated on one revision",
+            "Technical responsibility assigned"
+          ]
+        },
+        {
+          "heading": "Plan permissions, access and handover",
+          "body": [
+            "Ask the property manager or relevant authority which drawings, access times and permissions are required. Confirm deliveries, waste routes and building rules in writing.",
+            "Create an opening-readiness list for agreed work, operating controls, product information and outstanding items. Confirm provider availability for the exact Pune project and scope."
+          ],
+          "checks": [
+            "Property access requirements checked",
+            "Handover and open items documented"
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can an interior contractor confirm clinic compliance?",
+          "answer": "Identify which specialist or authority must confirm requirements; this checklist is not regulatory approval."
+        },
+        {
+          "question": "What helps a commercial estimate?",
+          "answer": "Share a floor plan, intended operations, equipment needs, finishes, access constraints and property requirements."
+        }
+      ],
+      "cta_heading": "Discuss commercial interior coordination",
+      "cta_intro": "Share the room plan, intended use and the work you want to coordinate. Confirm address and project-scope availability.",
+      "visual_file": "assets/commercial-interior-coordination-checklist-pune.svg",
+      "canonical_url": "https://arshinterior.in/guides/commercial-interior-coordination-checklist-pune/",
+      "scheduled_date": "2026-11-25",
+      "status": "scheduled",
+      "last_processing_result": "scheduled"
+    },
+    {
+      "slug": "interior-project-estimate-checklist-pune",
+      "path": "guides/interior-project-estimate-checklist-pune",
+      "content_id": "interior-project-estimate-checklist-pune",
+      "category": "project-estimate",
+      "service_name": "Interior project estimates",
+      "locality": "Pune",
+      "system": "project estimate",
+      "title": "What to Prepare Before Requesting an Interior Project Estimate in Pune",
+      "seo_title": "Interior Project Estimate Checklist in Pune | Arsh Interiors",
+      "description": "Prepare room details, drawings, photographs, materials and scope questions to compare interior project estimates in Pune.",
+      "primary_keyword": "interior project estimate Pune",
+      "supporting_keywords": [
+        "interior estimate checklist",
+        "home renovation estimate details",
+        "interior contractor Pune"
+      ],
+      "search_intent": "Pune-area homeowners researching interior project estimates before requesting a project discussion.",
+      "intro": "An estimate is easier to compare when each provider receives the same brief. Room dimensions, photos and a clear work list help identify differences before a decision is made.",
+      "visual_steps": [
+        "Gather room information",
+        "Describe services and selections",
+        "Compare assumptions in writing"
+      ],
+      "visual_alt": "Illustrative estimate-preparation board showing a room plan, photos, finish references and written scope.",
+      "visual_caption": "Original planning illustration only. It is not a site survey or a photograph of a completed Arsh Interiors project; confirm dimensions, product details and suitability for the actual property.",
+      "related_links": [
+        {
+          "href": "/estimator/",
+          "text": "Cost Calculator"
+        },
+        {
+          "href": "/services/",
+          "text": "Interior services"
+        },
+        {
+          "href": "/guides/",
+          "text": "Planning guides"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Gather room and existing-condition information",
+          "body": [
+            "Share the available floor plan, room names and approximate dimensions that can be checked on site. Add clear photographs of each area and say which details are confirmed or still need measurement.",
+            "List items that will stay, move or be removed. Note access constraints that may affect work organisation without guessing price or duration before the scope is reviewed."
+          ],
+          "checks": [
+            "Plan, room list and photos attached",
+            "Existing items and constraints noted"
+          ]
+        },
+        {
+          "heading": "Describe requested work and selections",
+          "body": [
+            "List the services under consideration—ceilings, electrical, painting, furniture or kitchen—and identify the rooms they apply to. Separate essentials from optional work.",
+            "Include finish references or product codes where known. Inspiration photos show style but may not identify a product or construction detail; ask the provider to clarify what can be matched."
+          ],
+          "checks": [
+            "Work categories mapped to rooms",
+            "Product references distinguished from inspiration"
+          ]
+        },
+        {
+          "heading": "Compare estimates using matching assumptions",
+          "body": [
+            "Ask each provider to state measurements, materials, preparation, installation, exclusions and assumptions. Check electrical, removal, finish, delivery or touch-up tasks instead of assuming they are included.",
+            "Record open questions and revision dates. Before approval, confirm who verifies measurements and how additions or changes will be written down."
+          ],
+          "checks": [
+            "Inclusions and exclusions visible",
+            "Assumptions and revisions documented"
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Do I need a final design before requesting an estimate?",
+          "answer": "Not always. A brief, plan, photos and preliminary scope can start the discussion; mark unresolved choices clearly."
+        },
+        {
+          "question": "Can I compare two estimates by total alone?",
+          "answer": "Only when scope, materials, measurements and exclusions match. Ask providers to explain differences in writing."
+        }
+      ],
+      "cta_heading": "Discuss interior project estimates",
+      "cta_intro": "Share the room plan, intended use and the work you want to coordinate. Confirm address and project-scope availability.",
+      "visual_file": "assets/interior-project-estimate-checklist-pune.svg",
+      "canonical_url": "https://arshinterior.in/guides/interior-project-estimate-checklist-pune/",
+      "scheduled_date": "2026-11-26",
+      "status": "scheduled",
+      "last_processing_result": "scheduled"
+    },
+    {
+      "slug": "bungalow-interior-scope-planning-pune",
+      "path": "guides/bungalow-interior-scope-planning-pune",
+      "content_id": "bungalow-interior-scope-planning-pune",
+      "category": "complete-interiors",
+      "service_name": "Residential interior planning",
+      "locality": "Pune",
+      "system": "complete interiors",
+      "title": "Bungalow Interior Planning in Pune: Set the Scope Room by Room",
+      "seo_title": "Bungalow Interior Planning in Pune | Room-by-Room Scope Guide",
+      "description": "Plan a bungalow project by recording room use, levels, storage, services, finish transitions and phased handovers.",
+      "primary_keyword": "bungalow interior planning Pune",
+      "supporting_keywords": [
+        "bungalow interior design Pune",
+        "whole home renovation scope",
+        "residential project planning"
+      ],
+      "search_intent": "Pune-area homeowners researching residential interior planning before requesting a project discussion.",
+      "intro": "A bungalow may include rooms with different uses, levels and service needs. Build the brief room by room so the scope captures how the household will use each area and where work connects across zones.",
+      "visual_steps": [
+        "Map each room and use",
+        "Record transitions and services",
+        "Plan phased handovers"
+      ],
+      "visual_alt": "Illustrative bungalow planning diagram connecting room-by-room scope, service coordination and phased handovers.",
+      "visual_caption": "Original planning illustration only. It is not a site survey or a photograph of a completed Arsh Interiors project; confirm dimensions, product details and suitability for the actual property.",
+      "related_links": [
+        {
+          "href": "/services/",
+          "text": "Interior services"
+        },
+        {
+          "href": "/furniture-in-pune/",
+          "text": "Custom furniture"
+        },
+        {
+          "href": "/False-Ceiling-in-Pune/",
+          "text": "False ceiling services"
+        },
+        {
+          "href": "/estimator/",
+          "text": "Cost Calculator"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Build a room-by-room brief",
+          "body": [
+            "For every room, note use, users, furniture to retain, storage and features under consideration. Separate public, private and utility priorities so the brief reflects the household rather than applying one treatment everywhere.",
+            "Include available plans, openings and known level changes. Mark dimensions that need site verification instead of treating an old plan as a finished survey."
+          ],
+          "checks": [
+            "Room purpose and priorities listed",
+            "Unverified dimensions flagged"
+          ]
+        },
+        {
+          "heading": "Map connections between rooms and services",
+          "body": [
+            "Show how circulation, lighting, storage and finishes continue or change between connected spaces. Draw where ceiling details or paint finishes stop and check those transitions on the relevant plan.",
+            "Have qualified trades assess concealed electrical routes and access for the actual structure. Photograph approved concealed work and store it with final drawings before surfaces close."
+          ],
+          "checks": [
+            "Transitions and level changes drawn",
+            "Concealed work recorded before closure"
+          ]
+        },
+        {
+          "heading": "Set phases and handovers",
+          "body": [
+            "A larger home may be coordinated in zones, but phasing should reflect access, household routines, deliveries and work dependencies. Ask which rooms can be handed over independently and which routes must stay protected.",
+            "Write a scope schedule with work, materials, exclusions, decision owners and checks. Confirm provider availability for the Pune address and complete brief instead of assuming every requested item is offered."
+          ],
+          "checks": [
+            "Zones and access agreed",
+            "Scope and owners recorded"
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Should a bungalow be renovated one floor at a time?",
+          "answer": "That is one option, but the right sequence depends on access, shared services, household use and trade dependencies."
+        },
+        {
+          "question": "What drawings help prepare an estimate?",
+          "answer": "Share floor plans, measurements, photos, retained furniture, requested services and known level or service constraints."
+        }
+      ],
+      "cta_heading": "Discuss residential interior planning",
+      "cta_intro": "Share the room plan, intended use and the work you want to coordinate. Confirm address and project-scope availability.",
+      "visual_file": "assets/bungalow-interior-scope-planning-pune.svg",
+      "canonical_url": "https://arshinterior.in/guides/bungalow-interior-scope-planning-pune/",
+      "scheduled_date": "2026-11-27",
+      "status": "scheduled",
+      "last_processing_result": "scheduled"
     }
-  ]
+  ],
+  "last_scheduled_date": "2026-11-27",
+  "last_reserved_publication_date": "2026-11-27",
+  "next_publication_date": "2026-10-15",
+  "last_verified_published_date": "2026-10-13",
+  "description": "Append-only publication manifest. The publisher honors each scheduled_date and publishes at most one page per Asia/Kolkata date."
 }
