@@ -1,7 +1,7 @@
 {
-  "last_published_date": "2026-10-15",
-  "last_published_slug": "gypsum-false-ceiling-wakad-pune",
-  "last_published_path": "gypsum-false-ceiling-wakad-pune/",
+  "last_published_date": "2026-10-16",
+  "last_published_slug": "pop-ceiling-in-baner-pune",
+  "last_published_path": "pop-ceiling-in-baner-pune/",
   "last_processing_result": "published",
   "published_posts": [
     {
@@ -14,6 +14,18 @@
       "scheduled_date": "2026-10-15",
       "actual_published_date": "2026-10-15",
       "actual_published_at": "2026-10-15T14:05:48+05:30",
+      "last_processing_result": "published"
+    },
+    {
+      "content_id": "pop-ceiling-in-baner-pune",
+      "slug": "pop-ceiling-in-baner-pune",
+      "title": "POP Ceiling in Baner, Pune: Size Decorative Profiles Well",
+      "url": "https://arshinterior.in/pop-ceiling-in-baner-pune/",
+      "category": "ceiling",
+      "locality": "Baner",
+      "scheduled_date": "2026-10-16",
+      "actual_published_date": "2026-10-16",
+      "actual_published_at": "2026-10-16T14:00:21+05:30",
       "last_processing_result": "published"
     }
   ]
