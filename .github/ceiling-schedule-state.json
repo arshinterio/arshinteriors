@@ -1,7 +1,7 @@
 {
-  "last_published_date": "2026-10-17",
-  "last_published_slug": "pvc-ceiling-in-kharadi-pune",
-  "last_published_path": "pvc-ceiling-in-kharadi-pune/",
+  "last_published_date": "2026-10-18",
+  "last_published_slug": "grid-ceiling-in-hinjawadi-pune",
+  "last_published_path": "grid-ceiling-in-hinjawadi-pune/",
   "last_processing_result": "published",
   "published_posts": [
     {
@@ -38,6 +38,18 @@
       "scheduled_date": "2026-10-17",
       "actual_published_date": "2026-10-17",
       "actual_published_at": "2026-10-17T13:32:36+05:30",
+      "last_processing_result": "published"
+    },
+    {
+      "content_id": "grid-ceiling-in-hinjawadi-pune",
+      "slug": "grid-ceiling-in-hinjawadi-pune",
+      "title": "Grid Ceiling in Hinjawadi, Pune: Coordinate Office Services",
+      "url": "https://arshinterior.in/grid-ceiling-in-hinjawadi-pune/",
+      "category": "ceiling",
+      "locality": "Hinjawadi",
+      "scheduled_date": "2026-10-18",
+      "actual_published_date": "2026-10-18",
+      "actual_published_at": "2026-10-18T13:50:08+05:30",
       "last_processing_result": "published"
     }
   ]
