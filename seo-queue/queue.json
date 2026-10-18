@@ -492,9 +492,11 @@
       "path": "grid-ceiling-in-hinjawadi-pune",
       "category": "ceiling",
       "service_name": "Grid ceiling",
-      "status": "scheduled",
+      "status": "published",
       "scheduled_date": "2026-10-18",
-      "last_processing_result": "scheduled"
+      "last_processing_result": "published",
+      "actual_published_date": "2026-10-18",
+      "actual_published_at": "2026-10-18T13:50:08+05:30"
     },
     {
       "slug": "gypsum-ceiling-in-balewadi-pune",
@@ -3228,6 +3230,6 @@
   "last_scheduled_date": "2026-11-27",
   "last_reserved_publication_date": "2026-11-27",
   "next_publication_date": "2026-10-15",
-  "last_verified_published_date": "2026-10-17",
+  "last_verified_published_date": "2026-10-18",
   "description": "Append-only publication manifest. The publisher honors each scheduled_date and publishes at most one page per Asia/Kolkata date."
 }
