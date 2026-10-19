@@ -1,7 +1,7 @@
 {
-  "last_published_date": "2026-10-18",
-  "last_published_slug": "grid-ceiling-in-hinjawadi-pune",
-  "last_published_path": "grid-ceiling-in-hinjawadi-pune/",
+  "last_published_date": "2026-10-19",
+  "last_published_slug": "gypsum-ceiling-in-balewadi-pune",
+  "last_published_path": "gypsum-ceiling-in-balewadi-pune/",
   "last_processing_result": "published",
   "published_posts": [
     {
@@ -50,6 +50,18 @@
       "scheduled_date": "2026-10-18",
       "actual_published_date": "2026-10-18",
       "actual_published_at": "2026-10-18T13:50:08+05:30",
+      "last_processing_result": "published"
+    },
+    {
+      "content_id": "gypsum-ceiling-in-balewadi-pune",
+      "slug": "gypsum-ceiling-in-balewadi-pune",
+      "title": "Gypsum Ceiling in Balewadi, Pune: Fans, Lights and AC Points",
+      "url": "https://arshinterior.in/gypsum-ceiling-in-balewadi-pune/",
+      "category": "ceiling",
+      "locality": "Balewadi",
+      "scheduled_date": "2026-10-19",
+      "actual_published_date": "2026-10-19",
+      "actual_published_at": "2026-10-19T14:48:33+05:30",
       "last_processing_result": "published"
     }
   ]
