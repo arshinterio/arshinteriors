@@ -1,7 +1,7 @@
 {
-  "last_published_date": "2026-10-19",
-  "last_published_slug": "gypsum-ceiling-in-balewadi-pune",
-  "last_published_path": "gypsum-ceiling-in-balewadi-pune/",
+  "last_published_date": "2026-10-20",
+  "last_published_slug": "false-ceiling-in-mahalunge-pune",
+  "last_published_path": "false-ceiling-in-mahalunge-pune/",
   "last_processing_result": "published",
   "published_posts": [
     {
@@ -62,6 +62,18 @@
       "scheduled_date": "2026-10-19",
       "actual_published_date": "2026-10-19",
       "actual_published_at": "2026-10-19T14:48:33+05:30",
+      "last_processing_result": "published"
+    },
+    {
+      "content_id": "false-ceiling-in-mahalunge-pune",
+      "slug": "false-ceiling-in-mahalunge-pune",
+      "title": "False Ceiling in Mahalunge, Pune: Compare Four Ceiling Systems",
+      "url": "https://arshinterior.in/false-ceiling-in-mahalunge-pune/",
+      "category": "ceiling",
+      "locality": "Mahalunge",
+      "scheduled_date": "2026-10-20",
+      "actual_published_date": "2026-10-20",
+      "actual_published_at": "2026-10-20T14:22:55+05:30",
       "last_processing_result": "published"
     }
   ]
