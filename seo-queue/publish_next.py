@@ -39,7 +39,24 @@ h2{font-size:1.55rem;margin:0 0 12px}h3{font-size:1.15rem;margin:18px 0 7px}
 .related-links{display:flex;flex-wrap:wrap;gap:10px}.related-links a{display:inline-block;border:1px solid var(--line);background:#fff;border-radius:999px;padding:8px 13px;font-weight:700;text-decoration:none}
 footer{background:#111;color:#ddd;padding:30px 22px}.footer-inner{max-width:930px;margin:auto}footer p{margin:5px 0}footer a{color:#ff9a9a}
 @media(max-width:760px){.header-inner{min-height:66px;padding:9px 16px}.menu-toggle{display:block}.site-nav{display:none;position:absolute;top:66px;left:0;right:0;background:#fff;box-shadow:0 12px 18px rgba(0,0,0,.09);padding:18px 22px 22px;flex-direction:column;align-items:stretch;gap:0}.site-nav.open{display:flex}.site-nav a{padding:11px 0;border-bottom:1px solid #f0eeee}.site-nav a.nav-cta{width:max-content;margin-top:10px;padding:11px 16px;border:2px solid var(--coral);border-radius:10px}.cta-actions{grid-template-columns:1fr}.action-button{width:100%}main{padding:0 16px;margin-top:25px}.card,.cta-box{padding:20px;border-radius:16px}}
-"""
+
+/* Immediate contact actions */
+body{padding-top:136px;padding-bottom:92px}
+.quick-action-bar{position:fixed;z-index:19;top:72px;left:0;right:0;background:#fff;border-bottom:1px solid #eee4e1;box-shadow:0 4px 14px rgba(17,17,17,.08)}
+.quick-action-inner{max-width:1100px;margin:auto;display:grid;grid-template-columns:repeat(3,minmax(130px,170px));justify-content:end;gap:10px;padding:6px 22px}
+.quick-action-inner .action-button{min-height:48px;display:flex;align-items:center;justify-content:center;padding:9px 12px;border:2px solid #ff6b6b;border-radius:10px;background:#ff6b6b;color:#fff!important;text-decoration:none!important;font-size:.9rem;font-weight:800;text-align:center;line-height:1.2;box-shadow:0 5px 14px rgba(255,107,107,.2);transition:background .2s ease,transform .2s ease}
+.quick-action-inner .action-button:hover{border-color:#e85555;background:#e85555;transform:translateY(-1px)}
+.quick-action-inner .action-button:focus-visible{outline:3px solid #111;outline-offset:3px}
+.floating-whatsapp{position:fixed;z-index:40;right:18px;bottom:18px;display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 20px;border:2px solid #fff;border-radius:999px;background:#25d366;color:#10381e!important;text-decoration:none!important;font-size:1rem;font-weight:800;box-shadow:0 8px 24px rgba(0,0,0,.22);transition:background .2s ease,transform .2s ease}
+.floating-whatsapp:hover{border-color:#128c7e;background:#128c7e;color:#fff!important;transform:translateY(-1px)}
+.floating-whatsapp:focus-visible{outline:3px solid #111;outline-offset:3px}
+@media(max-width:760px){
+ body{padding-top:118px;padding-bottom:82px}
+ .quick-action-bar{top:66px}
+ .quick-action-inner{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;padding:4px 8px}
+ .quick-action-inner .action-button{min-height:44px;padding:6px 4px;font-size:.75rem;line-height:1.1}
+ .floating-whatsapp{right:14px;bottom:14px;min-height:50px;padding:0 18px;font-size:.92rem}
+}"""
 PAGE_TEMPLATE = """<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>@@seo@@</title><meta name="description" content="@@description@@"><link rel="canonical" href="@@canonical@@"><meta name="robots" content="index,follow"><meta name="theme-color" content="#ff6b6b">
@@ -49,12 +66,14 @@ PAGE_TEMPLATE = """<!doctype html>
 .card img{display:block;width:100%}.faq-item{padding:12px 0;border-top:1px solid #eee}.faq-item h3{font-size:1.05rem}</style>
 <script type="application/ld+json">@@schema@@</script></head><body data-content-engine="arsh-seo-v2">
 <header class="site-header"><div class="header-inner"><a class="brand" href="/"><span class="brand-mark" aria-hidden="true">▰</span>Arsh Interiors</a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" id="menu-toggle">Menu</button><nav class="site-nav" id="site-nav" aria-label="Main navigation"><a href="/">Home</a><a href="/services/">Services</a><a href="/False-Ceiling-in-Pune/">False Ceilings</a><a href="/gypsum-pop-work/">Gypsum &amp; POP</a><a href="/guides/">Guides</a><a class="nav-cta" href="/estimator/">Cost Calculator</a></nav></div></header>
+<nav class="quick-action-bar" aria-label="Quick actions"><div class="quick-action-inner"><a class="action-button" href="/estimator/">Cost Calculator</a><a class="action-button" href="https://wa.me/919022104232" target="_blank" rel="noopener noreferrer">WhatsApp</a><a class="action-button" href="tel:+919022104232">Call</a></div></nav>
 <main><p class="breadcrumb"><a href="/">Home</a> / <a href="/guides/">Planning Guides</a> / @@title@@</p><p class="eyebrow">@@service@@ · Pune homeowner planning</p><h1>@@h1@@</h1><p class="lead">@@intro@@</p><p class="published">Published @@date@@ · @@system@@</p>
 <section class="cta-box" aria-labelledby="cta-title"><h2 id="cta-title">@@ctatitle@@</h2><p>@@ctaintro@@</p><div class="cta-actions"><a class="action-button" href="/estimator/">Cost Calculator</a><a class="action-button" href="https://wa.me/919022104232" rel="noopener">WhatsApp</a><a class="action-button" href="tel:+919022104232">Call +91 9022104232</a></div></section>
 <figure class="card"><img class="hero-image" src="@@image@@" alt="@@alt@@" width="1200" height="470" loading="eager"><figcaption class="image-note">@@caption@@</figcaption></figure>
 @@sections@@<section class="card"><h2>Local planning note</h2><p>@@localnote@@</p></section><section class="card" aria-labelledby="faq-heading"><h2 id="faq-heading">Frequently asked questions</h2>@@faqs@@</section><section class="card"><h2>Related Arsh Interiors pages</h2><div class="related-links">@@links@@</div></section></main>
 <footer><div class="footer-inner"><strong>Arsh Interiors · Pune</strong><p>Interior planning information based on published service pages. Confirm scope and availability for your address.</p><p><a href="https://wa.me/919022104232" rel="noopener">WhatsApp</a> · <a href="tel:+919022104232">Call +91 9022104232</a></p></div></footer>
-<script>const b=document.getElementById('menu-toggle'),n=document.getElementById('site-nav');b.addEventListener('click',()=>{const o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!o));n.classList.toggle('open',!o);});n.addEventListener('click',e=>{if(e.target.closest('a')){b.setAttribute('aria-expanded','false');n.classList.remove('open');}});</script></body></html>"""
+<script>const b=document.getElementById('menu-toggle'),n=document.getElementById('site-nav');b.addEventListener('click',()=>{const o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!o));n.classList.toggle('open',!o);});n.addEventListener('click',e=>{if(e.target.closest('a')){b.setAttribute('aria-expanded','false');n.classList.remove('open');}});</script><a class="floating-whatsapp" href="https://wa.me/919022104232" target="_blank" rel="noopener noreferrer" aria-label="Chat with Arsh Interiors on WhatsApp">WhatsApp</a>
+</body></html>"""
 HUB_TEMPLATE = """<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Ceiling Services Across Pune Areas | Arsh Interiors</title>
@@ -64,6 +83,7 @@ HUB_TEMPLATE = """<!doctype html>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>$css .hub-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}.hub-card{background:#fff;padding:20px;border-radius:16px;border:1px solid var(--line);box-shadow:0 8px 24px rgba(20,10,10,.04)}.hub-card h2{font-size:1.15rem}.hub-card p{color:var(--muted)}</style></head>
 <body><header class="site-header"><div class="header-inner"><a class="brand" href="/"><span class="brand-mark">▰</span>Arsh Interiors</a><button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button><nav class="site-nav" id="site-nav" aria-label="Main navigation"><a href="/">Home</a><a href="/services/">Services</a><a href="/False-Ceiling-in-Pune/">False Ceilings</a><a href="/gypsum-pop-work/">Gypsum &amp; POP</a><a href="/guides/">Guides</a><a href="/estimator/">Cost Calculator</a></nav></div></header>
+<nav class="quick-action-bar" aria-label="Quick actions"><div class="quick-action-inner"><a class="action-button" href="/estimator/">Cost Calculator</a><a class="action-button" href="https://wa.me/919022104232" target="_blank" rel="noopener noreferrer">WhatsApp</a><a class="action-button" href="tel:+919022104232">Call</a></div></nav>
 <main><p class="breadcrumb"><a href="/">Home</a> / Pune Ceiling Services</p><p class="eyebrow">Ceiling systems · Pune</p><h1>Ceiling planning by Pune area</h1>
 <p class="lead">Browse practical pages on gypsum, POP, PVC and grid ceiling decisions. Each page focuses on a different planning question. Service availability depends on the exact address and project scope, so please confirm before scheduling a site visit.</p>
 <figure class="card"><img class="hero-image" src="/ceiling-services-pune/ceiling-systems-comparison.svg" alt="Original diagram comparing gypsum, POP, PVC and modular grid ceiling systems for homeowner planning"><figcaption class="image-note">Illustrative comparison, not a photograph of a completed project.</figcaption></figure>
@@ -72,6 +92,7 @@ HUB_TEMPLATE = """<!doctype html>
 <p>Also review <a href="/False-Ceiling-in-Pune/">false ceiling services</a>, <a href="/gypsum-pop-work/">gypsum and POP work</a> and the <a href="/guides/">planning guides</a>.</p></main>
 <footer><div class="footer-inner"><strong>Arsh Interiors · Pune</strong><p><a href="https://wa.me/919022104232">WhatsApp</a> · <a href="tel:+919022104232">Call +91 9022104232</a></p></div></footer>
 <script>const b=document.getElementById('menu-toggle'),n=document.getElementById('site-nav');b.addEventListener('click',()=>{const o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!o));n.classList.toggle('open',!o);});n.addEventListener('click',e=>{if(e.target.closest('a')){b.setAttribute('aria-expanded','false');n.classList.remove('open');}});</script>
+<a class="floating-whatsapp" href="https://wa.me/919022104232" target="_blank" rel="noopener noreferrer" aria-label="Chat with Arsh Interiors on WhatsApp">WhatsApp</a>
 </body></html>
 """
 def public_path(entry):
