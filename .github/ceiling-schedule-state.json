@@ -1,7 +1,7 @@
 {
-  "last_published_date": "2026-10-20",
-  "last_published_slug": "false-ceiling-in-mahalunge-pune",
-  "last_published_path": "false-ceiling-in-mahalunge-pune/",
+  "last_published_date": "2026-10-21",
+  "last_published_slug": "pop-ceiling-in-tathawade-pune",
+  "last_published_path": "pop-ceiling-in-tathawade-pune/",
   "last_processing_result": "published",
   "published_posts": [
     {
@@ -74,6 +74,18 @@
       "scheduled_date": "2026-10-20",
       "actual_published_date": "2026-10-20",
       "actual_published_at": "2026-10-20T14:22:55+05:30",
+      "last_processing_result": "published"
+    },
+    {
+      "content_id": "pop-ceiling-in-tathawade-pune",
+      "slug": "pop-ceiling-in-tathawade-pune",
+      "title": "POP Ceiling in Tathawade, Pune: Coordinate Details Room by Room",
+      "url": "https://arshinterior.in/pop-ceiling-in-tathawade-pune/",
+      "category": "ceiling",
+      "locality": "Tathawade",
+      "scheduled_date": "2026-10-21",
+      "actual_published_date": "2026-10-21",
+      "actual_published_at": "2026-10-21T14:22:53+05:30",
       "last_processing_result": "published"
     }
   ]
