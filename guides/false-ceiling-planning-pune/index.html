@@ -52,7 +52,25 @@
         footer { padding-top:25px; padding-bottom:25px; background:#111; color:#ddd; }
         .foot { max-width:820px; margin:auto; }
         @media(max-width:600px) { .bar { align-items:flex-start; flex-direction:column; padding-top:16px; padding-bottom:16px; } nav { gap:10px 14px; } }
-    </style>
+    
+/* Immediate contact actions */
+body{padding-top:136px;padding-bottom:92px}
+.quick-action-bar{position:fixed;z-index:19;top:72px;left:0;right:0;background:#fff;border-bottom:1px solid #eee4e1;box-shadow:0 4px 14px rgba(17,17,17,.08)}
+.quick-action-inner{max-width:1100px;margin:auto;display:grid;grid-template-columns:repeat(3,minmax(130px,170px));justify-content:end;gap:10px;padding:6px 22px}
+.quick-action-inner .action-button{min-height:48px;display:flex;align-items:center;justify-content:center;padding:9px 12px;border:2px solid #ff6b6b;border-radius:10px;background:#ff6b6b;color:#fff!important;text-decoration:none!important;font-size:.9rem;font-weight:800;text-align:center;line-height:1.2;box-shadow:0 5px 14px rgba(255,107,107,.2);transition:background .2s ease,transform .2s ease}
+.quick-action-inner .action-button:hover{border-color:#e85555;background:#e85555;transform:translateY(-1px)}
+.quick-action-inner .action-button:focus-visible{outline:3px solid #111;outline-offset:3px}
+.floating-whatsapp{position:fixed;z-index:40;right:18px;bottom:18px;display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 20px;border:2px solid #fff;border-radius:999px;background:#25d366;color:#10381e!important;text-decoration:none!important;font-size:1rem;font-weight:800;box-shadow:0 8px 24px rgba(0,0,0,.22);transition:background .2s ease,transform .2s ease}
+.floating-whatsapp:hover{border-color:#128c7e;background:#128c7e;color:#fff!important;transform:translateY(-1px)}
+.floating-whatsapp:focus-visible{outline:3px solid #111;outline-offset:3px}
+@media(max-width:760px){
+ body{padding-top:118px;padding-bottom:82px}
+ .quick-action-bar{top:66px}
+ .quick-action-inner{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;padding:4px 8px}
+ .quick-action-inner .action-button{min-height:44px;padding:6px 4px;font-size:.75rem;line-height:1.1}
+ .floating-whatsapp{right:14px;bottom:14px;min-height:50px;padding:0 18px;font-size:.92rem}
+}
+</style>
 </head>
 <body>
 <header>
@@ -65,6 +83,7 @@
         </nav>
     </div>
 </header>
+<nav class="quick-action-bar" aria-label="Quick actions"><div class="quick-action-inner"><a class="action-button" href="/estimator/">Cost Calculator</a><a class="action-button" href="https://wa.me/919022104232" target="_blank" rel="noopener noreferrer">WhatsApp</a><a class="action-button" href="tel:+919022104232">Call</a></div></nav>
 <main>
     <p class="crumbs"><a href="/">Home</a> / <a href="/guides/">Planning Guides</a> / False Ceiling Planning</p>
     <article>
@@ -145,5 +164,6 @@
     <p>False ceiling, electrical, painting and custom furniture services in Pune.</p>
     <p><a href="tel:+919022104232">Call +91 9022104232</a> · <a href="https://wa.me/919022104232">WhatsApp</a> · <a href="/guides/">More planning guides</a></p>
 </div></footer>
+<a class="floating-whatsapp" href="https://wa.me/919022104232" target="_blank" rel="noopener noreferrer" aria-label="Chat with Arsh Interiors on WhatsApp">WhatsApp</a>
 </body>
 </html>

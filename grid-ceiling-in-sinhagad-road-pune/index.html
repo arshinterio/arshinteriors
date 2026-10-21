@@ -40,6 +40,24 @@ h2{font-size:1.55rem;margin:0 0 12px}h3{font-size:1.15rem;margin:18px 0 7px}
 .related-links{display:flex;flex-wrap:wrap;gap:10px}.related-links a{display:inline-block;border:1px solid var(--line);background:#fff;border-radius:999px;padding:8px 13px;font-weight:700;text-decoration:none}
 footer{background:#111;color:#ddd;padding:30px 22px}.footer-inner{max-width:930px;margin:auto}footer p{margin:5px 0}footer a{color:#ff9a9a}
 @media(max-width:760px){.header-inner{min-height:66px;padding:9px 16px}.menu-toggle{display:block}.site-nav{display:none;position:absolute;top:66px;left:0;right:0;background:#fff;box-shadow:0 12px 18px rgba(0,0,0,.09);padding:18px 22px 22px;flex-direction:column;align-items:stretch;gap:0}.site-nav.open{display:flex}.site-nav a{padding:11px 0;border-bottom:1px solid #f0eeee}.site-nav a.nav-cta{width:max-content;margin-top:10px;padding:11px 16px;border:2px solid var(--coral);border-radius:10px}.cta-actions{grid-template-columns:1fr}.action-button{width:100%}main{padding:0 16px;margin-top:25px}.card,.cta-box{padding:20px;border-radius:16px}}
+
+/* Immediate contact actions */
+body{padding-top:136px;padding-bottom:92px}
+.quick-action-bar{position:fixed;z-index:19;top:72px;left:0;right:0;background:#fff;border-bottom:1px solid #eee4e1;box-shadow:0 4px 14px rgba(17,17,17,.08)}
+.quick-action-inner{max-width:1100px;margin:auto;display:grid;grid-template-columns:repeat(3,minmax(130px,170px));justify-content:end;gap:10px;padding:6px 22px}
+.quick-action-inner .action-button{min-height:48px;display:flex;align-items:center;justify-content:center;padding:9px 12px;border:2px solid #ff6b6b;border-radius:10px;background:#ff6b6b;color:#fff!important;text-decoration:none!important;font-size:.9rem;font-weight:800;text-align:center;line-height:1.2;box-shadow:0 5px 14px rgba(255,107,107,.2);transition:background .2s ease,transform .2s ease}
+.quick-action-inner .action-button:hover{border-color:#e85555;background:#e85555;transform:translateY(-1px)}
+.quick-action-inner .action-button:focus-visible{outline:3px solid #111;outline-offset:3px}
+.floating-whatsapp{position:fixed;z-index:40;right:18px;bottom:18px;display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 20px;border:2px solid #fff;border-radius:999px;background:#25d366;color:#10381e!important;text-decoration:none!important;font-size:1rem;font-weight:800;box-shadow:0 8px 24px rgba(0,0,0,.22);transition:background .2s ease,transform .2s ease}
+.floating-whatsapp:hover{border-color:#128c7e;background:#128c7e;color:#fff!important;transform:translateY(-1px)}
+.floating-whatsapp:focus-visible{outline:3px solid #111;outline-offset:3px}
+@media(max-width:760px){
+ body{padding-top:118px;padding-bottom:82px}
+ .quick-action-bar{top:66px}
+ .quick-action-inner{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;padding:4px 8px}
+ .quick-action-inner .action-button{min-height:44px;padding:6px 4px;font-size:.75rem;line-height:1.1}
+ .floating-whatsapp{right:14px;bottom:14px;min-height:50px;padding:0 18px;font-size:.92rem}
+}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Grid Ceiling Contractor in Sinhagad Road, Pune: Access and Services", "description": "Planning a grid ceiling near Sinhagad Road? Coordinate the ceiling module with lighting, service access and replacement needs before comparing contractor scopes.", "datePublished": "2026-10-12", "dateModified": "2026-10-12", "mainEntityOfPage": "https://arshinterior.in/grid-ceiling-in-sinhagad-road-pune/", "image": "https://arshinterior.in/ceiling-services-pune/ceiling-systems-comparison.svg", "publisher": {"@type": "Organization", "name": "Arsh Interiors"}}</script>
 </head>
@@ -50,6 +68,7 @@ footer{background:#111;color:#ddd;padding:30px 22px}.footer-inner{max-width:930p
 <nav class="site-nav" id="site-nav" aria-label="Main navigation">
 <a href="/">Home</a><a href="/services/">Services</a><a href="/False-Ceiling-in-Pune/">False Ceilings</a><a href="/gypsum-pop-work/">Gypsum &amp; POP</a><a href="/guides/">Guides</a><a class="nav-cta" href="/estimator/">Cost Calculator</a>
 </nav></div></header>
+<nav class="quick-action-bar" aria-label="Quick actions"><div class="quick-action-inner"><a class="action-button" href="/estimator/">Cost Calculator</a><a class="action-button" href="https://wa.me/919022104232" target="_blank" rel="noopener noreferrer">WhatsApp</a><a class="action-button" href="tel:+919022104232">Call</a></div></nav>
 <main>
 <p class="breadcrumb"><a href="/">Home</a> / <a href="/False-Ceiling-in-Pune/">False Ceiling Services</a> / Sinhagad Road</p>
 <p class="eyebrow">Grid ceiling · Pune homeowner planning</p>
@@ -83,5 +102,6 @@ const nav=document.getElementById('site-nav');
 menuButton.addEventListener('click',()=>{const open=menuButton.getAttribute('aria-expanded')==='true';menuButton.setAttribute('aria-expanded',String(!open));nav.classList.toggle('open',!open);});
 nav.addEventListener('click',event=>{if(event.target.closest('a')){menuButton.setAttribute('aria-expanded','false');nav.classList.remove('open');}});
 </script>
+<a class="floating-whatsapp" href="https://wa.me/919022104232" target="_blank" rel="noopener noreferrer" aria-label="Chat with Arsh Interiors on WhatsApp">WhatsApp</a>
 </body>
 </html>
