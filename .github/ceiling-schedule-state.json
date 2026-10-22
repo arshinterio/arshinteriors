@@ -1,7 +1,7 @@
 {
-  "last_published_date": "2026-10-21",
-  "last_published_slug": "pop-ceiling-in-tathawade-pune",
-  "last_published_path": "pop-ceiling-in-tathawade-pune/",
+  "last_published_date": "2026-10-22",
+  "last_published_slug": "pvc-ceiling-in-punawale-pune",
+  "last_published_path": "pvc-ceiling-in-punawale-pune/",
   "last_processing_result": "published",
   "published_posts": [
     {
@@ -86,6 +86,18 @@
       "scheduled_date": "2026-10-21",
       "actual_published_date": "2026-10-21",
       "actual_published_at": "2026-10-21T14:22:53+05:30",
+      "last_processing_result": "published"
+    },
+    {
+      "content_id": "pvc-ceiling-in-punawale-pune",
+      "slug": "pvc-ceiling-in-punawale-pune",
+      "title": "PVC Ceiling in Punawale, Pune: Review Panels, Edges and Fixing",
+      "url": "https://arshinterior.in/pvc-ceiling-in-punawale-pune/",
+      "category": "ceiling",
+      "locality": "Punawale",
+      "scheduled_date": "2026-10-22",
+      "actual_published_date": "2026-10-22",
+      "actual_published_at": "2026-10-22T14:25:26+05:30",
       "last_processing_result": "published"
     }
   ]
