@@ -1,7 +1,7 @@
 {
-  "last_published_date": "2026-10-22",
-  "last_published_slug": "pvc-ceiling-in-punawale-pune",
-  "last_published_path": "pvc-ceiling-in-punawale-pune/",
+  "last_published_date": "2026-10-23",
+  "last_published_slug": "gypsum-ceiling-in-ravet-pune",
+  "last_published_path": "gypsum-ceiling-in-ravet-pune/",
   "last_processing_result": "published",
   "published_posts": [
     {
@@ -98,6 +98,18 @@
       "scheduled_date": "2026-10-22",
       "actual_published_date": "2026-10-22",
       "actual_published_at": "2026-10-22T14:25:26+05:30",
+      "last_processing_result": "published"
+    },
+    {
+      "content_id": "gypsum-ceiling-in-ravet-pune",
+      "slug": "gypsum-ceiling-in-ravet-pune",
+      "title": "Gypsum False Ceiling in Ravet, Pune: Inspect Joints and Paint Prep",
+      "url": "https://arshinterior.in/gypsum-ceiling-in-ravet-pune/",
+      "category": "ceiling",
+      "locality": "Ravet",
+      "scheduled_date": "2026-10-23",
+      "actual_published_date": "2026-10-23",
+      "actual_published_at": "2026-10-23T14:20:14+05:30",
       "last_processing_result": "published"
     }
   ]
