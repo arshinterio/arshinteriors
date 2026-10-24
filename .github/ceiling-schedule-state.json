@@ -1,7 +1,7 @@
 {
-  "last_published_date": "2026-10-23",
-  "last_published_slug": "gypsum-ceiling-in-ravet-pune",
-  "last_published_path": "gypsum-ceiling-in-ravet-pune/",
+  "last_published_date": "2026-10-24",
+  "last_published_slug": "grid-ceiling-in-hadapsar-pune",
+  "last_published_path": "grid-ceiling-in-hadapsar-pune/",
   "last_processing_result": "published",
   "published_posts": [
     {
@@ -110,6 +110,18 @@
       "scheduled_date": "2026-10-23",
       "actual_published_date": "2026-10-23",
       "actual_published_at": "2026-10-23T14:20:14+05:30",
+      "last_processing_result": "published"
+    },
+    {
+      "content_id": "grid-ceiling-in-hadapsar-pune",
+      "slug": "grid-ceiling-in-hadapsar-pune",
+      "title": "Grid Ceiling in Hadapsar, Pune: Plan Office Access and Replacement",
+      "url": "https://arshinterior.in/grid-ceiling-in-hadapsar-pune/",
+      "category": "ceiling",
+      "locality": "Hadapsar",
+      "scheduled_date": "2026-10-24",
+      "actual_published_date": "2026-10-24",
+      "actual_published_at": "2026-10-24T13:54:19+05:30",
       "last_processing_result": "published"
     }
   ]
