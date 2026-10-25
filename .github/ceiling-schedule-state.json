@@ -1,7 +1,7 @@
 {
-  "last_published_date": "2026-10-24",
-  "last_published_slug": "grid-ceiling-in-hadapsar-pune",
-  "last_published_path": "grid-ceiling-in-hadapsar-pune/",
+  "last_published_date": "2026-10-25",
+  "last_published_slug": "pvc-ceiling-in-manjari-pune",
+  "last_published_path": "pvc-ceiling-in-manjari-pune/",
   "last_processing_result": "published",
   "published_posts": [
     {
@@ -122,6 +122,18 @@
       "scheduled_date": "2026-10-24",
       "actual_published_date": "2026-10-24",
       "actual_published_at": "2026-10-24T13:54:19+05:30",
+      "last_processing_result": "published"
+    },
+    {
+      "content_id": "pvc-ceiling-in-manjari-pune",
+      "slug": "pvc-ceiling-in-manjari-pune",
+      "title": "PVC False Ceiling in Manjari, Pune: Make a Maintenance Plan",
+      "url": "https://arshinterior.in/pvc-ceiling-in-manjari-pune/",
+      "category": "ceiling",
+      "locality": "Manjari",
+      "scheduled_date": "2026-10-25",
+      "actual_published_date": "2026-10-25",
+      "actual_published_at": "2026-10-25T14:13:45+05:30",
       "last_processing_result": "published"
     }
   ]
