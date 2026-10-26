@@ -1,7 +1,7 @@
 {
-  "last_published_date": "2026-10-25",
-  "last_published_slug": "pvc-ceiling-in-manjari-pune",
-  "last_published_path": "pvc-ceiling-in-manjari-pune/",
+  "last_published_date": "2026-10-26",
+  "last_published_slug": "gypsum-ceiling-in-viman-nagar-pune",
+  "last_published_path": "gypsum-ceiling-in-viman-nagar-pune/",
   "last_processing_result": "published",
   "published_posts": [
     {
@@ -134,6 +134,18 @@
       "scheduled_date": "2026-10-25",
       "actual_published_date": "2026-10-25",
       "actual_published_at": "2026-10-25T14:13:45+05:30",
+      "last_processing_result": "published"
+    },
+    {
+      "content_id": "gypsum-ceiling-in-viman-nagar-pune",
+      "slug": "gypsum-ceiling-in-viman-nagar-pune",
+      "title": "Gypsum Ceiling in Viman Nagar, Pune: Plan a Bedroom Ceiling",
+      "url": "https://arshinterior.in/gypsum-ceiling-in-viman-nagar-pune/",
+      "category": "ceiling",
+      "locality": "Viman Nagar",
+      "scheduled_date": "2026-10-26",
+      "actual_published_date": "2026-10-26",
+      "actual_published_at": "2026-10-26T14:51:57+05:30",
       "last_processing_result": "published"
     }
   ]
