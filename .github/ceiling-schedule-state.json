@@ -1,7 +1,7 @@
 {
-  "last_published_date": "2026-10-28",
-  "last_published_slug": "false-ceiling-in-undri-pune",
-  "last_published_path": "false-ceiling-in-undri-pune/",
+  "last_published_date": "2026-10-29",
+  "last_published_slug": "gypsum-ceiling-in-sinhagad-road-pune",
+  "last_published_path": "gypsum-ceiling-in-sinhagad-road-pune/",
   "last_processing_result": "published",
   "published_posts": [
     {
@@ -170,6 +170,18 @@
       "scheduled_date": "2026-10-28",
       "actual_published_date": "2026-10-28",
       "actual_published_at": "2026-10-28T15:31:24+05:30",
+      "last_processing_result": "published"
+    },
+    {
+      "content_id": "gypsum-ceiling-in-sinhagad-road-pune",
+      "slug": "gypsum-ceiling-in-sinhagad-road-pune",
+      "title": "Gypsum False Ceiling on Sinhagad Road, Pune: Plan Lights First",
+      "url": "https://arshinterior.in/gypsum-ceiling-in-sinhagad-road-pune/",
+      "category": "ceiling",
+      "locality": "Sinhagad Road",
+      "scheduled_date": "2026-10-29",
+      "actual_published_date": "2026-10-29",
+      "actual_published_at": "2026-10-29T15:55:15+05:30",
       "last_processing_result": "published"
     }
   ]
