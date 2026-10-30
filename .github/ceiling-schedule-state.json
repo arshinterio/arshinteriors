@@ -1,7 +1,7 @@
 {
-  "last_published_date": "2026-10-29",
-  "last_published_slug": "gypsum-ceiling-in-sinhagad-road-pune",
-  "last_published_path": "gypsum-ceiling-in-sinhagad-road-pune/",
+  "last_published_date": "2026-10-30",
+  "last_published_slug": "gypsum-ceiling-in-wakad-pune",
+  "last_published_path": "gypsum-ceiling-in-wakad-pune/",
   "last_processing_result": "published",
   "published_posts": [
     {
@@ -182,6 +182,18 @@
       "scheduled_date": "2026-10-29",
       "actual_published_date": "2026-10-29",
       "actual_published_at": "2026-10-29T15:55:15+05:30",
+      "last_processing_result": "published"
+    },
+    {
+      "content_id": "gypsum-ceiling-in-wakad-pune",
+      "slug": "gypsum-ceiling-in-wakad-pune",
+      "title": "Gypsum False Ceiling in Wakad, Pune: Room-by-Room Set-Out",
+      "url": "https://arshinterior.in/gypsum-ceiling-in-wakad-pune/",
+      "category": "ceiling",
+      "locality": "Wakad",
+      "scheduled_date": "2026-10-30",
+      "actual_published_date": "2026-10-30",
+      "actual_published_at": "2026-10-30T15:57:57+05:30",
       "last_processing_result": "published"
     }
   ]
