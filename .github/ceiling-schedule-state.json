@@ -1,7 +1,7 @@
 {
-  "last_published_date": "2026-11-02",
-  "last_published_slug": "pvc-ceiling-in-ravet-pune",
-  "last_published_path": "pvc-ceiling-in-ravet-pune/",
+  "last_published_date": "2026-11-03",
+  "last_published_slug": "gypsum-ceiling-in-mahalunge-pune",
+  "last_published_path": "gypsum-ceiling-in-mahalunge-pune/",
   "last_processing_result": "published",
   "published_posts": [
     {
@@ -230,6 +230,18 @@
       "scheduled_date": "2026-11-02",
       "actual_published_date": "2026-11-02",
       "actual_published_at": "2026-11-02T17:11:28+05:30",
+      "last_processing_result": "published"
+    },
+    {
+      "content_id": "gypsum-ceiling-in-mahalunge-pune",
+      "slug": "gypsum-ceiling-in-mahalunge-pune",
+      "title": "Gypsum False Ceiling in Mahalunge, Pune: Sequence Lights and Paint",
+      "url": "https://arshinterior.in/gypsum-ceiling-in-mahalunge-pune/",
+      "category": "ceiling",
+      "locality": "Mahalunge",
+      "scheduled_date": "2026-11-03",
+      "actual_published_date": "2026-11-03",
+      "actual_published_at": "2026-11-03T16:50:48+05:30",
       "last_processing_result": "published"
     }
   ]
