@@ -1372,9 +1372,11 @@
       "path": "gypsum-ceiling-in-mahalunge-pune",
       "category": "ceiling",
       "service_name": "Gypsum false ceiling lighting plan",
-      "status": "scheduled",
+      "status": "published",
       "scheduled_date": "2026-11-03",
-      "last_processing_result": "scheduled"
+      "last_processing_result": "published",
+      "actual_published_date": "2026-11-03",
+      "actual_published_at": "2026-11-03T16:50:48+05:30"
     },
     {
       "slug": "pop-ceiling-in-manjari-pune",
@@ -3260,6 +3262,6 @@
   "last_scheduled_date": "2026-11-27",
   "last_reserved_publication_date": "2026-11-27",
   "next_publication_date": "2026-10-15",
-  "last_verified_published_date": "2026-11-02",
+  "last_verified_published_date": "2026-11-03",
   "description": "Append-only publication manifest. The publisher honors each scheduled_date and publishes at most one page per Asia/Kolkata date."
 }
