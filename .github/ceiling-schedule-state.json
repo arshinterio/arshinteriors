@@ -1,7 +1,7 @@
 {
-  "last_published_date": "2026-11-03",
-  "last_published_slug": "gypsum-ceiling-in-mahalunge-pune",
-  "last_published_path": "gypsum-ceiling-in-mahalunge-pune/",
+  "last_published_date": "2026-11-04",
+  "last_published_slug": "pop-ceiling-in-manjari-pune",
+  "last_published_path": "pop-ceiling-in-manjari-pune/",
   "last_processing_result": "published",
   "published_posts": [
     {
@@ -242,6 +242,18 @@
       "scheduled_date": "2026-11-03",
       "actual_published_date": "2026-11-03",
       "actual_published_at": "2026-11-03T16:50:48+05:30",
+      "last_processing_result": "published"
+    },
+    {
+      "content_id": "pop-ceiling-in-manjari-pune",
+      "slug": "pop-ceiling-in-manjari-pune",
+      "title": "POP Ceiling in Manjari, Pune: Plan a Simple Feature Ceiling",
+      "url": "https://arshinterior.in/pop-ceiling-in-manjari-pune/",
+      "category": "ceiling",
+      "locality": "Manjari",
+      "scheduled_date": "2026-11-04",
+      "actual_published_date": "2026-11-04",
+      "actual_published_at": "2026-11-04T17:04:43+05:30",
       "last_processing_result": "published"
     }
   ]
