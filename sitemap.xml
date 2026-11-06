@@ -123,9 +123,9 @@
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
-                                                                                                                <url>
+                                                                                                                    <url>
         <loc>https://arshinterior.in/ceiling-services-pune/</loc>
-        <lastmod>2026-11-05</lastmod>
+        <lastmod>2026-11-06</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -324,6 +324,12 @@
     <url>
         <loc>https://arshinterior.in/grid-ceiling-in-balewadi-pune/</loc>
         <lastmod>2026-11-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://arshinterior.in/gypsum-ceiling-in-tathawade-pune/</loc>
+        <lastmod>2026-11-06</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
