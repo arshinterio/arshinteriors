@@ -224,55 +224,6 @@
         .result-meta { font-size: 0.82rem; color: var(--gray); background: #fff; padding: 10px; border-radius: 10px; margin-top: 10px; border: 1px solid #f1f2f6; }
         .disclaimer { font-size: 0.68rem; color: var(--gray); margin-top: 8px; line-height: 1.4; }
 
-        /* Beautified Suggestion / Upsell Box */
-        .upsell-section {
-            background: linear-gradient(135deg, #fff9f8 0%, #fff2f0 100%); 
-            border: 2px solid #ffdcdc; 
-            border-radius: 16px;
-            padding: 16px 14px; 
-            margin-bottom: 16px; 
-            text-align: left;
-            box-shadow: 0 6px 16px rgba(255,107,107,0.04);
-        }
-        .upsell-title { 
-            font-weight: 800; 
-            font-size: 0.9rem; 
-            margin-bottom: 10px; 
-            color: var(--dark); 
-            display: flex; 
-            align-items: center; 
-            gap: 6px; 
-        }
-        .checkbox-grid { 
-            display: grid; 
-            grid-template-columns: 1fr 1fr; 
-            gap: 8px; 
-            font-size: 0.82rem; 
-            font-weight: 700; 
-            color: #374151;
-        }
-        .checkbox-item { 
-            display: flex; 
-            align-items: center; 
-            gap: 6px; 
-            cursor: pointer; 
-            background: #fff; 
-            padding: 7px 9px; 
-            border-radius: 9px; 
-            border: 1px solid #f0e1df; 
-            transition: var(--transition);
-        }
-        .checkbox-item:hover {
-            border-color: var(--primary);
-            background: #fff5f4;
-        }
-        .checkbox-item input[type="checkbox"] {
-            accent-color: var(--primary);
-            width: 15px;
-            height: 15px;
-            cursor: pointer;
-        }
-
         /* Floating WhatsApp */
         .floating-wa {
             position: fixed; bottom: 20px; right: 20px; background: #25d366; color: #fff; 
@@ -284,31 +235,26 @@
         @media(min-width: 768px) {
             .options-grid { grid-template-columns: repeat(3, 1fr); }
         }
-    </style>
+    
+/* Focus this route on its ceiling calculator */
+body{min-height:100vh;padding:20px 16px;justify-content:center;align-items:center;background:#faf9f8}
+.wrapper{max-width:520px;margin:auto;padding-top:0;padding-bottom:0}
+.hero-mini{margin-bottom:14px}
+.calc-card{border-radius:22px;box-shadow:0 14px 36px rgba(35,25,20,.08)}
+@media(max-width:560px){body{padding:14px 11px}.wrapper{max-width:100%}.calc-card{padding:21px 16px}}
+</style>
 </head>
 <body>
 
     <!-- Minimal Header -->
-    <header class="site-header">
-        <div class="header-inner">
-            <a href="/" class="logo"><img src="/arsh-interiors-logo.png" alt="Arsh Interiors" width="1643" height="470" style="display:block;width:109px;max-width:28vw;max-height:31px;height:auto;object-fit:contain;object-position:left center;"></a>
-            <div class="header-cta-group">
-                <a href="https://wa.me/919022104232?text=Hi%20Arsh%20Interiors,%20I%20want%20a%20false%20ceiling%20quote." class="header-btn wa" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                <a href="tel:+919022104232" class="header-btn" title="Call Us"><i class="fas fa-phone-alt"></i></a>
-            </div>
-        </div>
-    </header>
+    
 
-    <!-- Floating WhatsApp -->
-    <a href="https://wa.me/919022104232?text=Hi%20Arsh%20Interiors,%20I%20want%20a%20false%20ceiling%20quote." target="_blank" class="floating-wa">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+    
 
     <div class="wrapper">
         
         <!-- Hero Header -->
         <div class="hero-mini">
-            <span class="brand-tag">Pune & PCMC • Fast Estimator</span>
             <h1>False Ceiling Cost <span>Calculator</span></h1>
         </div>
 
@@ -463,18 +409,7 @@
                 </div>
 
                 <!-- Beautified Suggestion / Upsell Box -->
-                <div class="upsell-section" id="upsellSection">
-                    <div class="upsell-title"><i class="fas fa-sparkles" style="color: var(--primary);"></i> Planning other work too? (Optional)</div>
-                    <div class="checkbox-grid">
-                        <label class="checkbox-item"><input type="checkbox" name="additional_service" value="Electrical Work"> Electrical Work</label>
-                        <label class="checkbox-item"><input type="checkbox" name="additional_service" value="Painting"> Painting</label>
-                        <label class="checkbox-item"><input type="checkbox" name="additional_service" value="Wall Moulding"> Wall Moulding</label>
-                        <label class="checkbox-item"><input type="checkbox" name="additional_service" value="Furniture"> Furniture</label>
-                        <label class="checkbox-item"><input type="checkbox" name="additional_service" value="Complete Interior"> Complete Interior</label>
-                        <label class="checkbox-item"><input type="checkbox" name="additional_service" value="Nothing Else" checked> Nothing Else</label>
-                    </div>
-                    <button type="button" class="btn btn-secondary" style="margin-top: 12px; font-size: 0.82rem; padding: 10px; background: #fff; border: 1px solid var(--primary); color: var(--primary);" onclick="submitAdditionalServices()">Update Requirements</button>
-                </div>
+                
 
                 <!-- Post Estimate Actions -->
                 <div style="display: flex; flex-direction: column; gap: 10px;">
@@ -503,8 +438,7 @@
             location: '',
             name: '',
             phone: '',
-            additionalServices: []
-        };
+            };
 
         function centerCalculator() {
             window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -650,39 +584,6 @@
                     body: JSON.stringify(payload)
                 });
             } catch (e) {}
-        }
-
-        async function submitAdditionalServices() {
-            const selectedServices = [];
-            document.querySelectorAll('input[name="additional_service"]:checked').forEach(cb => {
-                selectedServices.push(cb.value);
-            });
-            calcData.additionalServices = selectedServices;
-
-            trackEvent('additional_service_selected', { services: selectedServices });
-
-            const payload = {
-                name: calcData.name,
-                phone: calcData.phone,
-                loc: calcData.location,
-                propType: calcData.propertyType,
-                area: calcData.area + " sq.ft",
-                material: calcData.materialType,
-                style: calcData.ceilingStyle,
-                estimatedPrice: document.getElementById('priceDisplayRange').innerText,
-                services: "False Ceiling, " + selectedServices.join(', ')
-            };
-
-            try {
-                fetch(GOOGLE_SHEET_URL, {
-                    method: "POST",
-                    mode: "no-cors",
-                    headers: { "Content-Type": "application/json" },
-                    body: JSON.stringify(payload)
-                });
-            } catch (e) {}
-
-            alert("Thank you! Additional requirements updated successfully.");
         }
 
         function trackEvent(eventName, payload = {}) {
