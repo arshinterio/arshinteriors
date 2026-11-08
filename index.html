@@ -196,6 +196,97 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 @media(max-width:380px){.hero-quick-actions a{white-space:normal}}
 @media(max-width:560px){body{padding-top:64px}.site-header .header-inner{min-height:64px;padding:7px 15px}.hero-section{min-height:max(620px,min(720px,calc(100svh - 64px)))}.hero-section>.container{padding:0 18px 48px}.hero-section .hero-title{font-size:clamp(2.35rem,10.2vw,3.35rem);line-height:1.04}.hero-section .hero-desc{font-size:.92rem;line-height:1.55}.hero-quick-actions{display:grid!important;grid-template-columns:1fr 1fr;gap:8px!important;margin-top:16px!important}.hero-quick-actions a{min-height:47px;padding:8px 4px;font-size:1rem!important;font-weight:700;line-height:1.2;white-space:nowrap}.hero-backdrop img{object-position:center center}.hero-backdrop:after{background:linear-gradient(0deg,rgba(18,15,13,.88),rgba(18,15,13,.50) 52%,rgba(18,15,13,.04) 100%)}.hero-backdrop figcaption{right:10px;bottom:6px;max-width:210px;font-size:.57rem}.homepage-callback{padding:24px 14px 14px}.homepage-callback .callback-form-box{padding:22px 18px;border-radius:20px}.homepage-benefits{padding:7px 14px 28px}.benefit-grid{gap:9px}.benefit-card{min-height:96px;gap:9px;padding:12px 10px;border-radius:14px}.benefit-icon{flex-basis:38px;width:38px;height:38px;font-size:1rem}.benefit-card h2{font-size:.7rem}.benefit-card p{font-size:.64rem;line-height:1.32}.homepage-why{padding:15px 16px 30px}}
 
+
+/* White-first, image-led homepage refresh */
+:root{--primary:#ff6b6b;--primary-dark:#e85555;--dark:#111;--light:#fff;--gray:#666;--border:#e8e6e4;--card-bg:#fff}
+body{background:#fff;color:#111}
+.site-header{background:rgba(255,255,255,.98);box-shadow:0 1px 12px rgba(17,17,17,.05)}
+.hero-section{display:grid;grid-template-columns:minmax(0,1.04fr) minmax(0,.96fr);align-items:stretch;max-width:1440px;min-height:600px;margin:0 auto;padding:0;overflow:hidden;background:#fff;color:#111;text-align:left;border:0}
+.hero-backdrop{position:relative;inset:auto;grid-column:1;grid-row:1;width:100%;height:100%;min-height:570px;margin:0;overflow:hidden}
+.hero-backdrop img{display:block;width:100%;height:100%;min-height:570px;object-fit:cover;object-position:center}
+.hero-backdrop:after{display:none}
+.hero-backdrop figcaption{right:14px;bottom:12px;max-width:260px;padding:5px 8px;border-radius:6px;background:rgba(17,17,17,.48);color:#fff;font-size:.68rem}
+.hero-section>.container{position:relative;grid-column:2;grid-row:1;z-index:auto;width:100%;max-width:720px;margin:0;align-self:center;padding:clamp(38px,6vw,84px);text-align:left;color:#111}
+.hero-section .container>span:first-child{color:var(--primary-dark)!important}
+.hero-section .hero-title{max-width:680px;margin:12px 0 18px;color:#111;font-size:clamp(2.6rem,4.6vw,4.8rem);line-height:1.05;text-shadow:none}
+.hero-section .hero-title span{color:var(--primary-dark)!important}
+.hero-section .hero-desc{max-width:620px;margin:0;color:#555;font-size:clamp(1rem,1.2vw,1.1rem);line-height:1.7}
+.hero-quick-actions{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));justify-content:start!important;gap:11px!important;margin-top:25px!important}
+.hero-quick-actions a{min-height:54px;padding:13px 16px;border-radius:999px!important;font-size:.95rem!important;line-height:1.2;font-weight:750;white-space:normal}
+.hero-quick-actions a[href="/estimator/"]{background:var(--primary)!important;color:#fff!important;border:1px solid var(--primary)!important;box-shadow:0 5px 14px rgba(255,107,107,.2)!important}
+.hero-quick-actions a.hero-whatsapp{background:#fff!important;color:#222!important;border:1px solid #e4e2e0!important;box-shadow:0 3px 10px rgba(17,17,17,.04)!important}
+.hero-quick-actions a.hero-whatsapp i{color:#25a85a}
+.homepage-callback{padding:34px 18px 18px;background:#fff}
+.callback-container{max-width:760px}
+.homepage-callback .callback-form-box{max-width:690px;padding:clamp(22px,4vw,38px);margin:0 auto;background:#fff;border:1px solid #ece9e7;border-radius:20px;box-shadow:0 8px 26px rgba(17,17,17,.045)}
+.homepage-callback .callback-form-box h3{font-size:1.55rem}
+.homepage-callback .callback-form-box p{color:#666}
+.homepage-callback input,.homepage-callback select{min-height:52px;padding:13px 15px!important;border:1px solid #e2e0de!important;border-radius:12px!important;background:#fff!important;color:#222;font-size:.96rem!important}
+.homepage-callback input:focus,.homepage-callback select:focus{border-color:var(--primary)!important;outline:3px solid rgba(255,107,107,.16);outline-offset:1px}
+.homepage-callback .callback-form-box button.btn{min-height:54px;margin-top:5px;padding:14px 20px;border-radius:999px;background:var(--primary);color:#fff;box-shadow:0 5px 14px rgba(255,107,107,.2)}
+.homepage-benefits{padding:12px 18px 38px;background:#fff}
+.benefit-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.benefit-card{min-height:104px;padding:15px;background:#fff;border:1px solid #ece9e7;border-radius:16px;box-shadow:0 4px 16px rgba(17,17,17,.035)}
+.benefit-icon,.benefit-delivery,.benefit-finish,.benefit-price{background:#f6f6f5!important;color:#393939!important}
+.benefit-card h2{color:#111}
+.benefit-card p{color:#666}
+.homepage-why{padding:22px 18px 40px;background:#fff}
+.homepage-why .container{max-width:900px}
+.homepage-why .callback-content{padding:12px 0}
+.homepage-why .callback-content h2{font-family:'Playfair Display',Georgia,serif}
+.homepage-service-grid{grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:16px!important}
+.homepage-service-grid>div{padding:24px 20px!important;border:1px solid #ece9e7!important;border-radius:16px!important;box-shadow:0 4px 16px rgba(17,17,17,.035)!important;transition:transform .2s ease,box-shadow .2s ease}
+.homepage-service-grid>div:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(17,17,17,.08)!important}
+.homepage-service-grid>div>div:first-child{background:#f5f5f4!important;color:#333!important}
+.homepage-service-grid>div>a{display:inline-flex;align-items:center;gap:7px;color:var(--primary-dark)!important}
+.homepage-service-grid>div>a:focus-visible,.hero-quick-actions a:focus-visible,.homepage-callback button:focus-visible{outline:3px solid #111;outline-offset:3px}
+.gbp-polish-card{background:#fff;border:1px solid #ece9e7;box-shadow:0 5px 18px rgba(17,17,17,.045)}
+.gbp-polish-card:before{height:3px;background:var(--primary)}
+.testimonial-card{box-shadow:0 4px 16px rgba(17,17,17,.035)}
+footer.homepage-footer{background:#fff!important;color:#111!important;border-top:1px solid #ece9e7}
+footer.homepage-footer p,footer.homepage-footer a{color:#666!important}
+footer.homepage-footer h4{color:#111!important}
+footer.homepage-footer a[style*="var(--primary)"]{color:var(--primary-dark)!important}
+footer.homepage-footer>div[style*="background: #0a0a0a"],footer.homepage-footer>div[style*="background: #000"]{background:#fff!important;border-top:1px solid #ece9e7!important}
+footer.homepage-footer>div[style*="background: #000"]{border-top:1px solid #ece9e7}
+main section[style*="background: #faf9f8"]{background:#fff!important}
+#ceiling-area-pages-link>div{border-color:#ece9e7!important;box-shadow:0 4px 16px rgba(17,17,17,.035)!important}
+.floating-whatsapp{box-shadow:0 4px 14px rgba(17,17,17,.14)!important}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline-color:#111}
+@media(max-width:1000px){.homepage-service-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media(max-width:767px){
+ body{padding-top:64px}
+ .site-header .header-inner{min-height:64px;padding:7px 15px}
+ .hero-section{display:flex;flex-direction:column;min-height:0;max-width:none;margin:0}
+ .hero-backdrop{order:0;width:100%;height:clamp(285px,88vw,470px);min-height:0}
+ .hero-backdrop img{width:100%;height:100%;min-height:0;object-position:center}
+ .hero-backdrop figcaption{right:10px;bottom:8px;max-width:205px;font-size:.6rem}
+ .hero-section>.container{order:1;width:100%;max-width:720px;margin:0 auto;padding:28px 20px 34px}
+ .hero-section .hero-title{font-size:clamp(2.25rem,9.2vw,3.3rem);line-height:1.06}
+ .hero-section .hero-desc{font-size:.95rem;line-height:1.62}
+ .hero-quick-actions{grid-template-columns:1fr 1fr;gap:9px!important;margin-top:20px!important}
+ .hero-quick-actions a{min-height:49px;padding:11px 9px;font-size:.88rem!important;white-space:nowrap}
+ .homepage-callback{padding:22px 14px 14px}
+ .homepage-callback .callback-form-box{padding:22px 17px;border-radius:18px;box-shadow:0 5px 18px rgba(17,17,17,.04)}
+ .homepage-benefits{padding:8px 14px 28px}
+ .benefit-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+ .benefit-card{min-height:86px;padding:11px 10px;gap:9px;border-radius:13px}
+ .benefit-icon{flex-basis:36px;width:36px;height:36px;font-size:1rem}
+ .benefit-card h2{font-size:.7rem}
+ .benefit-card p{font-size:.65rem;line-height:1.35}
+ .homepage-why{padding:16px 18px 30px}
+ .homepage-service-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important}
+ .homepage-service-grid>div{min-width:0;padding:18px 14px!important;border-radius:14px!important}
+ .homepage-service-grid>div h3{font-size:1rem!important;line-height:1.3}
+ .homepage-service-grid>div p{font-size:.83rem!important;line-height:1.55}
+ .homepage-service-grid>div>div:first-child{width:46px!important;height:46px!important;margin-bottom:14px!important;font-size:1.25rem!important}
+ .gbp-polish-card{padding:30px 18px!important;border-radius:18px}
+ footer.homepage-footer{padding-top:36px!important}
+ footer.homepage-footer>div[style*="background: #0a0a0a"],footer.homepage-footer>div[style*="background: #000"]{padding:20px 15px!important}
+}
+@media(max-width:380px){.hero-quick-actions a{font-size:.8rem!important;padding-left:5px;padding-right:5px}.homepage-service-grid>div{padding:15px 11px!important}}
+@media(prefers-reduced-motion:reduce){.homepage-service-grid>div{transition:none}}
+
 </style>
 </head>
 <body style="overflow-x: hidden;">
@@ -259,11 +350,9 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
                 <p class="hero-desc">When looking for professional interior contracting in Pune, <strong>Arsh Interiors</strong> (also known as <strong>Arsh Interior</strong>) is your ultimate destination. We specialize in flawless Gypsum false ceilings, smart electrical integrations, luxury wall painting, and custom furniture execution across Baner, Wakad, Kharadi, and Dhayari.</p>
                 
                 <div class="hero-quick-actions" style="display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-top: 20px;">
-                    <a href="/estimator/" class="btn" style="box-shadow: 0 4px 15px rgba(255,107,107,0.3);">Calculate Your Cost</a>
-                    <a href="/design/" style="background: transparent; color: #111; padding: 14px 24px; border-radius: 10px; font-weight: 700; text-decoration: none; display: inline-block; border: 2px solid #111;">View Master Portfolio</a>
+                    <a href="/estimator/" class="btn" style="box-shadow: 0 4px 15px rgba(255,107,107,0.3);">Get an estimate</a>
                 
                     <a href="https://wa.me/919022104232?text=Hello%20Arsh%20Interiors,%20I%20would%20like%20to%20discuss%20my%20interior%20project." class="btn hero-whatsapp" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp</a>
-                    <a href="tel:+919022104232" class="btn hero-call"><i class="fas fa-phone-alt" aria-hidden="true"></i> Call</a>
                 </div>
 
                 
@@ -297,7 +386,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
                     </div></div></section>
         <section class="homepage-benefits" aria-label="Arsh Interiors service commitments"><div class="container benefit-grid">
             <article class="benefit-card"><span class="benefit-icon"><i class="fas fa-shield-alt" aria-hidden="true"></i></span><div><h2>10 YEAR WARRANTY</h2><p>Built For Long-Term Confidence</p></div></article>
-            <article class="benefit-card"><span class="benefit-icon benefit-delivery"><i class="fas fa-gauge-high" aria-hidden="true"></i></span><div><h2>FAST DELIVERY</h2><p>Efficient Project Execution</p></div></article>
+            <article class="benefit-card"><span class="benefit-icon benefit-delivery"><i class="fas fa-gauge-high" aria-hidden="true"></i></span><div><h2>ON-TIME COMPLETION</h2><p>Efficient Project Execution</p></div></article>
             <article class="benefit-card"><span class="benefit-icon benefit-finish"><i class="fas fa-gem" aria-hidden="true"></i></span><div><h2>PREMIUM FINISH</h2><p>Clean Details. Sharp Results.</p></div></article>
             <article class="benefit-card"><span class="benefit-icon benefit-price"><i class="fas fa-indian-rupee-sign" aria-hidden="true"></i></span><div><h2>BEST PRICES</h2><p>Smart Value. No Compromise.</p></div></article>
         </div></section>
@@ -361,7 +450,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
                     <p style="max-width: 650px; margin: 0 auto; color: #555; font-size: 0.95rem;">Arsh Interior delivers expert false ceilings, wiring, painting, and custom woodwork across Pune.</p>
                 </div>
 
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px;">
+                <div class="homepage-service-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px;">
                     <div style="background: #fff; padding: 30px 20px; border-radius: 18px; box-shadow: 0 8px 25px rgba(0,0,0,0.04); border: 1px solid #eee;">
                         <div style="width: 55px; height: 55px; background: rgba(255,107,107,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: var(--primary); margin-bottom: 18px;"><i class="fas fa-cubes"></i></div>
                         <h3 style="font-size: 1.2rem; margin-bottom: 12px; color: #111;">False Ceiling & POP</h3>
@@ -440,7 +529,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 </main>
 
     <!-- Main Footer with Clean URLs & Keyword Index -->
-    <footer style="background: #111; color: #fff; padding: 50px 15px 0; box-sizing: border-box;">
+    <footer class="homepage-footer" style="background: #111; color: #fff; padding: 50px 15px 0; box-sizing: border-box;">
         <div class="container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 30px; margin-bottom: 30px; box-sizing: border-box;">
             <div>
                 <a href="/" aria-label="Arsh Interiors home" style="display:inline-flex;align-items:center;margin-bottom:15px;text-decoration:none;"><img src="/arsh-interiors-logo.png" alt="Arsh Interiors" width="1643" height="470" style="display:block;width:120px;max-width:67%;height:auto;"></a>
