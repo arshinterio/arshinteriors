@@ -1,7 +1,7 @@
 {
-  "last_published_date": "2026-11-07",
-  "last_published_slug": "gypsum-ceiling-in-punawale-pune",
-  "last_published_path": "gypsum-ceiling-in-punawale-pune/",
+  "last_published_date": "2026-11-08",
+  "last_published_slug": "pop-ceiling-in-hadapsar-pune",
+  "last_published_path": "pop-ceiling-in-hadapsar-pune/",
   "last_processing_result": "published",
   "published_posts": [
     {
@@ -290,6 +290,18 @@
       "scheduled_date": "2026-11-07",
       "actual_published_date": "2026-11-07",
       "actual_published_at": "2026-11-07T16:11:26+05:30",
+      "last_processing_result": "published"
+    },
+    {
+      "content_id": "pop-ceiling-in-hadapsar-pune",
+      "slug": "pop-ceiling-in-hadapsar-pune",
+      "title": "POP Ceiling in Hadapsar, Pune: Coordinate the Finish Sequence",
+      "url": "https://arshinterior.in/pop-ceiling-in-hadapsar-pune/",
+      "category": "ceiling",
+      "locality": "Hadapsar",
+      "scheduled_date": "2026-11-08",
+      "actual_published_date": "2026-11-08",
+      "actual_published_at": "2026-11-08T16:16:17+05:30",
       "last_processing_result": "published"
     }
   ]

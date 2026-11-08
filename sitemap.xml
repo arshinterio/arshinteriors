@@ -123,9 +123,9 @@
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
-                                                                                                                        <url>
+                                                                                                                            <url>
         <loc>https://arshinterior.in/ceiling-services-pune/</loc>
-        <lastmod>2026-11-07</lastmod>
+        <lastmod>2026-11-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -336,6 +336,12 @@
     <url>
         <loc>https://arshinterior.in/gypsum-ceiling-in-punawale-pune/</loc>
         <lastmod>2026-11-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://arshinterior.in/pop-ceiling-in-hadapsar-pune/</loc>
+        <lastmod>2026-11-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
