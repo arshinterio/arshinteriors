@@ -287,6 +287,16 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{ou
 @media(max-width:380px){.hero-quick-actions a{font-size:.8rem!important;padding-left:5px;padding-right:5px}.homepage-service-grid>div{padding:15px 11px!important}}
 @media(prefers-reduced-motion:reduce){.homepage-service-grid>div{transition:none}}
 
+
+/* Put the two primary actions directly below the heading on phones */
+@media(max-width:767px){
+ .hero-section>.container{display:flex;flex-direction:column}
+ .hero-section .container>span:first-child{order:0}
+ .hero-section .hero-title{order:1}
+ .hero-section .hero-quick-actions{order:2}
+ .hero-section .hero-desc{order:3;margin-top:16px}
+}
+
 </style>
 </head>
 <body style="overflow-x: hidden;">
