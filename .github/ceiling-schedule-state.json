@@ -1,7 +1,7 @@
 {
-  "last_published_date": "2026-11-08",
-  "last_published_slug": "pop-ceiling-in-hadapsar-pune",
-  "last_published_path": "pop-ceiling-in-hadapsar-pune/",
+  "last_published_date": "2026-11-09",
+  "last_published_slug": "grid-ceiling-in-manjari-pune",
+  "last_published_path": "grid-ceiling-in-manjari-pune/",
   "last_processing_result": "published",
   "published_posts": [
     {
@@ -302,6 +302,18 @@
       "scheduled_date": "2026-11-08",
       "actual_published_date": "2026-11-08",
       "actual_published_at": "2026-11-08T16:16:17+05:30",
+      "last_processing_result": "published"
+    },
+    {
+      "content_id": "grid-ceiling-in-manjari-pune",
+      "slug": "grid-ceiling-in-manjari-pune",
+      "title": "Grid Ceiling in Manjari, Pune: Keep Access Clear After Installation",
+      "url": "https://arshinterior.in/grid-ceiling-in-manjari-pune/",
+      "category": "ceiling",
+      "locality": "Manjari",
+      "scheduled_date": "2026-11-09",
+      "actual_published_date": "2026-11-09",
+      "actual_published_at": "2026-11-09T17:38:21+05:30",
       "last_processing_result": "published"
     }
   ]
