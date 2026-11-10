@@ -1757,9 +1757,11 @@
       "path": "gypsum-ceiling-in-viman-nagar-pune-bedroom",
       "category": "ceiling",
       "service_name": "Gypsum bedroom ceiling",
-      "status": "scheduled",
+      "status": "published",
       "scheduled_date": "2026-11-10",
-      "last_processing_result": "scheduled"
+      "last_processing_result": "published",
+      "actual_published_date": "2026-11-10",
+      "actual_published_at": "2026-11-10T17:17:00+05:30"
     },
     {
       "slug": "false-ceiling-in-kondhwa-pune",
@@ -3274,6 +3276,6 @@
   "last_scheduled_date": "2026-11-27",
   "last_reserved_publication_date": "2026-11-27",
   "next_publication_date": "2026-10-15",
-  "last_verified_published_date": "2026-11-09",
+  "last_verified_published_date": "2026-11-10",
   "description": "Append-only publication manifest. The publisher honors each scheduled_date and publishes at most one page per Asia/Kolkata date."
 }
