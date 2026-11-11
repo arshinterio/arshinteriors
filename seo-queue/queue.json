@@ -1812,9 +1812,11 @@
       "path": "false-ceiling-in-kondhwa-pune",
       "category": "ceiling",
       "service_name": "Gypsum false ceiling",
-      "status": "scheduled",
+      "status": "published",
       "scheduled_date": "2026-11-11",
-      "last_processing_result": "scheduled"
+      "last_processing_result": "published",
+      "actual_published_date": "2026-11-11",
+      "actual_published_at": "2026-11-11T16:57:25+05:30"
     },
     {
       "slug": "gypsum-ceiling-in-undri-pune",
@@ -3276,6 +3278,6 @@
   "last_scheduled_date": "2026-11-27",
   "last_reserved_publication_date": "2026-11-27",
   "next_publication_date": "2026-10-15",
-  "last_verified_published_date": "2026-11-10",
+  "last_verified_published_date": "2026-11-11",
   "description": "Append-only publication manifest. The publisher honors each scheduled_date and publishes at most one page per Asia/Kolkata date."
 }
