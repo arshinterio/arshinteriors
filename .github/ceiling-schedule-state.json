@@ -1,7 +1,7 @@
 {
-  "last_published_date": "2026-11-11",
-  "last_published_slug": "false-ceiling-in-kondhwa-pune",
-  "last_published_path": "false-ceiling-in-kondhwa-pune/",
+  "last_published_date": "2026-11-12",
+  "last_published_slug": "gypsum-ceiling-in-undri-pune",
+  "last_published_path": "gypsum-ceiling-in-undri-pune/",
   "last_processing_result": "published",
   "published_posts": [
     {
@@ -338,6 +338,18 @@
       "scheduled_date": "2026-11-11",
       "actual_published_date": "2026-11-11",
       "actual_published_at": "2026-11-11T16:57:25+05:30",
+      "last_processing_result": "published"
+    },
+    {
+      "content_id": "gypsum-ceiling-in-undri-pune",
+      "slug": "gypsum-ceiling-in-undri-pune",
+      "title": "Gypsum Ceiling in Undri, Pune: Review the Paint-Ready Handover",
+      "url": "https://arshinterior.in/gypsum-ceiling-in-undri-pune/",
+      "category": "ceiling",
+      "locality": "Undri",
+      "scheduled_date": "2026-11-12",
+      "actual_published_date": "2026-11-12",
+      "actual_published_at": "2026-11-12T17:21:00+05:30",
       "last_processing_result": "published"
     }
   ]
