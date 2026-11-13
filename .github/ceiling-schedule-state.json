@@ -1,7 +1,7 @@
 {
-  "last_published_date": "2026-11-12",
-  "last_published_slug": "gypsum-ceiling-in-undri-pune",
-  "last_published_path": "gypsum-ceiling-in-undri-pune/",
+  "last_published_date": "2026-11-13",
+  "last_published_slug": "gypsum-partition-planning-hinjawadi-pune",
+  "last_published_path": "guides/gypsum-partition-planning-hinjawadi-pune/",
   "last_processing_result": "published",
   "published_posts": [
     {
@@ -350,6 +350,18 @@
       "scheduled_date": "2026-11-12",
       "actual_published_date": "2026-11-12",
       "actual_published_at": "2026-11-12T17:21:00+05:30",
+      "last_processing_result": "published"
+    },
+    {
+      "content_id": "gypsum-partition-planning-hinjawadi-pune",
+      "slug": "gypsum-partition-planning-hinjawadi-pune",
+      "title": "Gypsum Partition Planning in Hinjawadi, Pune: Layout, Services and Finish",
+      "url": "https://arshinterior.in/guides/gypsum-partition-planning-hinjawadi-pune/",
+      "category": "gypsum-partition",
+      "locality": "Hinjawadi, Pune",
+      "scheduled_date": "2026-11-13",
+      "actual_published_date": "2026-11-13",
+      "actual_published_at": "2026-11-13T17:04:35+05:30",
       "last_processing_result": "published"
     }
   ]
