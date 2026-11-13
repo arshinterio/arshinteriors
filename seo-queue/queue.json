@@ -1963,8 +1963,10 @@
       "visual_file": "assets/gypsum-partition-planning-hinjawadi-pune.svg",
       "canonical_url": "https://arshinterior.in/guides/gypsum-partition-planning-hinjawadi-pune/",
       "scheduled_date": "2026-11-13",
-      "status": "scheduled",
-      "last_processing_result": "scheduled"
+      "status": "published",
+      "last_processing_result": "published",
+      "actual_published_date": "2026-11-13",
+      "actual_published_at": "2026-11-13T17:04:35+05:30"
     },
     {
       "slug": "electrical-renovation-point-planning-pune",
@@ -3280,6 +3282,6 @@
   "last_scheduled_date": "2026-11-27",
   "last_reserved_publication_date": "2026-11-27",
   "next_publication_date": "2026-10-15",
-  "last_verified_published_date": "2026-11-12",
+  "last_verified_published_date": "2026-11-13",
   "description": "Append-only publication manifest. The publisher honors each scheduled_date and publishes at most one page per Asia/Kolkata date."
 }
