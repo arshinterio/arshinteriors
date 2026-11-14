@@ -354,6 +354,22 @@ footer.homepage-footer>div[style*="background: #000"] p{color:#777!important}
 
 
 @media(max-width:767px){.hero-section .hero-quick-actions{order:1!important}.hero-section .hero-desc{order:2!important}}
+
+/* Refined callback and benefit alignment */
+.homepage-callback .callback-form-box>div:first-child{max-width:470px;margin:0 auto 24px!important;text-align:center}
+.homepage-callback .callback-form-box>div:first-child h3{font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(1.55rem,3vw,1.85rem)!important;font-weight:800;line-height:1.16;letter-spacing:-.045em;color:#111!important;margin:0 0 9px!important;text-wrap:balance}
+.homepage-callback .callback-form-box>div:first-child p{max-width:36ch;margin:0 auto!important;color:#666!important;font-size:.98rem!important;line-height:1.6}
+.homepage-benefits{padding:28px 16px 42px;background:#faf9f8}
+.benefit-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;max-width:1080px}
+.benefit-item{min-width:0;text-align:center}
+.benefit-card{min-height:132px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:18px 12px;background:#fff;border:1px solid #eee6e1;border-radius:20px;box-shadow:0 9px 24px rgba(35,25,20,.055);transition:transform .25s ease,box-shadow .25s ease}
+.benefit-card:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(35,25,20,.09)}
+.benefit-icon{flex:0 0 48px;width:48px;height:48px;display:grid;place-items:center;border-radius:50%;background:#fff1ef;color:#e85555;font-size:1.2rem}
+.benefit-card h2{max-width:15ch;margin:0;color:#171717;font-size:.83rem;line-height:1.25;letter-spacing:.035em;font-weight:800;text-align:center}
+.benefit-caption{min-height:2.8em;max-width:22ch;margin:11px auto 0;color:#68625f;font-size:.77rem;line-height:1.45}
+.homepage-why .why-service-intro{margin:22px 0 0;padding-top:19px;border-top:1px solid #eee6e1;color:#68625f;font-size:.97rem;line-height:1.75}
+@media(max-width:840px){.benefit-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}}
+@media(max-width:560px){.homepage-callback .callback-form-box>div:first-child{margin-bottom:21px!important}.homepage-callback .callback-form-box>div:first-child h3{font-size:1.55rem!important}.homepage-callback .callback-form-box>div:first-child p{font-size:.94rem!important;line-height:1.55}.homepage-benefits{padding:22px 16px 34px}.benefit-grid{gap:12px}.benefit-card{min-height:116px;padding:15px 9px;border-radius:17px;gap:10px}.benefit-icon{width:44px;height:44px;flex-basis:44px;font-size:1.1rem}.benefit-card h2{font-size:.76rem}.benefit-caption{font-size:.72rem;min-height:2.6em;margin-top:9px}.homepage-why .why-service-intro{margin-top:19px;padding-top:16px;font-size:.91rem}}
 </style>
 </head>
 <body style="overflow-x: hidden;">
@@ -410,13 +426,13 @@ footer.homepage-footer>div[style*="background: #000"] p{color:#777!important}
         
         <!-- Hero Section -->
         <section class="hero-section">
-            <figure class="hero-backdrop"><img src="/images/arsh-interiors-home-concept.webp" alt="Illustrative concept of a Pune living room with a layered false ceiling and warm lighting" width="1536" height="1024" fetchpriority="high" decoding="async"><figcaption>Illustrative concept only — not a completed Arsh Interiors project.</figcaption></figure>
+            <figure class="hero-backdrop"><img src="/images/arsh-interiors-floating-ceiling-concept.png" alt="Illustrative living room with a rounded floating gypsum ceiling, warm cove lighting and a centered chandelier" width="1536" height="1024" fetchpriority="high" decoding="async"><figcaption>Illustrative concept only — not a completed Arsh Interiors project.</figcaption></figure>
             <div class="container">
                 <div class="hero-heading-panel">
                     <span style="color: var(--primary); font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; font-size: 0.8rem; display: block; margin-bottom: 8px;">Pune's Premier Interior Execution Experts</span>
                     <h1 class="hero-title">False Ceilings &amp; Interior Work in <span style="color: var(--primary); font-style: italic; font-family: 'Playfair Display', serif;">Pune</span></h1>
                 </div>
-                <p class="hero-desc">When looking for professional interior contracting in Pune, <strong>Arsh Interiors</strong> (also known as <strong>Arsh Interior</strong>) is your ultimate destination. We specialize in flawless Gypsum false ceilings, smart electrical integrations, luxury wall painting, and custom furniture execution across Baner, Wakad, Kharadi, and Dhayari.</p>
+                
                 
                 <div class="hero-quick-actions" style="display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-top: 20px;">
                     <a href="/estimator/" class="btn" style="box-shadow: 0 4px 15px rgba(255,107,107,0.3);">Get an estimate</a>
@@ -454,10 +470,10 @@ footer.homepage-footer>div[style*="background: #000"] p{color:#777!important}
                         <div id="cbSuccess" style="display: none; text-align: center; color: #25d366; font-weight: 600; margin-top: 15px;"><i class="fas fa-check-circle"></i> We have received your request!</div>
                     </div></div></section>
         <section class="homepage-benefits" aria-label="Arsh Interiors service commitments"><div class="container benefit-grid">
-            <article class="benefit-card"><span class="benefit-icon"><i class="fas fa-shield-alt" aria-hidden="true"></i></span><div><h2>10 YEAR WARRANTY</h2><p>Built For Long-Term Confidence</p></div></article>
-            <article class="benefit-card"><span class="benefit-icon benefit-delivery"><i class="fas fa-gauge-high" aria-hidden="true"></i></span><div><h2>ON-TIME COMPLETION</h2><p>Efficient Project Execution</p></div></article>
-            <article class="benefit-card"><span class="benefit-icon benefit-finish"><i class="fas fa-gem" aria-hidden="true"></i></span><div><h2>PREMIUM FINISH</h2><p>Clean Details. Sharp Results.</p></div></article>
-            <article class="benefit-card"><span class="benefit-icon benefit-price"><i class="fas fa-indian-rupee-sign" aria-hidden="true"></i></span><div><h2>BEST PRICES</h2><p>Smart Value. No Compromise.</p></div></article>
+            <div class="benefit-item"><article class="benefit-card"><span class="benefit-icon"><i class="fas fa-shield-alt" aria-hidden="true"></i></span><h2>10 YEAR WARRANTY</h2></article><p class="benefit-caption">Built For Long-Term Confidence</p></div>
+            <div class="benefit-item"><article class="benefit-card"><span class="benefit-icon"><i class="fas fa-calendar-check" aria-hidden="true"></i></span><h2>ON-TIME COMPLETION</h2></article><p class="benefit-caption">Efficient Project Execution</p></div>
+            <div class="benefit-item"><article class="benefit-card"><span class="benefit-icon"><i class="fas fa-gem" aria-hidden="true"></i></span><h2>PREMIUM FINISH</h2></article><p class="benefit-caption">Clean Details. Sharp Results.</p></div>
+            <div class="benefit-item"><article class="benefit-card"><span class="benefit-icon"><i class="fas fa-indian-rupee-sign" aria-hidden="true"></i></span><h2>BEST PRICES</h2></article><p class="benefit-caption">Smart Value. No Compromise.</p></div>
         </div></section>
         <section class="homepage-why"><div class="container"><div class="callback-content">
                         <h2 style="font-size: 2rem; color: #111; margin-bottom: 18px; line-height: 1.3;">Why Choose <span style="color: var(--primary); font-style: italic; font-family: 'Playfair Display', serif;">Arsh Interiors?</span></h2>
@@ -473,6 +489,7 @@ footer.homepage-footer>div[style*="background: #000"] p{color:#777!important}
                                 <i class="fas fa-check-circle" style="color: var(--primary); font-size: 1.1rem; flex-shrink: 0;"></i> Transparent Pricing with Zero Hidden Fees
                             </li>
                         </ul>
+                        <p class="why-service-intro">When looking for professional interior contracting in Pune, <strong>Arsh Interiors</strong> (also known as <strong>Arsh Interior</strong>) is your ultimate destination. We specialize in flawless Gypsum false ceilings, smart electrical integrations, luxury wall painting, and custom furniture execution across Baner, Wakad, Kharadi, and Dhayari.</p>
                     </div></div></section>
 
         <!-- Social Connect Bar -->
