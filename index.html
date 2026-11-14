@@ -297,6 +297,61 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{ou
  .hero-section .hero-desc{order:3;margin-top:16px}
 }
 
+
+/* Integrated hero and a consistent white/coral visual system */
+.hero-heading-panel{padding:0;background:transparent}
+.hero-section .hero-title{letter-spacing:-.04em}
+.homepage-social-section,.homepage-gbp-section,.homepage-services-section,.homepage-testimonials-section{background:#fff!important}
+.homepage-social-section,.homepage-gbp-section,.homepage-services-section,.homepage-testimonials-section{border-color:#efedeb}
+.homepage-social-section .container>a{background:#fff!important;border:1px solid #e8e6e4!important;border-radius:999px!important;color:#333!important;box-shadow:none!important}
+.homepage-gbp-section .gbp-polish-card{background:#fff!important;border:1px solid #ebe8e6!important;border-radius:20px!important;box-shadow:0 6px 22px rgba(17,17,17,.045)!important}
+.homepage-gbp-section .gbp-polish-card:before{height:3px;background:var(--primary)!important}
+.homepage-gbp-section .gbp-polish-card>div:first-child{background:#f5f5f4!important;color:#444!important}
+.homepage-gbp-section .gbp-polish-card>span{color:#555!important}
+.homepage-gbp-section .gbp-polish-card h3 span{color:var(--primary-dark)!important}
+.homepage-gbp-section .gbp-polish-card .btn{background:var(--primary)!important;border-radius:999px!important;box-shadow:0 5px 14px rgba(255,107,107,.17)!important}
+.homepage-services-section .container>div[style*="text-align: center"],.homepage-testimonials-section .container>div[style*="text-align: center"]{max-width:760px;margin:0 0 28px!important;text-align:left!important}
+.homepage-services-section .container>div[style*="text-align: center"] h2,.homepage-testimonials-section .container>div[style*="text-align: center"] h2{font-family:'Playfair Display',Georgia,serif!important;line-height:1.2}
+.homepage-services-section .container>div[style*="text-align: center"] h2 span,.homepage-testimonials-section .container>div[style*="text-align: center"] h2 span{color:#111!important}
+.homepage-services-section .container>div[style*="text-align: center"] p,.homepage-testimonials-section .container>div[style*="text-align: center"] p{margin:0!important;color:#666!important}
+.homepage-service-grid>div{display:flex;flex-direction:column;min-height:300px;padding:24px 21px!important;background:#fff!important;border:1px solid #ebe8e6!important;border-radius:17px!important;box-shadow:0 4px 18px rgba(17,17,17,.035)!important}
+.homepage-service-grid>div>div:first-child{background:#f5f5f4!important;color:#333!important;border-radius:14px!important}
+.homepage-service-grid>div>a{display:inline-flex;align-items:center;justify-content:center;gap:7px;margin-top:auto;padding:10px 13px;border:1px solid #f2cecb;border-radius:999px;background:#fff;color:var(--primary-dark)!important;font-weight:750!important;text-decoration:none!important}
+.homepage-service-grid>div>a:hover{background:#fff8f7;border-color:var(--primary)}
+.homepage-testimonials-section .testimonial-slider-container{max-width:none;padding:0 3px 10px!important}
+.homepage-testimonials-section .testimonial-card{min-width:calc(33.333% - 11px);padding:24px 22px!important;background:#fff;border:1px solid #ebe8e6!important;border-radius:17px!important;box-shadow:0 5px 18px rgba(17,17,17,.04)!important;text-align:left!important}
+.homepage-testimonials-section .testimonial-card p{color:#555!important}
+.homepage-testimonials-section .testimonial-card h4{margin:0 0 2px}
+.homepage-why .callback-content{background:#fff;border:1px solid #ebe8e6;border-radius:20px;box-shadow:0 4px 18px rgba(17,17,17,.03)}
+.homepage-why .callback-content ul{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:22px!important}
+.homepage-why .callback-content li{margin:0!important;padding:13px;background:#fff;border:1px solid #efedeb;border-radius:13px}
+#ceiling-area-pages-link{background:#fff!important}
+#ceiling-area-pages-link>div{background:#fff!important;border:1px solid #ebe8e6!important;border-radius:18px!important;box-shadow:0 4px 18px rgba(17,17,17,.035)!important}
+#ceiling-area-pages-link a,.homepage-callback .callback-form-box button.btn{border-radius:999px!important;background:var(--primary)!important;box-shadow:0 5px 14px rgba(255,107,107,.18)!important}
+footer.homepage-footer,footer.homepage-footer>div[style*="background: #0a0a0a"],footer.homepage-footer>div[style*="background: #000"]{background:#fff!important;color:#111!important;border-color:#ebe8e6!important}
+footer.homepage-footer p,footer.homepage-footer a{color:#666!important}
+footer.homepage-footer h4{color:#111!important}
+footer.homepage-footer>div[style*="background: #000"] p{color:#777!important}
+@media(max-width:767px){
+ .hero-section{display:block;min-height:0;max-width:none;margin:0;overflow:visible}
+ .hero-backdrop{display:block;width:100%;height:clamp(285px,88vw,430px);min-height:0}
+ .hero-backdrop img{height:100%;min-height:0;object-position:center}
+ .hero-section>.container{display:flex;flex-direction:column;width:100%;max-width:780px;margin:-78px auto 0;padding:0 16px 34px;z-index:2}
+ .hero-heading-panel{order:0;width:100%;padding:19px 18px 16px;background:#fff;border:1px solid #ebe8e6;border-radius:18px;box-shadow:0 8px 24px rgba(17,17,17,.075)}
+ .hero-section .hero-title{font-size:clamp(2.12rem,8.7vw,3.15rem);line-height:1.04;margin:6px 0 0;letter-spacing:-.04em}
+ .hero-quick-actions{order:1;grid-template-columns:1fr 1fr;gap:9px!important;margin:14px 0 0!important}
+ .hero-section .hero-desc{order:2;max-width:none;margin:15px 3px 0;font-size:.93rem;line-height:1.58}
+ .homepage-why .callback-content ul{grid-template-columns:1fr}
+ .homepage-services-section,.homepage-testimonials-section{padding:48px 14px!important}
+ .homepage-service-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important}
+ .homepage-service-grid>div{min-width:0;min-height:260px;padding:17px 13px!important;border-radius:14px!important}
+ .homepage-service-grid>div h3{font-size:.97rem!important}
+ .homepage-service-grid>div p{font-size:.79rem!important;line-height:1.5}
+ .homepage-service-grid>div>a{font-size:.76rem!important;padding:9px 6px}
+ .homepage-testimonials-section .testimonial-card{min-width:100%;padding:22px 18px!important}
+}
+@media(max-width:380px){.hero-section>.container{padding-left:12px;padding-right:12px}.hero-heading-panel{padding:17px 15px 15px}.homepage-service-grid>div{padding:14px 10px!important}}
+
 </style>
 </head>
 <body style="overflow-x: hidden;">
@@ -355,8 +410,10 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{ou
         <section class="hero-section">
             <figure class="hero-backdrop"><img src="/images/arsh-interiors-home-concept.webp" alt="Illustrative concept of a Pune living room with a layered false ceiling and warm lighting" width="1536" height="1024" fetchpriority="high" decoding="async"><figcaption>Illustrative concept only — not a completed Arsh Interiors project.</figcaption></figure>
             <div class="container">
-                <span style="color: var(--primary); font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; font-size: 0.8rem; display: block; margin-bottom: 8px;">Pune's Premier Interior Execution Experts</span>
-                <h1 class="hero-title">False Ceilings &amp; Interior Work in <span style="color: var(--primary); font-style: italic; font-family: 'Playfair Display', serif;">Pune</span></h1>
+                <div class="hero-heading-panel">
+                    <span style="color: var(--primary); font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; font-size: 0.8rem; display: block; margin-bottom: 8px;">Pune's Premier Interior Execution Experts</span>
+                    <h1 class="hero-title">False Ceilings &amp; Interior Work in <span style="color: var(--primary); font-style: italic; font-family: 'Playfair Display', serif;">Pune</span></h1>
+                </div>
                 <p class="hero-desc">When looking for professional interior contracting in Pune, <strong>Arsh Interiors</strong> (also known as <strong>Arsh Interior</strong>) is your ultimate destination. We specialize in flawless Gypsum false ceilings, smart electrical integrations, luxury wall painting, and custom furniture execution across Baner, Wakad, Kharadi, and Dhayari.</p>
                 
                 <div class="hero-quick-actions" style="display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-top: 20px;">
@@ -417,7 +474,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{ou
                     </div></div></section>
 
         <!-- Social Connect Bar -->
-        <section style="background: #fff; padding: 20px 15px; border-top: 1px solid #eee; border-bottom: 1px solid #eee;">
+        <section class="homepage-social-section" style="background: #fff; padding: 20px 15px; border-top: 1px solid #eee; border-bottom: 1px solid #eee;">
             <div class="container" style="display: flex; justify-content: center; align-items: center; gap: 15px; flex-wrap: wrap; text-align: center;">
                 <span style="font-weight: 700; color: #111; font-size: 0.9rem;">Connect with Arsh Interior:</span>
                 <a href="https://maps.app.goo.gl/wy16RFpNYSbMEBpC6" target="_blank" style="background: #f8f9fa; padding: 8px 16px; border-radius: 50px; border: 1px solid #ddd; color: #111; text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 6px; font-size: 0.85rem;">
@@ -436,7 +493,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{ou
         </section>
 
         <!-- Google Business Profile Card -->
-        <section style="padding: 50px 15px; background: #faf9f8;">
+        <section class="homepage-gbp-section" style="padding: 50px 15px; background: #faf9f8;">
             <div class="container" style="max-width: 850px;">
                 <div class="gbp-polish-card">
                     <div style="width: 60px; height: 60px; background: rgba(66, 133, 244, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px auto; color: #4285F4; font-size: 1.8rem;">
@@ -453,7 +510,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{ou
         </section>
 
         <!-- Services Quick Overview (Clean URLs) -->
-        <section style="background: #fff; padding: 50px 15px;">
+        <section class="homepage-services-section" style="background: #fff; padding: 50px 15px;">
             <div class="container">
                 <div style="text-align: center; margin-bottom: 35px;">
                     <h2 style="font-size: 2rem; color: #111; margin-bottom: 8px;">Expert Services by <span style="color: var(--primary); font-style: italic; font-family: 'Playfair Display', serif;">Arsh Interiors</span></h2>
@@ -490,7 +547,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{ou
         </section>
 
         <!-- Testimonials Section -->
-        <section style="background: #faf9f8; padding: 50px 15px;">
+        <section class="homepage-testimonials-section" style="background: #faf9f8; padding: 50px 15px;">
             <div class="container">
                 <div style="text-align: center; margin-bottom: 35px;">
                     <h2 style="font-size: 2rem; color: #111; margin-bottom: 8px;">What Our <span style="color: var(--primary); font-style: italic; font-family: 'Playfair Display', serif;">Clients Say</span></h2>
