@@ -438,6 +438,9 @@ body{padding-top:0!important;min-height:100vh;background:#faf9f8}
 
             if(baseCost === 0) baseCost = 60000;
 
+            // Owner-requested 20% reduction, applied once to the combined base estimate.
+            baseCost *= 0.80;
+
             let simpleMin = Math.round(baseCost * 0.80);
             let simpleMax = Math.round(baseCost * 0.95);
 

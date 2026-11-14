@@ -543,7 +543,8 @@ body{min-height:100vh;padding:20px 16px;justify-content:center;align-items:cente
             let baseRate = baseRates[calcData.materialType] || 95;
             let multiplier = multipliers[calcData.ceilingStyle] || 1.7;
 
-            let calculatedTotal = calcData.area * baseRate * multiplier;
+            // Owner-requested 20% reduction, applied once to the calculated total.
+            let calculatedTotal = calcData.area * baseRate * multiplier * 0.80;
             let minEstimate = Math.round(calculatedTotal * 0.9 / 1000) * 1000;
             let maxEstimate = Math.round(calculatedTotal * 1.15 / 1000) * 1000;
 
