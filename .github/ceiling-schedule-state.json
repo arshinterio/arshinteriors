@@ -1,7 +1,7 @@
 {
-  "last_published_date": "2026-11-14",
-  "last_published_slug": "electrical-renovation-point-planning-pune",
-  "last_published_path": "guides/electrical-renovation-point-planning-pune/",
+  "last_published_date": "2026-11-15",
+  "last_published_slug": "paint-sheen-by-room-use-pune",
+  "last_published_path": "guides/paint-sheen-by-room-use-pune/",
   "last_processing_result": "published",
   "published_posts": [
     {
@@ -374,6 +374,18 @@
       "scheduled_date": "2026-11-14",
       "actual_published_date": "2026-11-14",
       "actual_published_at": "2026-11-14T16:26:10+05:30",
+      "last_processing_result": "published"
+    },
+    {
+      "content_id": "paint-sheen-by-room-use-pune",
+      "slug": "paint-sheen-by-room-use-pune",
+      "title": "How to Choose Paint Sheen by Room Use: A Pune Homeowner's Guide",
+      "url": "https://arshinterior.in/guides/paint-sheen-by-room-use-pune/",
+      "category": "painting",
+      "locality": "Pune",
+      "scheduled_date": "2026-11-15",
+      "actual_published_date": "2026-11-15",
+      "actual_published_at": "2026-11-15T17:00:02+05:30",
       "last_processing_result": "published"
     }
   ]
