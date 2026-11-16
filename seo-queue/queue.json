@@ -2248,8 +2248,10 @@
       "visual_file": "assets/wardrobe-storage-layout-viman-nagar-pune.svg",
       "canonical_url": "https://arshinterior.in/guides/wardrobe-storage-layout-viman-nagar-pune/",
       "scheduled_date": "2026-11-16",
-      "status": "scheduled",
-      "last_processing_result": "scheduled"
+      "status": "published",
+      "last_processing_result": "published",
+      "actual_published_date": "2026-11-16",
+      "actual_published_at": "2026-11-16T17:33:05+05:30"
     },
     {
       "slug": "modular-kitchen-layout-planning-pune",
@@ -3286,6 +3288,6 @@
   "last_scheduled_date": "2026-11-27",
   "last_reserved_publication_date": "2026-11-27",
   "next_publication_date": "2026-10-15",
-  "last_verified_published_date": "2026-11-15",
+  "last_verified_published_date": "2026-11-16",
   "description": "Append-only publication manifest. The publisher honors each scheduled_date and publishes at most one page per Asia/Kolkata date."
 }
