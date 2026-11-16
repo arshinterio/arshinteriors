@@ -1,7 +1,7 @@
 {
-  "last_published_date": "2026-11-15",
-  "last_published_slug": "paint-sheen-by-room-use-pune",
-  "last_published_path": "guides/paint-sheen-by-room-use-pune/",
+  "last_published_date": "2026-11-16",
+  "last_published_slug": "wardrobe-storage-layout-viman-nagar-pune",
+  "last_published_path": "guides/wardrobe-storage-layout-viman-nagar-pune/",
   "last_processing_result": "published",
   "published_posts": [
     {
@@ -386,6 +386,18 @@
       "scheduled_date": "2026-11-15",
       "actual_published_date": "2026-11-15",
       "actual_published_at": "2026-11-15T17:00:02+05:30",
+      "last_processing_result": "published"
+    },
+    {
+      "content_id": "wardrobe-storage-layout-viman-nagar-pune",
+      "slug": "wardrobe-storage-layout-viman-nagar-pune",
+      "title": "Wardrobe Storage Layout in Viman Nagar, Pune: Plan the Inside Before the Doors",
+      "url": "https://arshinterior.in/guides/wardrobe-storage-layout-viman-nagar-pune/",
+      "category": "custom-furniture",
+      "locality": "Viman Nagar, Pune",
+      "scheduled_date": "2026-11-16",
+      "actual_published_date": "2026-11-16",
+      "actual_published_at": "2026-11-16T17:33:05+05:30",
       "last_processing_result": "published"
     }
   ]
