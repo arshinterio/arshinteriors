@@ -2343,8 +2343,10 @@
       "visual_file": "assets/modular-kitchen-layout-planning-pune.svg",
       "canonical_url": "https://arshinterior.in/guides/modular-kitchen-layout-planning-pune/",
       "scheduled_date": "2026-11-17",
-      "status": "scheduled",
-      "last_processing_result": "scheduled"
+      "status": "published",
+      "last_processing_result": "published",
+      "actual_published_date": "2026-11-17",
+      "actual_published_at": "2026-11-17T17:58:45+05:30"
     },
     {
       "slug": "living-room-wall-moulding-layout-pune",
@@ -3288,6 +3290,6 @@
   "last_scheduled_date": "2026-11-27",
   "last_reserved_publication_date": "2026-11-27",
   "next_publication_date": "2026-10-15",
-  "last_verified_published_date": "2026-11-16",
+  "last_verified_published_date": "2026-11-17",
   "description": "Append-only publication manifest. The publisher honors each scheduled_date and publishes at most one page per Asia/Kolkata date."
 }
