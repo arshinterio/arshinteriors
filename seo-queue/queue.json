@@ -2438,8 +2438,10 @@
       "visual_file": "assets/living-room-wall-moulding-layout-pune.svg",
       "canonical_url": "https://arshinterior.in/guides/living-room-wall-moulding-layout-pune/",
       "scheduled_date": "2026-11-18",
-      "status": "scheduled",
-      "last_processing_result": "scheduled"
+      "status": "published",
+      "last_processing_result": "published",
+      "actual_published_date": "2026-11-18",
+      "actual_published_at": "2026-11-18T17:45:06+05:30"
     },
     {
       "slug": "layered-living-room-lighting-plan-pune",
@@ -3290,6 +3292,6 @@
   "last_scheduled_date": "2026-11-27",
   "last_reserved_publication_date": "2026-11-27",
   "next_publication_date": "2026-10-15",
-  "last_verified_published_date": "2026-11-17",
+  "last_verified_published_date": "2026-11-18",
   "description": "Append-only publication manifest. The publisher honors each scheduled_date and publishes at most one page per Asia/Kolkata date."
 }
