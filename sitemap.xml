@@ -20,7 +20,7 @@
     <!-- 3. Services Overview Page -->
     <url>
         <loc>https://arshinterior.in/services/</loc>
-        <lastmod>2026-09-09</lastmod>
+        <lastmod>2026-11-19</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -41,10 +41,17 @@
         <priority>0.9</priority>
     </url>
 
+    <url>
+        <loc>https://arshinterior.in/false-ceiling-cost-calculator/</loc>
+        <lastmod>2026-11-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
     <!-- 6. False Ceiling Service Page -->
     <url>
         <loc>https://arshinterior.in/False-Ceiling-in-Pune/</loc>
-        <lastmod>2026-09-09</lastmod>
+        <lastmod>2026-11-19</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
@@ -52,7 +59,7 @@
     <!-- 7. Gypsum & POP Work Page -->
     <url>
         <loc>https://arshinterior.in/gypsum-pop-work/</loc>
-        <lastmod>2026-09-09</lastmod>
+        <lastmod>2026-11-19</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
@@ -125,7 +132,7 @@
     </url>
                                                                                                                                             <url>
         <loc>https://arshinterior.in/ceiling-services-pune/</loc>
-        <lastmod>2026-11-12</lastmod>
+        <lastmod>2026-11-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -149,7 +156,7 @@
     </url>
     <url>
         <loc>https://arshinterior.in/guides/grid-ceiling-in-sinhagad-road-pune/</loc>
-        <lastmod>2026-10-08</lastmod>
+        <lastmod>2026-11-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -185,7 +192,7 @@
     </url>
     <url>
         <loc>https://arshinterior.in/grid-ceiling-in-sinhagad-road-pune/</loc>
-        <lastmod>2026-10-12</lastmod>
+        <lastmod>2026-11-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
