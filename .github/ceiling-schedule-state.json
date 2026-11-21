@@ -1,7 +1,7 @@
 {
-  "last_published_date": "2026-11-20",
-  "last_published_slug": "interior-trade-sequence-pune-ceiling-electrical-painting",
-  "last_published_path": "guides/interior-trade-sequence-pune-ceiling-electrical-painting/",
+  "last_published_date": "2026-11-21",
+  "last_published_slug": "custom-furniture-finish-comparison-pune",
+  "last_published_path": "guides/custom-furniture-finish-comparison-pune/",
   "last_processing_result": "published",
   "published_posts": [
     {
@@ -446,6 +446,18 @@
       "scheduled_date": "2026-11-20",
       "actual_published_date": "2026-11-20",
       "actual_published_at": "2026-11-20T17:41:38+05:30",
+      "last_processing_result": "published"
+    },
+    {
+      "content_id": "custom-furniture-finish-comparison-pune",
+      "slug": "custom-furniture-finish-comparison-pune",
+      "title": "Custom Furniture Finishes: Compare Laminate, Veneer and Painted Surfaces",
+      "url": "https://arshinterior.in/guides/custom-furniture-finish-comparison-pune/",
+      "category": "custom-furniture",
+      "locality": "Pune",
+      "scheduled_date": "2026-11-21",
+      "actual_published_date": "2026-11-21",
+      "actual_published_at": "2026-11-21T17:17:15+05:30",
       "last_processing_result": "published"
     }
   ]
