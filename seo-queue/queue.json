@@ -2822,8 +2822,10 @@
       "visual_file": "assets/modular-kitchen-materials-hardware-checklist-pune.svg",
       "canonical_url": "https://arshinterior.in/guides/modular-kitchen-materials-hardware-checklist-pune/",
       "scheduled_date": "2026-11-22",
-      "status": "scheduled",
-      "last_processing_result": "scheduled"
+      "status": "published",
+      "last_processing_result": "published",
+      "actual_published_date": "2026-11-22",
+      "actual_published_at": "2026-11-22T17:29:23+05:30"
     },
     {
       "slug": "new-flat-interior-planning-sequence-pune",
@@ -3902,6 +3904,6 @@
   "last_scheduled_date": "2026-11-27",
   "last_reserved_publication_date": "2026-11-27",
   "next_publication_date": "2026-10-15",
-  "last_verified_published_date": "2026-11-21",
+  "last_verified_published_date": "2026-11-22",
   "description": "Append-only publication manifest. The publisher honors each scheduled_date and publishes at most one page per Asia/Kolkata date."
 }
