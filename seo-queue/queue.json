@@ -3375,10 +3375,6 @@
           "text": "False ceiling services in Pune"
         },
         {
-          "href": "/false-ceiling-cost-calculator/",
-          "text": "False ceiling cost calculator"
-        },
-        {
           "href": "/estimator/",
           "text": "Interior estimator"
         },
@@ -3392,9 +3388,11 @@
         }
       ],
       "category": "ceiling",
-      "status": "scheduled",
+      "status": "published",
       "scheduled_date": "2026-11-23",
-      "last_processing_result": "scheduled"
+      "last_processing_result": "published",
+      "actual_published_date": "2026-11-22",
+      "actual_published_at": "2026-11-22T17:36:31.796+05:30"
     },
     {
       "slug": "false-ceiling-contractor-in-narhe-pune",
@@ -3675,10 +3673,6 @@
           "text": "Gypsum and POP ceiling work"
         },
         {
-          "href": "/false-ceiling-cost-calculator/",
-          "text": "False ceiling cost calculator"
-        },
-        {
           "href": "/estimator/",
           "text": "Interior estimator"
         },
@@ -3692,9 +3686,11 @@
         }
       ],
       "category": "ceiling",
-      "status": "scheduled",
+      "status": "published",
       "scheduled_date": "2026-11-26",
-      "last_processing_result": "scheduled"
+      "last_processing_result": "published",
+      "actual_published_date": "2026-11-22",
+      "actual_published_at": "2026-11-22T17:36:31.796+05:30"
     },
     {
       "slug": "false-ceiling-pop-wadgaon-budruk-pune",
