@@ -4,7 +4,7 @@
     <!-- 1. Home Page -->
     <url>
         <loc>https://arshinterior.in/</loc>
-        <lastmod>2026-09-09</lastmod>
+        <lastmod>2026-11-25</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
@@ -12,7 +12,7 @@
     <!-- 2. About Page -->
     <url>
         <loc>https://arshinterior.in/about/</loc>
-        <lastmod>2026-09-09</lastmod>
+        <lastmod>2026-11-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -20,7 +20,7 @@
     <!-- 3. Services Overview Page -->
     <url>
         <loc>https://arshinterior.in/services/</loc>
-        <lastmod>2026-11-19</lastmod>
+        <lastmod>2026-11-25</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -28,7 +28,7 @@
     <!-- 4. Design / Gallery Page -->
     <url>
         <loc>https://arshinterior.in/design/</loc>
-        <lastmod>2026-09-09</lastmod>
+        <lastmod>2026-11-25</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -36,7 +36,7 @@
     <!-- 5. Interactive Cost Estimator -->
     <url>
         <loc>https://arshinterior.in/estimator/</loc>
-        <lastmod>2026-09-09</lastmod>
+        <lastmod>2026-11-25</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
@@ -51,7 +51,7 @@
     <!-- 6. False Ceiling Service Page -->
     <url>
         <loc>https://arshinterior.in/False-Ceiling-in-Pune/</loc>
-        <lastmod>2026-11-19</lastmod>
+        <lastmod>2026-11-25</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
@@ -59,7 +59,7 @@
     <!-- 7. Gypsum & POP Work Page -->
     <url>
         <loc>https://arshinterior.in/gypsum-pop-work/</loc>
-        <lastmod>2026-11-19</lastmod>
+        <lastmod>2026-11-25</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
@@ -67,7 +67,7 @@
     <!-- 8. Electrical Work Page -->
     <url>
         <loc>https://arshinterior.in/electrical-work-in-pune/</loc>
-        <lastmod>2026-09-09</lastmod>
+        <lastmod>2026-11-25</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
@@ -75,7 +75,7 @@
     <!-- 9. Painting Services Page -->
     <url>
         <loc>https://arshinterior.in/painting-in-pune/</loc>
-        <lastmod>2026-09-09</lastmod>
+        <lastmod>2026-11-25</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
@@ -83,7 +83,7 @@
     <!-- 10. Custom Furniture & Carpentry Page -->
     <url>
         <loc>https://arshinterior.in/furniture-in-pune/</loc>
-        <lastmod>2026-09-09</lastmod>
+        <lastmod>2026-11-25</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
@@ -91,42 +91,42 @@
         <!-- Wall Preparation Before Painting in Kothrud and Dhayari Guide -->
     <url>
         <loc>https://arshinterior.in/guides/wall-preparation-painting-kothrud-dhayari-pune/</loc>
-        <lastmod>2026-10-05</lastmod>
+        <lastmod>2026-11-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <!-- Custom Wardrobe Measurements and Storage Planning in Wakad Guide -->
     <url>
         <loc>https://arshinterior.in/guides/custom-wardrobe-measurements-wakad-pune/</loc>
-        <lastmod>2026-10-06</lastmod>
+        <lastmod>2026-11-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <!-- TV Unit Planning in Baner Guide -->
     <url>
         <loc>https://arshinterior.in/guides/tv-unit-planning-baner-pune/</loc>
-        <lastmod>2026-10-07</lastmod>
+        <lastmod>2026-11-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
 <!-- Planning Guides Index -->
     <url>
         <loc>https://arshinterior.in/guides/</loc>
-        <lastmod>2026-10-08</lastmod>
+        <lastmod>2026-11-25</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
     </url>
     <!-- Switch and Socket Planning Guide -->
     <url>
         <loc>https://arshinterior.in/guides/switch-socket-placement-pune/</loc>
-        <lastmod>2026-10-04</lastmod>
+        <lastmod>2026-11-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <!-- False Ceiling Planning Guide -->
     <url>
         <loc>https://arshinterior.in/guides/false-ceiling-planning-pune/</loc>
-        <lastmod>2026-10-04</lastmod>
+        <lastmod>2026-11-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -138,37 +138,37 @@
     </url>
     <url>
         <loc>https://arshinterior.in/guides/false-ceiling-in-katraj-pune/</loc>
-        <lastmod>2026-10-08</lastmod>
+        <lastmod>2026-11-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://arshinterior.in/guides/false-ceiling-in-wagholi-pune/</loc>
-        <lastmod>2026-10-08</lastmod>
+        <lastmod>2026-11-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://arshinterior.in/guides/false-ceiling-in-dhayari-pune/</loc>
-        <lastmod>2026-10-08</lastmod>
+        <lastmod>2026-11-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://arshinterior.in/guides/grid-ceiling-in-sinhagad-road-pune/</loc>
-        <lastmod>2026-11-19</lastmod>
+        <lastmod>2026-11-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://arshinterior.in/guides/pvc-false-ceiling-kothrud-pune/</loc>
-        <lastmod>2026-10-08</lastmod>
+        <lastmod>2026-11-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://arshinterior.in/wall-mouldings-in-pune/</loc>
-        <lastmod>2026-10-08</lastmod>
+        <lastmod>2026-11-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -180,43 +180,43 @@
     </url>
     <url>
         <loc>https://arshinterior.in/false-ceiling-in-wagholi-pune/</loc>
-        <lastmod>2026-10-10</lastmod>
+        <lastmod>2026-11-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://arshinterior.in/false-ceiling-in-dhayari-pune/</loc>
-        <lastmod>2026-10-11</lastmod>
+        <lastmod>2026-11-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://arshinterior.in/grid-ceiling-in-sinhagad-road-pune/</loc>
-        <lastmod>2026-11-19</lastmod>
+        <lastmod>2026-11-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://arshinterior.in/pvc-false-ceiling-kothrud-pune/</loc>
-        <lastmod>2026-10-13</lastmod>
+        <lastmod>2026-11-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://arshinterior.in/gypsum-false-ceiling-wakad-pune/</loc>
-        <lastmod>2026-10-15</lastmod>
+        <lastmod>2026-11-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://arshinterior.in/pop-ceiling-in-baner-pune/</loc>
-        <lastmod>2026-10-16</lastmod>
+        <lastmod>2026-11-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://arshinterior.in/pvc-ceiling-in-kharadi-pune/</loc>
-        <lastmod>2026-10-17</lastmod>
+        <lastmod>2026-11-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -228,31 +228,31 @@
     </url>
     <url>
         <loc>https://arshinterior.in/gypsum-ceiling-in-balewadi-pune/</loc>
-        <lastmod>2026-10-19</lastmod>
+        <lastmod>2026-11-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://arshinterior.in/false-ceiling-in-mahalunge-pune/</loc>
-        <lastmod>2026-10-20</lastmod>
+        <lastmod>2026-11-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://arshinterior.in/pop-ceiling-in-tathawade-pune/</loc>
-        <lastmod>2026-10-21</lastmod>
+        <lastmod>2026-11-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://arshinterior.in/pvc-ceiling-in-punawale-pune/</loc>
-        <lastmod>2026-10-22</lastmod>
+        <lastmod>2026-11-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://arshinterior.in/gypsum-ceiling-in-ravet-pune/</loc>
-        <lastmod>2026-10-23</lastmod>
+        <lastmod>2026-11-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -264,7 +264,7 @@
     </url>
     <url>
         <loc>https://arshinterior.in/pvc-ceiling-in-manjari-pune/</loc>
-        <lastmod>2026-10-25</lastmod>
+        <lastmod>2026-11-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -282,13 +282,13 @@
     </url>
     <url>
         <loc>https://arshinterior.in/false-ceiling-in-undri-pune/</loc>
-        <lastmod>2026-10-28</lastmod>
+        <lastmod>2026-11-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://arshinterior.in/gypsum-ceiling-in-sinhagad-road-pune/</loc>
-        <lastmod>2026-10-29</lastmod>
+        <lastmod>2026-11-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -300,19 +300,19 @@
     </url>
     <url>
         <loc>https://arshinterior.in/false-ceiling-in-kharadi-pune-grid/</loc>
-        <lastmod>2026-10-31</lastmod>
+        <lastmod>2026-11-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://arshinterior.in/pop-ceiling-in-viman-nagar-pune/</loc>
-        <lastmod>2026-11-01</lastmod>
+        <lastmod>2026-11-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://arshinterior.in/pvc-ceiling-in-ravet-pune/</loc>
-        <lastmod>2026-11-02</lastmod>
+        <lastmod>2026-11-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -348,7 +348,7 @@
     </url>
     <url>
         <loc>https://arshinterior.in/pop-ceiling-in-hadapsar-pune/</loc>
-        <lastmod>2026-11-08</lastmod>
+        <lastmod>2026-11-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -390,25 +390,25 @@
     </url>
     <url>
         <loc>https://arshinterior.in/guides/paint-sheen-by-room-use-pune/</loc>
-        <lastmod>2026-11-15</lastmod>
+        <lastmod>2026-11-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://arshinterior.in/guides/wardrobe-storage-layout-viman-nagar-pune/</loc>
-        <lastmod>2026-11-16</lastmod>
+        <lastmod>2026-11-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://arshinterior.in/guides/modular-kitchen-layout-planning-pune/</loc>
-        <lastmod>2026-11-17</lastmod>
+        <lastmod>2026-11-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://arshinterior.in/guides/living-room-wall-moulding-layout-pune/</loc>
-        <lastmod>2026-11-18</lastmod>
+        <lastmod>2026-11-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>

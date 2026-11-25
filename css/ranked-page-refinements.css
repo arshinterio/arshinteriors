@@ -1,0 +1,24 @@
+/* Consistent white and coral finish for Search Console priority pages */
+:root{--rank-ink:#111111;--rank-coral:#ff6b6b;--rank-coral-dark:#e85555;--rank-line:#ece8e6}
+body{color:var(--rank-ink)}
+main p{line-height:1.68}
+main h1,main h2,main h3{text-wrap:balance}
+.logo,.brand,.estimator-brand{text-decoration:none!important}
+.estimator-brand{display:block;width:max-content;max-width:100%;margin:0 auto 14px}
+.estimator-brand img{display:block;width:109px;height:auto;max-width:28vw;max-height:31px;object-fit:contain;object-position:left center}
+.logo img,.brand img{display:block;width:109px;height:auto;max-width:28vw;max-height:31px;object-fit:contain;object-position:left center}
+.site-nav a{text-decoration:none}
+.site-nav a:not(.nav-cta):hover{color:var(--rank-coral-dark)}
+.site-nav a.nav-cta,.btn,.action-button,.quick-action-inner .action-button,.hero-quick-actions a,.header-btn{border-radius:999px!important;transition:background-color .18s ease,border-color .18s ease,color .18s ease,transform .18s ease}
+.site-nav a.nav-cta,.action-button,.quick-action-inner .action-button{font-weight:750;line-height:1.2}
+.site-nav a.nav-cta{min-height:44px;background:var(--rank-coral);border-color:var(--rank-coral);color:#fff;text-decoration:none}
+.site-nav a.nav-cta:hover,.action-button:hover,.quick-action-inner .action-button:hover{background:var(--rank-coral-dark);border-color:var(--rank-coral-dark)}
+.action-button,.quick-action-inner .action-button{min-height:50px;font-size:.95rem!important}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #111;outline-offset:3px}
+@media(max-width:767px){
+ .logo img,.brand img{width:103px;max-width:30vw}
+ .site-nav a.nav-cta{width:100%!important;justify-content:center}
+ .quick-action-inner .action-button,.action-button{min-height:50px;padding:11px 14px;font-size:.93rem!important}
+ .cta-actions{grid-template-columns:1fr!important}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
