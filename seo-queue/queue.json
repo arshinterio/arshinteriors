@@ -3792,9 +3792,11 @@
         }
       ],
       "category": "ceiling",
-      "status": "scheduled",
+      "status": "published",
       "scheduled_date": "2026-11-27",
-      "last_processing_result": "scheduled"
+      "last_processing_result": "published",
+      "actual_published_date": "2026-11-27",
+      "actual_published_at": "2026-11-27T18:37:39+05:30"
     },
     {
       "slug": "pop-ceiling-in-katraj-pune",
@@ -3904,6 +3906,6 @@
   "last_scheduled_date": "2026-11-27",
   "last_reserved_publication_date": "2026-11-27",
   "next_publication_date": "2026-10-15",
-  "last_verified_published_date": "2026-11-25",
+  "last_verified_published_date": "2026-11-27",
   "description": "Append-only publication manifest. The publisher honors each scheduled_date and publishes at most one page per Asia/Kolkata date."
 }
