@@ -22,3 +22,33 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
  .cta-actions{grid-template-columns:1fr!important}
 }
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
+
+
+/* Consistent card rhythm and brand details across ranked service and guide pages */
+:root{--rank-surface:#fff;--rank-soft:#fff5f3;--rank-shadow:0 8px 24px rgba(17,17,17,.055)}
+body{background:#fff;color:var(--rank-ink);font-family:'Plus Jakarta Sans',sans-serif}
+main :is(h1,h2,h3){letter-spacing:-.025em;line-height:1.25;text-wrap:balance;color:#111}
+main p{color:#5f5b59;line-height:1.7}
+main :is(.content-card,.card,.service-box,.service-card,.testimonial-card,.guide-card,.checklist,.cta-box){
+ background:#fff;border:1px solid var(--rank-line);border-radius:18px;box-shadow:var(--rank-shadow)
+}
+main :is(.service-box,.service-card,.content-card,.card){transition:transform .22s ease,border-color .22s ease,box-shadow .22s ease}
+main :is(.service-box,.service-card,.content-card,.card):hover{border-color:#f1c9c4;box-shadow:0 13px 28px rgba(17,17,17,.08);transform:translateY(-2px)}
+main :is(.service-icon,.service-box .icon,.service-card .icon){
+ display:grid;place-items:center;width:58px;height:58px;border:1px solid #ffe0dc;border-radius:18px;
+ background:linear-gradient(145deg,#fff0ee,#fff8f7);color:var(--rank-coral-dark);font-size:1.45rem
+}
+main :is(.service-box,.service-card) h2,main :is(.service-box,.service-card) h3{color:#171717;line-height:1.3}
+main :is(.service-box,.service-card) a:not(.action-button):not(.btn){color:var(--rank-coral-dark);font-weight:750;text-decoration:none}
+main :is(.related-links,.checklist){padding:clamp(18px,3vw,28px)}
+main :is(.content-card,.card,.service-box,.service-card,.testimonial-card) img{max-width:100%;height:auto;border-radius:14px}
+main :is(.action-button,.btn,.cta-button,.quick-action-inner .action-button){box-shadow:0 6px 16px rgba(255,107,107,.17)}
+main :is(.action-button,.btn,.cta-button,.quick-action-inner .action-button):hover{transform:translateY(-1px)}
+@media(max-width:767px){
+ main :is(.content-card,.card,.service-box,.service-card,.testimonial-card,.guide-card,.checklist,.cta-box){border-radius:16px}
+ main :is(.service-icon,.service-box .icon,.service-card .icon){width:52px;height:52px;border-radius:16px;font-size:1.3rem}
+ main :is(.content-card,.card,.service-box,.service-card,.checklist){padding:clamp(15px,4vw,21px)}
+}
+@media(prefers-reduced-motion:reduce){
+ main :is(.service-box,.service-card,.content-card,.card,.action-button,.btn,.cta-button){transition:none!important}
+}
